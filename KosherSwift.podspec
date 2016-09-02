@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KosherSwift'
-  s.version          = '0.1.2'
+  s.version          = '0.1.21'
   s.summary          = 'A Swift library for getting zmanim.'
 
 # This description is used to generate tags and improve search results.
