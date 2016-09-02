@@ -12,12 +12,12 @@ public class KSAstronomicalCalendar
 	var internalCalendar : NSCalendar?
 	var workingDate : NSDate?
 	
-	init()
+	public init()
 	{
 	    internalCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
 	}
 	
-	init(location aGeoLocation: KSGeoLocation)
+	public init(location aGeoLocation: KSGeoLocation)
 	{
 	    let tempCalc: KSSunriseAndSunsetCalculator = KSSunriseAndSunsetCalculator(geoLocation: aGeoLocation)
 		astronomicalCalculator = tempCalc

@@ -16,7 +16,7 @@
 //	    return KSZman(selector: selector)
 //	}
 //	
-//	init(selector: Selector)
+//	public init(selector: Selector)
 //	{
 //	    self.selector = selector
 //	}

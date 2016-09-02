@@ -10,7 +10,7 @@ public class KSDaf
     var pageNumber: Int = 0
     var tractateIndex: Int = 0
 
-    init(tractateIndex: Int, andPageNumber number: Int)
+    public init(tractateIndex: Int, andPageNumber number: Int)
     {
         self.tractateIndex = tractateIndex
         pageNumber = number

@@ -17,7 +17,7 @@ public class KSSefiraFormatter
     var custom = KSSefiraCustom.Sefard
     var language = KSSefiraLanguage.Hebrew
 	
-	init()
+	public init()
 	{
 	    language = KSSefiraLanguage.Hebrew;
 		custom = KSSefiraCustom.Ashkenaz;

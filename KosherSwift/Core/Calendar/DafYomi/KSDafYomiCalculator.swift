@@ -10,7 +10,7 @@ public class KSDafYomiCalculator
     let kNumberOfMasechtos = 40
 	var workingDate : NSDate?
 	
-	init(date: NSDate)
+	public init(date: NSDate)
 	{
 	    workingDate = date
 	}

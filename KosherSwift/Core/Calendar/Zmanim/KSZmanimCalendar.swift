@@ -9,7 +9,7 @@ public class KSZmanimCalendar: KSAstronomicalCalendar
 {
 	var candleLightingOffset = 0
 	
-	override init (location aGeoLocation:KSGeoLocation)
+	public override init(location aGeoLocation:KSGeoLocation)
 	{
 		super.init(location: aGeoLocation)
 	}

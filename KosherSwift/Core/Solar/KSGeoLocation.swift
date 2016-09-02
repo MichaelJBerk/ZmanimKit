@@ -16,7 +16,7 @@ public class KSGeoLocation
     let trig = trigonometry()
     
     
-    init(name: String, latitude: Double, longitude: Double, elevation: Double, timeZone: NSTimeZone)
+    public init(name: String, latitude: Double, longitude: Double, elevation: Double, timeZone: NSTimeZone)
     {
         self.locationName = name
         self.longitude = longitude
@@ -25,22 +25,22 @@ public class KSGeoLocation
         self.timeZone = timeZone
     }
     
-	convenience init(latitude: Double, longitude: Double, timeZone: NSTimeZone)
+	convenience public init(latitude: Double, longitude: Double, timeZone: NSTimeZone)
 	{
 		self.init(name: "Unspecified Location", latitude: latitude, longitude: longitude, elevation: 0, timeZone: timeZone)
 	}
 	
-	convenience init(latitude: Double, longitude: Double, elevation: Double, timezone: NSTimeZone)
+	convenience public init(latitude: Double, longitude: Double, elevation: Double, timezone: NSTimeZone)
 	{
 		self.init(name: "Unspecified Location", latitude: latitude, longitude: longitude, elevation: elevation, timeZone: timezone)
 	}
 	
-	convenience init(name: String, latitude: Double, longitude: Double, timeZone: NSTimeZone)
+	convenience public init(name: String, latitude: Double, longitude: Double, timeZone: NSTimeZone)
 	{
         self.init(name: name, latitude: latitude, longitude: longitude, elevation: 0, timeZone: timeZone)
 	}
 	
-	convenience init()
+	convenience public init()
 	{
         self.init(name: "Greenwich, England", latitude: 0, longitude: 51.4772, timeZone: NSTimeZone(abbreviation: "GMT")!)
 	}

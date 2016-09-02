@@ -14,7 +14,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
 		super.init(location: aGeoLocation)
 	}
 	
-//    convenience init()
+//    convenience public init()
 //	{
 //	    ateretTorahSunsetOffset = 40
 //	}

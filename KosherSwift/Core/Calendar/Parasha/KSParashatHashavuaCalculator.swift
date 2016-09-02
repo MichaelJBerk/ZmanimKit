@@ -10,7 +10,7 @@ public class KSParashatHashavuaCalculator
 	var hebrewCalendar : NSCalendar?
 	var gregorianCalendar : NSCalendar?
 
-	init()
+	public init()
 	{
 	    gregorianCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
 		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)

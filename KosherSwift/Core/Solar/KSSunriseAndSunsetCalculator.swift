@@ -10,7 +10,7 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	var geoLocation : KSGeoLocation?
 	var calculatorName : String?
 	
-    init(geoLocation: KSGeoLocation)
+    public init(geoLocation: KSGeoLocation)
 	{
 		calculatorName = "United States Naval Almanac Algorithm"
         self.geoLocation = geoLocation
