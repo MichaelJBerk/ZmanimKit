@@ -1,0 +1,6 @@
+use_frameworks!
+target 'KosherSwift_Tests' do
+  pod 'KosherSwift', :path => '../'
+  
+  
+end

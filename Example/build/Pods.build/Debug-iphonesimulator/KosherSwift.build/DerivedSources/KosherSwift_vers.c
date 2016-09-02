@@ -1,0 +1,1 @@
+ const unsigned char KosherSwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:KosherSwift  PROJECT:Pods-0.1.0" "\n"; const double KosherSwiftVersionNumber __attribute__ ((used)) = (double)0.1;

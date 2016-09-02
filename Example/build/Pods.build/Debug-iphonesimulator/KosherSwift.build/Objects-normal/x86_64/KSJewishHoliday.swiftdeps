@@ -1,0 +1,155 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KSJewishHoliday"
+provides-nominal:
+- "C11KosherSwift15KSJewishHoliday"
+provides-member:
+- ["C11KosherSwift15KSJewishHoliday", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "IntegerLiteralType"
+- "FloatLiteralType"
+- "String"
+- "AnyObject"
+- !private "Array"
+- !private "StringLiteralType"
+- "KSJewishHoliday"
+- "Int"
+depends-member:
+- !private ["Ps9AnyObject", "KSJewishHoliday"]
+- !private ["Ps9AnyObject", "holidayIndex"]
+- !private ["Ps9AnyObject", "holidayNames"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- ["C11KosherSwift15KSJewishHoliday", "AnyObject"]
+- ["C11KosherSwift15KSJewishHoliday", "Int"]
+- !private ["C11KosherSwift15KSJewishHoliday", "KSJewishHoliday"]
+- ["C11KosherSwift15KSJewishHoliday", "String"]
+- ["C11KosherSwift15KSJewishHoliday", "deinit"]
+- ["C11KosherSwift15KSJewishHoliday", "holidayData"]
+- ["C11KosherSwift15KSJewishHoliday", "holidayIndex"]
+- ["C11KosherSwift15KSJewishHoliday", "holidayNames"]
+- ["C11KosherSwift15KSJewishHoliday", "holidayWithIndex"]
+- ["C11KosherSwift15KSJewishHoliday", "init"]
+- ["C11KosherSwift15KSJewishHoliday", "name"]
+- ["C11KosherSwift15KSJewishHoliday", "nameTransliterated"]
+- ["C11KosherSwift15KSJewishHoliday", "names"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps14CollectionType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps13GeneratorType"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- "C11KosherSwift15KSJewishHoliday"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/Pods/Target Support Files/KosherSwift/KosherSwift-umbrella.h"
+- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Pods.build/Debug-iphonesimulator/KosherSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "39f86046b8fbd49413db62c7e7f02a34"
