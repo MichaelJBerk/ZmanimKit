@@ -25,7 +25,7 @@ extension NSCalendar
 	    let nextRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear + 1, andCalendar: hebCal)
 	    
 	    //  We only care about the ones place in the length.
-	    public var length = hebCal.daysFromDate(previousRoshHashana, toDate: nextRoshHashana)
+        var length = hebCal.daysFromDate(previousRoshHashana, toDate: nextRoshHashana)
 	    
 	    length = length % 10
 		
