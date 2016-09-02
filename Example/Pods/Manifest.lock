@@ -1,5 +1,5 @@
 PODS:
-  - KosherSwift (0.1.0)
+  - KosherSwift (0.1.22)
 
 DEPENDENCIES:
   - KosherSwift (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  KosherSwift: 9c0087f68c64d3cd3f3a708d3ae2d829b5066325
+  KosherSwift: fd2e5cd12339dafd71b0ec795112a88bfc7d300a
 
-COCOAPODS: 0.38.1
+PODFILE CHECKSUM: 15ab2a6f56e760fb8b7d2d6f2a4e8355a12aded4
+
+COCOAPODS: 1.1.0.beta.1
