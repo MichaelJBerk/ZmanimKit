@@ -1,4 +1,3 @@
-# KosherSwift
 
 [![CI Status](http://img.shields.io/travis/Dani Smith/KosherSwift.svg?style=flat)](https://travis-ci.org/Dani Smith/KosherSwift)
 [![Version](https://img.shields.io/cocoapods/v/KosherSwift.svg?style=flat)](http://cocoapods.org/pods/KosherSwift)
