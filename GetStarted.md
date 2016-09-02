@@ -4,18 +4,18 @@ KosherSwift Documentation:
 Table of Contents
 ---
 
-1. [Introduction]()
-2. [Sunrise, Sunset: Calculating Sunrise]()
-3. [Zmanim]()
-4. [Parashat Hashavua]()
-5. [Chagim]()
-6. [Sefira]()
-7. [Daf Yomi]()
-8. [Conclusion]()
+1. [Introduction](#intro)
+2. [Sunrise, Sunset: Calculating Sunrise](#sunrise)
+3. [Zmanim](#zmanim)
+4. [Parashat Hashavua](#parasha)
+5. [Chagim](#chagim)
+6. [Sefira](#sefira)
+7. [Daf Yomi](#dafyomi)
+8. [Conclusion](#conclusion)
 
 --- 
 
-1. Introduction
+1. Introduction <a name="intro"></a>
 ---
 
 KosherSwift is a Swift port of Moshe Berman's [KosherCocoa](https://github.com/MosheBerman/KosherCocoa), an Objective-C port of Eliyahu Hershfeld's [KosherJava](http://www.kosherjava.com). Moshe and Eliyahu both put a tremendous amount of work into their APIs, and this project would have been close to impossible without them.
@@ -24,7 +24,7 @@ This document is a "Get Started" guid for KosherSwift. Please be mindful of the 
 
 With that in mind, let's get started.
 
-2. Sunrise, Sunset: Calculating Sunrise
+2. Sunrise, Sunset: Calculating Sunrise <a name="sunrise"></a>
 ---
 Sunrise and sunset are defined by where you are on Earth. For example, sunrise in California is long after sunrise in New York. While we use time zones to handle this when discussing time, we need to pinpoint where our user is in order to show them times that they can relate to. To do so, we use the `KSGeoLocation` class. The simplest use case is presented here:
  
@@ -54,7 +54,7 @@ This is sunrise at whatever the altitude of the `geoLocation` object has at a 90
     
 Sunrise, sunset. That's how it's done.
 
-3. Zmanim
+3. Zmanim <a name="zmanim"></a>
 ---
 Zmanim are calculated by `KSZmanimCalendar` and its subclass `KSComplexZmanimCalendar`. Similar to sunrise, you can pass a location to a `KSZmanimCalendar` and then ask it for a zman.
 
@@ -64,7 +64,7 @@ Zmanim are calculated by `KSZmanimCalendar` and its subclass `KSComplexZmanimCal
     
 That's it. There are over 100 different zmanim API. Have a look at the documentation.
 
-4. Parashat Hashavua
+4. Parashat Hashavua <a name="parasha"></a>
 ---
 There are two classes when working with Parshiot. `KSParashatHashavuaCalculator` returns a `KSParasha` object representing the parasha for a given date. For example:
 
@@ -82,7 +82,7 @@ Now that we have a `KSParasha`, we can use the `name` method to get the Hebrew n
 	let hebrewName = parasha.name()
 	let translitiratedName = parasha.nameTransliterated() 
 
-5. Chagim
+5. Chagim <a name="chagim"></a>
 ---
 To calculate the holidays, use `KSJewishCalendar`. Using the value of the `workingDate` property inherited from its superclass, `KSJewishCalendar` can determing if the supplied date is a holiday.  
 
@@ -101,7 +101,7 @@ You can also choose to respect or ignore the various holidays involving the mode
 
     calendar.returnsModernHolidays = true // default is NO, YES will enable the modern holidays
     
-6. Sefira
+6. Sefira <a name="sefira"></a>
 ---
 Calculating Sefira is super easy with `KSSefiratHaomerCalculator`. It's a one liner:
 
@@ -159,7 +159,7 @@ There is also a pair of methods that will tell you if a date falls during the om
 
 
 
-7. Daf Yomi
+7. Daf Yomi <a name="dafyomi"></a>
 ---
 The Daf Yomi calculation classes work similarly to the Parasha calculation classes. You create a `KSDafYomiCalculator`, optionally assign a `workingDate`, and then ask it for a `KSDaf` for a given date. 
 	
@@ -174,9 +174,9 @@ To get the name of the daf, call the `name` method or the `transliteratedName` m
 	let hebrewName = daf.name()
 	let transliteratedName = daf.nameTransliterated()
 	
-8. Conclusion
+8. Conclusion <a name="conclusion"></a>
 ---
-There is still a small handfull of things I would like to add, but this library is definitely usable. I am in the process of implementing KosherSwift into my app, [YidKit](yidkit.com).
+There is still a small handfull of things I would like to add, but this library is definitely usable. I am in the process of implementing KosherSwift into my app, [YidKit](http://yidkit.com).
 
 Remember to provide your users with an adequate way to configuare a way for you to obtain their location. The primary cause of complaints in three years was nearly always a user who didn't know how to tell my apps where they were. 
 
