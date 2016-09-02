@@ -4,18 +4,18 @@ KosherSwift Documentation:
 Table of Contents
 ---
 
-1. [Introduction](#intro)
-2. [Sunrise, Sunset: Calculating Sunrise](#sunrise)
-3. [Zmanim](#zmanim)
-4. [Parashat Hashavua](#parasha)
-5. [Chagim](#chagim)
-6. [Sefira](#sefira)
-7. [Daf Yomi](#dafyomi)
-8. [Conclusion](#conclusion)
+1. [Introduction](#1-introduction)
+2. [Sunrise, Sunset: Calculating Sunrise](#2-sunrise-sunset-calculating-sunrise)
+3. [Zmanim](#3-zmanim)
+4. [Parashat Hashavua](#4-parashat-hashavua)
+5. [Chagim](#5-chagim)
+6. [Sefira](#6-sefira)
+7. [Daf Yomi](#7-daf-yomi)
+8. [Conclusion](#8-conclusion)
 
 --- 
 
-1. Introduction <a name="intro"></a>
+1. Introduction
 ---
 
 KosherSwift is a Swift port of Moshe Berman's [KosherCocoa](https://github.com/MosheBerman/KosherCocoa), an Objective-C port of Eliyahu Hershfeld's [KosherJava](http://www.kosherjava.com). Moshe and Eliyahu both put a tremendous amount of work into their APIs, and this project would have been close to impossible without them.
@@ -24,7 +24,7 @@ This document is a "Get Started" guid for KosherSwift. Please be mindful of the 
 
 With that in mind, let's get started.
 
-2. Sunrise, Sunset: Calculating Sunrise <a name="sunrise"></a>
+2. Sunrise, Sunset: Calculating Sunrise
 ---
 Sunrise and sunset are defined by where you are on Earth. For example, sunrise in California is long after sunrise in New York. While we use time zones to handle this when discussing time, we need to pinpoint where our user is in order to show them times that they can relate to. To do so, we use the `KSGeoLocation` class. The simplest use case is presented here:
  
@@ -54,7 +54,7 @@ This is sunrise at whatever the altitude of the `geoLocation` object has at a 90
     
 Sunrise, sunset. That's how it's done.
 
-3. Zmanim <a name="zmanim"></a>
+3. Zmanim
 ---
 Zmanim are calculated by `KSZmanimCalendar` and its subclass `KSComplexZmanimCalendar`. Similar to sunrise, you can pass a location to a `KSZmanimCalendar` and then ask it for a zman.
 
@@ -64,7 +64,7 @@ Zmanim are calculated by `KSZmanimCalendar` and its subclass `KSComplexZmanimCal
     
 That's it. There are over 100 different zmanim API. Have a look at the documentation.
 
-4. Parashat Hashavua <a name="parasha"></a>
+4. Parashat Hashavua
 ---
 There are two classes when working with Parshiot. `KSParashatHashavuaCalculator` returns a `KSParasha` object representing the parasha for a given date. For example:
 
@@ -82,7 +82,7 @@ Now that we have a `KSParasha`, we can use the `name` method to get the Hebrew n
 	let hebrewName = parasha.name()
 	let translitiratedName = parasha.nameTransliterated() 
 
-5. Chagim <a name="chagim"></a>
+5. Chagim 
 ---
 To calculate the holidays, use `KSJewishCalendar`. Using the value of the `workingDate` property inherited from its superclass, `KSJewishCalendar` can determing if the supplied date is a holiday.  
 
@@ -101,7 +101,7 @@ You can also choose to respect or ignore the various holidays involving the mode
 
     calendar.returnsModernHolidays = true // default is NO, YES will enable the modern holidays
     
-6. Sefira <a name="sefira"></a>
+6. Sefira
 ---
 Calculating Sefira is super easy with `KSSefiratHaomerCalculator`. It's a one liner:
 
@@ -159,7 +159,7 @@ There is also a pair of methods that will tell you if a date falls during the om
 
 
 
-7. Daf Yomi <a name="dafyomi"></a>
+7. Daf Yomi 
 ---
 The Daf Yomi calculation classes work similarly to the Parasha calculation classes. You create a `KSDafYomiCalculator`, optionally assign a `workingDate`, and then ask it for a `KSDaf` for a given date. 
 	
@@ -174,7 +174,7 @@ To get the name of the daf, call the `name` method or the `transliteratedName` m
 	let hebrewName = daf.name()
 	let transliteratedName = daf.nameTransliterated()
 	
-8. Conclusion <a name="conclusion"></a>
+8. Conclusion 
 ---
 There is still a small handfull of things I would like to add, but this library is definitely usable. I am in the process of implementing KosherSwift into my app, [YidKit](http://yidkit.com).
 
