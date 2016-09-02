@@ -5,13 +5,13 @@
 //
 //import Foundation
 //
-//class KSZman
+//public class KSZman
 //{
 //    var data: [zmandata]? = nil
 //	var selector: Selector?
 //    typealias zmandata = (hebrew: String, english: String, transAsh: String, transSef: String, selector: String, description: String?)
 //	
-//	class func zmanForSelector(selector: Selector) -> KSZman
+//	class public func zmanForSelector(selector: Selector) -> KSZman
 //	{
 //	    return KSZman(selector: selector)
 //	}
@@ -21,32 +21,32 @@
 //	    self.selector = selector
 //	}
 //	
-//	func hebrewName() -> String
+//	public func hebrewName() -> String
 //	{
 //	    return _metadataForCurrentZman().hebrew
 //	}
 //	
-//	func transliteratedNameAshkenazic() -> String
+//	public func transliteratedNameAshkenazic() -> String
 //	{
 //	    return _metadataForCurrentZman().transAsh
 //	}
 //	
-//	func transliteratedNameSephardic() -> String
+//	public func transliteratedNameSephardic() -> String
 //	{
 //	    return _metadataForCurrentZman().transSef
 //	}
 //	
-//	func englishName() -> String
+//	public func englishName() -> String
 //	{
 //	    return _metadataForCurrentZman().english
 //	}
 //	
-//	func explanation() -> String?
+//	public func explanation() -> String?
 //	{
 //	    return _metadataForCurrentZman().description
 //	}
 //	
-//	func relatedZmanim() -> [String]
+//	public func relatedZmanim() -> [String]
 //	{
 //	    
 //	    let selectorAsString: String = NSStringFromSelector(selector!)
@@ -69,7 +69,7 @@
 //	    return related
 //	}
 //	
-//	func _metadataForCurrentZman() -> zmandata
+//	public func _metadataForCurrentZman() -> zmandata
 //	{        
 //	    if data == nil
 //	    {
@@ -207,7 +207,7 @@
 //        return metadata[0]
 //	}
 //	
-//	func isEqualToZman(anotherZman: KSZman) -> Bool
+//	public func isEqualToZman(anotherZman: KSZman) -> Bool
 //	{
 //	    let mySelector: String = String(selector!)
 //	    let otherZmanSelector: String = String(anotherZman.selector!)

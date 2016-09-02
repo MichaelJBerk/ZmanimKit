@@ -7,14 +7,14 @@ import Foundation
 
 extension NSDate
 {
-	class func dateWithHebrewMonth(month: Int, andDay day: Int) -> NSDate
+	class public func dateWithHebrewMonth(month: Int, andDay day: Int) -> NSDate
 	{
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
 	    let year: Int = hebrewCalendar.yearsInDate(NSDate())
 	    return dateWithHebrewMonth(month, andDay: day, andYear: Int(year))
 	}
 	
-	class func dateWithHebrewMonth(month: Int, andDay day: Int, andYear year: Int) -> NSDate
+	class public func dateWithHebrewMonth(month: Int, andDay day: Int, andYear year: Int) -> NSDate
 	{
 	    let comps: NSDateComponents = NSDateComponents()
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!

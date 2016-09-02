@@ -10,7 +10,7 @@ import Foundation
  * possible weekly readings. Double readings and holiday
  * readings are treated separately from single parasha readings.
  */
-enum KSParashot: Int
+public enum KSParashot: Int
 {
 	case Bereshit = 0
 	case Noach

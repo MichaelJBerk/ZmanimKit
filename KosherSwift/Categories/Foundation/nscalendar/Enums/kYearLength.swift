@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum kYearLength
+public enum kYearLength
 {
 	case Short
 	case Regular

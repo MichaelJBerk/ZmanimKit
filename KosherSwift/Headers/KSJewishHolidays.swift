@@ -36,7 +36,7 @@ import Foundation
  *
  *  Take a look at the enum for the ones that aren't included.
  */
-enum kYomimTovim: Int
+public enum kYomimTovim: Int
 {
 	case kErevPesach = 0
 	case kPesach

@@ -5,7 +5,7 @@
 
 import Foundation
 
-class trigonometry
+public class trigonometry
 {
     /** toRadians
     *
@@ -14,7 +14,7 @@ class trigonometry
     *  @param degrees The number of degrees to convert.
     *  @return The number of radians that corresponds to the supplied number of degrees.
     */
-    func toRadians(degrees: Double) -> Double
+    public func toRadians(degrees: Double) -> Double
     {
         return degrees * M_PI / 180.0
     }
@@ -22,7 +22,7 @@ class trigonometry
     /**
     *  A utility function for converting radians to degrees
     */
-    func toDegrees(radians: Double) -> Double
+    public func toDegrees(radians: Double) -> Double
     {
         return radians * 180.0 / M_PI
     }
@@ -30,7 +30,7 @@ class trigonometry
     /**
     * sin of an angle in degrees
     */
-    func sinDeg(deg: Double) -> Double
+    public func sinDeg(deg: Double) -> Double
     {
         return sin(deg * 2.0 * M_PI / 360.0)
     }
@@ -38,7 +38,7 @@ class trigonometry
     /**
     * acos of an angle, result in degrees
     */
-    func acosDeg(x: Double) -> Double
+    public func acosDeg(x: Double) -> Double
     {
         return acos(x) * 360.0 / (2 * M_PI)
     }
@@ -46,7 +46,7 @@ class trigonometry
     /**
     * asin of an angle, result in degrees
     */
-    func asinDeg(x: Double) -> Double
+    public func asinDeg(x: Double) -> Double
     {
         return asin(x) * 360.0 / (2 * M_PI)
     }
@@ -54,7 +54,7 @@ class trigonometry
     /**
     * tan of an angle in degrees
     */
-    func tanDeg(deg: Double) -> Double
+    public func tanDeg(deg: Double) -> Double
     {
         return tan(deg * 2.0 * M_PI / 360.0)
     }
@@ -62,7 +62,7 @@ class trigonometry
     /**
     * cos of an angle in degrees
     */
-    func cosDeg(deg: Double) -> Double
+    public func cosDeg(deg: Double) -> Double
     {
         return cos(deg * 2.0 * M_PI / 360.0)
     }

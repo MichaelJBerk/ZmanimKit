@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSParashatHashavuaCalculator
+public class KSParashatHashavuaCalculator
 {
 	var hebrewCalendar : NSCalendar?
 	var gregorianCalendar : NSCalendar?
@@ -16,17 +16,17 @@ class KSParashatHashavuaCalculator
 		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)
 	}
 	
-	func parashaInDiasporaForDate(date: NSDate) -> KSParasha
+	public func parashaInDiasporaForDate(date: NSDate) -> KSParasha
 	{
 	    return _parashaForDate(date, inDiaspora: true)
 	}
 	
-	func parashaInIsraelForDate(date: NSDate) -> KSParasha
+	public func parashaInIsraelForDate(date: NSDate) -> KSParasha
 	{
 	    return _parashaForDate(date, inDiaspora: false)
 	}
 	
-	func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
+	public func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
 	    var parshiot = [KSParashot]()
 	    
@@ -105,7 +105,7 @@ class KSParashatHashavuaCalculator
 	    return parshiot
 	}
 	
-	func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
+	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
 	    var parshiot = [KSParashot]()
 	    

@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
+public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 {
 	var geoLocation : KSGeoLocation?
 	var calculatorName : String?
@@ -16,7 +16,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
         self.geoLocation = geoLocation
 	}
 	
-	func sunriseOrSunsetForYear(year: Int, andMonth month: Int, andDay day: Int, atLongitude longitude: Double, andLatitude latitude: Double, withZenith zenith: Double, andType type: Int) -> Double
+	public func sunriseOrSunsetForYear(year: Int, andMonth month: Int, andDay day: Int, atLongitude longitude: Double, andLatitude latitude: Double, withZenith zenith: Double, andType type: Int) -> Double
 	{
 	    
 	    let dayOfYear: Int = dayOfYearForYear(year, month: month, day: day)
@@ -68,7 +68,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return processedTime
 	}
 	
-	func localMeanTimeForHour(localHour: Double, andAscension sunRightAscensionHours: Double, andApproxTimeDays approxTimeDays: Double) -> Double
+	public func localMeanTimeForHour(localHour: Double, andAscension sunRightAscensionHours: Double, andApproxTimeDays approxTimeDays: Double) -> Double
 	{
 	    
 	    let temp: Double = localHour + sunRightAscensionHours - (0.06571 * approxTimeDays) - 6.622
@@ -79,7 +79,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    
 	}
 	
-	func cosLocalHourAngleForAngle(sunTrueLongitude: Double, andLatitude latitude: Double, andZenith zenith: Double) -> Double
+	public func cosLocalHourAngleForAngle(sunTrueLongitude: Double, andLatitude latitude: Double, andZenith zenith: Double) -> Double
 	{
 	    
 	    //NSLog(@"\n\n\n Long: %.15f \n\n Lat: %.15f \n\n Zen: %.15f\n\n\n", sunTrueLongitude, latitude, zenith);
@@ -94,7 +94,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    
 	}
 	
-	func sunRightAscensionHoursForLongitude(sunTrueLongitude: Double) -> Double
+	public func sunRightAscensionHoursForLongitude(sunTrueLongitude: Double) -> Double
 	{
 	    let a: Double = 0.91764 * tanDeg(sunTrueLongitude)
 	    var ra: Double = 360.0 / (2.0 * M_PI) * atan(a)
@@ -112,7 +112,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return ra / kDegreesPerHour; // convert to hours
 	}
 	
-	func sunTrueLongitudeFromAnomaly(sunMeanAnomaly: Double) -> Double
+	public func sunTrueLongitudeFromAnomaly(sunMeanAnomaly: Double) -> Double
 	{
 	    var l: Double = sunMeanAnomaly + (1.916 * sinDeg(sunMeanAnomaly)) + (0.020 * sinDeg(2 * sunMeanAnomaly)) + 282.634
 	    
@@ -130,7 +130,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return l
 	}
 	
-	func meanAnomalyForDayOfYear(dayOfYear: Int, atLongitude longitude: Double, forCalculationType type: Int) -> Double
+	public func meanAnomalyForDayOfYear(dayOfYear: Int, atLongitude longitude: Double, forCalculationType type: Int) -> Double
 	{
 	    let temp: Double = (0.9856 * approxTimeDaysForDayOfYear(dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude), forCalculationType: type)) - 3.289
 	    
@@ -139,7 +139,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return temp
 	}
 	
-	func approxTimeDaysForDayOfYear(dayOfYear: Int, withHoursFromMeridian hoursFromMeridian: Double, forCalculationType type: Int) -> Double
+	public func approxTimeDaysForDayOfYear(dayOfYear: Int, withHoursFromMeridian hoursFromMeridian: Double, forCalculationType type: Int) -> Double
 	{
 	    
 	    if type == kTypeSunrise
@@ -152,12 +152,12 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    
 	}
 	
-	func hoursFromMeridianForLongitude(longitude: Double) -> Double
+	public func hoursFromMeridianForLongitude(longitude: Double) -> Double
 	{
 	    return longitude / kDegreesPerHour
 	}
 	
-	func dayOfYearForYear(year: Int, month: Int, day: Int) -> Int
+	public func dayOfYearForYear(year: Int, month: Int, day: Int) -> Int
 	{
 	    let n1: Int = 275 * month / 9
 	    let n2: Int = (month + 9) / 12
@@ -168,7 +168,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return n
 	}
 	
-	func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	public func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
 	    var doubleTime: Double = 0.0
 	    var tempZenith = zenith
@@ -192,7 +192,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return doubleTime
 	}
 	
-	func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	public func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
 	    var doubleTime: Double = 0.0
 	    var tempZenith = zenith
@@ -216,7 +216,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return doubleTime
 	}
 	
-	func elevationAdjustmentForElevation(elevation: Double) -> Double
+	public func elevationAdjustmentForElevation(elevation: Double) -> Double
 	{
 	    let earthRadius: Double = kEarthRadiusInKilometers
 	    
@@ -228,7 +228,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return elevationAdjustment
 	}
 	
-	func adjustZenith(zenith: Double, forElevation elevation: Double) -> Double
+	public func adjustZenith(zenith: Double, forElevation elevation: Double) -> Double
 	{
 	    if zenith == kZenithGeometric
 	    {
@@ -238,7 +238,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    return zenith
 	}
 	
-	func yearMonthAndDayFromDate(date: NSDate) -> [Int]
+	public func yearMonthAndDayFromDate(date: NSDate) -> [Int]
 	{
 	    //
 	    //  Create a calendar

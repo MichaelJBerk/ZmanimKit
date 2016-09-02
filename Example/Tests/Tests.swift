@@ -2,24 +2,24 @@ import UIKit
 import XCTest
 import KosherSwift
 
-class Tests: XCTestCase {
+public class Tests: XCTestCase {
     
-    override func setUp() {
+    override public func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Put setup code here. This method is called before the invocation of each test method in the public class.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override public func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the public class.
         super.tearDown()
     }
     
-    func testExample() {
+    public func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
+    public func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
             // Put the code you want to measure the time of here.

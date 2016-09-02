@@ -6,7 +6,7 @@
 import Foundation
 
 /**  An enumerated type representing the volume of the Babylonian Talmud. */
-enum KSTractate: Int
+public enum KSTractate: Int
 {
 	case KSTractateBerachos = 0
 	case KSTractateShabbos

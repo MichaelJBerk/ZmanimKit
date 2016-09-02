@@ -5,13 +5,14 @@
 
 import Foundation
 
-class KSJewishHoliday
+public typealias holidayData = (hebrew: String, english: String)
+
+public class KSJewishHoliday
 {
 	static var names: [AnyObject]? = nil
 	var holidayIndex : Int = 0
-    typealias holidayData = (hebrew: String, english: String)
 	
-	class func holidayWithIndex(index: Int) -> AnyObject
+	class public func holidayWithIndex(index: Int) -> AnyObject
 	{
 	    let holiday: KSJewishHoliday = KSJewishHoliday()
 	    
@@ -20,17 +21,17 @@ class KSJewishHoliday
 	    return holiday
 	}
 	
-	func name() -> String
+	public func name() -> String
 	{
         return holidayNames()[holidayIndex].hebrew
     }
 	
-	func nameTransliterated() -> String
+	public func nameTransliterated() -> String
 	{
 	    return holidayNames()[holidayIndex].english
 	}
 	
-	func holidayNames() -> [holidayData]
+	public func holidayNames() -> [holidayData]
 	{
         let names = [(hebrew: "ערב פסח", english: "Erev Pesach"),
                  (hebrew: "פסח", english: "Pesach"),

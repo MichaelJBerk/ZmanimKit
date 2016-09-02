@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSDaf
+public class KSDaf
 {
     var pageNumber: Int = 0
     var tractateIndex: Int = 0
@@ -16,7 +16,7 @@ class KSDaf
         pageNumber = number
     }
 
-    func name() -> String
+    public func name() -> String
     {
         let names = ["ברכות", "שבת", "עירובין", "פסחים", "שקלים", "יומא", "סוכה", "ביצה", "ראש השנה", "תענית", "מגילה",
         "מועד קטן", "חגיגה", "יבמות", "כתובות", "נדרים", "נזיר", "סוטה", "גיטין", "קידושין", "בבא קמא", "בבא מציעא", "בבא בתרא",
@@ -26,7 +26,7 @@ class KSDaf
         return names[self.tractateIndex]
     }
 
-    func nameTransliterated() -> String
+    public func nameTransliterated() -> String
     {
         let names: [String] = ["Berachos", "Shabbos", "Eruvin", "Pesachim", "Shekalim", "Yoma", "Sukkah",
                                                  "Beitzah", "Rosh Hashana", "Taanis", "Megillah", "Moed Katan",

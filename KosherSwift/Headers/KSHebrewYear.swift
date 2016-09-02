@@ -15,7 +15,7 @@ import Foundation
  *  Other languages or environments may handle Hebrew leap
  *  years differently.
  */
-enum kHebrewMonth: Int
+public enum kHebrewMonth: Int
 {
 	case kTishrei = 1
 	case KSheshvan
@@ -53,7 +53,7 @@ enum kHebrewMonth: Int
  *  of the Hebrew calendar can be leap months.)
  *
  */
-enum kYearType: Int
+public enum kYearType: Int
 {
 	case KShaser = 0
 	case kKesidran

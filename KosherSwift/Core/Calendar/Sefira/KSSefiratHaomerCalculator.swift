@@ -5,24 +5,24 @@
 
 import Foundation
 
-class KSSefiratHaomerCalculator
+public class KSSefiratHaomerCalculator
 {
-	class func fallsToday() -> Bool
+	class public func fallsToday() -> Bool
 	{
 	    return fallsOnDate(NSDate())
 	}
 	
-	class func fallsOnDate(date: NSDate) -> Bool
+	class public func fallsOnDate(date: NSDate) -> Bool
 	{
 	    return dayOfSefiraForDate(date) != 0
 	}
 	
-	class func dayOfSefira() -> Int
+	class public func dayOfSefira() -> Int
 	{
 		return dayOfSefiraForDate(NSDate())
 	}
 	
-	class func dayOfSefiraForDate(date: NSDate) -> Int
+	class public func dayOfSefiraForDate(date: NSDate) -> Int
 	{
 		let firstDayOfTheOmer: NSDate = KSSefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date)
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
@@ -35,7 +35,7 @@ class KSSefiratHaomerCalculator
 	    return day
 	}
 	
-	class func _dateOfSixteenNissanForYearOfDate(date: NSDate) -> NSDate
+	class public func _dateOfSixteenNissanForYearOfDate(date: NSDate) -> NSDate
 	{
 		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
 		

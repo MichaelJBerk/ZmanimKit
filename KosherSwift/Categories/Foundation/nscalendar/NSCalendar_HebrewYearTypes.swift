@@ -7,7 +7,7 @@ import Foundation
 
 extension NSCalendar
 {
-	class func firstWeekdayOfHebrewYearContainingDate(date: NSDate) -> kWeekday
+	class public func firstWeekdayOfHebrewYearContainingDate(date: NSDate) -> kWeekday
 	{
 	    let hebCal = hebrewCalendar()
 	    let hebrewYear = hebCal.yearsInDate(date)
@@ -15,7 +15,7 @@ extension NSCalendar
 	    return kWeekday(rawValue: hebCal.weekdayInDate(roshHashana))!
 	}
 	
-	class func lengthOfHebrewYearContainingDate(date: NSDate) -> kYearLength?
+	class public func lengthOfHebrewYearContainingDate(date: NSDate) -> kYearLength?
 	{
 	    let hebCal = hebrewCalendar()
 	    
@@ -44,7 +44,7 @@ extension NSCalendar
 	    return nil
 	}
 	
-	class func isHebrewYearContainingDateALeapYear(date: NSDate) -> Bool
+	class public func isHebrewYearContainingDateALeapYear(date: NSDate) -> Bool
 	{
 		let hebCal = hebrewCalendar()
 	    let hebrewYear = hebCal.yearsInDate(date)
@@ -57,7 +57,7 @@ extension NSCalendar
 	    return months == 13
 	}
 	
-	class func typeOfHebrewYearContainingDate(date: NSDate) -> kHebrewYearType?
+    class public func typeOfHebrewYearContainingDate(date: NSDate) -> kHebrewYearType?
 	{
 	    let weekday = firstWeekdayOfHebrewYearContainingDate(date)
 	
@@ -156,7 +156,7 @@ extension NSCalendar
 	    return nil
 	}
 	
-	class func hebrewCalendar() -> NSCalendar
+	class public func hebrewCalendar() -> NSCalendar
 	{
 	    return NSCalendar(calendarIdentifier: NSCalendarIdentifierHebrew)!
 	}

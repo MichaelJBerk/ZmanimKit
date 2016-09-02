@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum kHebrewYearType
+public enum kHebrewYearType
 {
 	// Non-leap years
 	case TypeA // Short: Begins on Monday

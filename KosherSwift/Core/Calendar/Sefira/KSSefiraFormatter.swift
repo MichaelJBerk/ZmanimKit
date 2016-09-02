@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSSefiraFormatter
+public class KSSefiraFormatter
 {
 	var ashkenazTransliteratedStrings : [String]?
 	var sefardTransliteratedStrings : [String]?
@@ -23,7 +23,7 @@ class KSSefiraFormatter
 		custom = KSSefiraCustom.Ashkenaz;
 	}
 	
-//	func stringFromInteger(num: Int) -> String?
+//	public func stringFromInteger(num: Int) -> String?
 //	{
 //	    if num < 0 || num > 49
 //        {
@@ -43,7 +43,7 @@ class KSSefiraFormatter
 /**
  *  This flag determines which custom to use when returning a formatted string.
  */
-enum KSSefiraCustom: Int
+public enum KSSefiraCustom: Int
 {
     case Ashkenaz //  Uses the bet prefix
     case Sefard   //  Uses the lamed prefix
@@ -54,7 +54,7 @@ enum KSSefiraCustom: Int
 /**
  *  This flag determines which language to use to display the text.
  */
-enum KSSefiraLanguage: Int
+public enum KSSefiraLanguage: Int
 {
     case Hebrew                 //  The count, in Hebrew
     case English                //  The count, in English
@@ -67,7 +67,7 @@ enum KSSefiraLanguage: Int
  *  If the KSSefiraLanguage is not set to KSSefiraLanguageHebrew
  *  or KSSefiraCustom is not KSSefiraCustomAshkenaz, these flags are ignored.
  */
-enum KSSefiraPrayerAddition: Int
+public enum KSSefiraPrayerAddition: Int
 {
     case LeshaimYichud //= 1 << 0
     case Beracha //= 1 << 1

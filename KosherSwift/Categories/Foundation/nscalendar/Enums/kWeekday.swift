@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum kWeekday: Int
+public enum kWeekday: Int
 {
 	case Sunday = 1
 	case Monday

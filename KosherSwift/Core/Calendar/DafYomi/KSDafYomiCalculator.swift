@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSDafYomiCalculator
+public class KSDafYomiCalculator
 {
     let kNumberOfMasechtos = 40
 	var workingDate : NSDate?
@@ -15,12 +15,12 @@ class KSDafYomiCalculator
 	    workingDate = date
 	}
 	
-	func dafYomiBavli() -> KSDaf
+	public func dafYomiBavli() -> KSDaf
 	{
 	    return dafYomiBavliForDate(NSDate())!
 	}
 	
-	func dafYomiBavliForDate(date: NSDate) -> KSDaf?
+	public func dafYomiBavliForDate(date: NSDate) -> KSDaf?
 	{
 	    
 	    //Start on September 11, 1923
@@ -93,7 +93,7 @@ class KSDafYomiCalculator
 	    return dafYomi
 	}
 	
-	func julianDayForDate(date: NSDate) -> Int
+	public func julianDayForDate(date: NSDate) -> Int
 	{
 	    let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
 	    
@@ -116,7 +116,7 @@ class KSDafYomiCalculator
 	    return Int(math3 + b - 1524.5)
 	}
 	
-	func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> NSDate
+	public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> NSDate
 	{
 	    let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
 	    let dateComponents: NSDateComponents = NSDateComponents()

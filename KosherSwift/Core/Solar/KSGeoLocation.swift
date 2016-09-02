@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSGeoLocation
+public class KSGeoLocation
 {
 	var longitude : Double = 0
 	var locationName : String?
@@ -45,7 +45,7 @@ class KSGeoLocation
         self.init(name: "Greenwich, England", latitude: 0, longitude: 51.4772, timeZone: NSTimeZone(abbreviation: "GMT")!)
 	}
 	
-	func setLatitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String)
+	public func setLatitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String)
 	{
 	    var tempLat: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
 	    
@@ -66,7 +66,7 @@ class KSGeoLocation
 	    latitude = tempLat
 	}
 	
-	func setLongitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String) throws
+	public func setLongitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String) throws
 	{
 	    
 	    var longTemp: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
@@ -90,27 +90,27 @@ class KSGeoLocation
 	}
 	
     let kMillisecondsInAMinute = 60 * 1000
-	func localMeanTimeOffset() -> Int
+	public func localMeanTimeOffset() -> Int
 	{
 	    return Int(longitude) * 4 * kMillisecondsInAMinute - (timeZone!.secondsFromGMT * 1000)
 	}
 	
-	func getGeodesicInitialBearingForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicInitialBearingForLocation(location: KSGeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kInitialBearing)!
 	}
 	
-	func getGeodesicFinalBearingForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicFinalBearingForLocation(location: KSGeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kFinalBearing)!
 	}
 	
-	func getGeodesicDistanceForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicDistanceForLocation(location: KSGeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kDistance)!
 	}
 	
-	func vincentyFormulaForLocation(location: KSGeoLocation, withBearing formula: Int) -> Double?
+	public func vincentyFormulaForLocation(location: KSGeoLocation, withBearing formula: Int) -> Double?
 	{
 	    let a: Double = 6378137
 	    let b: Double = 6356752.3142
@@ -193,7 +193,7 @@ class KSGeoLocation
 	    }
 	}
 	
-	func getRhumbLineBearingForLocation(location: KSGeoLocation) -> Double
+	public func getRhumbLineBearingForLocation(location: KSGeoLocation) -> Double
 	{
 	    var dLon: Double = trig.toRadians(location.longitude - longitude)
 	    let dPhi: Double = log(tan(trig.toRadians(location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
@@ -203,7 +203,7 @@ class KSGeoLocation
 	    return trig.toDegrees(atan2(dLon, dPhi))
 	}
 	
-	func getRhumbLineDistanceForLocation(location: KSGeoLocation) -> Double
+	public func getRhumbLineDistanceForLocation(location: KSGeoLocation) -> Double
 	{
 	    
 	    let R: Double = 6371;  // earth's mean radius in km
@@ -221,7 +221,7 @@ class KSGeoLocation
 	    return d * R
 	}
 	
-	func description() -> String
+	public func description() -> String
 	{
 	    return String(format:"<GeoLocation:> ----\nName: %@ \nLatitude: %f, \nLongitude: %f \nAltitude: %f", locationName!, latitude, longitude, altitude)
 	}

@@ -5,7 +5,7 @@
 
 import Foundation
 
-class KSAstronomicalCalendar
+public class KSAstronomicalCalendar
 {
 	var geoLocation : KSGeoLocation?
 	var astronomicalCalculator : KSSunriseAndSunsetCalculator?
@@ -26,46 +26,46 @@ class KSAstronomicalCalendar
         internalCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
 	}
 	
-	func sunrise() -> NSDate?
+	public func sunrise() -> NSDate?
 	{
 	    let sunrise = UTCSunrise(kZenithGeometric)
 	    return dateFromTime(sunrise)
 	}
 	
-	func seaLevelSunrise() -> NSDate?
+	public func seaLevelSunrise() -> NSDate?
 	{
 	    let sunrise: Double = UTCSeaLevelSunrise(kZenithGeometric)
         return dateFromTime(sunrise)
 	}
 	
-	func beginCivilTwilight() -> NSDate
+	public func beginCivilTwilight() -> NSDate
 	{
 	    return sunriseOffsetByDegrees(kZenithCivil)
 	}
 	
-	func beginNauticalTwilight() -> NSDate
+	public func beginNauticalTwilight() -> NSDate
 	{
 	    return sunriseOffsetByDegrees(kZenithNautical)
 	}
 	
-	func beginAstronomicalTwilight() -> NSDate
+	public func beginAstronomicalTwilight() -> NSDate
 	{
 	    return sunriseOffsetByDegrees(kZenithAstronomical)
 	}
 	
-	func sunset() -> NSDate?
+	public func sunset() -> NSDate?
 	{
 	    let sunset: Double = UTCSunset(kZenithGeometric)
 	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunrise())
 	}
 	
-	func seaLevelSunset() -> NSDate?
+	public func seaLevelSunset() -> NSDate?
 	{
 	    let sunset: Double = UTCSeaLevelSunset(kZenithGeometric)
 	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunrise())
 	}
 	
-	func adjustedSunsetDateWithSunset(sunset: NSDate?, andSunrise sunrise: NSDate?) -> NSDate
+	public func adjustedSunsetDateWithSunset(sunset: NSDate?, andSunrise sunrise: NSDate?) -> NSDate
 	{
 	    if sunrise != nil && sunset != nil && (sunrise!.timeIntervalSinceDate(sunset!) > 0)
 	    {
@@ -74,57 +74,57 @@ class KSAstronomicalCalendar
 	    return sunset!
 	}
 	
-	func endCivilTwilight() -> NSDate
+	public func endCivilTwilight() -> NSDate
 	{
 	    return sunsetOffsetByDegrees(kZenithCivil)
 	}
 	
-	func endNauticalTwilight() -> NSDate
+	public func endNauticalTwilight() -> NSDate
 	{
 	    return sunsetOffsetByDegrees(kZenithNautical)
 	}
 	
-	func endAstronomicalTwilight() -> NSDate
+	public func endAstronomicalTwilight() -> NSDate
 	{
 	    return sunsetOffsetByDegrees(kZenithAstronomical)
 	}
 	
-	func sunriseOffsetByDegrees(offsetZenith: Double) -> NSDate
+	public func sunriseOffsetByDegrees(offsetZenith: Double) -> NSDate
 	{
 	    let dawn: Double = UTCSunrise(offsetZenith)
 	    
 	    return  dateFromTime(dawn)
 	}
 	
-	func sunsetOffsetByDegrees(offsetZenith: Double) -> NSDate
+	public func sunsetOffsetByDegrees(offsetZenith: Double) -> NSDate
 	{
 	    let sunset: Double = UTCSunset(offsetZenith)
 		
 	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunriseOffsetByDegrees(offsetZenith))
 	}
 	
-	func UTCSunrise(zenith: Double) -> Double
+	public func UTCSunrise(zenith: Double) -> Double
 	{
 	    return astronomicalCalculator!.UTCSunriseForDate(workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
 	
-	func UTCSeaLevelSunrise(zenith: Double) -> Double
+	public func UTCSeaLevelSunrise(zenith: Double) -> Double
 	{
 	    let sunrise: Double = (astronomicalCalculator!).UTCSunriseForDate(workingDate!, andZenith: zenith, adjustForElevation: false)
 	    return sunrise
 	}
 	
-	func UTCSunset(zenith: Double) -> Double
+	public func UTCSunset(zenith: Double) -> Double
 	{
 	    return astronomicalCalculator!.UTCSunsetForDate(workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
 	
-	func UTCSeaLevelSunset(zenith: Double) -> Double
+	public func UTCSeaLevelSunset(zenith: Double) -> Double
 	{
 	    return astronomicalCalculator!.UTCSunsetForDate(workingDate!, andZenith: zenith, adjustForElevation: false)
 	}
 	
-	func temporalHourFromSunrise(sunrise: NSDate?, toSunset sunset: NSDate?) -> Double
+	public func temporalHourFromSunrise(sunrise: NSDate?, toSunset sunset: NSDate?) -> Double
 	{
 	    if sunrise == nil || sunset == nil
 	    {
@@ -133,17 +133,17 @@ class KSAstronomicalCalendar
 	    return sunset!.timeIntervalSinceDate(sunrise!) / 12
 	}
 	
-	func sunTransit() -> NSDate
+	public func sunTransit() -> NSDate
 	{
 	    return sunrise()!.dateByAddingTimeInterval(temporalHourFromSunrise(sunrise(), toSunset: sunset()) * 6)
 	}
 	
-	func dateFromTime(time: Double) -> NSDate
+	public func dateFromTime(time: Double) -> NSDate
 	{
 	    return dateFromTime(time, inTimeZone: NSTimeZone.localTimeZone(), onDate: workingDate!)!
 	}
 	
-	func dateFromTime(time: Double, inTimeZone tz: NSTimeZone, onDate date: NSDate) -> NSDate?
+	public func dateFromTime(time: Double, inTimeZone tz: NSTimeZone, onDate date: NSDate) -> NSDate?
 	{
 	    var calculatedTime = time
         let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
@@ -179,7 +179,7 @@ class KSAstronomicalCalendar
 	    return returnDate 
 	}
 	
-	func stringFromDate(date: NSDate, forTimeZone tz: NSTimeZone, withSeconds shouldShowSeconds: Bool) -> String{
+	public func stringFromDate(date: NSDate, forTimeZone tz: NSTimeZone, withSeconds shouldShowSeconds: Bool) -> String{
 	    
 	    let form: NSDateFormatter = NSDateFormatter()
 	    
@@ -197,14 +197,14 @@ class KSAstronomicalCalendar
 	    return form.stringFromDate(date)
 	}
 	
-	func stringFromDate(date: NSDate, forTimeZone timezone: NSTimeZone) -> String
+	public func stringFromDate(date: NSDate, forTimeZone timezone: NSTimeZone) -> String
 	{
 	    
 	    return stringFromDate(date, forTimeZone: timezone, withSeconds: true)
 	    
 	}
 	
-	func  getInternalCalendar() -> NSCalendar
+	public func  getInternalCalendar() -> NSCalendar
 	{
 	    return internalCalendar!
 	}
