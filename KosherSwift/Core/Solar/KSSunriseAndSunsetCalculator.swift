@@ -210,8 +210,7 @@ class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 	    let month: Int = yearMonthAndDayFromDate(date)[1]
 	    
 	    let day: Int = yearMonthAndDayFromDate(date)[2]
-	    
-	    
+        
 	    doubleTime = sunriseOrSunsetForYear(year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunrise)
 	    
 	    return doubleTime
