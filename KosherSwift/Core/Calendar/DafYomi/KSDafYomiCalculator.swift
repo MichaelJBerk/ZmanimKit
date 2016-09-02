@@ -8,18 +8,37 @@ import Foundation
 public class KSDafYomiCalculator
 {
     let kNumberOfMasechtos = 40
-	var workingDate : NSDate?
+    
+    /**
+     *  The reference date used by the calculator.
+     */
+	public var workingDate : NSDate?
 	
 	public init(date: NSDate)
 	{
 	    workingDate = date
 	}
 	
+    /**
+     *  This method returns a KCDaf object representing
+     *  the page of talmud bavli being studied today.
+     *
+     *  - returns: a KCDaf object.
+     */
 	public func dafYomiBavli() -> KSDaf
 	{
 	    return dafYomiBavliForDate(NSDate())!
 	}
 	
+    /**
+     *  This method returns a KCDaf object representing
+     *  the page of talmud bavli being studied on the
+     *  supplied date.
+     *
+     *  - parameter date: A reference date to calculate with.
+     *
+     *  - returns: a KCDaf object.
+     */
 	public func dafYomiBavliForDate(date: NSDate) -> KSDaf?
 	{
 	    
@@ -30,17 +49,16 @@ public class KSDafYomiCalculator
 	    let shekalimJulianChangeDay: Int = julianDayForDate(shekalimChangeDate)
 	    
 	    //An array of the lengths of the meschtos
-	    var blattPerMasechta: [Int] = [64, 157, 105, 121, 22, 88, 56, 40, 35, 31, 32, 29, 27, 122, 112, 91, 66, 49, 90, 82, 119, 119, 176, 113, 24, 49, 76, 14, 120, 110, 142, 61, 34, 34, 28, 22, 4, 10, 4, 73]
+        var blattPerMasechta: [Int] = [64, 157, 105, 121, 22, 88, 56, 40, 35, 31, 32, 29, 27, 122, 112, 91, 66, 49, 90, 82, 119, 119, 176, 113, 24, 49, 76, 14, 120, 110, 142, 61, 34, 34, 28, 22, 4, 10, 4, 73]
 	    
-	    var dafYomi = KSDaf(tractateIndex: 0, andPageNumber: 0)
+        var dafYomi = KSDaf(tractateIndex: 0, andPageNumber: 0)
 	    
 	    let julianDay: Int = julianDayForDate(date)
-	    var cycleNo: Int = 0
-	    var dafNo: Int = 0
+        var cycleNo: Int = 0
+        var dafNo: Int = 0
 	    
 	    if date.timeIntervalSinceDate(dafYomiStartDate) < 0
 	    {
-	        
 	        // Return nil, since the date passed in was before the beginning of the daf yomi cycle
 	        return nil
 	    }
@@ -55,9 +73,9 @@ public class KSDafYomiCalculator
 	        dafNo = ((julianDay - dafYomiJulianStartDay) % 2702)
 	    }
 	    
-	    var total: Int = 0
-	    var masechta: Int = -1
-	    var blatt: Int = 0
+        var total: Int = 0
+        var masechta: Int = -1
+        var blatt: Int = 0
 	    
 	    /* Fix Shekalim for old cycles. */
 	    if cycleNo <= 7
@@ -97,8 +115,8 @@ public class KSDafYomiCalculator
 	{
 	    let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
 	    
-	    var year: Int = gregorianCalendar.components(NSCalendarUnit.Year, fromDate:date).year
-	    var month: Int = gregorianCalendar.components(NSCalendarUnit.Month, fromDate:date).month
+        var year: Int = gregorianCalendar.components(NSCalendarUnit.Year, fromDate:date).year
+        var month: Int = gregorianCalendar.components(NSCalendarUnit.Month, fromDate:date).month
 	    let day: Int = gregorianCalendar.components(NSCalendarUnit.Day, fromDate:date).day
 		
 	    if month <= 2

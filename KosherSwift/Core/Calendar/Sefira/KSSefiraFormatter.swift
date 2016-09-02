@@ -7,15 +7,15 @@ import Foundation
 
 public class KSSefiraFormatter
 {
-	var ashkenazTransliteratedStrings : [String]?
-	var sefardTransliteratedStrings : [String]?
-	var ashkenazHebrewStrings : [String]?
-	var sephardicTransliteratedStrings : [String]?
-	var sefardHebrewStrings : [String]?
-	var sephardicHebrewStrings : [String]?
-	var englishStrings : [String]?
-    var custom = KSSefiraCustom.Sefard
-    var language = KSSefiraLanguage.Hebrew
+	public var ashkenazTransliteratedStrings : [String]?
+	public var sefardTransliteratedStrings : [String]?
+	public var ashkenazHebrewStrings : [String]?
+	public var sephardicTransliteratedStrings : [String]?
+	public var sefardHebrewStrings : [String]?
+	public var sephardicHebrewStrings : [String]?
+	public var englishStrings : [String]?
+    public var custom = KSSefiraCustom.Sefard
+    public var language = KSSefiraLanguage.Hebrew
 	
 	public init()
 	{

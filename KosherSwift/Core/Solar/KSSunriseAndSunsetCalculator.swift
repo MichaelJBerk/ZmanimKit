@@ -7,8 +7,8 @@ import Foundation
 
 public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
 {
-	var geoLocation : KSGeoLocation?
-	var calculatorName : String?
+	public var geoLocation : KSGeoLocation?
+	public var calculatorName : String?
 	
     public init(geoLocation: KSGeoLocation)
 	{
@@ -29,7 +29,7 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	    
 	    let cosLocalHourAngle: Double = cosLocalHourAngleForAngle(sunTrueLong, andLatitude: latitude, andZenith: zenith)
 	    
-	    var localHourAngle: Double = 0
+        var localHourAngle: Double = 0
 	    
 	    if type == kTypeSunrise
 	    {
@@ -53,7 +53,7 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	    
 	    let localMeanTime: Double = localMeanTimeForHour(localHour, andAscension: sunRightAscensionHours, andApproxTimeDays: approxTimeDaysForDayOfYear(dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude), forCalculationType: type))
 	    
-	    var processedTime: Double = localMeanTime - hoursFromMeridianForLongitude(longitude)
+        var processedTime: Double = localMeanTime - hoursFromMeridianForLongitude(longitude)
 	    
 		while  processedTime < 0.0
 	    {
@@ -97,7 +97,7 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	public func sunRightAscensionHoursForLongitude(sunTrueLongitude: Double) -> Double
 	{
 	    let a: Double = 0.91764 * tanDeg(sunTrueLongitude)
-	    var ra: Double = 360.0 / (2.0 * M_PI) * atan(a)
+        var ra: Double = 360.0 / (2.0 * M_PI) * atan(a)
 	    
 	    // get result into 0-360 degree range
 	    // if (ra >= 360.0)ra = ra - 360.0;
@@ -114,7 +114,7 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	
 	public func sunTrueLongitudeFromAnomaly(sunMeanAnomaly: Double) -> Double
 	{
-	    var l: Double = sunMeanAnomaly + (1.916 * sinDeg(sunMeanAnomaly)) + (0.020 * sinDeg(2 * sunMeanAnomaly)) + 282.634
+        var l: Double = sunMeanAnomaly + (1.916 * sinDeg(sunMeanAnomaly)) + (0.020 * sinDeg(2 * sunMeanAnomaly)) + 282.634
 	    
 	    // get longitude into 0-360 degree range
 	    if l >= 360.0
@@ -170,8 +170,8 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	
 	public func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
-	    var doubleTime: Double = 0.0
-	    var tempZenith = zenith
+        var doubleTime: Double = 0.0
+        var tempZenith = zenith
 	    if adjustForElevation
 	    {
 	        tempZenith = adjustZenith(zenith, forElevation: geoLocation!.altitude)
@@ -194,8 +194,8 @@ public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculato
 	
 	public func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
-	    var doubleTime: Double = 0.0
-	    var tempZenith = zenith
+        var doubleTime: Double = 0.0
+        var tempZenith = zenith
 	    if adjustForElevation
 	    {
 	        tempZenith = adjustZenith(zenith, forElevation: geoLocation!.altitude)

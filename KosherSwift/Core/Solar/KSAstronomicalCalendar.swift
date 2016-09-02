@@ -7,10 +7,10 @@ import Foundation
 
 public class KSAstronomicalCalendar
 {
-	var geoLocation : KSGeoLocation?
-	var astronomicalCalculator : KSSunriseAndSunsetCalculator?
-	var internalCalendar : NSCalendar?
-	var workingDate : NSDate?
+	public var geoLocation : KSGeoLocation?
+	public var astronomicalCalculator : KSSunriseAndSunsetCalculator?
+	public var internalCalendar : NSCalendar?
+	public var workingDate : NSDate?
 	
 	public init()
 	{
@@ -145,7 +145,7 @@ public class KSAstronomicalCalendar
 	
 	public func dateFromTime(time: Double, inTimeZone tz: NSTimeZone, onDate date: NSDate) -> NSDate?
 	{
-	    var calculatedTime = time
+        var calculatedTime = time
         let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         let components: NSDateComponents = gregorianCalendar.components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Day, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Era], fromDate: date)
         
@@ -162,7 +162,7 @@ public class KSAstronomicalCalendar
 	    components.minute = Int(minutes)
 	    components.second = Int(seconds)
 	    
-	    var returnDate: NSDate = gregorianCalendar.dateFromComponents(components)!
+        var returnDate: NSDate = gregorianCalendar.dateFromComponents(components)!
 	    
 	    //  Here we apply a time zone offset. If the time is greater
 	    //  than 24, or less than 0, then we "roll" the date by a day.

@@ -7,7 +7,7 @@ import Foundation
 
 public class KSComplexZmanimCalendar: KSZmanimCalendar
 {
-	var ateretTorahSunsetOffset = 0
+	public var ateretTorahSunsetOffset = 0
 	
 	override init (location aGeoLocation: KSGeoLocation)
 	{

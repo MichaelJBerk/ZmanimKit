@@ -26,7 +26,7 @@ public class KSSefiratHaomerCalculator
 	{
 		let firstDayOfTheOmer: NSDate = KSSefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date)
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
-	    var day: Int = hebrewCalendar.daysFromDate(firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
+	    public var day: Int = hebrewCalendar.daysFromDate(firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
 	    if day < 0 || day > 49
 	    {
 	        day = 0

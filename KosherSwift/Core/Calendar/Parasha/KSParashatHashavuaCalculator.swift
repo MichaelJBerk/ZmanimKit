@@ -7,8 +7,8 @@ import Foundation
 
 public class KSParashatHashavuaCalculator
 {
-	var hebrewCalendar : NSCalendar?
-	var gregorianCalendar : NSCalendar?
+	public var hebrewCalendar : NSCalendar?
+	public var gregorianCalendar : NSCalendar?
 
 	public init()
 	{
@@ -28,7 +28,7 @@ public class KSParashatHashavuaCalculator
 	
 	public func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
-	    var parshiot = [KSParashot]()
+        var parshiot = [KSParashot]()
 	    
 	    if typeOfYear == kHebrewYearType.TypeA //  Monday, 353, regular
 	    {
@@ -107,7 +107,7 @@ public class KSParashatHashavuaCalculator
 	
 	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
-	    var parshiot = [KSParashot]()
+        var parshiot = [KSParashot]()
 	    
 	    if typeOfYear == kHebrewYearType.TypeA //  Monday, 353, regular
 	    {

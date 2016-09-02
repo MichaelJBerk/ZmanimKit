@@ -7,11 +7,11 @@ import Foundation
 
 public class KSGeoLocation
 {
-	var longitude : Double = 0
-	var locationName : String?
-	var latitude : Double = 0
-	var altitude : Double = 0
-	var timeZone : NSTimeZone?
+	public var longitude : Double = 0
+	public var locationName : String?
+	public var latitude : Double = 0
+	public var altitude : Double = 0
+	public var timeZone : NSTimeZone?
 
     let trig = trigonometry()
     
@@ -47,7 +47,7 @@ public class KSGeoLocation
 	
 	public func setLatitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String)
 	{
-	    var tempLat: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
+        var tempLat: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
 	    
 	    if tempLat > 90 || tempLat < 0
 	    {
@@ -69,7 +69,7 @@ public class KSGeoLocation
 	public func setLongitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String) throws
 	{
 	    
-	    var longTemp: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
+        var longTemp: Double = Double(_degrees) + ((Double(_minutes) + (_seconds / 60.0)) / 60.0)
 	    
 	    if longTemp > 180 || longTemp < 0
 	    {
@@ -123,18 +123,18 @@ public class KSGeoLocation
 	    let sinU2 = sin(U2)
         let cosU2 = cos(U2)
 	    
-	    var lambda = L
-	    var lambdaP = 2.0 * M_PI
-	    var iterLimit: Double = 20
-	    var sinLambda: Double = 0
-	    var cosLambda: Double = 0
-	    var sinSigma: Double = 0
-	    var cosSigma: Double = 0
-	    var sigma: Double = 0
-	    var sinAlpha: Double = 0
-	    var cosSqAlpha: Double = 0
-	    var cos2SigmaM: Double = 0
-	    var C: Double = 0
+        var lambda = L
+        var lambdaP = 2.0 * M_PI
+        var iterLimit: Double = 20
+        var sinLambda: Double = 0
+        var cosLambda: Double = 0
+        var sinSigma: Double = 0
+        var cosSigma: Double = 0
+        var sigma: Double = 0
+        var sinAlpha: Double = 0
+        var cosSqAlpha: Double = 0
+        var cos2SigmaM: Double = 0
+        var C: Double = 0
 	
 	    while fabs(lambda - lambdaP) > 1e-12 && iterLimit > 0
 	    {
@@ -195,7 +195,7 @@ public class KSGeoLocation
 	
 	public func getRhumbLineBearingForLocation(location: KSGeoLocation) -> Double
 	{
-	    var dLon: Double = trig.toRadians(location.longitude - longitude)
+        var dLon: Double = trig.toRadians(location.longitude - longitude)
 	    let dPhi: Double = log(tan(trig.toRadians(location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
 	    if fabs(dLon) > M_PI{
 	        dLon = dLon > 0 ? -(2 * M_PI - dLon) : (2 * M_PI + dLon)
@@ -208,7 +208,7 @@ public class KSGeoLocation
 	    
 	    let R: Double = 6371;  // earth's mean radius in km
 	    let dLat: Double = trig.toRadians(location.latitude - latitude)
-	    var dLon: Double = trig.toRadians(fabs(location.longitude - longitude))
+        var dLon: Double = trig.toRadians(fabs(location.longitude - longitude))
 	    let dPhi: Double = log(tan(trig.toRadians(location.longitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
 	    let q: Double = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(trig.toRadians(latitude))
 	    // if dLon over 180° take shorter rhumb across 180∞ meridian:

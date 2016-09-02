@@ -7,8 +7,8 @@
 //
 //public class KSZman
 //{
-//    var data: [zmandata]? = nil
-//	var selector: Selector?
+//    public var data: [zmandata]? = nil
+//	public var selector: Selector?
 //    typealias zmandata = (hebrew: String, english: String, transAsh: String, transSef: String, selector: String, description: String?)
 //	
 //	class public func zmanForSelector(selector: Selector) -> KSZman
@@ -50,7 +50,7 @@
 //	{
 //	    
 //	    let selectorAsString: String = NSStringFromSelector(selector!)
-//	    var related: [String] = [selectorAsString] //  By default, return the array of just this selector.
+//	    public var related: [String] = [selectorAsString] //  By default, return the array of just this selector.
 //	    
 //	    /**
 //	     *  All of the related sets
@@ -199,7 +199,7 @@
 //                    (hebrew: "", english: "", transAsh: "", transSef: "", selector: "sofZmanBiurChametzGra", description: nil),
 //                    (hebrew: "", english: "", transAsh: "", transSef: "", selector: "sofZmanBiurChametzMGA72Minutes", description: nil)]
 //	    }
-//	    var metadata = [zmandata]()
+//	    public var metadata = [zmandata]()
 //        for item in data! where item.selector == String(selector)
 //        {
 //            metadata.append(item)

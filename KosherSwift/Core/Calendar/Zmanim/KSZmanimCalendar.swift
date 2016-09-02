@@ -7,7 +7,7 @@ import Foundation
 
 public class KSZmanimCalendar: KSAstronomicalCalendar
 {
-	var candleLightingOffset = 0
+	public var candleLightingOffset = 0
 	
 	public override init(location aGeoLocation:KSGeoLocation)
 	{

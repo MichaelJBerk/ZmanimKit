@@ -9,9 +9,16 @@ public typealias holidayData = (hebrew: String, english: String)
 
 public class KSJewishHoliday
 {
-	static var names: [AnyObject]? = nil
-	var holidayIndex : Int = 0
+	static public var names: [String]? = nil
+    
+    /**
+     *  The index saying which holiday the object represents.
+     */
+	public var holidayIndex : Int = 0
 	
+    /**
+     *  A convenience accessor to get a holiday from an index.
+     */
 	class public func holidayWithIndex(index: Int) -> AnyObject
 	{
 	    let holiday: KSJewishHoliday = KSJewishHoliday()
@@ -21,11 +28,17 @@ public class KSJewishHoliday
 	    return holiday
 	}
 	
+    /**
+     *  - returns: The hebrew name of the holiday.
+     */
 	public func name() -> String
 	{
         return holidayNames()[holidayIndex].hebrew
     }
 	
+    /**
+     *  - returns: The transliterad hebrew name of the holiday.
+     */
 	public func nameTransliterated() -> String
 	{
 	    return holidayNames()[holidayIndex].english

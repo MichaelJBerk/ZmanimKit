@@ -11,12 +11,12 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
      *  Determines if we consider "modern" holidays,
      *  such as Yom Ha'atzmaut when returning values.
      */
-	var returnsModernHolidays = false
+	public var returnsModernHolidays = false
     
     /**
      *  Determines if we account for diaspora in our calculations.
      */
-	var inIsrael = false
+	public var inIsrael = false
 	
 	override init (location aGeoLocation:KSGeoLocation)
 	{
@@ -562,7 +562,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
      */
 	public func sofZmanKidushLevanaBetweenMoldosForDate(date: NSDate) -> NSDate
 	{
-	    var molad: NSDate = moladForDate(date)
+        var molad: NSDate = moladForDate(date)
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
 	    let comps: NSDateComponents = NSDateComponents()
 	    comps.month = 1
@@ -745,7 +745,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 		let hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
 	    let thisRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: year, andCalendar: hebrewCalendar)
 		let nextRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: year + 1, andCalendar: hebrewCalendar)
-		var totalDaysInTheYear = hebrewCalendar.daysFromDate(thisRoshHashana, toDate: nextRoshHashana)
+        var totalDaysInTheYear = hebrewCalendar.daysFromDate(thisRoshHashana, toDate: nextRoshHashana)
 	    if totalDaysInTheYear == 353 || totalDaysInTheYear == 383
 	    {
 			totalDaysInTheYear = 0
@@ -796,7 +796,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	
 	public func workingDateAdjustedForSunset() -> NSDate
 	{
-	    var returnDate: NSDate = super.workingDate!
+        var returnDate: NSDate = super.workingDate!
 	    
 	    let isAfterSunset: Bool = sunset()!.timeIntervalSinceNow < 0
 	    
