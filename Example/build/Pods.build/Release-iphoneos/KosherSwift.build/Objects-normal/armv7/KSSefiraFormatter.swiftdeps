@@ -1,0 +1,245 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KSSefiraFormatter"
+- "KSSefiraCustom"
+- "KSSefiraLanguage"
+- "KSSefiraPrayerAddition"
+provides-nominal:
+- "C11KosherSwift17KSSefiraFormatter"
+- "O11KosherSwift14KSSefiraCustom"
+- "O11KosherSwift16KSSefiraLanguage"
+- "O11KosherSwift22KSSefiraPrayerAddition"
+provides-member:
+- ["C11KosherSwift17KSSefiraFormatter", ""]
+- ["O11KosherSwift14KSSefiraCustom", ""]
+- ["O11KosherSwift16KSSefiraLanguage", ""]
+- ["O11KosherSwift22KSSefiraPrayerAddition", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int"
+- "KSSefiraCustom"
+- "KSSefiraFormatter"
+- "FloatLiteralType"
+- "String"
+- !private "~="
+- "=="
+- "IntegerLiteralType"
+- "KSSefiraLanguage"
+- "KSSefiraPrayerAddition"
+depends-member:
+- ["Ps9AnyObject", "KSSefiraCustom"]
+- ["Ps9AnyObject", "KSSefiraLanguage"]
+- !private ["Ps9AnyObject", "custom"]
+- !private ["Ps9AnyObject", "language"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Ashkenaz"]
+- !private ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "Hebrew"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "RawValue"]
+- ["Ps9Equatable", "Sefard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
+- !private ["Ps8Hashable", "Ashkenaz"]
+- !private ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "Hebrew"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "RawValue"]
+- ["Ps8Hashable", "Sefard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "hashValue"]
+- ["O11KosherSwift14KSSefiraCustom", "Ari"]
+- ["O11KosherSwift14KSSefiraCustom", "Ashkenaz"]
+- ["O11KosherSwift14KSSefiraCustom", "RawValue"]
+- ["O11KosherSwift14KSSefiraCustom", "Sefard"]
+- ["O11KosherSwift14KSSefiraCustom", "deinit"]
+- ["O11KosherSwift14KSSefiraCustom", "ephardic"]
+- ["O11KosherSwift14KSSefiraCustom", "hashValue"]
+- ["O11KosherSwift14KSSefiraCustom", "init"]
+- ["O11KosherSwift14KSSefiraCustom", "rawValue"]
+- ["C11KosherSwift17KSSefiraFormatter", "KSSefiraCustom"]
+- ["C11KosherSwift17KSSefiraFormatter", "KSSefiraLanguage"]
+- ["C11KosherSwift17KSSefiraFormatter", "String"]
+- ["C11KosherSwift17KSSefiraFormatter", "ashkenazHebrewStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "ashkenazTransliteratedStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "custom"]
+- ["C11KosherSwift17KSSefiraFormatter", "deinit"]
+- ["C11KosherSwift17KSSefiraFormatter", "englishStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "init"]
+- ["C11KosherSwift17KSSefiraFormatter", "language"]
+- ["C11KosherSwift17KSSefiraFormatter", "sefardHebrewStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "sefardTransliteratedStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "sephardicHebrewStrings"]
+- ["C11KosherSwift17KSSefiraFormatter", "sephardicTransliteratedStrings"]
+- ["O11KosherSwift16KSSefiraLanguage", "English"]
+- ["O11KosherSwift16KSSefiraLanguage", "Hebrew"]
+- ["O11KosherSwift16KSSefiraLanguage", "RawValue"]
+- ["O11KosherSwift16KSSefiraLanguage", "TransliteratedHebrew"]
+- ["O11KosherSwift16KSSefiraLanguage", "deinit"]
+- ["O11KosherSwift16KSSefiraLanguage", "hashValue"]
+- ["O11KosherSwift16KSSefiraLanguage", "init"]
+- ["O11KosherSwift16KSSefiraLanguage", "rawValue"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Aleinu"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Ana"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Beracha"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Harachaman"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Lamenatzaiach"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "LeshaimYichud"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "RawValue"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "Ribono"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "deinit"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "hashValue"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "init"]
+- ["O11KosherSwift22KSSefiraPrayerAddition", "rawValue"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo7NSValue", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps16RawRepresentable", "Ashkenaz"]
+- ["Ps16RawRepresentable", "Hebrew"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "Sefard"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "hashValue"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- "O11KosherSwift14KSSefiraCustom"
+- "C11KosherSwift17KSSefiraFormatter"
+- "O11KosherSwift16KSSefiraLanguage"
+- "O11KosherSwift22KSSefiraPrayerAddition"
+- !private "Ps14MirrorPathType"
+- !private "CSo8NSNumber"
+- !private "CSo8NSObject"
+- !private "CSo7NSValue"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- "Ps16RawRepresentable"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/Pods/Target Support Files/KosherSwift/KosherSwift-umbrella.h"
+- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Pods.build/Release-iphoneos/KosherSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "0a431d21c87646d6fcbfcc9287b5a8bc"

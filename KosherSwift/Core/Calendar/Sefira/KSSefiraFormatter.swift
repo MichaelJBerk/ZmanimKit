@@ -5,6 +5,7 @@
 
 import Foundation
 
+/** This class formats an integer into a sefira day */
 public class KSSefiraFormatter
 {
 	public var ashkenazTransliteratedStrings : [String]?
@@ -14,7 +15,15 @@ public class KSSefiraFormatter
 	public var sefardHebrewStrings : [String]?
 	public var sephardicHebrewStrings : [String]?
 	public var englishStrings : [String]?
+    
+    /**
+     *  The custom for the formatter to use.
+     */
     public var custom = KSSefiraCustom.Sefard
+    
+    /**
+     *  The language for the formatter to use.
+     */
     public var language = KSSefiraLanguage.Hebrew
 	
 	public init()

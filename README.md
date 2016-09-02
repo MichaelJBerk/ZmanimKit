@@ -20,6 +20,7 @@ Just add 'pod "KosherSwift"' to your Podfile.
 - [x] Create "Get Started" guide
 - [ ] Finish cleaning up code
 - [ ] Add support for retrieving sefira prayers
+- [ ] Add support in KSComplexZmanimCalendar
 
 KosherSwift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:

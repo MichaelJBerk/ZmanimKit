@@ -5,6 +5,16 @@
 
 import Foundation
 
+/**
+ *  The KCParashatHashavuaCalculator class calculates which
+ *  parasha is read on the shabbat following a supplied date.
+ *  It can also return the listing for an entire year.
+ *
+ *  In Israel, due to differences in holiday observance, the schedule
+ *  may vary from the diaspora in some years. KCParashatHashavuaCalculator
+ *  accounts for these as well, and can return the appropriate value for
+ *  both Israel and the diaspora.
+ */
 public class KSParashatHashavuaCalculator
 {
 	public var hebrewCalendar : NSCalendar?
@@ -16,16 +26,41 @@ public class KSParashatHashavuaCalculator
 		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)
 	}
 	
+    /**
+     *  This method returns a KCParasha object representing the *parasha*
+     *  in the diaspora for the week during which the supplied date falls.
+     *
+     *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
+     *  - returns: A KCParasha object representing the relevant parasha or parshiot.
+     */
 	public func parashaInDiasporaForDate(date: NSDate) -> KSParasha
 	{
 	    return _parashaForDate(date, inDiaspora: true)
 	}
 	
+    /**
+     *  This method returns a KCParasha object representing the *parasha*
+     *  in Israel for the week during which the supplied date falls.
+     *
+     *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
+     *  - returns: A KCParasha object representing the relevant parasha or parshiot.
+     */
 	public func parashaInIsraelForDate(date: NSDate) -> KSParasha
 	{
 	    return _parashaForDate(date, inDiaspora: false)
 	}
 	
+    /**
+     *  Returns a listing of all parshiot in the diaspora
+     *  for the specificed year type.
+     *
+     *  You can get the year type from the NSCalendar class method,
+     *  typeOfHebrewYearContainingDate: as defined
+     *  in NSDate+HebrewYearTypes category method.
+     *
+     *  - parameter typeOfYear: The type of hebrew year.
+     *  - returns: An array of KCParasha objects.
+     */
 	public func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
         var parshiot = [KSParashot]()
@@ -105,6 +140,17 @@ public class KSParashatHashavuaCalculator
 	    return parshiot
 	}
 	
+    /**
+     *  Returns a listing of all parshiot in Israel
+     *  for the specificed year type.
+     *
+     *  You can get the year type from the NSCalendar class method,
+     *  typeOfHebrewYearContainingDate: as defined
+     *  in NSDate+HebrewYearTypes category method.
+     *
+     *  - perameters typeOfYear: A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
+     *  - returns: An array of KCParasha objects.
+     */
 	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
 	{
         var parshiot = [KSParashot]()

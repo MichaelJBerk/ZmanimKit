@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "d5aa530d2dffbb38d161334e8174118d"
+build_time: [526169898, 183399000]
+inputs:
+  "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/Tests/Tests.swift": !dirty [526108257, 0]
