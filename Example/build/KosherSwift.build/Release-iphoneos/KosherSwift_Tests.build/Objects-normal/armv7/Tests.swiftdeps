@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C17KosherSwift_Tests5Tests", ""]
 provides-dynamic-lookup:
-- "tearDown"
-- "testPerformanceExample"
 - "setUp"
+- "tearDown"
 - "testExample"
+- "testPerformanceExample"
 depends-top-level:
-- !private "XCTAssert"
-- "Tests"
 - !private "BooleanLiteralType"
+- !private "XCTAssert"
 - "XCTestCase"
 - !private "StringLiteralType"
+- "Tests"
 depends-member:
 - !private ["Ps9AnyObject", "XCTAssert"]
 - ["Ps9AnyObject", "init"]
@@ -121,15 +121,15 @@ depends-nominal:
 - "CSo10XCTestCase"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/XCTest.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/XCTest.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIElementQuery.h"
@@ -158,7 +158,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
-- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Release-iphoneos/KosherSwift/KosherSwift.framework/Modules/KosherSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Release-iphoneos/KosherSwift/KosherSwift.framework/Modules/KosherSwift.swiftmodule/arm.swiftmodule"
 - "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Release-iphoneos/KosherSwift/KosherSwift.framework/Headers/KosherSwift-Swift.h"
 - "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Release-iphoneos/KosherSwift/KosherSwift.framework/Headers/KosherSwift-umbrella.h"
 - "/Users/Daniel/Documents/Programs/Swift/KosherSwift/Example/build/Release-iphoneos/KosherSwift/KosherSwift.framework/Modules/module.modulemap"
