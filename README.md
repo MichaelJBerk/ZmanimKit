@@ -33,4 +33,4 @@ Dani Smith, ds1239@hotmail.com
 
 ## License
 
-KosherSwift is available under the MIT license. See the LICENSE file for more info.
+KosherSwift is available under the LGLP license. See the LICENSE.md file for more info.
