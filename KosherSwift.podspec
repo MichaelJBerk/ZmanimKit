@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KosherSwift'
-  s.version          = '0.1.23'
+  s.version          = '0.1.24'
   s.summary          = 'A Swift library for getting zmanim.'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/DanielSmith1239/KosherSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'LGLP', :file => 'LICENSE.md' }
   s.author           = { 'Dani Smith' => 'ds1239@hotmail.com' }
   s.source           = { :git => 'https://github.com/DanielSmith1239/KosherSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'

@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		26C932E1F2BBF22D437E539A /* Pods_KosherSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD932FFFC1231363EE2585B3 /* Pods_KosherSwift_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		653E62641D7C896500E31143 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 653E62631D7C896500E31143 /* LICENSE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D1F485F16C0467742505182 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1F5905162449DE1E28FA6DB4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* KosherSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		653E62631D7C896500E31143 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		D6779420965083766FA1BE9F /* KosherSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KosherSwift.podspec; path = ../KosherSwift.podspec; sourceTree = "<group>"; };
 		DD932FFFC1231363EE2585B3 /* Pods_KosherSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KosherSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3EB532922068A2852574B7 /* Pods-KosherSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KosherSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KosherSwift_Tests/Pods-KosherSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +86,7 @@
 			children = (
 				D6779420965083766FA1BE9F /* KosherSwift.podspec */,
 				1F5905162449DE1E28FA6DB4 /* README.md */,
-				0D1F485F16C0467742505182 /* LICENSE */,
+				653E62631D7C896500E31143 /* LICENSE.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -218,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653E62641D7C896500E31143 /* LICENSE.md in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
