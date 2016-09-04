@@ -5,16 +5,16 @@
 
 import Foundation
 
-public class KSParasha
+public class Parasha
 {
 	private var transliteratedNames = ["Bereshit", "Noach", "Lech Lecha", "Vayeira", "Chayei Sarah", "Toldot", "Vayeitsei", "Vayishlach", "Vayeishev", "Miketz", "Vayigash", "Vayechi", "Shemot", "Va'era", "Bo", "Beshalach", "Yitro", "Mishpatim", "Terumah", "Tetzaveh", "Terumah - Tetzaveh", "Ki Tissa", "Vayakhel", "Pekudei", "Vayakhel - Pekudei", "Vayikra", "Tzav", "Shemini", "Tazria", "Metzora", "Tazria - Metzorah", "Acharei Mot", "Kedoshim", "Acharei Mot - Kedoshim", "Emor", "Behar", "Bechukotai", "Behar - Bechukotai", "Bamidbar", "Naso", "Beha'alotecha", "Shelach", "Korach", "Chukat", "Balak", "Chukat - Balak", "Pinchas", "Matot", "Masei", "Matot - Masei", "Devarim", "Va'etchanan", "Eikev", "Re'eh", "Shoftim", "Ki Teitzei", "Ki Tavo", "Nitzavim", "Vayeilech", "Nitzavim - Vayeilech", "Ha'azinu", "Vezot Haberacha", "Rosh Hashana", "Yom Kippur", "Sukkot 1", "Chol Hamoed Sukkot", "Shmini Atzeret", "Pesach 1", "Chol Hamoed Pesach", "Pesach 7", "Pesach 8", "Shavuot 2"]
 	private var names = ["בראשית", "נח", "לך לך", "וירא", "חיי שרה", "תולדות", "ויצא", "וישלח", "וישב", "מקץ", "ויגש", "ויחי", "שמות", "וארא", "בא", "בשלח", "יתרו", "משפטים", "תרומה", "תצוה", "תרומה - תצוה", "כי תשא", "ויקהל", "פקודי", "ויקהל - פקודי", "ויקרא", "צו", "שמיני", "תזריע", "מצורע", "תזריע - מצורע", "אחרי מות", "קדושים", "אחרי מות - קדושים", "אמור", "בהר", "בחקתי", "בהר - בחקתי", "במדבר", "נשא", "בהעלותך", "שלח", "קרח", "חקת", "בלק", "חקת - בלק", "פינחס", "מטות", "מסעי", "מטות - מסעי", "דברים", "ואתחנן", "עקב", "ראה", "שופטים", "כי תצא", "כי תבוא", "נצבים", "וילך", "נצבים - וילך", "האזינו", "וזאת הברכה", "א' ראש השנה", "יום כיפור", "א' סוכות", "חוה\"מ סוכות", "שמיני עצרת", "א' פסח", "חוה\"מ פסח", "ז' פסח", "ח' פסח", "ב' שבועות"]
     /**
      * The parasha identifier.
      */
-	public var identifier: KSParashot?
+	public var identifier: Parashot?
 	
-	public init(_identifier: KSParashot)
+	public init(_identifier: Parashot)
 	{
 	    identifier = _identifier
 	}
@@ -28,9 +28,9 @@ public class KSParasha
      *  - parameter identifier: An identifier, defined in KCParashaReadings.
      *  - returns: A KCParasha instance.
      */
-	class public func parashaWithIdentifier(_identifier: KSParashot) -> KSParasha
+	class public func parashaWithIdentifier(_identifier: Parashot) -> Parasha
 	{
-	    return KSParasha(_identifier: _identifier)
+	    return Parasha(_identifier: _identifier)
 	}
 	
     /**

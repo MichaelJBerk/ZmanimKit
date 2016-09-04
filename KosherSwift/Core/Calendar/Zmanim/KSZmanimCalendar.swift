@@ -5,11 +5,11 @@
 
 import Foundation
 
-public class KSZmanimCalendar: KSAstronomicalCalendar
+public class ZmanimCalendar: AstronomicalCalendar
 {
 	public var candleLightingOffset = 0
 	
-	public override init(location aGeoLocation:KSGeoLocation)
+	public override init(location aGeoLocation:GeoLocation)
 	{
 		super.init(location: aGeoLocation)
 	}

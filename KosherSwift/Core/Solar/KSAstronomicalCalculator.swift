@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol KSAstronomicalCalculator
+protocol AstronomicalCalculator
 {
 	func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double

@@ -5,15 +5,15 @@
 //
 //import Foundation
 //
-//public class KSZman
+//public class Zman
 //{
 //    public var data: [zmandata]? = nil
 //	public var selector: Selector?
 //    typealias zmandata = (hebrew: String, english: String, transAsh: String, transSef: String, selector: String, description: String?)
 //	
-//	class public func zmanForSelector(selector: Selector) -> KSZman
+//	class public func zmanForSelector(selector: Selector) -> Zman
 //	{
-//	    return KSZman(selector: selector)
+//	    return Zman(selector: selector)
 //	}
 //	
 //	public init(selector: Selector)
@@ -207,7 +207,7 @@
 //        return metadata[0]
 //	}
 //	
-//	public func isEqualToZman(anotherZman: KSZman) -> Bool
+//	public func isEqualToZman(anotherZman: Zman) -> Bool
 //	{
 //	    let mySelector: String = String(selector!)
 //	    let otherZmanSelector: String = String(anotherZman.selector!)

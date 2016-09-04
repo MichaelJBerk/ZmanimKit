@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class KSGeoLocation
+public class GeoLocation
 {
 	public var longitude : Double = 0
 	public var locationName : String?
@@ -95,22 +95,22 @@ public class KSGeoLocation
 	    return Int(longitude) * 4 * kMillisecondsInAMinute - (timeZone!.secondsFromGMT * 1000)
 	}
 	
-	public func getGeodesicInitialBearingForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicInitialBearingForLocation(location: GeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kInitialBearing)!
 	}
 	
-	public func getGeodesicFinalBearingForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicFinalBearingForLocation(location: GeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kFinalBearing)!
 	}
 	
-	public func getGeodesicDistanceForLocation(location: KSGeoLocation) -> Double
+	public func getGeodesicDistanceForLocation(location: GeoLocation) -> Double
 	{
 	    return vincentyFormulaForLocation(location, withBearing: kDistance)!
 	}
 	
-	public func vincentyFormulaForLocation(location: KSGeoLocation, withBearing formula: Int) -> Double?
+	public func vincentyFormulaForLocation(location: GeoLocation, withBearing formula: Int) -> Double?
 	{
 	    let a: Double = 6378137
 	    let b: Double = 6356752.3142
@@ -193,7 +193,7 @@ public class KSGeoLocation
 	    }
 	}
 	
-	public func getRhumbLineBearingForLocation(location: KSGeoLocation) -> Double
+	public func getRhumbLineBearingForLocation(location: GeoLocation) -> Double
 	{
         var dLon: Double = trig.toRadians(location.longitude - longitude)
 	    let dPhi: Double = log(tan(trig.toRadians(location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
@@ -203,7 +203,7 @@ public class KSGeoLocation
 	    return trig.toDegrees(atan2(dLon, dPhi))
 	}
 	
-	public func getRhumbLineDistanceForLocation(location: KSGeoLocation) -> Double
+	public func getRhumbLineDistanceForLocation(location: GeoLocation) -> Double
 	{
 	    
 	    let R: Double = 6371;  // earth's mean radius in km

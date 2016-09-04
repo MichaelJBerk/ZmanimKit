@@ -18,7 +18,7 @@ import Foundation
 public enum kHebrewMonth: Int
 {
 	case kTishrei = 1
-	case KSheshvan
+	case heshvan
 	case kKislev
 	case kTeves
 	case kShevat
@@ -55,7 +55,7 @@ public enum kHebrewMonth: Int
  */
 public enum kYearType: Int
 {
-	case KShaser = 0
+	case haser = 0
 	case kKesidran
 	case kShalaim
 }

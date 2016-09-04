@@ -18,7 +18,7 @@ let kJewishEpoch = -1373429
  *
  *  This is defined as 18.
  */
-let KShalakimPerMinute = 18
+let halakimPerMinute = 18
 
 /**
  *  The number of *chalakim* per hour.
@@ -26,7 +26,7 @@ let KShalakimPerMinute = 18
  *  This is defined as 18 times the number of minutes per 
  *  hour, or 1080.
  */
-let KShalakimPerHour = 1080
+let halakimPerHour = 1080
 
 /**
  *  The number of *chalakim* per day.
@@ -34,7 +34,7 @@ let KShalakimPerHour = 1080
  *  This is defined as 18 times the number of minutes per
  *  hour times the number of hours per day, or 25920.
  */
-let KShalakimPerDay = 25920 // 24 * 1080 = 25920
+let halakimPerDay = 25920 // 24 * 1080 = 25920
 
 /**
  *  The number of *chalakim* per month.
@@ -43,11 +43,11 @@ let KShalakimPerDay = 25920 // 24 * 1080 = 25920
  *  per day times the number of days in a standard
  *  Hebrew months.
  */
-let KShalakimPerMonth = 765433 // (29 * 24 + 12) * 1080 + 793 = 765433
+let halakimPerMonth = 765433 // (29 * 24 + 12) * 1080 + 793 = 765433
 
 /**
  *  Days from the beginning of Sunday till molad BaHaRaD.
  *  
  *  Calculated as 1 day, 5 hours and 204 chalakim.
  */
-let KShalakimMoladTohu = 31524 //(24 + 5) *1080 + 204 = 31524
+let halakimMoladTohu = 31524 //(24 + 5) *1080 + 204 = 31524

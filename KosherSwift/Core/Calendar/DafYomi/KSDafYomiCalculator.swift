@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class KSDafYomiCalculator
+public class DafYomiCalculator
 {
     let kNumberOfMasechtos = 40
     
@@ -25,7 +25,7 @@ public class KSDafYomiCalculator
      *
      *  - returns: a KCDaf object.
      */
-	public func dafYomiBavli() -> KSDaf
+	public func dafYomiBavli() -> Daf
 	{
 	    return dafYomiBavliForDate(NSDate())!
 	}
@@ -39,7 +39,7 @@ public class KSDafYomiCalculator
      *
      *  - returns: a KCDaf object.
      */
-	public func dafYomiBavliForDate(date: NSDate) -> KSDaf?
+	public func dafYomiBavliForDate(date: NSDate) -> Daf?
 	{
 	    
 	    //Start on September 11, 1923
@@ -51,7 +51,7 @@ public class KSDafYomiCalculator
 	    //An array of the lengths of the meschtos
         var blattPerMasechta: [Int] = [64, 157, 105, 121, 22, 88, 56, 40, 35, 31, 32, 29, 27, 122, 112, 91, 66, 49, 90, 82, 119, 119, 176, 113, 24, 49, 76, 14, 120, 110, 142, 61, 34, 34, 28, 22, 4, 10, 4, 73]
 	    
-        var dafYomi = KSDaf(tractateIndex: 0, andPageNumber: 0)
+        var dafYomi = Daf(tractateIndex: 0, andPageNumber: 0)
 	    
 	    let julianDay: Int = julianDayForDate(date)
         var cycleNo: Int = 0
@@ -103,7 +103,7 @@ public class KSDafYomiCalculator
 	            {
 	                blatt += 33
 	            }
-	            dafYomi = KSDaf(tractateIndex: masechta, andPageNumber: blatt)
+	            dafYomi = Daf(tractateIndex: masechta, andPageNumber: blatt)
 	            break
 	        }
 	    }

@@ -12,22 +12,20 @@ Parsed by: Dani Smith
 # Installation
 Just copy the KosherSwift folder in to your project.
 
-### Cocoapod
-Just add `pod "KosherSwift"` to your Podfile.
-
-# To Do:
-- [ ] Create documentation
-- [x] Create "Get Started" guide
-- [ ] Finish cleaning up code
-- [ ] Add support for retrieving sefira prayers
-- [ ] Add support in KSComplexZmanimCalendar
-
+### Cocoapods
 KosherSwift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "KosherSwift"
 ```
+
+# To Do:
+- [ ] Create documentation
+- [x] Create "Get Started" guide
+- [ ] Finish cleaning up code
+- [ ] Add support for retrieving sefira prayers
+- [ ] Add support for returning nil in ComplexZmanimCalendar
 
 ## Author
 

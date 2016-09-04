@@ -7,7 +7,7 @@ import Foundation
 
 public typealias holidayData = (hebrew: String, english: String)
 
-public class KSJewishHoliday
+public class JewishHoliday
 {
 	static public var names: [String]? = nil
     
@@ -21,7 +21,7 @@ public class KSJewishHoliday
      */
 	class public func holidayWithIndex(index: Int) -> AnyObject
 	{
-	    let holiday: KSJewishHoliday = KSJewishHoliday()
+	    let holiday: JewishHoliday = JewishHoliday()
 	    
 	    holiday.holidayIndex = index
 	    

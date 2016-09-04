@@ -15,7 +15,7 @@ import Foundation
  *  accounts for these as well, and can return the appropriate value for
  *  both Israel and the diaspora.
  */
-public class KSParashatHashavuaCalculator
+public class ParashatHashavuaCalculator
 {
 	public var hebrewCalendar : NSCalendar?
 	public var gregorianCalendar : NSCalendar?
@@ -33,7 +33,7 @@ public class KSParashatHashavuaCalculator
      *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
      *  - returns: A KCParasha object representing the relevant parasha or parshiot.
      */
-	public func parashaInDiasporaForDate(date: NSDate) -> KSParasha
+	public func parashaInDiasporaForDate(date: NSDate) -> Parasha
 	{
 	    return _parashaForDate(date, inDiaspora: true)
 	}
@@ -45,7 +45,7 @@ public class KSParashatHashavuaCalculator
      *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
      *  - returns: A KCParasha object representing the relevant parasha or parshiot.
      */
-	public func parashaInIsraelForDate(date: NSDate) -> KSParasha
+	public func parashaInIsraelForDate(date: NSDate) -> Parasha
 	{
 	    return _parashaForDate(date, inDiaspora: false)
 	}
@@ -61,9 +61,9 @@ public class KSParashatHashavuaCalculator
      *  - parameter typeOfYear: The type of hebrew year.
      *  - returns: An array of KCParasha objects.
      */
-	public func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
+	public func parshiotInDiasporaDuringYearType(typeOfYear: kHebrewYearType) -> [Parashot]
 	{
-        var parshiot = [KSParashot]()
+        var parshiot = [Parashot]()
 	    
 	    if typeOfYear == kHebrewYearType.TypeA //  Monday, 353, regular
 	    {
@@ -151,9 +151,9 @@ public class KSParashatHashavuaCalculator
      *  - perameters typeOfYear: A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
      *  - returns: An array of KCParasha objects.
      */
-	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [KSParashot]
+	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [Parashot]
 	{
-        var parshiot = [KSParashot]()
+        var parshiot = [Parashot]()
 	    
 	    if typeOfYear == kHebrewYearType.TypeA //  Monday, 353, regular
 	    {
@@ -232,7 +232,7 @@ public class KSParashatHashavuaCalculator
 	    return parshiot
 	}
 	
-	private func _parashaForDate(date: NSDate, inDiaspora isInDiaspora: Bool) -> KSParasha
+	private func _parashaForDate(date: NSDate, inDiaspora isInDiaspora: Bool) -> Parasha
 	{
 	    let tempDate = hebrewCalendar!.lastDayOfTheWeekUsingReferenceDate(date)
 	    let year = hebrewCalendar!.yearsInDate(tempDate)
@@ -244,11 +244,11 @@ public class KSParashatHashavuaCalculator
 	    //	Then look up this weeks parsha
 	    let parashaIDNumber = parshiot[weeksSinceRoshHashana]
 	    let parashaID = parashaIDNumber
-	    let parasha = KSParasha.parashaWithIdentifier(parashaID)
+	    let parasha = Parasha.parashaWithIdentifier(parashaID)
 	    return parasha
 	}
 	
-	private func _parshiotForYearType(type: kHebrewYearType, inDiaspora diaspora: Bool) -> [KSParashot]
+	private func _parshiotForYearType(type: kHebrewYearType, inDiaspora diaspora: Bool) -> [Parashot]
 	{
 	    return diaspora ? parshiotInDiasporaDuringYearType(type) : parshiotInIsraelDuringYearType(type)
 	}

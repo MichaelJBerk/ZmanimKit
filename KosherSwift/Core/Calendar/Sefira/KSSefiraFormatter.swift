@@ -6,7 +6,7 @@
 import Foundation
 
 /** This class formats an integer into a sefira day */
-public class KSSefiraFormatter
+public class SefiraFormatter
 {
 	public var ashkenazTransliteratedStrings : [String]?
 	public var sefardTransliteratedStrings : [String]?
@@ -19,17 +19,17 @@ public class KSSefiraFormatter
     /**
      *  The custom for the formatter to use.
      */
-    public var custom = KSSefiraCustom.Sefard
+    public var custom = SefiraCustom.Sefard
     
     /**
      *  The language for the formatter to use.
      */
-    public var language = KSSefiraLanguage.Hebrew
+    public var language = SefiraLanguage.Hebrew
 	
 	public init()
 	{
-	    language = KSSefiraLanguage.Hebrew;
-		custom = KSSefiraCustom.Ashkenaz;
+	    language = SefiraLanguage.Hebrew;
+		custom = SefiraCustom.Ashkenaz;
 	}
 	
 //	public func stringFromInteger(num: Int) -> String?
@@ -52,7 +52,7 @@ public class KSSefiraFormatter
 /**
  *  This flag determines which custom to use when returning a formatted string.
  */
-public enum KSSefiraCustom: Int
+public enum SefiraCustom: Int
 {
     case Ashkenaz //  Uses the bet prefix
     case Sefard   //  Uses the lamed prefix
@@ -63,7 +63,7 @@ public enum KSSefiraCustom: Int
 /**
  *  This flag determines which language to use to display the text.
  */
-public enum KSSefiraLanguage: Int
+public enum SefiraLanguage: Int
 {
     case Hebrew                 //  The count, in Hebrew
     case English                //  The count, in English
@@ -73,10 +73,10 @@ public enum KSSefiraLanguage: Int
 /**
  *  The options for the formatter.
  *
- *  If the KSSefiraLanguage is not set to KSSefiraLanguageHebrew
- *  or KSSefiraCustom is not KSSefiraCustomAshkenaz, these flags are ignored.
+ *  If the SefiraLanguage is not set to SefiraLanguageHebrew
+ *  or SefiraCustom is not SefiraCustomAshkenaz, these flags are ignored.
  */
-public enum KSSefiraPrayerAddition: Int
+public enum SefiraPrayerAddition: Int
 {
     case LeshaimYichud //= 1 << 0
     case Beracha //= 1 << 1

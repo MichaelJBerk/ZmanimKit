@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class KSJewishCalendar: KSComplexZmanimCalendar
+public class JewishCalendar: ComplexZmanimCalendar
 {
     /**
      *  Determines if we consider "modern" holidays,
@@ -18,7 +18,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
      */
 	public var inIsrael = false
 	
-	override init (location aGeoLocation:KSGeoLocation)
+	override init (location aGeoLocation:GeoLocation)
 	{
 		super.init(location: aGeoLocation)
 	}
@@ -45,7 +45,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	            }
 	            else if (currentHebrewDayOfMonth() >= 17 && currentHebrewDayOfMonth() <= 20) || (currentHebrewDayOfMonth() == 16 && inIsrael)
 	            {
-	                return kYomimTovim.KSholHamoedPesach
+	                return kYomimTovim.holHamoedPesach
 	            }
 	            if useModernHolidays && ((currentHebrewDayOfMonth() == 26 && currentDayOfTheWeek() == 5) || (currentHebrewDayOfMonth() == 28 && currentDayOfTheWeek() == 1) || (currentHebrewDayOfMonth() == 27 && currentDayOfTheWeek() == 3) || (currentHebrewDayOfMonth() == 27 && currentDayOfTheWeek() == 5))
 	            {
@@ -128,7 +128,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	            }
 	            if (currentHebrewDayOfMonth() >= 17 && currentHebrewDayOfMonth() <= 20) || (currentHebrewDayOfMonth() == 16 && inIsrael)
 	            {
-	                return kYomimTovim.KSholHamoedSuccos
+	                return kYomimTovim.holHamoedSuccos
 	            }
 	            if currentHebrewDayOfMonth() == 21
 	            {
@@ -151,13 +151,13 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	            {
 	                if currentHebrewDayOfMonth() >= 25
 	                {
-	                    return kYomimTovim.KShanukah
+	                    return kYomimTovim.hanukah
 	                }
 	            }
 	        case .kTeves:
 	            if currentHebrewDayOfMonth() == 1 || currentHebrewDayOfMonth() == 2 || (currentHebrewDayOfMonth() == 3 && isKislevShort())
 	            {
-	                return kYomimTovim.KShanukah
+	                return kYomimTovim.hanukah
 	            }
 	            else if currentHebrewDayOfMonth() == 10
 	            {
@@ -223,7 +223,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	{
         if let holidayIndex = yomTovIndex()
         {
-            if isErevYomTov() || holidayIndex == .KShanukah || (isTaanis() && holidayIndex != .kYomKippur)
+            if isErevYomTov() || holidayIndex == .hanukah || (isTaanis() && holidayIndex != .kYomKippur)
             {
                 return false
             }
@@ -240,7 +240,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	public func isCholHamoed() -> Bool
 	{
 	    let holidayIndex = yomTovIndex()
-	    return (holidayIndex == .KSholHamoedPesach || holidayIndex == .KSholHamoedSuccos)
+	    return (holidayIndex == .holHamoedPesach || holidayIndex == .holHamoedSuccos)
 	}
 	
     /**
@@ -330,7 +330,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
      */
 	public func isChanukah() -> Bool
 	{
-	    return yomTovIndex() == .KShanukah
+	    return yomTovIndex() == .hanukah
 	}
 	
     /**
@@ -640,9 +640,9 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
      *
      *  - returns: KCDaf object corresponding to the date
      */
-	public func dafYomiBavli() -> KSDaf
+	public func dafYomiBavli() -> Daf
 	{
-	    let calculator: KSDafYomiCalculator = KSDafYomiCalculator(date: workingDate!)
+	    let calculator: DafYomiCalculator = DafYomiCalculator(date: workingDate!)
 	    return calculator.dafYomiBavliForDate(workingDate!)!
 	}
 	
@@ -773,7 +773,7 @@ public class KSJewishCalendar: KSComplexZmanimCalendar
 	{
 	    let monthOfYear: Int = adjustedMonthToStartFromTishreiForMonth(month, ofYear: year)
 	    let monthsElapsed: Int = (235 * ((year - 1) / 19)) + (12 * ((year - 1) % 19)) + ((7 * ((year - 1) % 19) + 1) / 19) + (monthOfYear - 1)
-	    return KShalakimMoladTohu + (KShalakimPerMonth * monthsElapsed)
+	    return halakimMoladTohu + (halakimPerMonth * monthsElapsed)
 	}
 	
     /**

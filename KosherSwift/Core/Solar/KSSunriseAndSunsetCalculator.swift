@@ -5,12 +5,12 @@
 
 import Foundation
 
-public class KSSunriseAndSunsetCalculator: trigonometry, KSAstronomicalCalculator
+public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 {
-	public var geoLocation : KSGeoLocation?
+	public var geoLocation : GeoLocation?
 	public var calculatorName : String?
 	
-    public init(geoLocation: KSGeoLocation)
+    public init(geoLocation: GeoLocation)
 	{
 		calculatorName = "United States Naval Almanac Algorithm"
         self.geoLocation = geoLocation

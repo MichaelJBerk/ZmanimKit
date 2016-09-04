@@ -5,10 +5,10 @@
 
 import Foundation
 
-public class KSAstronomicalCalendar
+public class AstronomicalCalendar
 {
-	public var geoLocation : KSGeoLocation?
-	public var astronomicalCalculator : KSSunriseAndSunsetCalculator?
+	public var geoLocation : GeoLocation?
+	public var astronomicalCalculator : SunriseAndSunsetCalculator?
 	public var internalCalendar : NSCalendar?
 	public var workingDate : NSDate?
 	
@@ -17,9 +17,9 @@ public class KSAstronomicalCalendar
 	    internalCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
 	}
 	
-	public init(location aGeoLocation: KSGeoLocation)
+	public init(location aGeoLocation: GeoLocation)
 	{
-	    let tempCalc: KSSunriseAndSunsetCalculator = KSSunriseAndSunsetCalculator(geoLocation: aGeoLocation)
+	    let tempCalc: SunriseAndSunsetCalculator = SunriseAndSunsetCalculator(geoLocation: aGeoLocation)
 		astronomicalCalculator = tempCalc
 		geoLocation = aGeoLocation
 		workingDate = NSDate()

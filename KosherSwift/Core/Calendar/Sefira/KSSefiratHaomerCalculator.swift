@@ -6,7 +6,7 @@
 import Foundation
 
 /** A class that calculates Sefirat Haomer. */
-public class KSSefiratHaomerCalculator
+public class SefiratHaomerCalculator
 {
     /**
      *  This method checks if [NSDate date] represents a day
@@ -59,7 +59,7 @@ public class KSSefiratHaomerCalculator
      */
 	class public func dayOfSefiraForDate(date: NSDate) -> Int
 	{
-		let firstDayOfTheOmer: NSDate = KSSefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date)
+		let firstDayOfTheOmer: NSDate = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date)
 	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
         var day: Int = hebrewCalendar.daysFromDate(firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
 	    if day < 0 || day > 49

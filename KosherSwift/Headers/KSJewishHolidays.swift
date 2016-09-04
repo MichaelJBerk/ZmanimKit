@@ -40,7 +40,7 @@ public enum kYomimTovim: Int
 {
 	case kErevPesach = 0
 	case kPesach
-	case KSholHamoedPesach
+	case holHamoedPesach
 	case kPesachSheni
 	case kErevShavuos
 	case kShavuos
@@ -54,12 +54,12 @@ public enum kYomimTovim: Int
 	case kYomKippur
 	case kErevSuccos
 	case kSuccos
-	case KSholHamoedSuccos
+	case holHamoedSuccos
 	case kHoshanaRabba
 	case kSheminiAtzeres
 	case kSimchasTorah
 	case kErevChanukah
-	case KShanukah
+	case hanukah
 	case kTenthOfTeves  //  TODO: Change "Teves" to "tevet"
 	case kTuBeshvat
 	case kFastOfEsther

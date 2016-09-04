@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension KSAstronomicalCalendar
+extension AstronomicalCalendar
 {
 	public func dateByAddingSeconds(seconds: Int, toDate date: NSDate) -> NSDate
 	{

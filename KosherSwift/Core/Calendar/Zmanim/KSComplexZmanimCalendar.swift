@@ -18,13 +18,13 @@ import Foundation
  *  that are not part of the API.
  *
  *  The methods for doing zmanim calculations not present in this class or its
- *  superclass the KSZmanimCalendar are contained in KSAstronomicalCalendar,
+ *  superclass the ZmanimCalendar are contained in AstronomicalCalendar,
  *  the base class of the calendars in our API since they are generic methods
  *  for calculating time based on degrees or time before or after sunrise and
  *  sunset and
  *  are of interest for calculation beyond zmanim calculations.
  */
-public class KSComplexZmanimCalendar: KSZmanimCalendar
+public class ComplexZmanimCalendar: ZmanimCalendar
 {
     /**
      *  The default value is 40 minutes. In Israel, this should be 25
@@ -32,7 +32,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      */
 	public var ateretTorahSunsetOffset = 0
 	
-	override init (location aGeoLocation: KSGeoLocation)
+	override init (location aGeoLocation: GeoLocation)
 	{
 		super.init(location: aGeoLocation)
 	}
@@ -61,7 +61,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *  of the Antarctic Circle
      *  where the sun may not reach low enough below the horizon for this calculation, a
      *  Int.min will be returned. See detailed explanation on top of
-     *  KSAstronomicalCalendar documentation.
+     *  AstronomicalCalendar documentation.
      */
 	public func shaahZmanis19Point8Degrees() -> Double
 	{
@@ -87,7 +87,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *  of the Antarctic Circle
      *  where the sun may not reach low enough below the horizon for this calculation, a
      *  Int.min will be returned. See detailed explanation on top of
-     *  KSAstronomicalCalendar documentation.
+     *  AstronomicalCalendar documentation.
      */
 	public func shaahZmanis18Degrees() -> Double
 	{
@@ -113,7 +113,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *  of the Antarctic Circle
      *  where the sun may not reach low enough below the horizon for this calculation, a
      *  Int.min will be returned. See detailed explanation on top of
-     *  KSAstronomicalCalendar documentation.
+     *  AstronomicalCalendar documentation.
      */
 	public func shaahZmanis26Degrees() -> Double
 	{
@@ -139,7 +139,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *  of the Antarctic Circle
      *  where the sun may not reach low enough below the horizon for this calculation, a
      *  Int.min will be returned. See detailed explanation on top of
-     *  KSAstronomicalCalendar documentation.
+     *  AstronomicalCalendar documentation.
      */
 	public func shaahZmanis16Point1Degrees() -> Double
 	{
@@ -157,7 +157,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where
      * there is at least one day a year where the sun does not rise,
      * and one where it does not set, a Int.min will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis60Minutes() -> Double
 	{
@@ -176,7 +176,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where
      * there is at least one day a year where the sun does not rise,
      * and one where it does not set, a Int.min will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis72Minutes() -> Double
 	{
@@ -197,7 +197,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where there is at
      * least one day a year where the sun does not rise, and one where it does not set,
      * a Int.min will be returned. See detailed explanation on top of
-     * the KSAstronomicalCalendar documentation.
+     * the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis72MinutesZmanis() -> Double
 	{
@@ -216,7 +216,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a
      * Int.min will be returned. See detailed explanation on top of
-     * the KSAstronomicalCalendar documentation.
+     * the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis90Minutes() -> Double
 	{
@@ -237,7 +237,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set,
      * a Int.min will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis90MinutesZmanis() -> Double
 	{
@@ -256,7 +256,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a
      * Int.min will be returned. See detailed explanation on top of
-     * the KSAstronomicalCalendar documentation.
+     * the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis96Minutes() -> Double
 	{
@@ -276,7 +276,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a Int.min
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis96MinutesZmanis() -> Double
 	{
@@ -298,7 +298,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as in the Arctic Circle where there
      * is at least one day a year where the sun does not rise, and one where it does
      * not set, a Int.min will be returned. See detailed explanation on top
-     * of the KSAstronomicalCalendar documentation.
+     * of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanisAteretTorah() -> Double
 	{
@@ -316,7 +316,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a Int.min
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis120Minutes() -> Double
 	{
@@ -336,7 +336,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a Int.min will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func shaahZmanis120MinutesZmanis() -> Double
 	{
@@ -353,7 +353,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * 
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha120Minutes() -> NSDate?
 	{
@@ -370,7 +370,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha120MinutesZmanis() -> NSDate?
 	{
@@ -389,7 +389,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at
      * least one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos60() -> NSDate?
 	{
@@ -401,7 +401,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * or 1/10th of the day before sea level sunrise. This is based on an 18 minute Mil so the time
      * for 4 Mil is 72 minutes which is 1/10th of a day (12 * 60 = 720) based on the day starting
      * at sea level sunrise and ending at sea level sunset. The actual calulation is
-     * KSAstronomicalCalendar.SeaLevelSunrise()- (KSZmanimCalendar.ShaahZmanisGra() * 1.2).
+     * AstronomicalCalendar.SeaLevelSunrise()- (ZmanimCalendar.ShaahZmanisGra() * 1.2).
      * This calculation is used in the calendars published by Hisachdus Harabanim
      * D'Artzos Habris Ve'Canada.
      *
@@ -409,7 +409,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos72Zmanis() -> NSDate?
 	{
@@ -433,7 +433,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos90() -> NSDate?
 	{
@@ -450,13 +450,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * or 1/8th of the day before sea level sunrise. This is based on a 22.5 minute Mil so
      * the time for 4 Mil is 90 minutes which is 1/8th of a day (12 * 60) / 8 = 90
      * based on the day starting at sunrise and ending at sunset. The actual calculation is
-     * KSAstronomicalCalendar.Sunrise() - (KSZmanimCalendar.ShaahZmanisGra() * 1.5).
+     * AstronomicalCalendar.Sunrise() - (ZmanimCalendar.ShaahZmanisGra() * 1.5).
      *
      * - returns: representing the time.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos90Zmanis() -> NSDate?
 	{
@@ -481,7 +481,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos96() -> NSDate?
 	{
@@ -497,13 +497,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * or 1/8th of the day before sea level sunrise. This is based on a 24 minute Mil so the time
      * for 4 Mil is 96 minutes which is 1/7.5th of a day (12 * 60) / 7.5 = 96 based on the day
      * starting at sunrise and ending at sunset. The actual calculation is
-     * KSAstronomicalCalendar.Sunrise() - (KSZmanimCalendar.ShaahZmanisGra() * 1.6).
+     * AstronomicalCalendar.Sunrise() - (ZmanimCalendar.ShaahZmanisGra() * 1.6).
      *
      * - returns: representing the time.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos96Zmanis() -> NSDate?
 	{
@@ -529,7 +529,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * - returns: representing the time.
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos120() -> NSDate?
 	{
@@ -545,13 +545,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * or 1/6th of the day before sea level sunrise. This is based on a 24 minute Mil so the time
      * for 5 Mil is 120 minutes which is 1/6th of a day (12 * 60) / 6 = 120 based on the day starting
      * at sunrise and ending at sunset. The actual calculation is
-     * KSAstronomicalCalendar.Sunrise() - (KSZmanimCalendar.ShaahZmanisGra() * 2).
+     * AstronomicalCalendar.Sunrise() - (ZmanimCalendar.ShaahZmanisGra() * 2).
      *
      * - returns: representing the time.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will
-     * be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func alos120Zmanis() -> NSDate?
 	{
@@ -575,7 +575,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func alos26Degrees() -> NSDate
 	{
@@ -591,7 +591,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func alos18Degrees() -> NSDate
 	{
@@ -610,7 +610,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func alos19Point8Degrees() -> NSDate
 	{
@@ -629,7 +629,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func alos16Point1Degrees() -> NSDate
 	{
@@ -647,7 +647,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func misheyakir11Point5Degrees() -> NSDate
 	{
@@ -665,7 +665,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func misheyakir11Degrees() -> NSDate
 	{
@@ -683,7 +683,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func misheyakir10Point2Degrees() -> NSDate
 	{
@@ -702,7 +702,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
-     * top of the KSAstronomicalCalendar documentation.
+     * top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA19Point8Degrees() -> NSDate
 	{
@@ -721,7 +721,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA16Point1Degrees() -> NSDate
 	{
@@ -734,14 +734,14 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham
      * that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes
      * after sunset. This returns the time of 3 * ShaahZmanis72Minutes() after dawn.
-     * This class returns an identical time to KSZmanimCalendar.SofZmanShmaMGA() and is
+     * This class returns an identical time to ZmanimCalendar.SofZmanShmaMGA() and is
      * repeated here for clarity.
      *
      * - returns: the Date of the latest zman krias shema.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA72Minutes() -> NSDate
 	{
@@ -760,7 +760,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA72MinutesZmanis() -> NSDate
 	{
@@ -778,7 +778,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA90Minutes() -> NSDate?
 	{
@@ -797,7 +797,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA90MinutesZmanis() -> NSDate?
 	{
@@ -816,7 +816,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA96Minutes() -> NSDate?
 	{
@@ -835,7 +835,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA96MinutesZmanis() -> NSDate?
 	{
@@ -844,15 +844,15 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
 	
     /**
      * This method returns the latest zman krias shema (time to recite Shema in the morning) calculated
-     * as 3 hours (regular and not zmaniyos) before KSZmanimCalendar.Chatzos().
+     * as 3 hours (regular and not zmaniyos) before ZmanimCalendar.Chatzos().
      * This is the opinion of the Shach in the Nekudas Hakesef (Yora Deah 184), Shevus Yaakov,
-     * Chasam Sofer and others. This returns the time of 3 hours before KSZmanimCalendar.Chatzos().
+     * Chasam Sofer and others. This returns the time of 3 hours before ZmanimCalendar.Chatzos().
      *
      * - returns: the Date of the latest zman krias shema.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShma3HoursBeforeChatzos() -> NSDate
 	{
@@ -872,7 +872,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil
-     * will be returned. See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaMGA120Minutes() -> NSDate?
 	{
@@ -892,7 +892,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaAlos16Point1ToSunset() -> NSDate?
 	{
@@ -918,7 +918,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate?
 	{
@@ -944,7 +944,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA19Point8Degrees() -> NSDate
 	{
@@ -963,7 +963,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA16Point1Degrees() -> NSDate
 	{
@@ -976,14 +976,14 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * This time is 4 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham
      * that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes
      * after sunset. This returns the time of 4 * ShaahZmanis72Minutes() after dawn.
-     * This class returns an identical time to KSZmanimCalendar.SofZmanTfilaMGA()
+     * This class returns an identical time to ZmanimCalendar.SofZmanTfilaMGA()
      * and is repeated here for clarity.
      *
      * - returns: the Date of the latest zman tfila.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA72Minutes() -> NSDate
 	{
@@ -1002,7 +1002,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA72MinutesZmanis() -> NSDate
 	{
@@ -1021,7 +1021,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA90Minutes() -> NSDate?
 	{
@@ -1040,7 +1040,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA90MinutesZmanis() -> NSDate
 	{
@@ -1058,7 +1058,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA96Minutes() -> NSDate?
 	{
@@ -1077,7 +1077,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA96MinutesZmanis() -> NSDate?
 	{
@@ -1096,7 +1096,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaMGA120Minutes() -> NSDate?
 	{
@@ -1107,13 +1107,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * This method returns the latest zman tfila (time to recite the morning prayers) calculated as
      * 2 hours before ZmanimCalendar.getChatzos(). This is based on the opinions that calculate
      * sof zman krias shema as SofZmanShma3HoursBeforeChatzos().
-     * This returns the time of 2 hours before KSZmanimCalendar.Chatzos().
+     * This returns the time of 2 hours before ZmanimCalendar.Chatzos().
      *
      * - returns: the Date of the latest zman krias shema.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfila2HoursBeforeChatzos() -> NSDate
 	{
@@ -1122,7 +1122,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
 	
     /**
      * This method returns mincha gedola calculated as 30 minutes after chatzos and not 1/2 of
-     * a shaah zmanis after chatzos as calculated by KSZmanimCalendar.MinchaGedola().
+     * a shaah zmanis after chatzos as calculated by ZmanimCalendar.MinchaGedola().
      * Some use this time to delay the start of mincha in the winter when 1/2 of a shaah zmanis is
      * less than 30 minutes. See MinchaGedolaGreaterThan30()for a convenience method that returns
      * the later of the 2 calculations. One should not use this time to start mincha before the standard
@@ -1133,7 +1133,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func minchaGedola30Minutes() -> NSDate //After chatzos
 	{
@@ -1151,7 +1151,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func minchaGedola72Minutes() -> NSDate
 	{
@@ -1170,7 +1170,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of the
      * Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough below the
      * horizon for this calculation, a nil will be returned. See detailed explanation
-     * on top of the KSAstronomicalCalendar documentation.
+     * on top of the AstronomicalCalendar documentation.
      */
 	public func minchaGedola16Point1Degrees() -> NSDate
 	{
@@ -1207,7 +1207,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of the
      * Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough below
      * the horizon for this calculation, a nil will be returned. See detailed explanation on top of
-     * the KSAstronomicalCalendar documentation.
+     * the AstronomicalCalendar documentation.
      */
 	public func minchaKetana16Point1Degrees() -> NSDate
 	{
@@ -1226,7 +1226,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func minchaKetana72Minutes() -> NSDate
 	{
@@ -1243,7 +1243,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha60Minutes() -> NSDate?
 	{
@@ -1254,13 +1254,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * This method returns the time of plag hamincha according to the Magen Avraham with the day
      * starting 72 minutes before sunrise and ending 72 minutes after sunset. This is calculated
      * as 10.75 hours after dawn.
-     * The formula used is: 10.75 ShaahZmanis72Minutes() after KSZmanimCalendar.Alos72().
+     * The formula used is: 10.75 ShaahZmanis72Minutes() after ZmanimCalendar.Alos72().
      *
      * - returns: the Date of the time of plag hamincha.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha72Minutes() -> NSDate?
 	{
@@ -1277,7 +1277,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha90Minutes() -> NSDate?
 	{
@@ -1294,7 +1294,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha96Minutes() -> NSDate?
 	{
@@ -1309,7 +1309,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha96MinutesZmanis() -> NSDate
 	{
@@ -1324,7 +1324,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha90MinutesZmanis() -> NSDate
 	{
@@ -1339,7 +1339,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha72MinutesZmanis() -> NSDate
 	{
@@ -1356,7 +1356,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
-     * top of the KSAstronomicalCalendar documentation.
+     * top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha16Point1Degrees() -> NSDate
 	{
@@ -1373,7 +1373,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha19Point8Degrees() -> NSDate
 	{
@@ -1389,7 +1389,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha26Degrees() -> NSDate
 	{
@@ -1406,7 +1406,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHamincha18Degrees() -> NSDate
 	{
@@ -1426,7 +1426,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagAlosToSunset() -> NSDate
 	{
@@ -1446,7 +1446,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate
 	{
@@ -1474,7 +1474,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func bainHashmashosRT13Degrees() -> NSDate
 	{
@@ -1490,7 +1490,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func bainHashmashosRT58Point5Minutes() -> NSDate
 	{
@@ -1507,7 +1507,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func bainHashmashosRT13Point5MinutesBefore7Point083Degrees() -> NSDate
 	{
@@ -1526,7 +1526,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func bainHashmashosRT2Stars() -> NSDate?
 	{
@@ -1550,7 +1550,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim5Point95Degrees() -> NSDate
 	{
@@ -1568,7 +1568,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim3Point65Degrees() -> NSDate
 	{
@@ -1586,7 +1586,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim4Point61Degrees() -> NSDate
 	{
@@ -1604,7 +1604,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim4Point37Degrees() -> NSDate
 	{
@@ -1624,7 +1624,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim5Point88Degrees() -> NSDate
 	{
@@ -1642,7 +1642,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim4Point8Degrees() -> NSDate
 	{
@@ -1660,7 +1660,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim7Point083Degrees() -> NSDate
 	{
@@ -1676,7 +1676,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south
      * of the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisGeonim8Point5Degrees() -> NSDate
 	{
@@ -1692,7 +1692,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais50() -> NSDate
 	{
@@ -1708,7 +1708,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais60() -> NSDate
 	{
@@ -1730,7 +1730,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzaisAteretTorah() -> NSDate
 	{
@@ -1751,7 +1751,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanShmaAteretTorah() -> NSDate?
 	{
@@ -1772,7 +1772,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanTfilaAteretTorah() -> NSDate?
 	{
@@ -1793,7 +1793,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func minchaGedolaAteretTorah() -> NSDate?
 	{
@@ -1814,7 +1814,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func minchaKetanaAteretTorah() -> NSDate?
 	{
@@ -1833,7 +1833,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func plagHaminchaAteretTorah() -> NSDate?
 	{
@@ -1863,7 +1863,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais72Zmanis() -> NSDate?
 	{
@@ -1885,7 +1885,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais90Zmanis() -> NSDate?
 	{
@@ -1907,7 +1907,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais96Zmanis() -> NSDate?
 	{
@@ -1933,7 +1933,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais90() -> NSDate
 	{
@@ -1951,7 +1951,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais120() -> NSDate
 	{
@@ -1966,7 +1966,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais120Zmanis() -> NSDate?
 	{
@@ -1986,7 +1986,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of the
      * Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais16Point1Degrees() -> NSDate
 	{
@@ -2001,7 +2001,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of the
      * Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough below
      * the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais26Degrees() -> NSDate
 	{
@@ -2016,7 +2016,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais18Degrees() -> NSDate
 	{
@@ -2031,7 +2031,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais19Point8Degrees() -> NSDate
 	{
@@ -2046,7 +2046,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func tzais96() -> NSDate
 	{
@@ -2097,13 +2097,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * to the opinion of the GRA and the Baal Hatanya. This time is identical to the Sof zman tefilah GRA.
      * This time is 4 hours into the day based on the opinion of the GRA and the Baal Hatanya
      * that the day is calculated from sunrise to sunset.
-     * This returns the time 4 * KSZmanimCalendar.ShaahZmanisGra() after sea level sunrise.
+     * This returns the time 4 * ZmanimCalendar.ShaahZmanisGra() after sea level sunrise.
      *
      * - returns: the Date one is allowed eating chametz on Erev Pesach.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least
      * one day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanAchilasChametzGra() -> NSDate
 	{
@@ -2116,13 +2116,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * the Sof zman tefilah MGA 72 minutes. This time is 4 shaos zmaniyos (temporal hours) after dawn
      * based on the opinion of the MGA that the day is calculated from a dawn of 72 minutes before
      * sunrise to nightfall of 72 minutes after sunset.
-     * This returns the time of 4 * KSZmanimCalendar.ShaahZmanisMGA() after dawn.
+     * This returns the time of 4 * ZmanimCalendar.ShaahZmanisMGA() after dawn.
      *
      * - returns: the Date of the latest time of eating chametz.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set), a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanAchilasChametzMGA72Minutes() -> NSDate
 	{
@@ -2141,7 +2141,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of
      * the Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough
      * below the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanAchilasChametzMGA16Point1Degrees() -> NSDate
 	{
@@ -2152,13 +2152,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * This method returns the latest time for burning chametz on Erev Pesach according to the opinion
      * of the GRA and the Baal Hatanya. This time is 5 hours into the day based on the opinion
      * of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.
-     * This returns the time 5 * KSZmanimCalendar.ShaahZmanisGra() after sea level sunrise.
+     * This returns the time 5 * ZmanimCalendar.ShaahZmanisGra() after sea level sunrise.
      *
      * - returns: the Date of the latest time for burning chametz on Erev Pesach.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanBiurChametzGra() -> NSDate
 	{
@@ -2170,13 +2170,13 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * of the Magen Avraham based on alos being 72 minutes before sunrise.
      * This time is 5 shaos zmaniyos (temporal hours) after dawn based on the opinion of the Magen Avraham
      * that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes
-     * after sunset. This returns the time of 5 * KSZmanimCalendar.ShaahZmanisMGA() after dawn.
+     * after sunset. This returns the time of 5 * ZmanimCalendar.ShaahZmanisMGA() after dawn.
      *
      * - returns: the Date of the latest time for burning chametz on Erev Pesach.
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set), a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanBiurChametzMGA72Minutes() -> NSDate
 	{
@@ -2195,7 +2195,7 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      * If the calculation can't be computed such as northern and southern locations even south of the
      * Arctic Circle and north of the Antarctic Circle where the sun may not reach low enough below
      * the horizon for this calculation, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func sofZmanBiurChametzMGA16Point1Degrees() -> NSDate
 	{
@@ -2211,11 +2211,11 @@ public class KSComplexZmanimCalendar: KSZmanimCalendar
      *
      * If the calculation can't be computed such as in the Arctic Circle where there is at least one
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
-     * See detailed explanation on top of the KSAstronomicalCalendar documentation.
+     * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
 	public func solarMidnight() -> NSDate?
 	{
-	    let clonedCalendar: KSComplexZmanimCalendar = self
+	    let clonedCalendar: ComplexZmanimCalendar = self
         clonedCalendar.workingDate = dateByAddingDays(1, toDate: clonedCalendar.workingDate!)
 	    let tempSunset: NSDate = sunset()!
 	    let tempSunrise: NSDate = sunrise()!
