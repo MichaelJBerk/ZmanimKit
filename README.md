@@ -13,7 +13,7 @@ Parsed by: Dani Smith
 Just copy the KosherSwift folder in to your project.
 
 ### Cocoapod
-Just add 'pod "KosherSwift"' to your Podfile.
+Just add `pod "KosherSwift"` to your Podfile.
 
 # To Do:
 - [ ] Create documentation
