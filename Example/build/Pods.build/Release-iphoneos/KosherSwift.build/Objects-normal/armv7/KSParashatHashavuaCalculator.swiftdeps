@@ -1,33 +1,33 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSParashatHashavuaCalculator"
+- "ParashatHashavuaCalculator"
 provides-nominal:
-- "C11KosherSwift28KSParashatHashavuaCalculator"
+- "C11KosherSwift26ParashatHashavuaCalculator"
 provides-member:
-- ["C11KosherSwift28KSParashatHashavuaCalculator", ""]
+- ["C11KosherSwift26ParashatHashavuaCalculator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "KSParashot"
-- !private "||"
-- "NSDate"
-- !private "Array"
-- !private "BooleanLiteralType"
 - "kHebrewYearType"
-- "KSParashatHashavuaCalculator"
-- !private "NSCalendarIdentifierHebrew"
-- !private "=="
-- !private "Bool"
-- !private "NSCalendarIdentifierGregorian"
-- "KSParasha"
-- "NSCalendar"
+- "NSDate"
 - !private "Int"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- "Parasha"
+- !private "NSCalendarIdentifierGregorian"
+- "NSCalendar"
+- !private "=="
+- "Parashot"
+- !private "||"
+- !private "NSCalendarIdentifierHebrew"
+- "ParashatHashavuaCalculator"
+- !private "Array"
 depends-member:
-- !private ["Ps9AnyObject", "KSParasha"]
-- !private ["Ps9AnyObject", "KSParashot"]
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierHebrew"]
 - !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "Parasha"]
+- !private ["Ps9AnyObject", "Parashot"]
 - !private ["Ps9AnyObject", "_parashaForDate"]
 - !private ["Ps9AnyObject", "_parshiotForYearType"]
 - !private ["Ps9AnyObject", "dateWithDay"]
@@ -316,96 +316,6 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
-- !private ["C11KosherSwift9KSParasha", "parashaWithIdentifier"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "Bool"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "Int"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "KSParasha"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "KSParashot"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "NSCalendar"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "NSCalendarIdentifierGregorian"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "NSCalendarIdentifierHebrew"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "NSDate"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "_parashaForDate"]
-- !private ["C11KosherSwift28KSParashatHashavuaCalculator", "_parshiotForYearType"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "deinit"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "gregorianCalendar"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "hebrewCalendar"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "init"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "kHebrewYearType"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "parashaInDiasporaForDate"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "parashaInIsraelForDate"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "parshiotInDiasporaDuringYearType"]
-- ["C11KosherSwift28KSParashatHashavuaCalculator", "parshiotInIsraelDuringYearType"]
-- !private ["O11KosherSwift10KSParashot", "AchareiMot"]
-- !private ["O11KosherSwift10KSParashot", "AchareiMotAndKedoshim"]
-- !private ["O11KosherSwift10KSParashot", "Balak"]
-- !private ["O11KosherSwift10KSParashot", "Bamidbar"]
-- !private ["O11KosherSwift10KSParashot", "Bechukotai"]
-- !private ["O11KosherSwift10KSParashot", "Behaalotecha"]
-- !private ["O11KosherSwift10KSParashot", "Behar"]
-- !private ["O11KosherSwift10KSParashot", "BeharAndBechukotai"]
-- !private ["O11KosherSwift10KSParashot", "Bereshit"]
-- !private ["O11KosherSwift10KSParashot", "Beshalach"]
-- !private ["O11KosherSwift10KSParashot", "Bo"]
-- !private ["O11KosherSwift10KSParashot", "ChayeiSarah"]
-- !private ["O11KosherSwift10KSParashot", "Chukat"]
-- !private ["O11KosherSwift10KSParashot", "ChukatAndBalak"]
-- !private ["O11KosherSwift10KSParashot", "Devarim"]
-- !private ["O11KosherSwift10KSParashot", "Eikev"]
-- !private ["O11KosherSwift10KSParashot", "Emor"]
-- !private ["O11KosherSwift10KSParashot", "Haazinu"]
-- !private ["O11KosherSwift10KSParashot", "Kedoshim"]
-- !private ["O11KosherSwift10KSParashot", "KiTavo"]
-- !private ["O11KosherSwift10KSParashot", "KiTeitzei"]
-- !private ["O11KosherSwift10KSParashot", "KiTissa"]
-- !private ["O11KosherSwift10KSParashot", "Korach"]
-- !private ["O11KosherSwift10KSParashot", "LechLecha"]
-- !private ["O11KosherSwift10KSParashot", "Masei"]
-- !private ["O11KosherSwift10KSParashot", "Matot"]
-- !private ["O11KosherSwift10KSParashot", "MatotAndMasei"]
-- !private ["O11KosherSwift10KSParashot", "Metzora"]
-- !private ["O11KosherSwift10KSParashot", "Miketz"]
-- !private ["O11KosherSwift10KSParashot", "Mishpatim"]
-- !private ["O11KosherSwift10KSParashot", "Naso"]
-- !private ["O11KosherSwift10KSParashot", "Nitzavim"]
-- !private ["O11KosherSwift10KSParashot", "NitzavimAndVayeilech"]
-- !private ["O11KosherSwift10KSParashot", "Noach"]
-- !private ["O11KosherSwift10KSParashot", "Pekudei"]
-- !private ["O11KosherSwift10KSParashot", "Pesach1"]
-- !private ["O11KosherSwift10KSParashot", "Pesach3"]
-- !private ["O11KosherSwift10KSParashot", "Pesach7"]
-- !private ["O11KosherSwift10KSParashot", "Pesach8"]
-- !private ["O11KosherSwift10KSParashot", "Pinchas"]
-- !private ["O11KosherSwift10KSParashot", "Reeh"]
-- !private ["O11KosherSwift10KSParashot", "RoshHashana1"]
-- !private ["O11KosherSwift10KSParashot", "Shavuot2"]
-- !private ["O11KosherSwift10KSParashot", "Shelach"]
-- !private ["O11KosherSwift10KSParashot", "Shemini"]
-- !private ["O11KosherSwift10KSParashot", "SheminiAtzeret"]
-- !private ["O11KosherSwift10KSParashot", "Shemot"]
-- !private ["O11KosherSwift10KSParashot", "Shoftim"]
-- !private ["O11KosherSwift10KSParashot", "Sukkot1"]
-- !private ["O11KosherSwift10KSParashot", "Sukkot3"]
-- !private ["O11KosherSwift10KSParashot", "Tazria"]
-- !private ["O11KosherSwift10KSParashot", "TazriaAndMetzora"]
-- !private ["O11KosherSwift10KSParashot", "Terumah"]
-- !private ["O11KosherSwift10KSParashot", "Tetzaveh"]
-- !private ["O11KosherSwift10KSParashot", "Toldot"]
-- !private ["O11KosherSwift10KSParashot", "Tzav"]
-- !private ["O11KosherSwift10KSParashot", "Vaera"]
-- !private ["O11KosherSwift10KSParashot", "Vaetchanan"]
-- !private ["O11KosherSwift10KSParashot", "Vayakhel"]
-- !private ["O11KosherSwift10KSParashot", "VayakhelAndPekudei"]
-- !private ["O11KosherSwift10KSParashot", "Vayechi"]
-- !private ["O11KosherSwift10KSParashot", "Vayeilech"]
-- !private ["O11KosherSwift10KSParashot", "Vayeira"]
-- !private ["O11KosherSwift10KSParashot", "Vayeishev"]
-- !private ["O11KosherSwift10KSParashot", "Vayeitsei"]
-- !private ["O11KosherSwift10KSParashot", "Vayigash"]
-- !private ["O11KosherSwift10KSParashot", "Vayikra"]
-- !private ["O11KosherSwift10KSParashot", "Vayishlach"]
-- !private ["O11KosherSwift10KSParashot", "Yitro"]
-- !private ["O11KosherSwift10KSParashot", "YomKippur"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps21MutableCollectionType", "Element"]
@@ -465,6 +375,96 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "typeOfHebrewYearContainingDate"]
 - !private ["PSo14NSSecureCoding", "weeksFromDate"]
 - !private ["PSo14NSSecureCoding", "yearsInDate"]
+- !private ["C11KosherSwift7Parasha", "parashaWithIdentifier"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "Bool"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "Int"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "NSCalendar"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "NSCalendarIdentifierGregorian"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "NSCalendarIdentifierHebrew"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "NSDate"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "Parasha"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "Parashot"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "_parashaForDate"]
+- !private ["C11KosherSwift26ParashatHashavuaCalculator", "_parshiotForYearType"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "deinit"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "gregorianCalendar"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "hebrewCalendar"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "init"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "kHebrewYearType"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "parashaInDiasporaForDate"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "parashaInIsraelForDate"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "parshiotInDiasporaDuringYearType"]
+- ["C11KosherSwift26ParashatHashavuaCalculator", "parshiotInIsraelDuringYearType"]
+- !private ["O11KosherSwift8Parashot", "AchareiMot"]
+- !private ["O11KosherSwift8Parashot", "AchareiMotAndKedoshim"]
+- !private ["O11KosherSwift8Parashot", "Balak"]
+- !private ["O11KosherSwift8Parashot", "Bamidbar"]
+- !private ["O11KosherSwift8Parashot", "Bechukotai"]
+- !private ["O11KosherSwift8Parashot", "Behaalotecha"]
+- !private ["O11KosherSwift8Parashot", "Behar"]
+- !private ["O11KosherSwift8Parashot", "BeharAndBechukotai"]
+- !private ["O11KosherSwift8Parashot", "Bereshit"]
+- !private ["O11KosherSwift8Parashot", "Beshalach"]
+- !private ["O11KosherSwift8Parashot", "Bo"]
+- !private ["O11KosherSwift8Parashot", "ChayeiSarah"]
+- !private ["O11KosherSwift8Parashot", "Chukat"]
+- !private ["O11KosherSwift8Parashot", "ChukatAndBalak"]
+- !private ["O11KosherSwift8Parashot", "Devarim"]
+- !private ["O11KosherSwift8Parashot", "Eikev"]
+- !private ["O11KosherSwift8Parashot", "Emor"]
+- !private ["O11KosherSwift8Parashot", "Haazinu"]
+- !private ["O11KosherSwift8Parashot", "Kedoshim"]
+- !private ["O11KosherSwift8Parashot", "KiTavo"]
+- !private ["O11KosherSwift8Parashot", "KiTeitzei"]
+- !private ["O11KosherSwift8Parashot", "KiTissa"]
+- !private ["O11KosherSwift8Parashot", "Korach"]
+- !private ["O11KosherSwift8Parashot", "LechLecha"]
+- !private ["O11KosherSwift8Parashot", "Masei"]
+- !private ["O11KosherSwift8Parashot", "Matot"]
+- !private ["O11KosherSwift8Parashot", "MatotAndMasei"]
+- !private ["O11KosherSwift8Parashot", "Metzora"]
+- !private ["O11KosherSwift8Parashot", "Miketz"]
+- !private ["O11KosherSwift8Parashot", "Mishpatim"]
+- !private ["O11KosherSwift8Parashot", "Naso"]
+- !private ["O11KosherSwift8Parashot", "Nitzavim"]
+- !private ["O11KosherSwift8Parashot", "NitzavimAndVayeilech"]
+- !private ["O11KosherSwift8Parashot", "Noach"]
+- !private ["O11KosherSwift8Parashot", "Pekudei"]
+- !private ["O11KosherSwift8Parashot", "Pesach1"]
+- !private ["O11KosherSwift8Parashot", "Pesach3"]
+- !private ["O11KosherSwift8Parashot", "Pesach7"]
+- !private ["O11KosherSwift8Parashot", "Pesach8"]
+- !private ["O11KosherSwift8Parashot", "Pinchas"]
+- !private ["O11KosherSwift8Parashot", "Reeh"]
+- !private ["O11KosherSwift8Parashot", "RoshHashana1"]
+- !private ["O11KosherSwift8Parashot", "Shavuot2"]
+- !private ["O11KosherSwift8Parashot", "Shelach"]
+- !private ["O11KosherSwift8Parashot", "Shemini"]
+- !private ["O11KosherSwift8Parashot", "SheminiAtzeret"]
+- !private ["O11KosherSwift8Parashot", "Shemot"]
+- !private ["O11KosherSwift8Parashot", "Shoftim"]
+- !private ["O11KosherSwift8Parashot", "Sukkot1"]
+- !private ["O11KosherSwift8Parashot", "Sukkot3"]
+- !private ["O11KosherSwift8Parashot", "Tazria"]
+- !private ["O11KosherSwift8Parashot", "TazriaAndMetzora"]
+- !private ["O11KosherSwift8Parashot", "Terumah"]
+- !private ["O11KosherSwift8Parashot", "Tetzaveh"]
+- !private ["O11KosherSwift8Parashot", "Toldot"]
+- !private ["O11KosherSwift8Parashot", "Tzav"]
+- !private ["O11KosherSwift8Parashot", "Vaera"]
+- !private ["O11KosherSwift8Parashot", "Vaetchanan"]
+- !private ["O11KosherSwift8Parashot", "Vayakhel"]
+- !private ["O11KosherSwift8Parashot", "VayakhelAndPekudei"]
+- !private ["O11KosherSwift8Parashot", "Vayechi"]
+- !private ["O11KosherSwift8Parashot", "Vayeilech"]
+- !private ["O11KosherSwift8Parashot", "Vayeira"]
+- !private ["O11KosherSwift8Parashot", "Vayeishev"]
+- !private ["O11KosherSwift8Parashot", "Vayeitsei"]
+- !private ["O11KosherSwift8Parashot", "Vayigash"]
+- !private ["O11KosherSwift8Parashot", "Vayikra"]
+- !private ["O11KosherSwift8Parashot", "Vayishlach"]
+- !private ["O11KosherSwift8Parashot", "Yitro"]
+- !private ["O11KosherSwift8Parashot", "YomKippur"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
@@ -649,9 +649,6 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
-- !private "C11KosherSwift9KSParasha"
-- "C11KosherSwift28KSParashatHashavuaCalculator"
-- !private "O11KosherSwift10KSParashot"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -663,6 +660,9 @@ depends-nominal:
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "C11KosherSwift7Parasha"
+- "C11KosherSwift26ParashatHashavuaCalculator"
+- !private "O11KosherSwift8Parashot"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
@@ -695,4 +695,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-interface-hash: "fc50e9f3ad6ca4061c3a675498336ebe"
+interface-hash: "6673fb71f5568e73aae2425277e2d0ac"

@@ -7,18 +7,18 @@ provides-member:
 - ["C11KosherSwift12trigonometry", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "sin"
+- !private "asin"
+- !private "M_PI"
+- !private "FloatLiteralType"
+- !private "tan"
 - "Double"
 - !private "cos"
-- !private "/"
-- !private "FloatLiteralType"
-- !private "acos"
-- !private "tan"
-- "trigonometry"
 - !private "*"
-- !private "sin"
+- !private "/"
 - !private "IntegerLiteralType"
-- !private "M_PI"
-- !private "asin"
+- !private "acos"
+- "trigonometry"
 depends-member:
 - !private ["Ps9AnyObject", "M_PI"]
 - !private ["Ps9AnyObject", "acos"]

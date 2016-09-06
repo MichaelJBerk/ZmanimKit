@@ -1,24 +1,24 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSZmanimCalendar"
+- "ZmanimCalendar"
 provides-nominal:
-- "C11KosherSwift16KSZmanimCalendar"
+- "C11KosherSwift14ZmanimCalendar"
 provides-member:
-- ["C11KosherSwift16KSZmanimCalendar", ""]
+- ["C11KosherSwift14ZmanimCalendar", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "KSGeoLocation"
-- "Int"
-- "KSZmanimCalendar"
 - !private "kZenithEightPointFive"
+- "GeoLocation"
+- "Int"
 - "FloatLiteralType"
-- "KSAstronomicalCalendar"
-- !private "*"
-- "IntegerLiteralType"
+- "ZmanimCalendar"
+- "AstronomicalCalendar"
 - "Double"
-- !private "StringLiteralType"
-- !private "kZenithSixteenPointOne"
+- !private "*"
 - "NSDate"
+- "IntegerLiteralType"
+- !private "kZenithSixteenPointOne"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "alos72"]
@@ -58,6 +58,46 @@ depends-member:
 - ["Ps9AnyObject", "tzais"]
 - ["Ps9AnyObject", "tzais72"]
 - ["Ps9AnyObject", ""]
+- ["C11KosherSwift20AstronomicalCalendar", "Double"]
+- ["C11KosherSwift20AstronomicalCalendar", "GeoLocation"]
+- ["C11KosherSwift20AstronomicalCalendar", "Int"]
+- ["C11KosherSwift20AstronomicalCalendar", "NSDate"]
+- ["C11KosherSwift20AstronomicalCalendar", "alos72"]
+- ["C11KosherSwift20AstronomicalCalendar", "alosHashachar"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting15"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting18"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting20"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting22"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting30"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLighting40"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLightingOffset"]
+- ["C11KosherSwift20AstronomicalCalendar", "candleLightingWithOffsetFromSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "chatzos"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "dateByAddingMinutes"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "dateBySubtractingMinutes"]
+- ["C11KosherSwift20AstronomicalCalendar", "init"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithEightPointFive"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithSixteenPointOne"]
+- ["C11KosherSwift20AstronomicalCalendar", "minchaGedola"]
+- ["C11KosherSwift20AstronomicalCalendar", "minchaKetana"]
+- ["C11KosherSwift20AstronomicalCalendar", "plagHamincha"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "seaLevelSunrise"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "seaLevelSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "shaahZmanisGra"]
+- ["C11KosherSwift20AstronomicalCalendar", "shaahZmanisMogenAvraham"]
+- ["C11KosherSwift20AstronomicalCalendar", "sofZmanShmaGra"]
+- ["C11KosherSwift20AstronomicalCalendar", "sofZmanShmaMogenAvraham"]
+- ["C11KosherSwift20AstronomicalCalendar", "sofZmanTfilaGra"]
+- ["C11KosherSwift20AstronomicalCalendar", "sofZmanTfilaMogenAvraham"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "sunTransit"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "sunriseOffsetByDegrees"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "sunset"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "sunsetOffsetByDegrees"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "temporalHourFromSunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "tzais"]
+- ["C11KosherSwift20AstronomicalCalendar", "tzais72"]
+- ["C11KosherSwift20AstronomicalCalendar", ""]
 - !private ["Ps22BidirectionalIndexType", "init"]
 - !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Ps11CVarArgType", "dateByAddingTimeInterval"]
@@ -75,86 +115,6 @@ depends-member:
 - !private ["Ps21IntegerArithmeticType", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "init"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "Double"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "Int"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "KSGeoLocation"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "NSDate"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "alos72"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "alosHashachar"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting15"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting18"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting20"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting22"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting30"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLighting40"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLightingOffset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "candleLightingWithOffsetFromSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "chatzos"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "dateByAddingMinutes"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "dateBySubtractingMinutes"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "init"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithEightPointFive"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithSixteenPointOne"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "minchaGedola"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "minchaKetana"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "plagHamincha"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "seaLevelSunrise"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "seaLevelSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "shaahZmanisGra"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "shaahZmanisMogenAvraham"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sofZmanShmaGra"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sofZmanShmaMogenAvraham"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sofZmanTfilaGra"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sofZmanTfilaMogenAvraham"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "sunTransit"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "sunriseOffsetByDegrees"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "sunset"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "sunsetOffsetByDegrees"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "temporalHourFromSunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "tzais"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "tzais72"]
-- ["C11KosherSwift22KSAstronomicalCalendar", ""]
-- ["C11KosherSwift16KSZmanimCalendar", "Double"]
-- ["C11KosherSwift16KSZmanimCalendar", "Int"]
-- ["C11KosherSwift16KSZmanimCalendar", "KSGeoLocation"]
-- ["C11KosherSwift16KSZmanimCalendar", "NSDate"]
-- ["C11KosherSwift16KSZmanimCalendar", "alos72"]
-- ["C11KosherSwift16KSZmanimCalendar", "alosHashachar"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting15"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting18"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting20"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting22"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting30"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLighting40"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLightingOffset"]
-- ["C11KosherSwift16KSZmanimCalendar", "candleLightingWithOffsetFromSunset"]
-- ["C11KosherSwift16KSZmanimCalendar", "chatzos"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "dateByAddingMinutes"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "dateBySubtractingMinutes"]
-- ["C11KosherSwift16KSZmanimCalendar", "deinit"]
-- ["C11KosherSwift16KSZmanimCalendar", "init"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "kZenithEightPointFive"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "kZenithSixteenPointOne"]
-- ["C11KosherSwift16KSZmanimCalendar", "minchaGedola"]
-- ["C11KosherSwift16KSZmanimCalendar", "minchaKetana"]
-- ["C11KosherSwift16KSZmanimCalendar", "plagHamincha"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "seaLevelSunrise"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "seaLevelSunset"]
-- ["C11KosherSwift16KSZmanimCalendar", "shaahZmanisGra"]
-- ["C11KosherSwift16KSZmanimCalendar", "shaahZmanisMogenAvraham"]
-- ["C11KosherSwift16KSZmanimCalendar", "sofZmanShmaGra"]
-- ["C11KosherSwift16KSZmanimCalendar", "sofZmanShmaMogenAvraham"]
-- ["C11KosherSwift16KSZmanimCalendar", "sofZmanTfilaGra"]
-- ["C11KosherSwift16KSZmanimCalendar", "sofZmanTfilaMogenAvraham"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "sunTransit"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "sunriseOffsetByDegrees"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "sunset"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "sunsetOffsetByDegrees"]
-- !private ["C11KosherSwift16KSZmanimCalendar", "temporalHourFromSunrise"]
-- ["C11KosherSwift16KSZmanimCalendar", "tzais"]
-- ["C11KosherSwift16KSZmanimCalendar", "tzais72"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "dateByAddingTimeInterval"]
 - !private ["PSo9NSCopying", "dateByAddingTimeInterval"]
@@ -167,6 +127,46 @@ depends-member:
 - !private ["Ps16SignedNumberType", "init"]
 - !private ["Vs12StaticString", "deinit"]
 - !private ["Ps10Strideable", "init"]
+- ["C11KosherSwift14ZmanimCalendar", "Double"]
+- ["C11KosherSwift14ZmanimCalendar", "GeoLocation"]
+- ["C11KosherSwift14ZmanimCalendar", "Int"]
+- ["C11KosherSwift14ZmanimCalendar", "NSDate"]
+- ["C11KosherSwift14ZmanimCalendar", "alos72"]
+- ["C11KosherSwift14ZmanimCalendar", "alosHashachar"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting15"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting18"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting20"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting22"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting30"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLighting40"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLightingOffset"]
+- ["C11KosherSwift14ZmanimCalendar", "candleLightingWithOffsetFromSunset"]
+- ["C11KosherSwift14ZmanimCalendar", "chatzos"]
+- !private ["C11KosherSwift14ZmanimCalendar", "dateByAddingMinutes"]
+- !private ["C11KosherSwift14ZmanimCalendar", "dateBySubtractingMinutes"]
+- ["C11KosherSwift14ZmanimCalendar", "deinit"]
+- ["C11KosherSwift14ZmanimCalendar", "init"]
+- !private ["C11KosherSwift14ZmanimCalendar", "kZenithEightPointFive"]
+- !private ["C11KosherSwift14ZmanimCalendar", "kZenithSixteenPointOne"]
+- ["C11KosherSwift14ZmanimCalendar", "minchaGedola"]
+- ["C11KosherSwift14ZmanimCalendar", "minchaKetana"]
+- ["C11KosherSwift14ZmanimCalendar", "plagHamincha"]
+- !private ["C11KosherSwift14ZmanimCalendar", "seaLevelSunrise"]
+- !private ["C11KosherSwift14ZmanimCalendar", "seaLevelSunset"]
+- ["C11KosherSwift14ZmanimCalendar", "shaahZmanisGra"]
+- ["C11KosherSwift14ZmanimCalendar", "shaahZmanisMogenAvraham"]
+- ["C11KosherSwift14ZmanimCalendar", "sofZmanShmaGra"]
+- ["C11KosherSwift14ZmanimCalendar", "sofZmanShmaMogenAvraham"]
+- ["C11KosherSwift14ZmanimCalendar", "sofZmanTfilaGra"]
+- ["C11KosherSwift14ZmanimCalendar", "sofZmanTfilaMogenAvraham"]
+- !private ["C11KosherSwift14ZmanimCalendar", "sunTransit"]
+- !private ["C11KosherSwift14ZmanimCalendar", "sunriseOffsetByDegrees"]
+- !private ["C11KosherSwift14ZmanimCalendar", "sunset"]
+- !private ["C11KosherSwift14ZmanimCalendar", "sunsetOffsetByDegrees"]
+- !private ["C11KosherSwift14ZmanimCalendar", "temporalHourFromSunrise"]
+- ["C11KosherSwift14ZmanimCalendar", "tzais"]
+- ["C11KosherSwift14ZmanimCalendar", "tzais72"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "init"]
 - !private ["Ps22_IntegerArithmeticType", "init"]
@@ -178,6 +178,7 @@ depends-member:
 - !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- "C11KosherSwift20AstronomicalCalendar"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Ps11CVarArgType"
@@ -191,8 +192,6 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
-- "C11KosherSwift22KSAstronomicalCalendar"
-- "C11KosherSwift16KSZmanimCalendar"
 - !private "Ps14MirrorPathType"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -205,6 +204,7 @@ depends-nominal:
 - !private "Ps16SignedNumberType"
 - !private "Vs12StaticString"
 - !private "Ps10Strideable"
+- "C11KosherSwift14ZmanimCalendar"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
@@ -225,4 +225,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "976a455863c5ce3a1c3302334a672d62"
+interface-hash: "b6a45983a7c5617f18dd60f1535e8319"

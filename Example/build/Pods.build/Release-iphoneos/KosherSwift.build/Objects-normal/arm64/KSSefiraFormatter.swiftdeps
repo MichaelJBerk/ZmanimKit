@@ -1,34 +1,34 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSSefiraFormatter"
-- "KSSefiraCustom"
-- "KSSefiraLanguage"
-- "KSSefiraPrayerAddition"
+- "SefiraFormatter"
+- "SefiraCustom"
+- "SefiraLanguage"
+- "SefiraPrayerAddition"
 provides-nominal:
-- "C11KosherSwift17KSSefiraFormatter"
-- "O11KosherSwift14KSSefiraCustom"
-- "O11KosherSwift16KSSefiraLanguage"
-- "O11KosherSwift22KSSefiraPrayerAddition"
+- "C11KosherSwift15SefiraFormatter"
+- "O11KosherSwift12SefiraCustom"
+- "O11KosherSwift14SefiraLanguage"
+- "O11KosherSwift20SefiraPrayerAddition"
 provides-member:
-- ["C11KosherSwift17KSSefiraFormatter", ""]
-- ["O11KosherSwift14KSSefiraCustom", ""]
-- ["O11KosherSwift16KSSefiraLanguage", ""]
-- ["O11KosherSwift22KSSefiraPrayerAddition", ""]
+- ["C11KosherSwift15SefiraFormatter", ""]
+- ["O11KosherSwift12SefiraCustom", ""]
+- ["O11KosherSwift14SefiraLanguage", ""]
+- ["O11KosherSwift20SefiraPrayerAddition", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "KSSefiraCustom"
-- "=="
 - !private "~="
-- "KSSefiraFormatter"
-- "String"
+- "=="
 - "IntegerLiteralType"
+- "SefiraFormatter"
 - "Int"
+- "SefiraCustom"
+- "SefiraLanguage"
 - "FloatLiteralType"
-- "KSSefiraLanguage"
-- "KSSefiraPrayerAddition"
+- "String"
+- "SefiraPrayerAddition"
 depends-member:
-- ["Ps9AnyObject", "KSSefiraCustom"]
-- ["Ps9AnyObject", "KSSefiraLanguage"]
+- ["Ps9AnyObject", "SefiraCustom"]
+- ["Ps9AnyObject", "SefiraLanguage"]
 - !private ["Ps9AnyObject", "custom"]
 - !private ["Ps9AnyObject", "language"]
 - ["Ps9AnyObject", ""]
@@ -90,49 +90,6 @@ depends-member:
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "hashValue"]
-- ["O11KosherSwift14KSSefiraCustom", "Ari"]
-- ["O11KosherSwift14KSSefiraCustom", "Ashkenaz"]
-- ["O11KosherSwift14KSSefiraCustom", "RawValue"]
-- ["O11KosherSwift14KSSefiraCustom", "Sefard"]
-- ["O11KosherSwift14KSSefiraCustom", "deinit"]
-- ["O11KosherSwift14KSSefiraCustom", "ephardic"]
-- ["O11KosherSwift14KSSefiraCustom", "hashValue"]
-- ["O11KosherSwift14KSSefiraCustom", "init"]
-- ["O11KosherSwift14KSSefiraCustom", "rawValue"]
-- ["C11KosherSwift17KSSefiraFormatter", "KSSefiraCustom"]
-- ["C11KosherSwift17KSSefiraFormatter", "KSSefiraLanguage"]
-- ["C11KosherSwift17KSSefiraFormatter", "String"]
-- ["C11KosherSwift17KSSefiraFormatter", "ashkenazHebrewStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "ashkenazTransliteratedStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "custom"]
-- ["C11KosherSwift17KSSefiraFormatter", "deinit"]
-- ["C11KosherSwift17KSSefiraFormatter", "englishStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "init"]
-- ["C11KosherSwift17KSSefiraFormatter", "language"]
-- ["C11KosherSwift17KSSefiraFormatter", "sefardHebrewStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "sefardTransliteratedStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "sephardicHebrewStrings"]
-- ["C11KosherSwift17KSSefiraFormatter", "sephardicTransliteratedStrings"]
-- ["O11KosherSwift16KSSefiraLanguage", "English"]
-- ["O11KosherSwift16KSSefiraLanguage", "Hebrew"]
-- ["O11KosherSwift16KSSefiraLanguage", "RawValue"]
-- ["O11KosherSwift16KSSefiraLanguage", "TransliteratedHebrew"]
-- ["O11KosherSwift16KSSefiraLanguage", "deinit"]
-- ["O11KosherSwift16KSSefiraLanguage", "hashValue"]
-- ["O11KosherSwift16KSSefiraLanguage", "init"]
-- ["O11KosherSwift16KSSefiraLanguage", "rawValue"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Aleinu"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Ana"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Beracha"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Harachaman"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Lamenatzaiach"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "LeshaimYichud"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "RawValue"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "Ribono"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "deinit"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "hashValue"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "init"]
-- ["O11KosherSwift22KSSefiraPrayerAddition", "rawValue"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "hashValue"]
@@ -151,6 +108,49 @@ depends-member:
 - ["Ps16RawRepresentable", "init"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", ""]
+- ["O11KosherSwift12SefiraCustom", "Ari"]
+- ["O11KosherSwift12SefiraCustom", "Ashkenaz"]
+- ["O11KosherSwift12SefiraCustom", "RawValue"]
+- ["O11KosherSwift12SefiraCustom", "Sefard"]
+- ["O11KosherSwift12SefiraCustom", "deinit"]
+- ["O11KosherSwift12SefiraCustom", "ephardic"]
+- ["O11KosherSwift12SefiraCustom", "hashValue"]
+- ["O11KosherSwift12SefiraCustom", "init"]
+- ["O11KosherSwift12SefiraCustom", "rawValue"]
+- ["C11KosherSwift15SefiraFormatter", "SefiraCustom"]
+- ["C11KosherSwift15SefiraFormatter", "SefiraLanguage"]
+- ["C11KosherSwift15SefiraFormatter", "String"]
+- ["C11KosherSwift15SefiraFormatter", "ashkenazHebrewStrings"]
+- ["C11KosherSwift15SefiraFormatter", "ashkenazTransliteratedStrings"]
+- ["C11KosherSwift15SefiraFormatter", "custom"]
+- ["C11KosherSwift15SefiraFormatter", "deinit"]
+- ["C11KosherSwift15SefiraFormatter", "englishStrings"]
+- ["C11KosherSwift15SefiraFormatter", "init"]
+- ["C11KosherSwift15SefiraFormatter", "language"]
+- ["C11KosherSwift15SefiraFormatter", "sefardHebrewStrings"]
+- ["C11KosherSwift15SefiraFormatter", "sefardTransliteratedStrings"]
+- ["C11KosherSwift15SefiraFormatter", "sephardicHebrewStrings"]
+- ["C11KosherSwift15SefiraFormatter", "sephardicTransliteratedStrings"]
+- ["O11KosherSwift14SefiraLanguage", "English"]
+- ["O11KosherSwift14SefiraLanguage", "Hebrew"]
+- ["O11KosherSwift14SefiraLanguage", "RawValue"]
+- ["O11KosherSwift14SefiraLanguage", "TransliteratedHebrew"]
+- ["O11KosherSwift14SefiraLanguage", "deinit"]
+- ["O11KosherSwift14SefiraLanguage", "hashValue"]
+- ["O11KosherSwift14SefiraLanguage", "init"]
+- ["O11KosherSwift14SefiraLanguage", "rawValue"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Aleinu"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Ana"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Beracha"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Harachaman"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Lamenatzaiach"]
+- ["O11KosherSwift20SefiraPrayerAddition", "LeshaimYichud"]
+- ["O11KosherSwift20SefiraPrayerAddition", "RawValue"]
+- ["O11KosherSwift20SefiraPrayerAddition", "Ribono"]
+- ["O11KosherSwift20SefiraPrayerAddition", "deinit"]
+- ["O11KosherSwift20SefiraPrayerAddition", "hashValue"]
+- ["O11KosherSwift20SefiraPrayerAddition", "init"]
+- ["O11KosherSwift20SefiraPrayerAddition", "rawValue"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps17SignedIntegerType", "hashValue"]
@@ -206,10 +206,6 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
-- "O11KosherSwift14KSSefiraCustom"
-- "C11KosherSwift17KSSefiraFormatter"
-- "O11KosherSwift16KSSefiraLanguage"
-- "O11KosherSwift22KSSefiraPrayerAddition"
 - !private "Ps14MirrorPathType"
 - !private "CSo8NSNumber"
 - !private "CSo8NSObject"
@@ -217,6 +213,10 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
 - "Ps16RawRepresentable"
+- "O11KosherSwift12SefiraCustom"
+- "C11KosherSwift15SefiraFormatter"
+- "O11KosherSwift14SefiraLanguage"
+- "O11KosherSwift20SefiraPrayerAddition"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Ps10Strideable"
@@ -242,4 +242,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "0a431d21c87646d6fcbfcc9287b5a8bc"
+interface-hash: "1a974d6e0b9a72b73e773f5cb4440f1d"

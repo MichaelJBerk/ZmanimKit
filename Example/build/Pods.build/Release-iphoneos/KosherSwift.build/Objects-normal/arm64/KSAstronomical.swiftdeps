@@ -8,12 +8,12 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "FloatLiteralType"
-- "kSolarRadius"
 - "kEarthRadiusInKilometers"
+- "kSolarRadius"
 - "kDegreesPerHour"
 - "kRefraction"
 - "/"
+- "FloatLiteralType"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

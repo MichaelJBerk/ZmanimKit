@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "IntegerLiteralType"
-- "kTypeSunset"
 - "kTypeSunrise"
 - "FloatLiteralType"
+- "kTypeSunset"
+- "IntegerLiteralType"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

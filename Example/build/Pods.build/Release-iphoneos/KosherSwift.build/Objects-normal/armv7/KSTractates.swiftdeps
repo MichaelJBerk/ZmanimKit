@@ -1,18 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSTractate"
+- "Tractate"
 provides-nominal:
-- "O11KosherSwift10KSTractate"
+- "O11KosherSwift8Tractate"
 provides-member:
-- ["O11KosherSwift10KSTractate", ""]
+- ["O11KosherSwift8Tractate", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "FloatLiteralType"
-- "Int"
 - !private "~="
 - "=="
 - "IntegerLiteralType"
-- "KSTractate"
+- "Int"
+- "Tractate"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
@@ -66,51 +66,6 @@ depends-member:
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "hashValue"]
-- ["O11KosherSwift10KSTractate", "KSTractateArachin"]
-- ["O11KosherSwift10KSTractate", "KSTractateAvodahZarah"]
-- ["O11KosherSwift10KSTractate", "KSTractateBavaBatra"]
-- ["O11KosherSwift10KSTractate", "KSTractateBavaKamma"]
-- ["O11KosherSwift10KSTractate", "KSTractateBavaMetzia"]
-- ["O11KosherSwift10KSTractate", "KSTractateBechoros"]
-- ["O11KosherSwift10KSTractate", "KSTractateBeitzah"]
-- ["O11KosherSwift10KSTractate", "KSTractateBerachos"]
-- ["O11KosherSwift10KSTractate", "KSTractateChagigah"]
-- ["O11KosherSwift10KSTractate", "KSTractateChulin"]
-- ["O11KosherSwift10KSTractate", "KSTractateEruvin"]
-- ["O11KosherSwift10KSTractate", "KSTractateGitin"]
-- ["O11KosherSwift10KSTractate", "KSTractateHoriyos"]
-- ["O11KosherSwift10KSTractate", "KSTractateKerisos"]
-- ["O11KosherSwift10KSTractate", "KSTractateKesubos"]
-- ["O11KosherSwift10KSTractate", "KSTractateKiddushin"]
-- ["O11KosherSwift10KSTractate", "KSTractateKinnim"]
-- ["O11KosherSwift10KSTractate", "KSTractateMakkos"]
-- ["O11KosherSwift10KSTractate", "KSTractateMegillah"]
-- ["O11KosherSwift10KSTractate", "KSTractateMeilah"]
-- ["O11KosherSwift10KSTractate", "KSTractateMenachos"]
-- ["O11KosherSwift10KSTractate", "KSTractateMidos"]
-- ["O11KosherSwift10KSTractate", "KSTractateMoedKatan"]
-- ["O11KosherSwift10KSTractate", "KSTractateNazir"]
-- ["O11KosherSwift10KSTractate", "KSTractateNedarim"]
-- ["O11KosherSwift10KSTractate", "KSTractateNiddah"]
-- ["O11KosherSwift10KSTractate", "KSTractatePesachim"]
-- ["O11KosherSwift10KSTractate", "KSTractateRoshHashana"]
-- ["O11KosherSwift10KSTractate", "KSTractateSanhedrin"]
-- ["O11KosherSwift10KSTractate", "KSTractateShabbos"]
-- ["O11KosherSwift10KSTractate", "KSTractateShekalim"]
-- ["O11KosherSwift10KSTractate", "KSTractateShevuos"]
-- ["O11KosherSwift10KSTractate", "KSTractateSotah"]
-- ["O11KosherSwift10KSTractate", "KSTractateSukkah"]
-- ["O11KosherSwift10KSTractate", "KSTractateTaanis"]
-- ["O11KosherSwift10KSTractate", "KSTractateTamid"]
-- ["O11KosherSwift10KSTractate", "KSTractateTemurah"]
-- ["O11KosherSwift10KSTractate", "KSTractateYevamos"]
-- ["O11KosherSwift10KSTractate", "KSTractateYoma"]
-- ["O11KosherSwift10KSTractate", "KSTractateZevachim"]
-- ["O11KosherSwift10KSTractate", "RawValue"]
-- ["O11KosherSwift10KSTractate", "deinit"]
-- ["O11KosherSwift10KSTractate", "hashValue"]
-- ["O11KosherSwift10KSTractate", "init"]
-- ["O11KosherSwift10KSTractate", "rawValue"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "hashValue"]
@@ -135,6 +90,51 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "hashValue"]
+- ["O11KosherSwift8Tractate", "RawValue"]
+- ["O11KosherSwift8Tractate", "TractateArachin"]
+- ["O11KosherSwift8Tractate", "TractateAvodahZarah"]
+- ["O11KosherSwift8Tractate", "TractateBavaBatra"]
+- ["O11KosherSwift8Tractate", "TractateBavaKamma"]
+- ["O11KosherSwift8Tractate", "TractateBavaMetzia"]
+- ["O11KosherSwift8Tractate", "TractateBechoros"]
+- ["O11KosherSwift8Tractate", "TractateBeitzah"]
+- ["O11KosherSwift8Tractate", "TractateBerachos"]
+- ["O11KosherSwift8Tractate", "TractateChagigah"]
+- ["O11KosherSwift8Tractate", "TractateChulin"]
+- ["O11KosherSwift8Tractate", "TractateEruvin"]
+- ["O11KosherSwift8Tractate", "TractateGitin"]
+- ["O11KosherSwift8Tractate", "TractateHoriyos"]
+- ["O11KosherSwift8Tractate", "TractateKerisos"]
+- ["O11KosherSwift8Tractate", "TractateKesubos"]
+- ["O11KosherSwift8Tractate", "TractateKiddushin"]
+- ["O11KosherSwift8Tractate", "TractateKinnim"]
+- ["O11KosherSwift8Tractate", "TractateMakkos"]
+- ["O11KosherSwift8Tractate", "TractateMegillah"]
+- ["O11KosherSwift8Tractate", "TractateMeilah"]
+- ["O11KosherSwift8Tractate", "TractateMenachos"]
+- ["O11KosherSwift8Tractate", "TractateMidos"]
+- ["O11KosherSwift8Tractate", "TractateMoedKatan"]
+- ["O11KosherSwift8Tractate", "TractateNazir"]
+- ["O11KosherSwift8Tractate", "TractateNedarim"]
+- ["O11KosherSwift8Tractate", "TractateNiddah"]
+- ["O11KosherSwift8Tractate", "TractatePesachim"]
+- ["O11KosherSwift8Tractate", "TractateRoshHashana"]
+- ["O11KosherSwift8Tractate", "TractateSanhedrin"]
+- ["O11KosherSwift8Tractate", "TractateShabbos"]
+- ["O11KosherSwift8Tractate", "TractateShekalim"]
+- ["O11KosherSwift8Tractate", "TractateShevuos"]
+- ["O11KosherSwift8Tractate", "TractateSotah"]
+- ["O11KosherSwift8Tractate", "TractateSukkah"]
+- ["O11KosherSwift8Tractate", "TractateTaanis"]
+- ["O11KosherSwift8Tractate", "TractateTamid"]
+- ["O11KosherSwift8Tractate", "TractateTemurah"]
+- ["O11KosherSwift8Tractate", "TractateYevamos"]
+- ["O11KosherSwift8Tractate", "TractateYoma"]
+- ["O11KosherSwift8Tractate", "TractateZevachim"]
+- ["O11KosherSwift8Tractate", "deinit"]
+- ["O11KosherSwift8Tractate", "hashValue"]
+- ["O11KosherSwift8Tractate", "init"]
+- ["O11KosherSwift8Tractate", "rawValue"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
@@ -180,7 +180,6 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
-- "O11KosherSwift10KSTractate"
 - !private "Ps14MirrorPathType"
 - !private "CSo8NSNumber"
 - !private "CSo8NSObject"
@@ -191,6 +190,7 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Ps10Strideable"
+- "O11KosherSwift8Tractate"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps14_Incrementable"
@@ -213,4 +213,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-interface-hash: "ecb8b7430a7260e9d5331f07fc824e6e"
+interface-hash: "e32c2b10a782831024c007d9ea020378"

@@ -9,21 +9,21 @@ provides-member:
 - ["CSo10NSCalendar", "typeOfHebrewYearContainingDate"]
 - ["CSo10NSCalendar", "hebrewCalendar"]
 provides-dynamic-lookup:
-- "isHebrewYearContainingDateALeapYear"
 - "hebrewCalendar"
+- "isHebrewYearContainingDateALeapYear"
 depends-top-level:
-- !private "~="
-- "NSDate"
-- !private "=="
-- "Bool"
-- !private "+"
-- "kYearLength"
+- "kHebrewYearType"
 - "kWeekday"
-- "NSCalendar"
+- "NSDate"
+- "kYearLength"
 - !private "%"
 - !private "!"
-- "kHebrewYearType"
+- "Bool"
+- !private "+"
+- "NSCalendar"
 - !private "NSCalendarIdentifierHebrew"
+- !private "~="
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierHebrew"]

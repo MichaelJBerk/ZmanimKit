@@ -12,18 +12,18 @@ provides-dynamic-lookup:
 - "hebrewCalendar"
 - "isHebrewYearContainingDateALeapYear"
 depends-top-level:
+- !private "=="
+- !private "~="
 - !private "NSCalendarIdentifierHebrew"
-- "kHebrewYearType"
-- "kWeekday"
-- !private "+"
-- "NSCalendar"
-- !private "!"
 - "Bool"
 - "NSDate"
-- !private "~="
-- !private "=="
-- !private "%"
+- !private "+"
+- "kWeekday"
+- "kHebrewYearType"
+- "NSCalendar"
 - "kYearLength"
+- !private "!"
+- !private "%"
 depends-member:
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierHebrew"]

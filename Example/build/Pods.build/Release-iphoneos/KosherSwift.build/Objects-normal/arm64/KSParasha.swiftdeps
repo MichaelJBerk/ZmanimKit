@@ -1,19 +1,19 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSParasha"
+- "Parasha"
 provides-nominal:
-- "C11KosherSwift9KSParasha"
+- "C11KosherSwift7Parasha"
 provides-member:
-- ["C11KosherSwift9KSParasha", ""]
+- ["C11KosherSwift7Parasha", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "StringLiteralType"
-- "Array"
-- "KSParasha"
-- "KSParashot"
+- "Parashot"
 - "String"
+- "Array"
+- "Parasha"
 depends-member:
-- !private ["Ps9AnyObject", "KSParasha"]
+- !private ["Ps9AnyObject", "Parasha"]
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "identifier"]
 - !private ["Ps9AnyObject", "init"]
@@ -74,20 +74,6 @@ depends-member:
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
-- ["C11KosherSwift9KSParasha", "KSParasha"]
-- ["C11KosherSwift9KSParasha", "KSParashot"]
-- ["C11KosherSwift9KSParasha", "String"]
-- ["C11KosherSwift9KSParasha", "deinit"]
-- ["C11KosherSwift9KSParasha", "description"]
-- ["C11KosherSwift9KSParasha", "identifier"]
-- ["C11KosherSwift9KSParasha", "init"]
-- ["C11KosherSwift9KSParasha", "name"]
-- ["C11KosherSwift9KSParasha", "nameTransliterated"]
-- !private ["C11KosherSwift9KSParasha", "names"]
-- ["C11KosherSwift9KSParasha", "parashaWithIdentifier"]
-- !private ["C11KosherSwift9KSParasha", "transliteratedNames"]
-- !private ["O11KosherSwift10KSParashot", "deinit"]
-- !private ["O11KosherSwift10KSParashot", "rawValue"]
 - !private ["Ps14MirrorPathType", "init"]
 - ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
@@ -112,6 +98,20 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - !private ["Ps16OutputStreamType", "init"]
+- ["C11KosherSwift7Parasha", "Parasha"]
+- ["C11KosherSwift7Parasha", "Parashot"]
+- ["C11KosherSwift7Parasha", "String"]
+- ["C11KosherSwift7Parasha", "deinit"]
+- ["C11KosherSwift7Parasha", "description"]
+- ["C11KosherSwift7Parasha", "identifier"]
+- ["C11KosherSwift7Parasha", "init"]
+- ["C11KosherSwift7Parasha", "name"]
+- ["C11KosherSwift7Parasha", "nameTransliterated"]
+- !private ["C11KosherSwift7Parasha", "names"]
+- ["C11KosherSwift7Parasha", "parashaWithIdentifier"]
+- !private ["C11KosherSwift7Parasha", "transliteratedNames"]
+- !private ["O11KosherSwift8Parashot", "deinit"]
+- !private ["O11KosherSwift8Parashot", "rawValue"]
 - ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
@@ -189,8 +189,6 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
-- "C11KosherSwift9KSParasha"
-- !private "O11KosherSwift10KSParashot"
 - !private "Ps14MirrorPathType"
 - "Ps21MutableCollectionType"
 - "Ps16MutableIndexable"
@@ -203,6 +201,8 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "Ps16OutputStreamType"
+- "C11KosherSwift7Parasha"
+- !private "O11KosherSwift8Parashot"
 - "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
@@ -238,4 +238,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "53a2c5c4fa3643d03df7c0886e581f38"
+interface-hash: "0670b8e8e629d82a1301fcae34979b63"

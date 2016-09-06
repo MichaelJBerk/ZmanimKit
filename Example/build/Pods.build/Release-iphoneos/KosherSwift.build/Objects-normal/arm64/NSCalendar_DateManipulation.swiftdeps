@@ -18,27 +18,27 @@ provides-member:
 - ["CSo10NSCalendar", "dateBySubtractingMonths"]
 - ["CSo10NSCalendar", "dateBySubtractingYears"]
 provides-dynamic-lookup:
-- "dateByAddingHours"
-- "dateBySubtractingSeconds"
-- "dateBySubtractingHours"
-- "dateBySubtractingMonths"
-- "dateByAddingWeeks"
 - "dateBySubtractingWeeks"
+- "dateByAddingYears"
+- "dateByAddingWeeks"
+- "dateBySubtractingYears"
+- "dateBySubtractingHours"
 - "dateByAddingSeconds"
 - "dateBySubtractingMinutes"
-- "dateBySubtractingYears"
-- "dateByAddingYears"
-- "dateByAddingDays"
-- "dateByAddingMinutes"
+- "dateBySubtractingMonths"
 - "dateByAddingMonths"
 - "dateBySubtractingDays"
+- "dateByAddingHours"
+- "dateBySubtractingSeconds"
+- "dateByAddingDays"
+- "dateByAddingMinutes"
 depends-top-level:
-- !private "Array"
-- "NSDate"
-- "Int"
 - !private "-"
 - "NSCalendar"
+- !private "Array"
+- "Int"
 - !private "NSDateComponents"
+- "NSDate"
 depends-member:
 - !private ["Ps9AnyObject", "NSDateComponents"]
 - !private ["Ps9AnyObject", "dateByAddingComponents"]

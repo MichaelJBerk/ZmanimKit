@@ -1,54 +1,54 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSAstronomicalCalendar"
+- "AstronomicalCalendar"
 provides-nominal:
-- "C11KosherSwift22KSAstronomicalCalendar"
+- "C11KosherSwift20AstronomicalCalendar"
 provides-member:
-- ["C11KosherSwift22KSAstronomicalCalendar", ""]
+- ["C11KosherSwift20AstronomicalCalendar", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Array"
+- "AstronomicalCalendar"
+- !private "kZenithAstronomical"
+- !private "=="
+- !private "-="
+- !private "kZenithGeometric"
 - !private "||"
-- !private "*"
+- !private "/"
 - !private "NSCalendarUnit"
 - "NSDate"
-- "Double"
-- !private "!="
-- !private "kZenithCivil"
-- !private "/"
-- "NSTimeZone"
-- !private ">"
-- "KSAstronomicalCalendar"
-- !private "BooleanLiteralType"
-- !private "NSDateFormatter"
-- "KSSunriseAndSunsetCalculator"
-- !private "-="
-- !private "<"
 - !private "+"
-- !private "kZenithGeometric"
-- !private "Array"
-- !private "=="
+- !private ">"
+- !private "*="
+- !private "NSCalendarIdentifierGregorian"
+- "NSTimeZone"
 - "NSCalendar"
 - !private "NSDateComponents"
-- !private "&&"
-- "KSGeoLocation"
-- "Bool"
-- !private "NSCalendarIdentifierGregorian"
-- !private "*="
-- "String"
-- !private "kZenithNautical"
+- !private "<"
+- "GeoLocation"
+- !private "!="
 - !private "Int"
-- !private "kZenithAstronomical"
+- !private "&&"
+- "String"
+- "Bool"
+- !private "kZenithCivil"
+- !private "*"
+- "SunriseAndSunsetCalculator"
+- "Double"
+- !private "BooleanLiteralType"
+- !private "kZenithNautical"
+- !private "NSDateFormatter"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "Int"]
-- !private ["Ps9AnyObject", "KSSunriseAndSunsetCalculator"]
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]
 - !private ["Ps9AnyObject", "NSCalendarUnit"]
 - !private ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "NSDateFormatter"]
 - !private ["Ps9AnyObject", "NSTimeZone"]
+- !private ["Ps9AnyObject", "SunriseAndSunsetCalculator"]
 - !private ["Ps9AnyObject", "UTCSeaLevelSunrise"]
 - !private ["Ps9AnyObject", "UTCSeaLevelSunset"]
 - !private ["Ps9AnyObject", "UTCSunrise"]
@@ -95,6 +95,56 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Second"]
 - !private ["Ps23ArrayLiteralConvertible", "WeekOfYear"]
 - !private ["Ps23ArrayLiteralConvertible", "Year"]
+- !private ["P11KosherSwift22AstronomicalCalculator", "UTCSunriseForDate"]
+- !private ["P11KosherSwift22AstronomicalCalculator", "UTCSunsetForDate"]
+- !private ["P11KosherSwift22AstronomicalCalculator", "init"]
+- ["C11KosherSwift20AstronomicalCalendar", "Bool"]
+- ["C11KosherSwift20AstronomicalCalendar", "Double"]
+- ["C11KosherSwift20AstronomicalCalendar", "GeoLocation"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "Int"]
+- ["C11KosherSwift20AstronomicalCalendar", "NSCalendar"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "NSCalendarIdentifierGregorian"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "NSCalendarUnit"]
+- ["C11KosherSwift20AstronomicalCalendar", "NSDate"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "NSDateComponents"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "NSDateFormatter"]
+- ["C11KosherSwift20AstronomicalCalendar", "NSTimeZone"]
+- ["C11KosherSwift20AstronomicalCalendar", "String"]
+- ["C11KosherSwift20AstronomicalCalendar", "SunriseAndSunsetCalculator"]
+- ["C11KosherSwift20AstronomicalCalendar", "UTCSeaLevelSunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "UTCSeaLevelSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "UTCSunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "UTCSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "adjustedSunsetDateWithSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "astronomicalCalculator"]
+- ["C11KosherSwift20AstronomicalCalendar", "beginAstronomicalTwilight"]
+- ["C11KosherSwift20AstronomicalCalendar", "beginCivilTwilight"]
+- ["C11KosherSwift20AstronomicalCalendar", "beginNauticalTwilight"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "dateByAddingDays"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "dateBySubtractingDays"]
+- ["C11KosherSwift20AstronomicalCalendar", "dateFromTime"]
+- ["C11KosherSwift20AstronomicalCalendar", "deinit"]
+- ["C11KosherSwift20AstronomicalCalendar", "endAstronomicalTwilight"]
+- ["C11KosherSwift20AstronomicalCalendar", "endCivilTwilight"]
+- ["C11KosherSwift20AstronomicalCalendar", "endNauticalTwilight"]
+- ["C11KosherSwift20AstronomicalCalendar", "geoLocation"]
+- ["C11KosherSwift20AstronomicalCalendar", "getInternalCalendar"]
+- ["C11KosherSwift20AstronomicalCalendar", "init"]
+- ["C11KosherSwift20AstronomicalCalendar", "internalCalendar"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithAstronomical"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithCivil"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithGeometric"]
+- !private ["C11KosherSwift20AstronomicalCalendar", "kZenithNautical"]
+- ["C11KosherSwift20AstronomicalCalendar", "seaLevelSunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "seaLevelSunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "stringFromDate"]
+- ["C11KosherSwift20AstronomicalCalendar", "sunTransit"]
+- ["C11KosherSwift20AstronomicalCalendar", "sunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "sunriseOffsetByDegrees"]
+- ["C11KosherSwift20AstronomicalCalendar", "sunset"]
+- ["C11KosherSwift20AstronomicalCalendar", "sunsetOffsetByDegrees"]
+- ["C11KosherSwift20AstronomicalCalendar", "temporalHourFromSunrise"]
+- ["C11KosherSwift20AstronomicalCalendar", "workingDate"]
 - !private ["Ps22BidirectionalIndexType", "init"]
 - !private ["Ps22BidirectionalIndexType", "min"]
 - !private ["Ps21BitwiseOperationsType", "init"]
@@ -202,60 +252,6 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "min"]
 - !private ["Ps11IntegerType", "init"]
 - !private ["Ps11IntegerType", "min"]
-- !private ["P11KosherSwift24KSAstronomicalCalculator", "UTCSunriseForDate"]
-- !private ["P11KosherSwift24KSAstronomicalCalculator", "UTCSunsetForDate"]
-- !private ["P11KosherSwift24KSAstronomicalCalculator", "init"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "Bool"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "Double"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "Int"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "KSGeoLocation"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "KSSunriseAndSunsetCalculator"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "NSCalendar"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "NSCalendarIdentifierGregorian"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "NSCalendarUnit"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "NSDate"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "NSDateComponents"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "NSDateFormatter"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "NSTimeZone"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "String"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "UTCSeaLevelSunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "UTCSeaLevelSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "UTCSunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "UTCSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "adjustedSunsetDateWithSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "astronomicalCalculator"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "beginAstronomicalTwilight"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "beginCivilTwilight"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "beginNauticalTwilight"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "dateByAddingDays"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "dateBySubtractingDays"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "dateFromTime"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "deinit"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "endAstronomicalTwilight"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "endCivilTwilight"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "endNauticalTwilight"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "geoLocation"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "getInternalCalendar"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "init"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "internalCalendar"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithAstronomical"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithCivil"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithGeometric"]
-- !private ["C11KosherSwift22KSAstronomicalCalendar", "kZenithNautical"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "seaLevelSunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "seaLevelSunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "stringFromDate"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sunTransit"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sunriseOffsetByDegrees"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sunset"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "sunsetOffsetByDegrees"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "temporalHourFromSunrise"]
-- ["C11KosherSwift22KSAstronomicalCalendar", "workingDate"]
-- !private ["C11KosherSwift28KSSunriseAndSunsetCalculator", "UTCSunriseForDate"]
-- !private ["C11KosherSwift28KSSunriseAndSunsetCalculator", "UTCSunsetForDate"]
-- !private ["C11KosherSwift28KSSunriseAndSunsetCalculator", "deinit"]
-- !private ["C11KosherSwift28KSSunriseAndSunsetCalculator", "init"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "min"]
 - !private ["CSo10NSCalendar", "components"]
@@ -391,6 +387,10 @@ depends-member:
 - !private ["Ps16SignedNumberType", "min"]
 - !private ["Ps10Strideable", "init"]
 - !private ["Ps10Strideable", "min"]
+- !private ["C11KosherSwift26SunriseAndSunsetCalculator", "UTCSunriseForDate"]
+- !private ["C11KosherSwift26SunriseAndSunsetCalculator", "UTCSunsetForDate"]
+- !private ["C11KosherSwift26SunriseAndSunsetCalculator", "deinit"]
+- !private ["C11KosherSwift26SunriseAndSunsetCalculator", "init"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
@@ -422,6 +422,8 @@ depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "P11KosherSwift22AstronomicalCalculator"
+- "C11KosherSwift20AstronomicalCalendar"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
@@ -441,9 +443,6 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
-- !private "P11KosherSwift24KSAstronomicalCalculator"
-- "C11KosherSwift22KSAstronomicalCalendar"
-- !private "C11KosherSwift28KSSunriseAndSunsetCalculator"
 - !private "Ps14MirrorPathType"
 - !private "CSo10NSCalendar"
 - !private "VSC14NSCalendarUnit"
@@ -466,6 +465,7 @@ depends-nominal:
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Ps10Strideable"
+- !private "C11KosherSwift26SunriseAndSunsetCalculator"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps31_BuiltinFloatLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
@@ -492,4 +492,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "b548ae057ef6095d695e73e9c2e47d12"
+interface-hash: "3c7d4a4efb73a9a405646ef634d5a91d"

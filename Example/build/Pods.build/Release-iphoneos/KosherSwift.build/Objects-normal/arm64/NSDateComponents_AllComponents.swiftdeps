@@ -6,8 +6,8 @@ provides-member:
 - ["CSo16NSDateComponents", "allComponents"]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSDateComponents"
 - "NSCalendarUnit"
+- "NSDateComponents"
 depends-member:
 - ["Ps9AnyObject", "allComponents"]
 - !private ["Ps23ArrayLiteralConvertible", "Day"]

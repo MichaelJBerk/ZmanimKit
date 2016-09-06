@@ -14,23 +14,23 @@ provides-member:
 - ["CSo6NSDate", "monthAndDayAndYearOnCalendar"]
 - ["CSo6NSDate", "dayOfMonthAndYearOnCalendar"]
 provides-dynamic-lookup:
-- "monthAndDayAndYearOnCalendar"
-- "monthAndDayOnCalendar"
-- "dayOfMonthOnCalendar"
-- "about"
-- "monthNameOnCalendar"
-- "monthAndYearOnCalendar"
 - "dayNameOnCalendar"
-- "monthAbbreviationAndYearOnCalendar"
+- "monthNameOnCalendar"
 - "monthAbbreviationOnCalendar"
 - "dayOfMonthAndYearOnCalendar"
+- "monthAbbreviationAndYearOnCalendar"
+- "monthAndYearOnCalendar"
+- "monthAndDayAndYearOnCalendar"
+- "dayOfMonthOnCalendar"
+- "about"
+- "monthAndDayOnCalendar"
 depends-top-level:
-- "NSDate"
+- "NSCalendar"
+- "String"
 - !private "UnicodeScalarType"
 - !private "NSDateFormatter"
-- "String"
-- "NSCalendar"
 - !private "StringLiteralType"
+- "NSDate"
 depends-member:
 - !private ["Ps9AnyObject", "NSDateFormatter"]
 - ["Ps9AnyObject", "about"]

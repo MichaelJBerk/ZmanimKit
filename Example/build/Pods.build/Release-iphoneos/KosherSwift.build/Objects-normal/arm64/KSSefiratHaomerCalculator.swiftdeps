@@ -1,28 +1,28 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSSefiratHaomerCalculator"
+- "SefiratHaomerCalculator"
 provides-nominal:
-- "C11KosherSwift25KSSefiratHaomerCalculator"
+- "C11KosherSwift23SefiratHaomerCalculator"
 provides-member:
-- ["C11KosherSwift25KSSefiratHaomerCalculator", ""]
+- ["C11KosherSwift23SefiratHaomerCalculator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSDate"
-- "KSSefiratHaomerCalculator"
-- !private ">"
-- !private "NSCalendarIdentifierHebrew"
-- !private "!="
-- !private "||"
+- "SefiratHaomerCalculator"
 - "Bool"
+- !private ">"
 - !private "NSCalendar"
+- !private "||"
+- !private "!="
 - "Int"
-- !private "+"
 - !private "<"
+- !private "+"
+- !private "NSCalendarIdentifierHebrew"
+- "NSDate"
 depends-member:
-- !private ["Ps9AnyObject", "KSSefiratHaomerCalculator"]
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierHebrew"]
 - !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "SefiratHaomerCalculator"]
 - !private ["Ps9AnyObject", "_dateOfSixteenNissanForYearOfDate"]
 - !private ["Ps9AnyObject", "dateWithDay"]
 - !private ["Ps9AnyObject", "dayOfSefiraForDate"]
@@ -57,19 +57,6 @@ depends-member:
 - !private ["Ps8Hashable", "daysFromDate"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "yearsInDate"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "Bool"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "Int"]
-- !private ["C11KosherSwift25KSSefiratHaomerCalculator", "KSSefiratHaomerCalculator"]
-- !private ["C11KosherSwift25KSSefiratHaomerCalculator", "NSCalendar"]
-- !private ["C11KosherSwift25KSSefiratHaomerCalculator", "NSCalendarIdentifierHebrew"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "NSDate"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "_dateOfSixteenNissanForYearOfDate"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "dayOfSefira"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "dayOfSefiraForDate"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "deinit"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "fallsOnDate"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "fallsToday"]
-- ["C11KosherSwift25KSSefiratHaomerCalculator", "init"]
 - !private ["CSo10NSCalendar", "daysFromDate"]
 - !private ["CSo10NSCalendar", "init"]
 - !private ["CSo10NSCalendar", "yearsInDate"]
@@ -95,6 +82,19 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "daysFromDate"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "yearsInDate"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "Bool"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "Int"]
+- !private ["C11KosherSwift23SefiratHaomerCalculator", "NSCalendar"]
+- !private ["C11KosherSwift23SefiratHaomerCalculator", "NSCalendarIdentifierHebrew"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "NSDate"]
+- !private ["C11KosherSwift23SefiratHaomerCalculator", "SefiratHaomerCalculator"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "_dateOfSixteenNissanForYearOfDate"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "dayOfSefira"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "dayOfSefiraForDate"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "deinit"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "fallsOnDate"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "fallsToday"]
+- ["C11KosherSwift23SefiratHaomerCalculator", "init"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -110,7 +110,6 @@ depends-nominal:
 - !private "Ps23CustomStringConvertible"
 - !private "Ps9Equatable"
 - !private "Ps8Hashable"
-- "C11KosherSwift25KSSefiratHaomerCalculator"
 - !private "CSo10NSCalendar"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -118,6 +117,7 @@ depends-nominal:
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- "C11KosherSwift23SefiratHaomerCalculator"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps12_Reflectable"
@@ -133,4 +133,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "f3155af6b4651cc6bbb7910c8f7decb0"
+interface-hash: "cce9e05fb9e272fbbfcbd60d38ebf0a1"

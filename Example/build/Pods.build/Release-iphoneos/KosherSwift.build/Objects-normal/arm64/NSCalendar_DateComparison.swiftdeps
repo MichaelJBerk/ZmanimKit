@@ -15,11 +15,11 @@ provides-dynamic-lookup:
 - "date"
 - "date"
 depends-top-level:
+- "NSDate"
+- !private "=="
 - "NSCalendar"
 - !private "&&"
 - "Bool"
-- "NSDate"
-- !private "=="
 depends-member:
 - ["Ps9AnyObject", "date"]
 - !private ["Ps9AnyObject", "daysInDate"]

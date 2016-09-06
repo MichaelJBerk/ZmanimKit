@@ -1,19 +1,19 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "KSDaf"
+- "Daf"
 provides-nominal:
-- "C11KosherSwift5KSDaf"
+- "C11KosherSwift3Daf"
 provides-member:
-- ["C11KosherSwift5KSDaf", ""]
+- ["C11KosherSwift3Daf", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Array"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- "Int"
-- "KSDaf"
 - !private "StringLiteralType"
+- !private "Array"
 - "String"
+- "Daf"
+- "IntegerLiteralType"
+- "FloatLiteralType"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "pageNumber"]
 - !private ["Ps9AnyObject", "tractateIndex"]
@@ -45,6 +45,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- ["C11KosherSwift3Daf", "Int"]
+- ["C11KosherSwift3Daf", "String"]
+- ["C11KosherSwift3Daf", "deinit"]
+- ["C11KosherSwift3Daf", "init"]
+- ["C11KosherSwift3Daf", "name"]
+- ["C11KosherSwift3Daf", "nameTransliterated"]
+- ["C11KosherSwift3Daf", "pageNumber"]
+- ["C11KosherSwift3Daf", "tractateIndex"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
@@ -53,14 +61,6 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
-- ["C11KosherSwift5KSDaf", "Int"]
-- ["C11KosherSwift5KSDaf", "String"]
-- ["C11KosherSwift5KSDaf", "deinit"]
-- ["C11KosherSwift5KSDaf", "init"]
-- ["C11KosherSwift5KSDaf", "name"]
-- ["C11KosherSwift5KSDaf", "nameTransliterated"]
-- ["C11KosherSwift5KSDaf", "pageNumber"]
-- ["C11KosherSwift5KSDaf", "tractateIndex"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
@@ -118,10 +118,10 @@ depends-nominal:
 - !private "Ps14CollectionType"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps23CustomStringConvertible"
+- "C11KosherSwift3Daf"
 - !private "Ps13GeneratorType"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
-- "C11KosherSwift5KSDaf"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -144,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "239c6c9ae58dd650b062fdbec842d4e1"
+interface-hash: "c69e13c163b48f04f377095dd66c837f"

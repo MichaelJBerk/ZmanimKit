@@ -1,24 +1,24 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "holidayData"
-- "KSJewishHoliday"
+- "JewishHoliday"
 provides-nominal:
-- "C11KosherSwift15KSJewishHoliday"
+- "C11KosherSwift13JewishHoliday"
 provides-member:
-- ["C11KosherSwift15KSJewishHoliday", ""]
+- ["C11KosherSwift13JewishHoliday", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- "KSJewishHoliday"
 - "String"
-- "Int"
-- "IntegerLiteralType"
 - "holidayData"
-- "FloatLiteralType"
-- !private "Array"
 - "AnyObject"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "Array"
+- "Int"
+- "JewishHoliday"
+- !private "StringLiteralType"
 depends-member:
-- !private ["Ps9AnyObject", "KSJewishHoliday"]
+- !private ["Ps9AnyObject", "JewishHoliday"]
 - !private ["Ps9AnyObject", "holidayIndex"]
 - !private ["Ps9AnyObject", "holidayNames"]
 - !private ["Ps9AnyObject", "init"]
@@ -58,19 +58,19 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
-- ["C11KosherSwift15KSJewishHoliday", "AnyObject"]
-- ["C11KosherSwift15KSJewishHoliday", "Int"]
-- !private ["C11KosherSwift15KSJewishHoliday", "KSJewishHoliday"]
-- ["C11KosherSwift15KSJewishHoliday", "String"]
-- ["C11KosherSwift15KSJewishHoliday", "deinit"]
-- ["C11KosherSwift15KSJewishHoliday", "holidayData"]
-- ["C11KosherSwift15KSJewishHoliday", "holidayIndex"]
-- ["C11KosherSwift15KSJewishHoliday", "holidayNames"]
-- ["C11KosherSwift15KSJewishHoliday", "holidayWithIndex"]
-- ["C11KosherSwift15KSJewishHoliday", "init"]
-- ["C11KosherSwift15KSJewishHoliday", "name"]
-- ["C11KosherSwift15KSJewishHoliday", "nameTransliterated"]
-- ["C11KosherSwift15KSJewishHoliday", "names"]
+- ["C11KosherSwift13JewishHoliday", "AnyObject"]
+- ["C11KosherSwift13JewishHoliday", "Int"]
+- !private ["C11KosherSwift13JewishHoliday", "JewishHoliday"]
+- ["C11KosherSwift13JewishHoliday", "String"]
+- ["C11KosherSwift13JewishHoliday", "deinit"]
+- ["C11KosherSwift13JewishHoliday", "holidayData"]
+- ["C11KosherSwift13JewishHoliday", "holidayIndex"]
+- ["C11KosherSwift13JewishHoliday", "holidayNames"]
+- ["C11KosherSwift13JewishHoliday", "holidayWithIndex"]
+- ["C11KosherSwift13JewishHoliday", "init"]
+- ["C11KosherSwift13JewishHoliday", "name"]
+- ["C11KosherSwift13JewishHoliday", "nameTransliterated"]
+- ["C11KosherSwift13JewishHoliday", "names"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
@@ -131,7 +131,7 @@ depends-nominal:
 - !private "Ps13GeneratorType"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
-- "C11KosherSwift15KSJewishHoliday"
+- "C11KosherSwift13JewishHoliday"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -154,4 +154,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "3c74d8b7ab6a360a24476baef2e4fe9e"
+interface-hash: "69323a8ac64bb82da83843d92f51422a"
