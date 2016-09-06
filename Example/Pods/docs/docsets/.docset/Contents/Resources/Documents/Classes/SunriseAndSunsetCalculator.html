@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SunriseAndSunsetCalculator Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SunriseAndSunsetCalculator" class="dashAnchor"></a>
+    <a title="SunriseAndSunsetCalculator Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SunriseAndSunsetCalculator Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AstronomicalCalendar.html">AstronomicalCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComplexZmanimCalendar.html">ComplexZmanimCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Daf.html">Daf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ParashatHashavuaCalculator.html">ParashatHashavuaCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SefiraFormatter.html">SefiraFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SefiratHaomerCalculator.html">SefiratHaomerCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SunriseAndSunsetCalculator.html">SunriseAndSunsetCalculator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift8Parashot">Parashot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift12SefiraCustom">SefiraCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift14SefiraLanguage">SefiraLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift20SefiraPrayerAddition">SefiraPrayerAddition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift8Tractate">Tractate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift12kHebrewMonth">kHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift9kYearType">kYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O11KosherSwift11kYomimTovim">kYomimTovim</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SunriseAndSunsetCalculator</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SunriseAndSunsetCalculator</span><span class="p">:</span> <span class="n">trigonometry</span><span class="p">,</span> <span class="kt">AstronomicalCalculator</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that uses the United States Naval Almanac Algorithm to calculate sunrise and sunset.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC11KosherSwift26SunriseAndSunsetCalculator11geoLocationGSqCS_11GeoLocation_"></a>
+                    <a name="//apple_ref/swift/Property/geoLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC11KosherSwift26SunriseAndSunsetCalculator11geoLocationGSqCS_11GeoLocation_">geoLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The location of the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">geoLocation</span> <span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC11KosherSwift26SunriseAndSunsetCalculator14calculatorNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/calculatorName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC11KosherSwift26SunriseAndSunsetCalculator14calculatorNameGSqSS_">calculatorName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string representing the name of the calculator</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">calculatorName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator22sunriseOrSunsetForYearFTSi8andMonthSi6andDaySi11atLongitudeSd11andLatitudeSd10withZenithSd7andTypeSi_Sd"></a>
+                    <a name="//apple_ref/swift/Method/sunriseOrSunsetForYear(_:andMonth:andDay:atLongitude:andLatitude:withZenith:andType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator22sunriseOrSunsetForYearFTSi8andMonthSi6andDaySi11atLongitudeSd11andLatitudeSd10withZenithSd7andTypeSi_Sd">sunriseOrSunsetForYear(_:andMonth:andDay:atLongitude:andLatitude:withZenith:andType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method returning the sunrise in UTC as a double. If an error was
+  encountered in the calculation (as expected in some locations, such
+  as near the poles) NAN will be returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sunriseOrSunsetForYear</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andMonth</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andDay</span> <span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">atLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLatitude</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">withZenith</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Gregorian year number as an integer.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The month of the gregorian year. Valud values range from 1 to 12.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the gregorian month. Valid values range from 1 to 31.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude in degrees. (Longitude values west of Meridian are negative.)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude in degrees. longitudes south of Equator are negative</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Which zenith to use in the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of calculation to carry out. Values are kCalcTypeSunrise or kCalcTypeSunset. (Alternatively, an integer 0 or 1)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The time that sunset occurs UTC as a double.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator20localMeanTimeForHourFTSd12andAscensionSd17andApproxTimeDaysSd_Sd"></a>
+                    <a name="//apple_ref/swift/Method/localMeanTimeForHour(_:andAscension:andApproxTimeDays:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator20localMeanTimeForHourFTSd12andAscensionSd17andApproxTimeDaysSd_Sd">localMeanTimeForHour(_:andAscension:andApproxTimeDays:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the local mean time of rising or setting.
+  By `local&rsquo; is meant the exact time at the location,
+  assuming that there were no time zone. That is, the
+  time difference between the location and the Meridian
+  depended entirely on the longitude. We can&rsquo;t do anything
+  with this time directly; we must convert it to UTC and
+  then to a local time. The result is expressed as a
+  fractional number of hours since midnight.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localMeanTimeForHour</span><span class="p">(</span><span class="nv">localHour</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andAscension</span> <span class="nv">sunRightAscensionHours</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andApproxTimeDays</span> <span class="nv">approxTimeDays</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>localHour</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description unavailable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunRightAscensionHours</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description unavailable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>approxTimeDays</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description unavailable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The local mean time of sunrise or sunset.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator25cosLocalHourAngleForAngleFTSd11andLatitudeSd9andZenithSd_Sd"></a>
+                    <a name="//apple_ref/swift/Method/cosLocalHourAngleForAngle(_:andLatitude:andZenith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator25cosLocalHourAngleForAngleFTSd11andLatitudeSd9andZenithSd_Sd">cosLocalHourAngleForAngle(_:andLatitude:andZenith:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the cosine of the Sun&rsquo;s local hour angle.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cosLocalHourAngleForAngle</span><span class="p">(</span><span class="nv">sunTrueLongitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLatitude</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andZenith</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunTrueLongitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description unavailable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude to use for the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The zenith to use for the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator34sunRightAscensionHoursForLongitudeFSdSd"></a>
+                    <a name="//apple_ref/swift/Method/sunRightAscensionHoursForLongitude(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator34sunRightAscensionHoursForLongitudeFSdSd">sunRightAscensionHoursForLongitude(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the Sun&rsquo;s right ascension in hours, given the Sun&rsquo;s true
+  longitude in degrees. Input and output are angles greater than 0 and
+  less than 360.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sunRightAscensionHoursForLongitude</span><span class="p">(</span><span class="nv">sunTrueLongitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunTrueLongitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description unavailable.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sun&rsquo;s right ascension.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator27sunTrueLongitudeFromAnomalyFSdSd"></a>
+                    <a name="//apple_ref/swift/Method/sunTrueLongitudeFromAnomaly(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator27sunTrueLongitudeFromAnomalyFSdSd">sunTrueLongitudeFromAnomaly(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates the Sun&rsquo;s true longitude in degrees. The result is an angle
+  greater than 0 and less than 360. Requires the Sun&rsquo;s mean anomaly, also
+  in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sunTrueLongitudeFromAnomaly</span><span class="p">(</span><span class="nv">sunMeanAnomaly</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunMeanAnomaly</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The mean anomaly of the sun, in degrees.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sun&rsquo;s true longitude in degrees.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator23meanAnomalyForDayOfYearFTSi11atLongitudeSd18forCalculationTypeSi_Sd"></a>
+                    <a name="//apple_ref/swift/Method/meanAnomalyForDayOfYear(_:atLongitude:forCalculationType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator23meanAnomalyForDayOfYearFTSi11atLongitudeSd18forCalculationTypeSi_Sd">meanAnomalyForDayOfYear(_:atLongitude:forCalculationType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the Sun&rsquo;s mean anomaly in degrees, at sunrise or sunset, given
+  the longitude in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">meanAnomalyForDayOfYear</span><span class="p">(</span><span class="nv">dayOfYear</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">atLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">forCalculationType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dayOfYear</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the year that we&rsquo;re calculating for.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude for the calculation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Either 0 or 1. Also defined as kTypeSunrise and kTypeSunset in kSunCalculationTypes.h, respectively.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sun&rsquo;s mean anomaly in degrees.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator26approxTimeDaysForDayOfYearFTSi21withHoursFromMeridianSd18forCalculationTypeSi_Sd"></a>
+                    <a name="//apple_ref/swift/Method/approxTimeDaysForDayOfYear(_:withHoursFromMeridian:forCalculationType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator26approxTimeDaysForDayOfYearFTSi21withHoursFromMeridianSd18forCalculationTypeSi_Sd">approxTimeDaysForDayOfYear(_:withHoursFromMeridian:forCalculationType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the approximate time of sunset or sunrise In DAYS since midnight
+  Jan 1st, assuming 6am and 6pm events. We need this figure to derive the
+  Sun&rsquo;s mean anomaly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">approxTimeDaysForDayOfYear</span><span class="p">(</span><span class="nv">dayOfYear</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withHoursFromMeridian</span> <span class="nv">hoursFromMeridian</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">forCalculationType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dayOfYear</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the gregorian year.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hoursFromMeridian</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>How far we are from the meridian.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Either 0 or 1. Also defined as kTypeSunrise and kTypeSunset in kSunCalculationTypes.h, respectively.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator29hoursFromMeridianForLongitudeFSdSd"></a>
+                    <a name="//apple_ref/swift/Method/hoursFromMeridianForLongitude(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator29hoursFromMeridianForLongitudeFSdSd">hoursFromMeridianForLongitude(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get time difference between location&rsquo;s longitude and the Meridian, in
+  hours. West of Meridian has a negative time difference.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hoursFromMeridianForLongitude</span><span class="p">(</span><span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude that we&rsquo;re calculating for.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the time difference between the longitude and the prime meridian.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator16dayOfYearForYearFTSi5monthSi3daySi_Si"></a>
+                    <a name="//apple_ref/swift/Method/dayOfYearForYear(_:month:day:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator16dayOfYearForYearFTSi5monthSi3daySi_Si">dayOfYearForYear(_:month:day:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the day of the year, where Jan 1st is day 1. Note that this
+  method needs to know the year, because leap years have an impact here</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dayOfYearForYear</span><span class="p">(</span><span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Gregorian year number.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A gregorian month number. January is 1, December is 12.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the month, beginning with 1.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The days of the Gregorian year.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator16UTCSunsetForDateFTCSo6NSDate9andZenithSd18adjustForElevationSb_Sd"></a>
+                    <a name="//apple_ref/swift/Method/UTCSunsetForDate(_:andZenith:adjustForElevation:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator16UTCSunsetForDateFTCSo6NSDate9andZenithSd18adjustForElevationSb_Sd">UTCSunsetForDate(_:andZenith:adjustForElevation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get sunset as a double.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">UTCSunsetForDate</span><span class="p">(</span><span class="nv">date</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">,</span> <span class="n">andZenith</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">adjustForElevation</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date we&rsquo;re using to calculate sunrise.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The zenith we use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjustForElevation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Determines if we calculate at a the given elevation or at sea level.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sunset time as a double. (TODO: Check the units.)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator17UTCSunriseForDateFTCSo6NSDate9andZenithSd18adjustForElevationSb_Sd"></a>
+                    <a name="//apple_ref/swift/Method/UTCSunriseForDate(_:andZenith:adjustForElevation:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator17UTCSunriseForDateFTCSo6NSDate9andZenithSd18adjustForElevationSb_Sd">UTCSunriseForDate(_:andZenith:adjustForElevation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get sunrise as a double.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">UTCSunriseForDate</span><span class="p">(</span><span class="nv">date</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">,</span> <span class="n">andZenith</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">adjustForElevation</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date we&rsquo;re using to calculate sunrise.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The zenith we use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjustForElevation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Determines if we calculate at a the given elevation or at sea level.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sunrise time as a double. (TODO: Check the units.)</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator31elevationAdjustmentForElevationFSdSd"></a>
+                    <a name="//apple_ref/swift/Method/elevationAdjustmentForElevation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator31elevationAdjustmentForElevationFSdSd">elevationAdjustmentForElevation(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <pre class="highlight plaintext"><code>Method to return the adjustment to the zenith required to account for the
+elevation. Since a person at a higher elevation can see farther below the
+horizon, the calculation for sunrise / sunset is calculated below the
+horizon used at sea level. This is only used for sunrise and sunset and
+not times above or below it such as nautical twilight since those calculations
+</code></pre>
+
+<p>are based on the level of available light at the
+    given dip below the horizon, something that is not affected by elevation,
+    the adjustment should only made if the zenith == 90&deg;
+    {@link #adjustZenith adjusted} for refraction and solar radius.<br /></p>
+
+<pre class="highlight plaintext"><code>The source of this algorthitm is &lt;a
+href="http: *www.calendarists.com"&gt;Calendrical Calculations&lt;/a&gt; by
+Edward M. Reingold and Nachum Dershowitz.
+
+- parameter elevation: elevation in Meters.
+
+- returns: the adjusted zenith
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">elevationAdjustmentForElevation</span><span class="p">(</span><span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator12adjustZenithFTSd12forElevationSd_Sd"></a>
+                    <a name="//apple_ref/swift/Method/adjustZenith(_:forElevation:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator12adjustZenithFTSd12forElevationSd_Sd">adjustZenith(_:forElevation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <pre class="highlight plaintext"><code>Adjusts the zenith to account for solar refraction, solar radius and
+elevation. The value for Sun's zenith and true rise/set Zenith (used in
+this class and subclasses) is the angle that the center of the Sun makes
+to a line perpendicular to the Earth's surface. If the Sun were a point
+and the Earth were without an atmosphere, true sunset and sunrise would
+correspond to a 90&amp;deg; zenith. Because the Sun is not a point, and
+because the atmosphere refracts light, this 90&amp;deg; zenith does not, in
+fact, correspond to true sunset or sunrise, instead the centre of the
+Sun's disk must lie just below the horizon for the upper edge to be
+obscured. This means that a zenith of just above 90&amp;deg; must be used.
+The Sun subtends an angle of 16 minutes of arc (this can be changed via
+the {@link #setSolarRadius(double)} method , and atmospheric refraction
+accounts for 34 minutes or so, giving a total of 50 arcminutes.
+The total value for ZENITH is 90+(5/6) or 90.8333333&amp;deg; for true
+sunrise/sunset. Since a person at an elevation can see blow the horizon
+of a person at sea level, this will also adjust the zenith to account for
+elevation if available.
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">adjustZenith</span><span class="p">(</span><span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">forElevation</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC11KosherSwift26SunriseAndSunsetCalculator23yearMonthAndDayFromDateFCSo6NSDateGSaSi_"></a>
+                    <a name="//apple_ref/swift/Method/yearMonthAndDayFromDate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC11KosherSwift26SunriseAndSunsetCalculator23yearMonthAndDayFromDateFCSo6NSDateGSaSi_">yearMonthAndDayFromDate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Break up a date object into day, month, year.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">yearMonthAndDayFromDate</span><span class="p">(</span><span class="nv">date</span><span class="p">:</span> <span class="kt">NSDate</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An NSDate to use extract information from.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array containing three numbers. The first represents a year. The second represents the month. The third value is the day of the month.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

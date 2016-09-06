@@ -16,16 +16,16 @@ provides-member:
 - ["O11KosherSwift20SefiraPrayerAddition", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "~="
-- "=="
-- "IntegerLiteralType"
-- "SefiraFormatter"
-- "Int"
-- "SefiraCustom"
 - "SefiraLanguage"
 - "FloatLiteralType"
+- "SefiraCustom"
+- "SefiraFormatter"
 - "String"
+- "=="
 - "SefiraPrayerAddition"
+- "IntegerLiteralType"
+- !private "~="
+- "Int"
 depends-member:
 - ["Ps9AnyObject", "SefiraCustom"]
 - ["Ps9AnyObject", "SefiraLanguage"]

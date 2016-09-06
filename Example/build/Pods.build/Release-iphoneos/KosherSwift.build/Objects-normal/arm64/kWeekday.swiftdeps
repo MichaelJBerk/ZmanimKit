@@ -7,12 +7,12 @@ provides-member:
 - ["O11KosherSwift8kWeekday", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
 - "FloatLiteralType"
+- "kWeekday"
+- "Int"
 - !private "~="
 - "=="
 - "IntegerLiteralType"
-- "kWeekday"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]

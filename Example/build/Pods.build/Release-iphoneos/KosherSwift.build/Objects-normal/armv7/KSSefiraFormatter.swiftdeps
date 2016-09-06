@@ -17,15 +17,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "SefiraCustom"
-- "SefiraPrayerAddition"
-- "SefiraFormatter"
-- "Int"
-- "String"
-- "FloatLiteralType"
 - "SefiraLanguage"
+- "FloatLiteralType"
+- "SefiraPrayerAddition"
+- "Int"
 - !private "~="
 - "=="
 - "IntegerLiteralType"
+- "String"
+- "SefiraFormatter"
 depends-member:
 - ["Ps9AnyObject", "SefiraCustom"]
 - ["Ps9AnyObject", "SefiraLanguage"]

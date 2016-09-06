@@ -7,11 +7,11 @@ provides-member:
 - ["O11KosherSwift8Parashot", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "FloatLiteralType"
 - "Parashot"
+- "IntegerLiteralType"
+- "FloatLiteralType"
 - "=="
 - !private "~="
-- "IntegerLiteralType"
 - "Int"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "Distance"]

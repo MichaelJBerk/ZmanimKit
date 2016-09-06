@@ -9,11 +9,11 @@ provides-dynamic-lookup:
 - "dateWithHebrewMonth"
 - "dateWithHebrewMonth"
 depends-top-level:
-- !private "NSCalendarIdentifierHebrew"
+- !private "NSDateComponents"
 - !private "NSCalendar"
 - "Int"
+- !private "NSCalendarIdentifierHebrew"
 - "NSDate"
-- !private "NSDateComponents"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSCalendar"]

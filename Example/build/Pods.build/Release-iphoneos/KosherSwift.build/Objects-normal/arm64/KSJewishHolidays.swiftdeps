@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "FloatLiteralType"
-- "Int"
 - "kYomimTovim"
-- "=="
 - !private "~="
+- "=="
 - "IntegerLiteralType"
+- "Int"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]

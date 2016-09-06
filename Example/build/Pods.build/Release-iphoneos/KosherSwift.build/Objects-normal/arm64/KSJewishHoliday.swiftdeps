@@ -8,15 +8,15 @@ provides-member:
 - ["C11KosherSwift13JewishHoliday", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "holidayData"
-- "AnyObject"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- !private "Array"
 - "Int"
-- "JewishHoliday"
+- "holidayData"
+- "FloatLiteralType"
+- !private "Array"
+- "String"
+- "AnyObject"
+- "IntegerLiteralType"
 - !private "StringLiteralType"
+- "JewishHoliday"
 depends-member:
 - !private ["Ps9AnyObject", "JewishHoliday"]
 - !private ["Ps9AnyObject", "holidayIndex"]

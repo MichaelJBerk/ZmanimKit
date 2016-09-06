@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "kTypeSunrise"
 - "FloatLiteralType"
+- "kTypeSunrise"
 - "kTypeSunset"
 - "IntegerLiteralType"
 depends-member:

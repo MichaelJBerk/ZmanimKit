@@ -7,10 +7,10 @@ provides-member:
 - ["C11KosherSwift7Parasha", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Parasha"
-- "Parashot"
 - "Array"
 - "String"
+- "Parasha"
+- "Parashot"
 - "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "Parasha"]

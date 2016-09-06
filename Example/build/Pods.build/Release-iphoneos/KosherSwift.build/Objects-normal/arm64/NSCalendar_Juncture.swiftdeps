@@ -12,21 +12,21 @@ provides-member:
 - ["CSo10NSCalendar", "lastDayOfTheMonth"]
 - ["CSo10NSCalendar", "lastDayOfTheMonthUsingReferenceDate"]
 provides-dynamic-lookup:
-- "firstDayOfTheWeekUsingReferenceDate"
 - "lastDayOfTheMonthUsingReferenceDate"
-- "firstDayOfTheMonth"
 - "lastDayOfTheMonth"
-- "lastDayOfTheWeek"
+- "firstDayOfTheWeekUsingReferenceDate"
 - "lastDayOfTheWeekUsingReferenceDate"
+- "lastDayOfTheWeek"
 - "firstDayOfTheWeek"
 - "firstDayOfTheMonthUsingReferenceDate"
+- "firstDayOfTheMonth"
 depends-top-level:
+- "NSCalendar"
 - !private "Array"
+- !private "-"
 - !private "Int"
 - !private "NSDateComponents"
-- "NSCalendar"
 - "NSDate"
-- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "components"]

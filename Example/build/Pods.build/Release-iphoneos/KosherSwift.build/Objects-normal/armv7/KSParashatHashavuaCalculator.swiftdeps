@@ -7,20 +7,20 @@ provides-member:
 - ["C11KosherSwift26ParashatHashavuaCalculator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "kHebrewYearType"
-- "NSDate"
-- !private "Int"
-- !private "Bool"
-- !private "BooleanLiteralType"
-- "Parasha"
-- !private "NSCalendarIdentifierGregorian"
 - "NSCalendar"
-- !private "=="
 - "Parashot"
-- !private "||"
+- "Parasha"
 - !private "NSCalendarIdentifierHebrew"
+- !private "BooleanLiteralType"
 - "ParashatHashavuaCalculator"
 - !private "Array"
+- !private "=="
+- "NSDate"
+- !private "Int"
+- !private "||"
+- !private "NSCalendarIdentifierGregorian"
+- "kHebrewYearType"
+- !private "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]

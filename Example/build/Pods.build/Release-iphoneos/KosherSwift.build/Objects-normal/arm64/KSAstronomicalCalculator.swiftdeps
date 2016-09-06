@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AstronomicalCalculator"
-- "NSDate"
 - "Double"
 - "Bool"
+- "NSDate"
 depends-member:
 - ["P11KosherSwift22AstronomicalCalculator", "Bool"]
 - ["P11KosherSwift22AstronomicalCalculator", "Double"]

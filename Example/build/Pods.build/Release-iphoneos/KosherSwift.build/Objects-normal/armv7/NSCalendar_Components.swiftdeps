@@ -14,21 +14,21 @@ provides-member:
 - ["CSo10NSCalendar", "yearsInDate"]
 - ["CSo10NSCalendar", "eraInDate"]
 provides-dynamic-lookup:
-- "yearsInDate"
-- "minutesInDate"
-- "weekOfMonthInDate"
-- "weekdayInDate"
-- "daysInDate"
-- "secondsInDate"
 - "weekOfYearInDate"
+- "weekOfMonthInDate"
+- "secondsInDate"
 - "hoursInDate"
 - "monthsInDate"
 - "eraInDate"
+- "weekdayInDate"
+- "minutesInDate"
+- "daysInDate"
+- "yearsInDate"
 depends-top-level:
 - "NSDate"
 - !private "NSDateComponents"
-- "Int"
 - "NSCalendar"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "day"]

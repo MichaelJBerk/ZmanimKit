@@ -7,17 +7,17 @@ provides-member:
 - ["C11KosherSwift23SefiratHaomerCalculator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private ">"
-- !private "NSCalendar"
-- !private "NSCalendarIdentifierHebrew"
-- "Int"
-- !private "+"
 - !private "<"
 - "NSDate"
-- !private "!="
 - !private "||"
-- "Bool"
+- !private ">"
 - "SefiratHaomerCalculator"
+- !private "NSCalendarIdentifierHebrew"
+- !private "!="
+- !private "NSCalendar"
+- !private "+"
+- "Bool"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "NSCalendar"]
 - !private ["Ps9AnyObject", "NSCalendarIdentifierHebrew"]

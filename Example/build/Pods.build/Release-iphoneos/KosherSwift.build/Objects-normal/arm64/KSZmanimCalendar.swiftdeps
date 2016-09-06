@@ -7,18 +7,18 @@ provides-member:
 - ["C11KosherSwift14ZmanimCalendar", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "kZenithEightPointFive"
-- "GeoLocation"
-- "Int"
-- "FloatLiteralType"
-- "ZmanimCalendar"
 - "AstronomicalCalendar"
-- "Double"
-- !private "*"
-- "NSDate"
-- "IntegerLiteralType"
 - !private "kZenithSixteenPointOne"
+- "ZmanimCalendar"
+- "NSDate"
+- "FloatLiteralType"
+- "Int"
+- "Double"
+- "GeoLocation"
+- "IntegerLiteralType"
+- !private "kZenithEightPointFive"
 - !private "StringLiteralType"
+- !private "*"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "alos72"]

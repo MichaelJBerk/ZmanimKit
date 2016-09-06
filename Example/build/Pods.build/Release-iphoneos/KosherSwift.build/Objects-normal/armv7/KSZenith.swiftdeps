@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "kZenithNautical"
 - "kZenithCivil"
-- "FloatLiteralType"
 - "kZenithGeometric"
+- "FloatLiteralType"
 - "kZenithAstronomical"
 depends-member:
 depends-nominal:

@@ -20,8 +20,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AstronomicalCalendar"
-- "NSDate"
 - "Int"
+- "NSDate"
 depends-member:
 - !private ["Ps9AnyObject", "dateByAddingDays"]
 - !private ["Ps9AnyObject", "dateByAddingHours"]

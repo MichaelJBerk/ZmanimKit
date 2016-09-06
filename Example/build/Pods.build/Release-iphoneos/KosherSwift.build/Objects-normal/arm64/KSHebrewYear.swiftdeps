@@ -10,13 +10,13 @@ provides-member:
 - ["O11KosherSwift9kYearType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
+- "kHebrewMonth"
+- "kYearType"
+- "FloatLiteralType"
 - !private "~="
 - "=="
 - "IntegerLiteralType"
-- "kYearType"
-- "kHebrewMonth"
-- "FloatLiteralType"
+- "Int"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]

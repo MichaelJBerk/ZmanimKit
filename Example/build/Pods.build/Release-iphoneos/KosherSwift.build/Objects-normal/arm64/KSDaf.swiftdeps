@@ -7,11 +7,11 @@ provides-member:
 - ["C11KosherSwift3Daf", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Daf"
+- "IntegerLiteralType"
 - !private "StringLiteralType"
 - !private "Array"
 - "String"
-- "Daf"
-- "IntegerLiteralType"
 - "FloatLiteralType"
 - "Int"
 depends-member:

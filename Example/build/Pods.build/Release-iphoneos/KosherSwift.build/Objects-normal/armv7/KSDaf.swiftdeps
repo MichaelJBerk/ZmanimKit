@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "Array"
-- "Int"
 - "FloatLiteralType"
+- "Int"
 - "IntegerLiteralType"
 - "String"
-- "Daf"
 - !private "StringLiteralType"
+- "Daf"
 depends-member:
 - !private ["Ps9AnyObject", "pageNumber"]
 - !private ["Ps9AnyObject", "tractateIndex"]

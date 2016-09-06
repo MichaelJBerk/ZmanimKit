@@ -10,14 +10,14 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "halakimPerHour"
 - "halakimPerMinute"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- "halakimPerDay"
-- "kJewishEpoch"
 - "halakimMoladTohu"
 - "halakimPerMonth"
+- "FloatLiteralType"
+- "halakimPerHour"
+- "IntegerLiteralType"
+- "kJewishEpoch"
+- "halakimPerDay"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

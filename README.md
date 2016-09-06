@@ -7,7 +7,10 @@
 # KosherSwift
 A Swift version of [KosherCocoa](https://github.com/MosheBerman/KosherCocoa)
 
-Parsed by: Dani Smith
+# Documentation
+A "Get Started" guide can be found [here](https://github.com/DanielSmith1239/KosherSwift/blob/master/GetStarted.md).
+
+To view documentation, download KosherSwift, navigate to `Example > Pods > docs`, and open `index.html` in a web browser.
 
 # Installation
 Just copy the KosherSwift folder in to your project.

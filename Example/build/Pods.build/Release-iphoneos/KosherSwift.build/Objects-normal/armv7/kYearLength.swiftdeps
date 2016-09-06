@@ -7,10 +7,10 @@ provides-member:
 - ["O11KosherSwift11kYearLength", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "kYearLength"
 - !private "FloatLiteralType"
 - "=="
 - !private "IntegerLiteralType"
+- "kYearLength"
 depends-member:
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]
