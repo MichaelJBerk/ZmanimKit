@@ -24,7 +24,7 @@ pod "KosherSwift"
 ```
 
 # To Do:
-- [ ] Create documentation
+- [x] Create documentation
 - [x] Create "Get Started" guide
 - [ ] Finish cleaning up code
 - [ ] Add support for retrieving sefira prayers
