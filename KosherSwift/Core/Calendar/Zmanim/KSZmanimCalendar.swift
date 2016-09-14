@@ -14,7 +14,7 @@ public class ZmanimCalendar: AstronomicalCalendar
 		super.init(location: aGeoLocation)
 	}
 	
-	public func alosHashachar() -> NSDate
+	public func alosHashachar() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithSixteenPointOne)
 	}

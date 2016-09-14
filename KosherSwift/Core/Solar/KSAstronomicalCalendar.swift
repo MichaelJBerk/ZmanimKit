@@ -86,7 +86,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of civil twilight.
      */
-	public func beginCivilTwilight() -> NSDate
+	public func beginCivilTwilight() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithCivil)
 	}
@@ -94,7 +94,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of nautical twilight.
      */
-	public func beginNauticalTwilight() -> NSDate
+	public func beginNauticalTwilight() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithNautical)
 	}
@@ -102,7 +102,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of astronomical twilight.
      */
-	public func beginAstronomicalTwilight() -> NSDate
+	public func beginAstronomicalTwilight() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithAstronomical)
 	}
@@ -202,11 +202,11 @@ public class AstronomicalCalendar
      *  - returns: The Date of the beginning of civil twilight using a zenith of 96 degrees. If the calculation
      *         can't be computed, nill will be returned. See detailed explanation on top of the page.
      */
-	public func sunriseOffsetByDegrees(offsetZenith: Double) -> NSDate
+	public func sunriseOffsetByDegrees(offsetZenith: Double) -> NSDate?
 	{
 	    let dawn: Double = UTCSunrise(offsetZenith)
 	    
-	    return  dateFromTime(dawn)
+	    return dateFromTime(dawn)
 	}
 	
     /**
@@ -336,9 +336,13 @@ public class AstronomicalCalendar
      *
      *  - returns: The calculated time as an NSDate object based on the user's time zone and today's date.
      */
-	public func dateFromTime(time: Double) -> NSDate
+	public func dateFromTime(time: Double) -> NSDate?
 	{
-	    return dateFromTime(time, inTimeZone: NSTimeZone.localTimeZone(), onDate: workingDate!)!
+        if let date = workingDate
+        {
+            return dateFromTime(time, inTimeZone: NSTimeZone.localTimeZone(), onDate: date)
+        }
+        return nil
 	}
 	
     /**

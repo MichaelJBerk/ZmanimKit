@@ -37,11 +37,6 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 		super.init(location: aGeoLocation)
 	}
 	
-//    convenience public init()
-//	{
-//	    ateretTorahSunsetOffset = 40
-//	}
-	
     /**
      *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
      *  19.8&deg; dip.
@@ -393,7 +388,14 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func alos60() -> NSDate?
 	{
-	    return dateBySubtractingHours(1, fromDate: seaLevelSunrise()!)
+        if let sunrise = seaLevelSunrise()
+        {
+            return dateBySubtractingHours(1, fromDate: sunrise)
+        }
+        else
+        {
+            return nil
+        }
 	}
     
     /**
@@ -577,7 +579,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos26Degrees() -> NSDate
+	public func alos26Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithTwentySix)
 	}
@@ -593,7 +595,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos18Degrees() -> NSDate
+	public func alos18Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithAstronomical)
 	}
@@ -612,7 +614,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos19Point8Degrees() -> NSDate
+	public func alos19Point8Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithNineteenPointEight)
 	}
@@ -631,7 +633,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos16Point1Degrees() -> NSDate
+	public func alos16Point1Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithSixteenPointOne)
 	}
@@ -649,7 +651,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir11Point5Degrees() -> NSDate
+	public func misheyakir11Point5Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithElevenPointFive)
 	}
@@ -667,7 +669,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir11Degrees() -> NSDate
+	public func misheyakir11Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithElevenDegrees)
 	}
@@ -685,7 +687,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir10Point2Degrees() -> NSDate
+	public func misheyakir10Point2Degrees() -> NSDate?
 	{
 	    return sunriseOffsetByDegrees(kZenithTenPointTwo)
 	}
@@ -704,9 +706,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
      * top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA19Point8Degrees() -> NSDate
+	public func sofZmanShmaMGA19Point8Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithNineteenPointEight).dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 3)
+	    return sunriseOffsetByDegrees(kZenithNineteenPointEight)?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 3)
 	}
 	
     /**
@@ -723,9 +725,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA16Point1Degrees() -> NSDate
+	public func sofZmanShmaMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 3)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 3)
 	}
 	
     /**
@@ -898,11 +900,12 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	{
 	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: seaLevelSunset())
 	    
-	    if shaahZmanis == Double(Int.min) {
+	    if shaahZmanis == Double(Int.min)
+        {
 	        return nil
 	    }
 	    
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis * 3)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 3)
 	}
 	
     /**
@@ -923,13 +926,12 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	public func sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate?
 	{
 	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
-	    
 	     if shaahZmanis == Double(Int.min)
 		 {
 	        return nil
 	     }
 	    
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis * 3)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 3)
 	}
 	
     /**
@@ -946,9 +948,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA19Point8Degrees() -> NSDate
+	public func sofZmanTfilaMGA19Point8Degrees() -> NSDate?
 	{
-	    return alos19Point8Degrees().dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 4)
+	    return alos19Point8Degrees()?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 4)
 	}
 	
     /**
@@ -965,9 +967,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA16Point1Degrees() -> NSDate
+	public func sofZmanTfilaMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 4)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 4)
 	}
 	
     /**
@@ -1172,9 +1174,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func minchaGedola16Point1Degrees() -> NSDate
+	public func minchaGedola16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 6.5)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 6.5)
 	}
 	
     // TODO
@@ -1209,9 +1211,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * the horizon for this calculation, a nil will be returned. See detailed explanation on top of
      * the AstronomicalCalendar documentation.
      */
-	public func minchaKetana16Point1Degrees() -> NSDate
+	public func minchaKetana16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 9.5)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 9.5)
 	}
 	
     /**
@@ -1358,9 +1360,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
      * top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha16Point1Degrees() -> NSDate
+	public func plagHamincha16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 10.75)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 10.75)
 	}
 	
     /**
@@ -1375,9 +1377,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha19Point8Degrees() -> NSDate
+	public func plagHamincha19Point8Degrees() -> NSDate?
 	{
-	    return alos19Point8Degrees().dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 10.75)
+	    return alos19Point8Degrees()?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 10.75)
 	}
 	
     /**
@@ -1391,9 +1393,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha26Degrees() -> NSDate
+	public func plagHamincha26Degrees() -> NSDate?
 	{
-	    return alos26Degrees().dateByAddingTimeInterval(shaahZmanis26Degrees() * 10.75)
+	    return alos26Degrees()?.dateByAddingTimeInterval(shaahZmanis26Degrees() * 10.75)
 	}
 	
     /**
@@ -1408,9 +1410,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha18Degrees() -> NSDate
+	public func plagHamincha18Degrees() -> NSDate?
 	{
-	    return alos18Degrees().dateByAddingTimeInterval(shaahZmanis18Degrees() * 10.75)
+	    return alos18Degrees()?.dateByAddingTimeInterval(shaahZmanis18Degrees() * 10.75)
 	}
 	
     /**
@@ -1428,10 +1430,10 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagAlosToSunset() -> NSDate
+	public func plagAlosToSunset() -> NSDate?
 	{
 	    let shaaZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: seaLevelSunset())
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaaZmanis * 10.75)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaaZmanis * 10.75)
 	}
 	
     /**
@@ -1448,10 +1450,10 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate
+	public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate?
 	{
 	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis * 10.75)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 10.75)
 	}
 	
     /**
@@ -1476,7 +1478,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func bainHashmashosRT13Degrees() -> NSDate
+	public func bainHashmashosRT13Degrees() -> NSDate?
 	{
 	    return sunsetOffsetByDegrees(kZenithThirteenPointTwentyFourDegrees)
 	}
@@ -1538,7 +1540,11 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	
-	    return seaLevelSunrise()!.dateByAddingTimeInterval((sunrise!.timeIntervalSinceReferenceDate - alos19Point8Degrees().timeIntervalSinceReferenceDate) * (5 / 18))
+        if let alos = alos19Point8Degrees()
+        {
+            return seaLevelSunrise()?.dateByAddingTimeInterval((sunrise!.timeIntervalSinceReferenceDate - alos.timeIntervalSinceReferenceDate) * (5 / 18))
+        }
+        return nil
 	}
 	
     /**
@@ -2065,9 +2071,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date representing the local chatzos.
      */
-	public func fixedLocalChatzos() -> NSDate
+	public func fixedLocalChatzos() -> NSDate?
 	{
-	    return dateFromTime((12.0 - Double(geoLocation!.timeZone!.secondsFromGMT))).dateByAddingTimeInterval(Double(geoLocation!.localMeanTimeOffset()))
+	    return dateFromTime((12.0 - Double(geoLocation!.timeZone!.secondsFromGMT)))?.dateByAddingTimeInterval(Double(geoLocation!.localMeanTimeOffset()))
 	}
 	
     /**
@@ -2076,9 +2082,13 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date of the latest zman krias shema calculated as 3 hours before FixedLocalChatzos()
      */
-	public func sofZmanShmaFixedLocal() -> NSDate
+	public func sofZmanShmaFixedLocal() -> NSDate?
 	{
-	    return dateBySubtractingMinutes(180, fromDate: fixedLocalChatzos())
+        if let date = dateBySubtractingMinutes(180, fromDate: fixedLocalChatzos()!) as? NSDate
+        {
+            return date
+        }
+        return nil
 	}
 	
     /**
@@ -2087,9 +2097,13 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date of the latest zman tfila.
      */
-	public func sofZmanTfilaFixedLocal() -> NSDate
+	public func sofZmanTfilaFixedLocal() -> NSDate?
 	{
-	    return dateBySubtractingMinutes(120, fromDate: fixedLocalChatzos())
+        if let date = dateBySubtractingMinutes(120, fromDate: fixedLocalChatzos()!) as? NSDate
+        {
+            return date
+        }
+	    return nil
 	}
 	
     /**
@@ -2143,7 +2157,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanAchilasChametzMGA16Point1Degrees() -> NSDate
+	public func sofZmanAchilasChametzMGA16Point1Degrees() -> NSDate?
 	{
 	    return sofZmanTfilaMGA16Point1Degrees()
 	}
@@ -2197,9 +2211,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanBiurChametzMGA16Point1Degrees() -> NSDate
+	public func sofZmanBiurChametzMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees().dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 5)
+	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 5)
 	}
 	
     /**
