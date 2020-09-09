@@ -32,7 +32,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public var ateretTorahSunsetOffset = 0
 	
-	override init (location aGeoLocation: GeoLocation)
+	public override init (location aGeoLocation: GeoLocation)
 	{
 		super.init(location: aGeoLocation)
 	}
@@ -60,7 +60,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis19Point8Degrees() -> Double
 	{
-	    return temporalHourFromSunrise(alos19Point8Degrees(), toSunset: tzais19Point8Degrees())
+		return temporalHourFromSunrise(sunrise: alos19Point8Degrees(), toSunset: tzais19Point8Degrees())
 	}
 	
     /**
@@ -86,7 +86,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis18Degrees() -> Double
 	{
-	    return temporalHourFromSunrise(alos18Degrees(), toSunset: tzais18Degrees())
+		return temporalHourFromSunrise(sunrise: alos18Degrees(), toSunset: tzais18Degrees())
 	}
 	
     /**
@@ -112,7 +112,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis26Degrees() -> Double
 	{
-	    return temporalHourFromSunrise(alos26Degrees(), toSunset: tzais26Degrees())
+		return temporalHourFromSunrise(sunrise: alos26Degrees(), toSunset: tzais26Degrees())
 	}
 	
     /**
@@ -138,7 +138,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis16Point1Degrees() -> Double
 	{
-	    return temporalHourFromSunrise(alos16Point1Degrees(), toSunset: tzais16Point1Degrees())
+		return temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzais16Point1Degrees())
 	}
 	
     /**
@@ -156,7 +156,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis60Minutes() -> Double
 	{
-	    return temporalHourFromSunrise(alos60(), toSunset: tzais60())
+		return temporalHourFromSunrise(sunrise: alos60(), toSunset: tzais60())
 	}
 	
     /**
@@ -196,7 +196,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis72MinutesZmanis() -> Double
 	{
-	    return temporalHourFromSunrise(alos72Zmanis(), toSunset: tzais72Zmanis())
+		return temporalHourFromSunrise(sunrise: alos72Zmanis(), toSunset: tzais72Zmanis())
 	}
 	
     /**
@@ -215,7 +215,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis90Minutes() -> Double
 	{
-	    return temporalHourFromSunrise(alos90(), toSunset: tzais90())
+		return temporalHourFromSunrise(sunrise: alos90(), toSunset: tzais90())
 	}
 	
     /**
@@ -236,7 +236,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis90MinutesZmanis() -> Double
 	{
-	    return temporalHourFromSunrise(alos90Zmanis(), toSunset: tzais90Zmanis())
+		return temporalHourFromSunrise(sunrise: alos90Zmanis(), toSunset: tzais90Zmanis())
 	}
 	
     /**
@@ -255,7 +255,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis96Minutes() -> Double
 	{
-	    return temporalHourFromSunrise(alos96(), toSunset: tzais96())
+		return temporalHourFromSunrise(sunrise: alos96(), toSunset: tzais96())
 	}
 	
     /**
@@ -275,7 +275,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis96MinutesZmanis() -> Double
 	{
-	    return temporalHourFromSunrise(alos96Zmanis(), toSunset: tzais96Zmanis())
+		return temporalHourFromSunrise(sunrise: alos96Zmanis(), toSunset: tzais96Zmanis())
 	}
 	
     /**
@@ -297,7 +297,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanisAteretTorah() -> Double
 	{
-	    return temporalHourFromSunrise(alos72Zmanis(), toSunset: tzaisAteretTorah())
+		return temporalHourFromSunrise(sunrise: alos72Zmanis(), toSunset: tzaisAteretTorah())
 	}
 	
     /**
@@ -315,7 +315,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis120Minutes() -> Double
 	{
-	    return temporalHourFromSunrise(alos120(), toSunset: tzais120())
+		return temporalHourFromSunrise(sunrise: alos120(), toSunset: tzais120())
 	}
 	
     /**
@@ -335,7 +335,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func shaahZmanis120MinutesZmanis() -> Double
 	{
-	    return temporalHourFromSunrise(alos120Zmanis(), toSunset: tzais120Zmanis())
+		return temporalHourFromSunrise(sunrise: alos120Zmanis(), toSunset: tzais120Zmanis())
 	}
 	
     /**
@@ -352,7 +352,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha120Minutes() -> NSDate?
 	{
-	    return alos120Zmanis()?.dateByAddingTimeInterval(shaahZmanis120Minutes() * 10.75)
+		return alos120Zmanis()?.addingTimeInterval(shaahZmanis120Minutes() * 10.75)
 	}
 	
     /**
@@ -369,7 +369,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha120MinutesZmanis() -> NSDate?
 	{
-	    return alos120Zmanis()?.dateByAddingTimeInterval(shaahZmanis120MinutesZmanis() * 10.75)
+		return alos120Zmanis()?.addingTimeInterval(shaahZmanis120MinutesZmanis() * 10.75)
 	}
 	
     /**
@@ -390,7 +390,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	{
         if let sunrise = seaLevelSunrise()
         {
-            return dateBySubtractingHours(1, fromDate: sunrise)
+			return dateBySubtractingHours(hours: 1, fromDate: sunrise)
         }
         else
         {
@@ -421,7 +421,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunrise()?.dateByAddingTimeInterval(shaahZmanis - 1.2)
+		return seaLevelSunrise()?.addingTimeInterval(shaahZmanis - 1.2)
 	}
 	
     /**
@@ -442,7 +442,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	    
 	    if let baseDate: NSDate = seaLevelSunrise()
         {
-            return dateBySubtractingMinutes(90, fromDate: baseDate)
+			return dateBySubtractingMinutes(minutes: 90, fromDate: baseDate)
         }
         return nil
 	}
@@ -469,7 +469,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunrise()?.dateByAddingTimeInterval((shaahZmanis  - 1.5))
+		return seaLevelSunrise()?.addingTimeInterval((shaahZmanis  - 1.5))
 	}
 	
     /**
@@ -489,7 +489,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	{
 	    if let baseDate: NSDate = seaLevelSunrise()
         {
-            return dateBySubtractingMinutes(96, fromDate: baseDate)
+			return dateBySubtractingMinutes(minutes: 96, fromDate: baseDate)
         }
         return nil
 	}
@@ -517,7 +517,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunrise()?.dateByAddingTimeInterval(shaahZmanis  - 1.6)
+		return seaLevelSunrise()?.addingTimeInterval(shaahZmanis  - 1.6)
 	}
 	
     /**
@@ -537,7 +537,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	{
 	    if let baseDate: NSDate = seaLevelSunrise()
         {
-            return dateBySubtractingMinutes(120, fromDate: baseDate)
+			return dateBySubtractingMinutes(minutes: 120, fromDate: baseDate)
         }
         return nil
 	}
@@ -562,7 +562,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 		{
 	        return nil
 	    }
-	    return seaLevelSunrise()?.dateByAddingTimeInterval(shaahZmanis  - 2)
+		return seaLevelSunrise()?.addingTimeInterval(shaahZmanis * -2)
 	}
 	
     /**
@@ -581,7 +581,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func alos26Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithTwentySix)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithTwentySix)
 	}
 	
     /**
@@ -597,7 +597,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func alos18Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithAstronomical)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
 	
     /**
@@ -616,7 +616,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func alos19Point8Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithNineteenPointEight)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)
 	}
 	
     /**
@@ -635,7 +635,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func alos16Point1Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithSixteenPointOne)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithSixteenPointOne)
 	}
 	
     /**
@@ -653,7 +653,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func misheyakir11Point5Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithElevenPointFive)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithElevenPointFive)
 	}
 	
     /**
@@ -671,7 +671,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func misheyakir11Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithElevenDegrees)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithElevenDegrees)
 	}
 	
     /**
@@ -689,7 +689,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func misheyakir10Point2Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithTenPointTwo)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithTenPointTwo)
 	}
 	
     /**
@@ -708,7 +708,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA19Point8Degrees() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithNineteenPointEight)?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 3)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)?.addingTimeInterval(shaahZmanis19Point8Degrees() * 3)
 	}
 	
     /**
@@ -727,7 +727,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 3)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 3)
 	}
 	
     /**
@@ -766,7 +766,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA72MinutesZmanis() -> NSDate
 	{
-	    return alos72Zmanis()!.dateByAddingTimeInterval(shaahZmanis72MinutesZmanis() * 3)
+		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 3)
 	}
 	
     /**
@@ -784,7 +784,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA90Minutes() -> NSDate?
 	{
-	    return alos90()?.dateByAddingTimeInterval(shaahZmanis90Minutes() * 3)
+		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 3)
 	}
 	
     /**
@@ -803,7 +803,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA90MinutesZmanis() -> NSDate?
 	{
-	    return alos90Zmanis()?.dateByAddingTimeInterval(shaahZmanis90MinutesZmanis() * 3)
+		return alos90Zmanis()?.addingTimeInterval(shaahZmanis90MinutesZmanis() * 3)
 	}
 	
     /**
@@ -822,7 +822,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA96Minutes() -> NSDate?
 	{
-	    return alos96()?.dateByAddingTimeInterval(shaahZmanis96Minutes() * 3)
+		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 3)
 	}
 	
     /**
@@ -841,7 +841,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA96MinutesZmanis() -> NSDate?
 	{
-	    return alos96Zmanis()?.dateByAddingTimeInterval(shaahZmanis96MinutesZmanis() * 3)
+		return alos96Zmanis()?.addingTimeInterval(shaahZmanis96MinutesZmanis() * 3)
 	}
 	
     /**
@@ -859,7 +859,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	public func sofZmanShma3HoursBeforeChatzos() -> NSDate
 	{
 	    let baseDate: NSDate = chatzos()
-	    return dateBySubtractingHours(3, fromDate: baseDate)
+		return dateBySubtractingHours(hours: 3, fromDate: baseDate)
 	}
 	
     /**
@@ -878,7 +878,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaMGA120Minutes() -> NSDate?
 	{
-	    return alos120()?.dateByAddingTimeInterval(shaahZmanis120Minutes() * 3)
+		return alos120()?.addingTimeInterval(shaahZmanis120Minutes() * 3)
 	}
 	
     /**
@@ -898,14 +898,14 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaAlos16Point1ToSunset() -> NSDate?
 	{
-	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: seaLevelSunset())
+		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: seaLevelSunset())
 	    
 	    if shaahZmanis == Double(Int.min)
         {
 	        return nil
 	    }
 	    
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 3)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis * 3)
 	}
 	
     /**
@@ -925,13 +925,13 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate?
 	{
-	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
+		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
 	     if shaahZmanis == Double(Int.min)
 		 {
 	        return nil
 	     }
 	    
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 3)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis * 3)
 	}
 	
     /**
@@ -950,7 +950,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA19Point8Degrees() -> NSDate?
 	{
-	    return alos19Point8Degrees()?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 4)
+		return alos19Point8Degrees()?.addingTimeInterval(shaahZmanis19Point8Degrees() * 4)
 	}
 	
     /**
@@ -969,7 +969,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 4)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 4)
 	}
 	
     /**
@@ -1008,7 +1008,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA72MinutesZmanis() -> NSDate
 	{
-	    return alos72Zmanis()!.dateByAddingTimeInterval(shaahZmanis72MinutesZmanis() * 4)
+		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 4)
 	}
 	
     /**
@@ -1027,7 +1027,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA90Minutes() -> NSDate?
 	{
-	    return alos90()?.dateByAddingTimeInterval(shaahZmanis90Minutes() * 4)
+		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 4)
 	}
 	
     /**
@@ -1046,7 +1046,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA90MinutesZmanis() -> NSDate
 	{
-	    return alos90Zmanis()!.dateByAddingTimeInterval(shaahZmanis90MinutesZmanis() * 4)
+		return alos90Zmanis()!.addingTimeInterval(shaahZmanis90MinutesZmanis() * 4)
 	}
 	
     /**
@@ -1064,7 +1064,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA96Minutes() -> NSDate?
 	{
-	    return alos96()?.dateByAddingTimeInterval(shaahZmanis96Minutes() * 4)
+		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 4)
 	}
 	
     /**
@@ -1083,7 +1083,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA96MinutesZmanis() -> NSDate?
 	{
-	    return alos96Zmanis()?.dateByAddingTimeInterval(shaahZmanis96MinutesZmanis() * 4)
+		return alos96Zmanis()?.addingTimeInterval(shaahZmanis96MinutesZmanis() * 4)
 	}
 	
     /**
@@ -1102,7 +1102,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaMGA120Minutes() -> NSDate?
 	{
-	    return alos120()?.dateByAddingTimeInterval(shaahZmanis120Minutes() * 4)
+		return alos120()?.addingTimeInterval(shaahZmanis120Minutes() * 4)
 	}
 	
     /**
@@ -1119,7 +1119,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfila2HoursBeforeChatzos() -> NSDate
 	{
-	    return dateBySubtractingHours(2, fromDate: chatzos())
+		return dateBySubtractingHours(hours: 2, fromDate: chatzos())
 	}
 	
     /**
@@ -1139,7 +1139,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaGedola30Minutes() -> NSDate //After chatzos
 	{
-	    return dateByAddingMinutes(30, toDate: chatzos())
+		return dateByAddingMinutes(minutes: 30, toDate: chatzos())
 	}
 	
     /**
@@ -1157,7 +1157,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaGedola72Minutes() -> NSDate
 	{
-	    return alos72().dateByAddingTimeInterval(shaahZmanis72Minutes() * 6.5)
+		return alos72().addingTimeInterval(shaahZmanis72Minutes() * 6.5)
 	}
 	
     /**
@@ -1176,7 +1176,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaGedola16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 6.5)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 6.5)
 	}
 	
     // TODO
@@ -1213,7 +1213,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaKetana16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 9.5)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 9.5)
 	}
 	
     /**
@@ -1232,7 +1232,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaKetana72Minutes() -> NSDate
 	{
-	    return alos72().dateByAddingTimeInterval(shaahZmanis72MinutesZmanis() * 9.5)
+		return alos72().addingTimeInterval(shaahZmanis72MinutesZmanis() * 9.5)
 	}
 	
     /**
@@ -1249,7 +1249,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha60Minutes() -> NSDate?
 	{
-	    return alos60()?.dateByAddingTimeInterval(shaahZmanis60Minutes() * 10.75)
+		return alos60()?.addingTimeInterval(shaahZmanis60Minutes() * 10.75)
 	}
 	
     /**
@@ -1266,7 +1266,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha72Minutes() -> NSDate?
 	{
-	    return alos72().dateByAddingTimeInterval(shaahZmanis72Minutes() * 10.75)
+		return alos72().addingTimeInterval(shaahZmanis72Minutes() * 10.75)
 	}
 	
     /**
@@ -1283,7 +1283,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha90Minutes() -> NSDate?
 	{
-	    return alos90()?.dateByAddingTimeInterval(shaahZmanis90Minutes() * 10.75)
+		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 10.75)
 	}
 	
     /**
@@ -1300,7 +1300,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha96Minutes() -> NSDate?
 	{
-	    return alos96()?.dateByAddingTimeInterval(shaahZmanis96Minutes() * 10.75)
+		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 10.75)
 	}
 	
     /**
@@ -1315,7 +1315,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha96MinutesZmanis() -> NSDate
 	{
-	    return alos96Zmanis()!.dateByAddingTimeInterval(shaahZmanis96MinutesZmanis() * 10.75)
+		return alos96Zmanis()!.addingTimeInterval(shaahZmanis96MinutesZmanis() * 10.75)
 	}
 	
     /**
@@ -1330,7 +1330,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha90MinutesZmanis() -> NSDate
 	{
-	    return alos90Zmanis()!.dateByAddingTimeInterval(shaahZmanis90MinutesZmanis() * 10.75)
+		return alos90Zmanis()!.addingTimeInterval(shaahZmanis90MinutesZmanis() * 10.75)
 	}
 	
     /**
@@ -1345,7 +1345,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha72MinutesZmanis() -> NSDate
 	{
-	    return alos72Zmanis()!.dateByAddingTimeInterval(shaahZmanis72MinutesZmanis() * 10.75)
+		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 10.75)
 	}
 	
     /**
@@ -1362,7 +1362,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 10.75)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 10.75)
 	}
 	
     /**
@@ -1379,7 +1379,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha19Point8Degrees() -> NSDate?
 	{
-	    return alos19Point8Degrees()?.dateByAddingTimeInterval(shaahZmanis19Point8Degrees() * 10.75)
+		return alos19Point8Degrees()?.addingTimeInterval(shaahZmanis19Point8Degrees() * 10.75)
 	}
 	
     /**
@@ -1395,7 +1395,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha26Degrees() -> NSDate?
 	{
-	    return alos26Degrees()?.dateByAddingTimeInterval(shaahZmanis26Degrees() * 10.75)
+		return alos26Degrees()?.addingTimeInterval(shaahZmanis26Degrees() * 10.75)
 	}
 	
     /**
@@ -1412,7 +1412,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHamincha18Degrees() -> NSDate?
 	{
-	    return alos18Degrees()?.dateByAddingTimeInterval(shaahZmanis18Degrees() * 10.75)
+		return alos18Degrees()?.addingTimeInterval(shaahZmanis18Degrees() * 10.75)
 	}
 	
     /**
@@ -1432,8 +1432,8 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagAlosToSunset() -> NSDate?
 	{
-	    let shaaZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: seaLevelSunset())
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaaZmanis * 10.75)
+		let shaaZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: seaLevelSunset())
+		return alos16Point1Degrees()?.addingTimeInterval(shaaZmanis * 10.75)
 	}
 	
     /**
@@ -1452,8 +1452,8 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> NSDate?
 	{
-	    let shaahZmanis = temporalHourFromSunrise(alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis * 10.75)
+		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis * 10.75)
 	}
 	
     /**
@@ -1480,7 +1480,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func bainHashmashosRT13Degrees() -> NSDate?
 	{
-	    return sunsetOffsetByDegrees(kZenithThirteenPointTwentyFourDegrees)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithThirteenPointTwentyFourDegrees)
 	}
 	
     /**
@@ -1497,7 +1497,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	public func bainHashmashosRT58Point5Minutes() -> NSDate
 	{
 	    let baseDate: NSDate = seaLevelSunset()!
-        return dateByAddingMinutes(58, seconds: 30, toDate: baseDate)
+		return dateByAddingMinutes(minutes: 58, seconds: 30, toDate: baseDate)
 	}
 	
     /**
@@ -1513,8 +1513,8 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func bainHashmashosRT13Point5MinutesBefore7Point083Degrees() -> NSDate
 	{
-	    let baseDate: NSDate = sunsetOffsetByDegrees(kZenithSevenPointZeroEightThree)
-	    return dateBySubtractingMinutes(13, seconds: 30, fromDate: baseDate)
+		let baseDate: NSDate = sunsetOffsetByDegrees(offsetZenith: kZenithSevenPointZeroEightThree)
+		return dateBySubtractingMinutes(minutes: 13, seconds: 30, fromDate: baseDate)
 	}
 	
     /**
@@ -1542,7 +1542,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	
         if let alos = alos19Point8Degrees()
         {
-            return seaLevelSunrise()?.dateByAddingTimeInterval((sunrise!.timeIntervalSinceReferenceDate - alos.timeIntervalSinceReferenceDate) * (5 / 18))
+			return seaLevelSunrise()?.addingTimeInterval((sunrise!.timeIntervalSinceReferenceDate - alos.timeIntervalSinceReferenceDate) * (5 / 18))
         }
         return nil
 	}
@@ -1560,7 +1560,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim5Point95Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithFivePointNinetyFive)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithFivePointNinetyFive)
 	}
 	
     /**
@@ -1578,7 +1578,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim3Point65Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithThreePointSixtyFive)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithThreePointSixtyFive)
 	}
 	
     /**
@@ -1596,7 +1596,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim4Point61Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithFourPointSixtyOne)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointSixtyOne)
 	}
 	
     /**
@@ -1614,7 +1614,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim4Point37Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithFourPointThirtySeven)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointThirtySeven)
 	}
 	
     /**
@@ -1634,7 +1634,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim5Point88Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithFivePointEightyEight)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithFivePointEightyEight)
 	}
 	
     /**
@@ -1652,7 +1652,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim4Point8Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithFourPointEight)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointEight)
 	}
 	
     /**
@@ -1670,7 +1670,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim7Point083Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithSevenPointZeroEightThree)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithSevenPointZeroEightThree)
 	}
 	
     /**
@@ -1686,7 +1686,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisGeonim8Point5Degrees() -> NSDate
 	{
-	    return  sunsetOffsetByDegrees(kZenithEightPointFive)
+		return  sunsetOffsetByDegrees(offsetZenith: kZenithEightPointFive)
 	}
 	
     /**
@@ -1702,7 +1702,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais50() -> NSDate
 	{
-	    return dateByAddingMinutes(50, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: 50, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -1718,7 +1718,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais60() -> NSDate
 	{
-	    return dateByAddingMinutes(60, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: 60, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -1740,7 +1740,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzaisAteretTorah() -> NSDate
 	{
-	    return dateByAddingMinutes(ateretTorahSunsetOffset, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: ateretTorahSunsetOffset, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -1761,7 +1761,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaAteretTorah() -> NSDate?
 	{
-	    return alos72Zmanis()?.dateByAddingTimeInterval(shaahZmanisAteretTorah() * 3)
+		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 3)
 	}
 	
     /**
@@ -1782,7 +1782,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaAteretTorah() -> NSDate?
 	{
-	    return alos72Zmanis()?.dateByAddingTimeInterval(shaahZmanisAteretTorah() * 4)
+		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 4)
 	}
 	
     /**
@@ -1803,7 +1803,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaGedolaAteretTorah() -> NSDate?
 	{
-	    return alos72Zmanis()?.dateByAddingTimeInterval(shaahZmanisAteretTorah() * 6.5)
+		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 6.5)
 	}
 	
     /**
@@ -1824,7 +1824,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func minchaKetanaAteretTorah() -> NSDate?
 	{
-	    return alos72Zmanis()?.dateByAddingTimeInterval(shaahZmanisAteretTorah() * 9.5)
+		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 9.5)
 	}
 	
     /**
@@ -1843,7 +1843,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func plagHaminchaAteretTorah() -> NSDate?
 	{
-	    return alos72Zmanis()?.dateByAddingTimeInterval(shaahZmanisAteretTorah() * 10.75)
+		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 10.75)
 	}
 	
     /**
@@ -1858,7 +1858,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func misheyakirAteretTorahWithMinutes(minutes: Int) -> NSDate
 	{
-	    return dateByAddingMinutes(minutes, toDate: alos72Zmanis()!)
+		return dateByAddingMinutes(minutes: minutes, toDate: alos72Zmanis()!)
 	}
 	
     /**
@@ -1880,7 +1880,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunset()!.dateByAddingTimeInterval(shaahZmanis * 1.2)
+		return seaLevelSunset()!.addingTimeInterval(shaahZmanis * 1.2)
 	}
 	
     /**
@@ -1902,7 +1902,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunset()!.dateByAddingTimeInterval(shaahZmanis * 1.5)
+		return seaLevelSunset()!.addingTimeInterval(shaahZmanis * 1.5)
 	}
 	
     /**
@@ -1924,7 +1924,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	        return nil
 	    }
 	    
-	    return seaLevelSunset()!.dateByAddingTimeInterval(shaahZmanis * 1.6)
+		return seaLevelSunset()!.addingTimeInterval(shaahZmanis * 1.6)
 	}
 	
     /**
@@ -1943,7 +1943,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais90() -> NSDate
 	{
-	    return dateByAddingMinutes(90, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: 90, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -1961,7 +1961,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais120() -> NSDate
 	{
-	    return dateByAddingMinutes(120, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: 120, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -1981,7 +1981,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 		{
 	        return nil
 	    }
-	    return seaLevelSunset()!.dateByAddingTimeInterval(shaahZmanis * 2.0)
+		return seaLevelSunset()!.addingTimeInterval(shaahZmanis * 2.0)
 	}
 	
     /**
@@ -1996,7 +1996,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais16Point1Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithSixteenPointOne)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithSixteenPointOne)
 	}
 	
     /**
@@ -2011,7 +2011,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais26Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithTwentySix)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithTwentySix)
 	}
 	
     /**
@@ -2026,7 +2026,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais18Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithAstronomical)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
 	
     /**
@@ -2041,7 +2041,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais19Point8Degrees() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithNineteenPointEight)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)
 	}
 	
     /**
@@ -2056,7 +2056,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func tzais96() -> NSDate
 	{
-	    return dateByAddingMinutes(96, toDate: seaLevelSunset()!)
+		return dateByAddingMinutes(minutes: 96, toDate: seaLevelSunset()!)
 	}
 	
     /**
@@ -2073,7 +2073,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func fixedLocalChatzos() -> NSDate?
 	{
-	    return dateFromTime((12.0 - Double(geoLocation!.timeZone!.secondsFromGMT)))?.dateByAddingTimeInterval(Double(geoLocation!.localMeanTimeOffset()))
+		return dateFromTime(time: (12.0 - Double(geoLocation!.timeZone!.secondsFromGMT())))?.addingTimeInterval(Double(geoLocation!.localMeanTimeOffset()))
 	}
 	
     /**
@@ -2084,7 +2084,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaFixedLocal() -> NSDate?
 	{
-        if let date = dateBySubtractingMinutes(180, fromDate: fixedLocalChatzos()!) as? NSDate
+		if let date = dateBySubtractingMinutes(minutes: 180, fromDate: fixedLocalChatzos()!) as? NSDate
         {
             return date
         }
@@ -2099,7 +2099,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaFixedLocal() -> NSDate?
 	{
-        if let date = dateBySubtractingMinutes(120, fromDate: fixedLocalChatzos()!) as? NSDate
+		if let date = dateBySubtractingMinutes(minutes: 120, fromDate: fixedLocalChatzos()!) as? NSDate
         {
             return date
         }
@@ -2176,7 +2176,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanBiurChametzGra() -> NSDate
 	{
-	    return seaLevelSunrise()!.dateByAddingTimeInterval(shaahZmanisGra() * 5)
+		return seaLevelSunrise()!.addingTimeInterval(shaahZmanisGra() * 5)
 	}
 	
     /**
@@ -2194,7 +2194,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanBiurChametzMGA72Minutes() -> NSDate
 	{
-	    return alos72().dateByAddingTimeInterval(shaahZmanisMogenAvraham() * 5)
+		return alos72().addingTimeInterval(shaahZmanisMogenAvraham() * 5)
 	}
 	
     /**
@@ -2213,7 +2213,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanBiurChametzMGA16Point1Degrees() -> NSDate?
 	{
-	    return alos16Point1Degrees()?.dateByAddingTimeInterval(shaahZmanis16Point1Degrees() * 5)
+		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 5)
 	}
 	
     /**
@@ -2230,10 +2230,10 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	public func solarMidnight() -> NSDate?
 	{
 	    let clonedCalendar: ComplexZmanimCalendar = self
-        clonedCalendar.workingDate = dateByAddingDays(1, toDate: clonedCalendar.workingDate!)
+		clonedCalendar.workingDate = dateByAddingDays(days: 1, toDate: clonedCalendar.workingDate!)
 	    let tempSunset: NSDate = sunset()!
 	    let tempSunrise: NSDate = sunrise()!
 	    
-	    return sunset()?.dateByAddingTimeInterval(temporalHourFromSunrise(tempSunrise, toSunset: tempSunset) * 6)
+		return sunset()?.addingTimeInterval(temporalHourFromSunrise(sunrise: tempSunrise, toSunset: tempSunset) * 6)
 	}
 }

@@ -17,7 +17,7 @@ public class SefiratHaomerCalculator
      */
 	class public func fallsToday() -> Bool
 	{
-	    return fallsOnDate(NSDate())
+		return fallsOnDate(date: NSDate())
 	}
 	
     /**
@@ -30,7 +30,7 @@ public class SefiratHaomerCalculator
      */
 	class public func fallsOnDate(date: NSDate) -> Bool
 	{
-	    return dayOfSefiraForDate(date) != 0
+		return dayOfSefiraForDate(date: date) != 0
 	}
 	
     /**
@@ -44,7 +44,7 @@ public class SefiratHaomerCalculator
      */
 	class public func dayOfSefira() -> Int
 	{
-		return dayOfSefiraForDate(NSDate())
+		return dayOfSefiraForDate(date: NSDate())
 	}
 	
     /**
@@ -59,9 +59,9 @@ public class SefiratHaomerCalculator
      */
 	class public func dayOfSefiraForDate(date: NSDate) -> Int
 	{
-		let firstDayOfTheOmer: NSDate = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date)
-	    let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
-        var day: Int = hebrewCalendar.daysFromDate(firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
+		let firstDayOfTheOmer: NSDate = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date: date)
+		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		var day: Int = hebrewCalendar.daysFromDate(fromDate: firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
 	    if day < 0 || day > 49
 	    {
 	        day = 0
@@ -72,11 +72,11 @@ public class SefiratHaomerCalculator
 	
 	class public func _dateOfSixteenNissanForYearOfDate(date: NSDate) -> NSDate
 	{
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)!
+		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
 		
-	    let hebrewYear: Int = hebrewCalendar.yearsInDate(date)
+		let hebrewYear: Int = hebrewCalendar.yearsInDate(date: date)
 		
 	    //  Foundation reserves 7 for Adar II, so Nissan is 8
-		return NSDate.dateWithDay(16, Month: 8, Year: hebrewYear, andCalendar: hebrewCalendar)
+		return NSDate.dateWithDay(day: 16, Month: 8, Year: hebrewYear, andCalendar: hebrewCalendar)
 	}
 }

@@ -9,13 +9,13 @@ import Foundation
 let kDegreesPerHour = 360.0 / 24.0
 
 /** The commonly used average solar radius in minutes of a degree. */
-let kSolarRadius = 16.0 / 60.0
+let kSolarRadius: Double = 16.0 / 60.0
 
 /**
 	The commonly used average solar refraction.
 	Calendrical Calculations lists a more accurate global average of 34.478885263888294.
 */
-let kRefraction = 34.0 / 60.0
+let kRefraction: Double = 34.0 / 60.0
 
 /**  The diameter of the earth's radius in kilometers. */
 let kEarthRadiusInKilometers = 6356.9

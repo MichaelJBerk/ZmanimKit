@@ -22,8 +22,8 @@ public class ParashatHashavuaCalculator
 
 	public init()
 	{
-	    gregorianCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
-		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierHebrew)
+		gregorianCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
+		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)
 	}
 	
     /**
@@ -35,7 +35,7 @@ public class ParashatHashavuaCalculator
      */
 	public func parashaInDiasporaForDate(date: NSDate) -> Parasha
 	{
-	    return _parashaForDate(date, inDiaspora: true)
+		return _parashaForDate(date: date, inDiaspora: true)
 	}
 	
     /**
@@ -47,7 +47,7 @@ public class ParashatHashavuaCalculator
      */
 	public func parashaInIsraelForDate(date: NSDate) -> Parasha
 	{
-	    return _parashaForDate(date, inDiaspora: false)
+		return _parashaForDate(date: date, inDiaspora: false)
 	}
 	
     /**
@@ -234,22 +234,22 @@ public class ParashatHashavuaCalculator
 	
 	private func _parashaForDate(date: NSDate, inDiaspora isInDiaspora: Bool) -> Parasha
 	{
-	    let tempDate = hebrewCalendar!.lastDayOfTheWeekUsingReferenceDate(date)
-	    let year = hebrewCalendar!.yearsInDate(tempDate)
-	    let roshHashana = NSDate.dateWithDay(1, Month: 1, Year: year, andCalendar: hebrewCalendar!)
-	    let weeksSinceRoshHashana: Int = hebrewCalendar!.weeksFromDate(roshHashana, toDate: tempDate)
-	    let type: kHebrewYearType = NSCalendar.typeOfHebrewYearContainingDate(tempDate)!
+		let tempDate = hebrewCalendar!.lastDayOfTheWeekUsingReferenceDate(date: date)
+		let year = hebrewCalendar!.yearsInDate(date: tempDate)
+		let roshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar!)
+		let weeksSinceRoshHashana: Int = hebrewCalendar!.weeksFromDate(fromDate: roshHashana, toDate: tempDate)
+		let type: kHebrewYearType = NSCalendar.typeOfHebrewYearContainingDate(date: tempDate)!
 		//	Query the parshios
-		let parshiot = _parshiotForYearType(type, inDiaspora: isInDiaspora)
+		let parshiot = _parshiotForYearType(type: type, inDiaspora: isInDiaspora)
 	    //	Then look up this weeks parsha
 	    let parashaIDNumber = parshiot[weeksSinceRoshHashana]
 	    let parashaID = parashaIDNumber
-	    let parasha = Parasha.parashaWithIdentifier(parashaID)
+		let parasha = Parasha.parashaWithIdentifier(_identifier: parashaID)
 	    return parasha
 	}
 	
 	private func _parshiotForYearType(type: kHebrewYearType, inDiaspora diaspora: Bool) -> [Parashot]
 	{
-	    return diaspora ? parshiotInDiasporaDuringYearType(type) : parshiotInIsraelDuringYearType(type)
+		return diaspora ? parshiotInDiasporaDuringYearType(typeOfYear: type) : parshiotInIsraelDuringYearType(typeOfYear: type)
 	}
 }

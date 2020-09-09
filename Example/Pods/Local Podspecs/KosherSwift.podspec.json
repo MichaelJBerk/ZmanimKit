@@ -1,22 +1,22 @@
 {
   "name": "KosherSwift",
-  "version": "0.1.22",
-  "summary": "A Swift library for getting zmanim.",
+  "version": "0.1.0",
+  "summary": "A short description of KosherSwift.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/DanielSmith1239/KosherSwift",
+  "homepage": "https://github.com/MichaelJBerk/KosherSwift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Dani Smith": "ds1239@hotmail.com"
+    "MichaelJBerk": "moshe.berk@icloud.com"
   },
   "source": {
-    "git": "https://github.com/DanielSmith1239/KosherSwift.git",
-    "tag": "0.1.22"
+    "git": "https://github.com/MichaelJBerk/KosherSwift.git",
+    "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "KosherSwift/**/*"
+  "source_files": "KosherSwift/Classes/**/*"
 }

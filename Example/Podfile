@@ -1,6 +1,11 @@
 use_frameworks!
-target 'KosherSwift_Tests' do
+
+target 'KosherSwift_Example' do
   pod 'KosherSwift', :path => '../'
-  
-  
+
+  target 'KosherSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end

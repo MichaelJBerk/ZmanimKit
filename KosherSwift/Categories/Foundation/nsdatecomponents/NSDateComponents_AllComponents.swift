@@ -7,8 +7,8 @@ import Foundation
 
 public extension NSDateComponents
 {
-	public class func allComponents() -> [NSCalendarUnit]
+	class func allComponents() -> [NSCalendar.Unit]
 	{
-		return [.Era, .Year, .Month, .Day, .Hour, .Minute, .Second, .WeekOfYear]
+		return [.era, .year, .month, .day, .hour, .minute, .second, .weekOfYear]
 	}
 }

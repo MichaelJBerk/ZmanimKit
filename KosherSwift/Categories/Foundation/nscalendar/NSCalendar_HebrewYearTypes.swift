@@ -10,22 +10,22 @@ extension NSCalendar
 	class public func firstWeekdayOfHebrewYearContainingDate(date: NSDate) -> kWeekday
 	{
 	    let hebCal = hebrewCalendar()
-	    let hebrewYear = hebCal.yearsInDate(date)
-	    let roshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
-	    return kWeekday(rawValue: hebCal.weekdayInDate(roshHashana))!
+		let hebrewYear = hebCal.yearsInDate(date: date)
+		let roshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
+		return kWeekday(rawValue: hebCal.weekdayInDate(date: roshHashana))!
 	}
 	
 	class public func lengthOfHebrewYearContainingDate(date: NSDate) -> kYearLength?
 	{
 	    let hebCal = hebrewCalendar()
 	    
-	    let hebrewYear = hebCal.yearsInDate(date)
+		let hebrewYear = hebCal.yearsInDate(date: date)
 	    
-	    let previousRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
-	    let nextRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear + 1, andCalendar: hebCal)
+		let previousRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
+		let nextRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: hebrewYear + 1, andCalendar: hebCal)
 	    
 	    //  We only care about the ones place in the length.
-        var length = hebCal.daysFromDate(previousRoshHashana, toDate: nextRoshHashana)
+		var length = hebCal.daysFromDate(fromDate: previousRoshHashana, toDate: nextRoshHashana)
 	    
 	    length = length % 10
 		
@@ -47,23 +47,23 @@ extension NSCalendar
 	class public func isHebrewYearContainingDateALeapYear(date: NSDate) -> Bool
 	{
 		let hebCal = hebrewCalendar()
-	    let hebrewYear = hebCal.yearsInDate(date)
+		let hebrewYear = hebCal.yearsInDate(date: date)
 	    
-	    let previousRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
-	    let nextRoshHashana = NSDate.dateWithDay(1, Month: 1, Year: hebrewYear + 1, andCalendar: hebCal)
+		let previousRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
+		let nextRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: hebrewYear + 1, andCalendar: hebCal)
 	    
-	    let months = hebCal.monthsFromDate(previousRoshHashana, toDate: nextRoshHashana)
+		let months = hebCal.monthsFromDate(fromDate: previousRoshHashana, toDate: nextRoshHashana)
 	    
 	    return months == 13
 	}
 	
     class public func typeOfHebrewYearContainingDate(date: NSDate) -> kHebrewYearType?
 	{
-	    let weekday = firstWeekdayOfHebrewYearContainingDate(date)
+		let weekday = firstWeekdayOfHebrewYearContainingDate(date: date)
 	
-	    let length = lengthOfHebrewYearContainingDate(date)
+		let length = lengthOfHebrewYearContainingDate(date: date)
 	    
-	    let isLeapYear: Bool = isHebrewYearContainingDateALeapYear(date)
+		let isLeapYear: Bool = isHebrewYearContainingDateALeapYear(date: date)
 	    
 	    if !isLeapYear
 		{
@@ -158,6 +158,6 @@ extension NSCalendar
 	
 	class public func hebrewCalendar() -> NSCalendar
 	{
-	    return NSCalendar(calendarIdentifier: NSCalendarIdentifierHebrew)!
+		return NSCalendar(calendarIdentifier: NSCalendar.Identifier.hebrew)!
 	}
 }

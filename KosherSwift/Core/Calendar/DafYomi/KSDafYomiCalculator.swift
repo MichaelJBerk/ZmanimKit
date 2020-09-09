@@ -27,7 +27,7 @@ public class DafYomiCalculator
      */
 	public func dafYomiBavli() -> Daf
 	{
-	    return dafYomiBavliForDate(NSDate())!
+		return dafYomiBavliForDate(date: NSDate())!
 	}
 	
     /**
@@ -43,27 +43,27 @@ public class DafYomiCalculator
 	{
 	    
 	    //Start on September 11, 1923
-	    let dafYomiStartDate: NSDate = gregorianDateForYear(1923, month: 9, andDay: 11)
-	    let dafYomiJulianStartDay: Int = julianDayForDate(dafYomiStartDate)
-	    let shekalimChangeDate: NSDate = gregorianDateForYear(1975, month: 6, andDay: 24)
-	    let shekalimJulianChangeDay: Int = julianDayForDate(shekalimChangeDate)
+		let dafYomiStartDate: NSDate = gregorianDateForYear(year: 1923, month: 9, andDay: 11)
+		let dafYomiJulianStartDay: Int = julianDayForDate(date: dafYomiStartDate)
+		let shekalimChangeDate: NSDate = gregorianDateForYear(year: 1975, month: 6, andDay: 24)
+		let shekalimJulianChangeDay: Int = julianDayForDate(date: shekalimChangeDate)
 	    
 	    //An array of the lengths of the meschtos
         var blattPerMasechta: [Int] = [64, 157, 105, 121, 22, 88, 56, 40, 35, 31, 32, 29, 27, 122, 112, 91, 66, 49, 90, 82, 119, 119, 176, 113, 24, 49, 76, 14, 120, 110, 142, 61, 34, 34, 28, 22, 4, 10, 4, 73]
 	    
         var dafYomi = Daf(tractateIndex: 0, andPageNumber: 0)
 	    
-	    let julianDay: Int = julianDayForDate(date)
+		let julianDay: Int = julianDayForDate(date: date)
         var cycleNo: Int = 0
         var dafNo: Int = 0
 	    
-	    if date.timeIntervalSinceDate(dafYomiStartDate) < 0
+		if date.timeIntervalSince(dafYomiStartDate as Date) < 0
 	    {
 	        // Return nil, since the date passed in was before the beginning of the daf yomi cycle
 	        return nil
 	    }
 	    
-	    if date.timeIntervalSinceDate(shekalimChangeDate) >= 0 {
+		if date.timeIntervalSince(shekalimChangeDate as Date) >= 0 {
 	        cycleNo = 8 + ((julianDay - shekalimJulianChangeDay) / 2711)
 	        dafNo = ((julianDay - shekalimJulianChangeDay) % 2711)
 	    }
@@ -113,11 +113,11 @@ public class DafYomiCalculator
 	
 	public func julianDayForDate(date: NSDate) -> Int
 	{
-	    let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
+		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
 	    
-        var year: Int = gregorianCalendar.components(NSCalendarUnit.Year, fromDate:date).year
-        var month: Int = gregorianCalendar.components(NSCalendarUnit.Month, fromDate:date).month
-	    let day: Int = gregorianCalendar.components(NSCalendarUnit.Day, fromDate:date).day
+		var year: Int = gregorianCalendar.components(NSCalendar.Unit.year, from:date as Date).year ?? 0
+		var month: Int = gregorianCalendar.components(NSCalendar.Unit.month, from:date as Date).month ?? 0
+		let day: Int = gregorianCalendar.components(NSCalendar.Unit.day, from:date as Date).day ?? 0
 		
 	    if month <= 2
 	    {
@@ -136,13 +136,13 @@ public class DafYomiCalculator
 	
 	public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> NSDate
 	{
-	    let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
+		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
 	    let dateComponents: NSDateComponents = NSDateComponents()
 	    dateComponents.year = year
 	    dateComponents.month = month
 	    dateComponents.day = day
 	    
-	    let returnDate: NSDate = gregorianCalendar.dateFromComponents(dateComponents)!
+		let returnDate: NSDate = gregorianCalendar.date(from: dateComponents as DateComponents)! as NSDate
 	    
 	    return returnDate
 	}

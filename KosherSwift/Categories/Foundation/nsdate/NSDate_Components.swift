@@ -9,7 +9,7 @@ extension NSDate
 {
 	class public func dateWithDay(day: Int, month: Int, year: Int) -> NSDate
 	{
-	    return NSDate.dateWithDay(day, Month: month, Year: year, andCalendar: NSDate.defaultCalendar())
+		return NSDate.dateWithDay(day: day, Month: month, Year: year, andCalendar: NSDate.defaultCalendar())
 	}
 	
 	class public func dateWithDay(day: Int, Month month: Int, Year year: Int, andCalendar calendar: NSCalendar) -> NSDate
@@ -19,7 +19,7 @@ extension NSDate
 	    components.month = month
 	    components.year = year
 	    
-	    return calendar.dateFromComponents(components)!
+		return calendar.date(from: components as DateComponents)! as NSDate
 	}
 	
 	class public func dateWithEra(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, week: Int, weekday: Int, weekdayOrdinal: Int, andCalendar calendar: NSCalendar) -> NSDate
@@ -36,57 +36,57 @@ extension NSDate
 	    components.weekday = weekday
 	    components.weekdayOrdinal = weekdayOrdinal
 	    
-	    return calendar.dateFromComponents(components)!
+		return calendar.date(from: components as DateComponents)! as NSDate
 	}
 	
 	class public func defaultEraForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).era
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).era
 	}
 	
 	class public func defaultYearForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).year
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).year
 	}
 	
 	class public func defaultMonthForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).month
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).month
 	}
 	
 	class public func defaultDayForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).day
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).day
 	}
 	
 	class public func defaultHourForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).hour
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).hour
 	}
 	
 	class public func defaultMinuteForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).minute
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).minute
 	}
 	
 	class public func defaultSecondForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).second
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).second
 	}
 	
 	class public func defaultWeekForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).weekOfYear
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekOfYear
 	}
 	
 	class public func defaultWeekdayForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).weekday
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekday
 	}
 	
 	class public func defaultWeekdayOrdinalForCalendar(calendar: NSCalendar) -> Int
 	{
-	    return NSDate.defaultComponentsForCalendar(calendar).weekdayOrdinal
+		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekdayOrdinal
 	}
 	
 	class public func defaultEra() -> Int
@@ -141,16 +141,16 @@ extension NSDate
 	
 	class public func defaultComponents() -> NSDateComponents
 	{
-	    return defaultComponentsForCalendar(NSDate.defaultCalendar())
+		return defaultComponentsForCalendar(calendar: NSDate.defaultCalendar())
 	}
 	
 	class public func defaultComponentsForCalendar(calendar: NSCalendar) -> NSDateComponents
 	{    
-	    return calendar.components([.Era, .Year, .Month, .Day, .Hour, .Minute, .Second, .Weekday, .WeekdayOrdinal, .Quarter, .WeekOfYear, .WeekOfMonth, .YearForWeekOfYear, .Calendar, .TimeZone], fromDate:NSDate())
+		return calendar.components([.era, .year, .month, .day, .hour, .minute, .second, .weekday, .weekdayOrdinal, .quarter, .weekOfYear, .weekOfMonth, .yearForWeekOfYear, .calendar, .timeZone], from:NSDate() as Date) as NSDateComponents
 	}
 	
 	class public func defaultCalendar() -> NSCalendar
 	{
-	    return NSCalendar.currentCalendar()
+		return NSCalendar.current as NSCalendar
 	}
 }

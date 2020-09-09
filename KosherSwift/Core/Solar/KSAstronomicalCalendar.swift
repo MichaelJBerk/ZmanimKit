@@ -34,7 +34,7 @@ public class AstronomicalCalendar
 	
 	public init()
 	{
-	    internalCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
+		internalCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
 	}
 	
 	public init(location aGeoLocation: GeoLocation)
@@ -43,7 +43,7 @@ public class AstronomicalCalendar
 		astronomicalCalculator = tempCalc
 		geoLocation = aGeoLocation
 		workingDate = NSDate()
-        internalCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
+		internalCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
 	}
 	
     /**
@@ -61,8 +61,8 @@ public class AstronomicalCalendar
      */
 	public func sunrise() -> NSDate?
 	{
-	    let sunrise = UTCSunrise(kZenithGeometric)
-	    return dateFromTime(sunrise)
+		let sunrise = UTCSunrise(zenith: kZenithGeometric)
+		return dateFromTime(time: sunrise)
 	}
 	
     /**
@@ -79,8 +79,8 @@ public class AstronomicalCalendar
      */
 	public func seaLevelSunrise() -> NSDate?
 	{
-	    let sunrise: Double = UTCSeaLevelSunrise(kZenithGeometric)
-        return dateFromTime(sunrise)
+		let sunrise: Double = UTCSeaLevelSunrise(zenith: kZenithGeometric)
+		return dateFromTime(time: sunrise)
 	}
 	
     /**
@@ -88,7 +88,7 @@ public class AstronomicalCalendar
      */
 	public func beginCivilTwilight() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithCivil)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithCivil)
 	}
 	
     /**
@@ -96,7 +96,7 @@ public class AstronomicalCalendar
      */
 	public func beginNauticalTwilight() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithNautical)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithNautical)
 	}
 	
     /**
@@ -104,7 +104,7 @@ public class AstronomicalCalendar
      */
 	public func beginAstronomicalTwilight() -> NSDate?
 	{
-	    return sunriseOffsetByDegrees(kZenithAstronomical)
+		return sunriseOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
 	
     /**
@@ -117,8 +117,8 @@ public class AstronomicalCalendar
      */
 	public func sunset() -> NSDate?
 	{
-	    let sunset: Double = UTCSunset(kZenithGeometric)
-	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunrise())
+		let sunset: Double = UTCSunset(zenith: kZenithGeometric)
+		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunrise())
 	}
 	
     /**
@@ -131,8 +131,8 @@ public class AstronomicalCalendar
      */
 	public func seaLevelSunset() -> NSDate?
 	{
-	    let sunset: Double = UTCSeaLevelSunset(kZenithGeometric)
-	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunrise())
+		let sunset: Double = UTCSeaLevelSunset(zenith: kZenithGeometric)
+		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunrise())
 	}
 	
     /**
@@ -152,9 +152,9 @@ public class AstronomicalCalendar
      */
 	public func adjustedSunsetDateWithSunset(sunset: NSDate?, andSunrise sunrise: NSDate?) -> NSDate
 	{
-	    if sunrise != nil && sunset != nil && (sunrise!.timeIntervalSinceDate(sunset!) > 0)
+		if sunrise != nil && sunset != nil && (sunrise!.timeIntervalSince(sunset! as Date) > 0)
 	    {
-	        return dateByAddingDays(1, toDate: sunset!)
+			return dateByAddingDays(days: 1, toDate: sunset!)
 	    }
 	    return sunset!
 	}
@@ -167,7 +167,7 @@ public class AstronomicalCalendar
      */
 	public func endCivilTwilight() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithCivil)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithCivil)
 	}
 	
     /**
@@ -179,7 +179,7 @@ public class AstronomicalCalendar
      */
 	public func endNauticalTwilight() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithNautical)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithNautical)
 	}
 	
     /**
@@ -191,7 +191,7 @@ public class AstronomicalCalendar
      */
 	public func endAstronomicalTwilight() -> NSDate
 	{
-	    return sunsetOffsetByDegrees(kZenithAstronomical)
+		return sunsetOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
 	
     /**
@@ -204,9 +204,9 @@ public class AstronomicalCalendar
      */
 	public func sunriseOffsetByDegrees(offsetZenith: Double) -> NSDate?
 	{
-	    let dawn: Double = UTCSunrise(offsetZenith)
+		let dawn: Double = UTCSunrise(zenith: offsetZenith)
 	    
-	    return dateFromTime(dawn)
+		return dateFromTime(time: dawn)
 	}
 	
     /**
@@ -224,9 +224,11 @@ public class AstronomicalCalendar
      */
 	public func sunsetOffsetByDegrees(offsetZenith: Double) -> NSDate
 	{
-	    let sunset: Double = UTCSunset(offsetZenith)
+		let sunset: Double = UTCSunset(zenith: offsetZenith)
+		let d = dateFromTime(time: sunset)
+		print(d)
 		
-	    return adjustedSunsetDateWithSunset(dateFromTime(sunset), andSunrise: sunriseOffsetByDegrees(offsetZenith))
+		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunriseOffsetByDegrees(offsetZenith: offsetZenith))
 	}
 	
     /**
@@ -240,7 +242,7 @@ public class AstronomicalCalendar
      */
 	public func UTCSunrise(zenith: Double) -> Double
 	{
-	    return astronomicalCalculator!.UTCSunriseForDate(workingDate!, andZenith: zenith, adjustForElevation: true)
+		return astronomicalCalculator!.UTCSunriseForDate(date: workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
 	
     /**
@@ -255,7 +257,7 @@ public class AstronomicalCalendar
      */
 	public func UTCSeaLevelSunrise(zenith: Double) -> Double
 	{
-	    let sunrise: Double = (astronomicalCalculator!).UTCSunriseForDate(workingDate!, andZenith: zenith, adjustForElevation: false)
+		let sunrise: Double = (astronomicalCalculator!).UTCSunriseForDate(date: workingDate!, andZenith: zenith, adjustForElevation: false)
 	    return sunrise
 	}
 	
@@ -270,7 +272,7 @@ public class AstronomicalCalendar
      */
 	public func UTCSunset(zenith: Double) -> Double
 	{
-	    return astronomicalCalculator!.UTCSunsetForDate(workingDate!, andZenith: zenith, adjustForElevation: true)
+		return astronomicalCalculator!.UTCSunsetForDate(date: workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
 	
     /**
@@ -287,7 +289,7 @@ public class AstronomicalCalendar
      */
 	public func UTCSeaLevelSunset(zenith: Double) -> Double
 	{
-	    return astronomicalCalculator!.UTCSunsetForDate(workingDate!, andZenith: zenith, adjustForElevation: false)
+		return astronomicalCalculator!.UTCSunsetForDate(date: workingDate!, andZenith: zenith, adjustForElevation: false)
 	}
 	
     /**
@@ -308,7 +310,7 @@ public class AstronomicalCalendar
 	    {
 	        return Double(Int.min)
 	    }
-	    return sunset!.timeIntervalSinceDate(sunrise!) / 12
+		return sunset!.timeIntervalSince(sunrise! as Date) / 12
 	}
 	
     /**
@@ -324,7 +326,7 @@ public class AstronomicalCalendar
      */
 	public func sunTransit() -> NSDate
 	{
-	    return sunrise()!.dateByAddingTimeInterval(temporalHourFromSunrise(sunrise(), toSunset: sunset()) * 6)
+		return sunrise()!.addingTimeInterval(temporalHourFromSunrise(sunrise: sunrise(), toSunset: sunset()) * 6)
 	}
 	
     /**
@@ -340,7 +342,7 @@ public class AstronomicalCalendar
 	{
         if let date = workingDate
         {
-            return dateFromTime(time, inTimeZone: NSTimeZone.localTimeZone(), onDate: date)
+			return dateFromTime(time: time, inTimeZone: NSTimeZone.local as NSTimeZone, onDate: date)
         }
         return nil
 	}
@@ -361,34 +363,36 @@ public class AstronomicalCalendar
 	public func dateFromTime(time: Double, inTimeZone tz: NSTimeZone, onDate date: NSDate) -> NSDate?
 	{
         var calculatedTime = time
-        let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        let components: NSDateComponents = gregorianCalendar.components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.WeekOfYear, NSCalendarUnit.Day, NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Era], fromDate: date)
+		let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+		let components: NSDateComponents = gregorianCalendar.components([NSCalendar.Unit.year, NSCalendar.Unit.month, NSCalendar.Unit.weekOfYear, NSCalendar.Unit.day, NSCalendar.Unit.hour, NSCalendar.Unit.minute, NSCalendar.Unit.second, NSCalendar.Unit.era], from: date as Date) as NSDateComponents
         
 		//  Set the components time zone to GMT, since all of our calculations were done in GMT initially.
-	    components.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+		components.timeZone = NSTimeZone(forSecondsFromGMT: 0) as TimeZone
 	    
-	    let hours = calculatedTime
+		let hours: Int = Int(calculatedTime)
 	    calculatedTime -= Double(hours)
-        let minutes: Double = Double(calculatedTime *= 60)
+		
+        let minutes = Int(calculatedTime * 60)
+		calculatedTime *= 60
 	    calculatedTime -= Double(minutes)
-	    let seconds = calculatedTime * 60
+		let seconds: Int = Int(calculatedTime * 60)
         
 	    components.hour = Int(hours)
 	    components.minute = Int(minutes)
 	    components.second = Int(seconds)
 	    
-        var returnDate: NSDate = gregorianCalendar.dateFromComponents(components)!
+		var returnDate: NSDate = gregorianCalendar.date(from: components as DateComponents)! as NSDate
 	    
 	    //  Here we apply a time zone offset. If the time is greater
 	    //  than 24, or less than 0, then we "roll" the date by a day.
-	    let offsetFromGMT = Double(tz.secondsFromGMTForDate(date)) / 3600.0
+		let offsetFromGMT = Double(tz.secondsFromGMT(for: date as Date)) / 3600.0
         if time + offsetFromGMT > 24
 	    {
-	        returnDate = dateBySubtractingDays(1, fromDate: returnDate)
+			returnDate = dateBySubtractingDays(days: 1, fromDate: returnDate)
 	    }
 	    else if time + offsetFromGMT < 0
 	    {
-	        returnDate = dateByAddingDays(1, toDate: returnDate)
+			returnDate = dateByAddingDays(days: 1, toDate: returnDate)
 	    }
 	    
 	    return returnDate 
@@ -409,20 +413,20 @@ public class AstronomicalCalendar
      */
 	public func stringFromDate(date: NSDate, forTimeZone tz: NSTimeZone, withSeconds shouldShowSeconds: Bool) -> String{
 	    
-	    let form: NSDateFormatter = NSDateFormatter()
+		let form: DateFormatter = DateFormatter()
 	    
 	    if shouldShowSeconds
 	    {
-	        form.timeStyle = .MediumStyle
+			form.timeStyle = .medium
 	    }
 	    else
 	    {
-	        form.timeStyle = .ShortStyle
+			form.timeStyle = .short
 	    }
 	
-	    form.timeZone = tz
+		form.timeZone = tz as TimeZone
 	    
-	    return form.stringFromDate(date)
+		return form.string(from: date as Date)
 	}
 	
     /**
@@ -442,7 +446,7 @@ public class AstronomicalCalendar
 	public func stringFromDate(date: NSDate, forTimeZone timezone: NSTimeZone) -> String
 	{
 	    
-	    return stringFromDate(date, forTimeZone: timezone, withSeconds: true)
+		return stringFromDate(date: date, forTimeZone: timezone, withSeconds: true)
 	    
 	}
 	

@@ -42,15 +42,15 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	public func sunriseOrSunsetForYear(year: Int, andMonth month: Int, andDay day: Int, atLongitude longitude: Double, andLatitude latitude: Double, withZenith zenith: Double, andType type: Int) -> Double
 	{
 	    
-	    let dayOfYear: Int = dayOfYearForYear(year, month: month, day: day)
+		let dayOfYear: Int = dayOfYearForYear(year: year, month: month, day: day)
 	    
-	    let sunMeanAnomaly: Double = meanAnomalyForDayOfYear(dayOfYear, atLongitude: longitude, forCalculationType: type)
+		let sunMeanAnomaly: Double = meanAnomalyForDayOfYear(dayOfYear: dayOfYear, atLongitude: longitude, forCalculationType: type)
 	    
-	    let sunTrueLong: Double = sunTrueLongitudeFromAnomaly(sunMeanAnomaly)
+		let sunTrueLong: Double = sunTrueLongitudeFromAnomaly(sunMeanAnomaly: sunMeanAnomaly)
 	    
-	    let sunRightAscensionHours: Double = sunRightAscensionHoursForLongitude(sunTrueLong)
+		let sunRightAscensionHours: Double = sunRightAscensionHoursForLongitude(sunTrueLongitude: sunTrueLong)
 	    
-	    let cosLocalHourAngle: Double = cosLocalHourAngleForAngle(sunTrueLong, andLatitude: latitude, andZenith: zenith)
+		let cosLocalHourAngle: Double = cosLocalHourAngleForAngle(sunTrueLongitude: sunTrueLong, andLatitude: latitude, andZenith: zenith)
 	    
         var localHourAngle: Double = 0
 	    
@@ -61,7 +61,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	            // since the calculation
 	            // will return NaN
 	        }
-	        localHourAngle = 360.0 - acosDeg(cosLocalHourAngle)
+			localHourAngle = 360.0 - acosDeg(x: cosLocalHourAngle)
 	    }
 	    else /* if (type == TYPE_SUNSET)*/
 	    {
@@ -70,13 +70,13 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	            // since the calculation
 	            // will return Double.NaN
 	        }
-	        localHourAngle = acosDeg(cosLocalHourAngle)
+			localHourAngle = acosDeg(x: cosLocalHourAngle)
 	    }
 	    let localHour: Double = localHourAngle / kDegreesPerHour
 	    
-	    let localMeanTime: Double = localMeanTimeForHour(localHour, andAscension: sunRightAscensionHours, andApproxTimeDays: approxTimeDaysForDayOfYear(dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude), forCalculationType: type))
+		let localMeanTime: Double = localMeanTimeForHour(localHour: localHour, andAscension: sunRightAscensionHours, andApproxTimeDays: approxTimeDaysForDayOfYear(dayOfYear: dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude: longitude), forCalculationType: type))
 	    
-        var processedTime: Double = localMeanTime - hoursFromMeridianForLongitude(longitude)
+		var processedTime: Double = localMeanTime - hoursFromMeridianForLongitude(longitude: longitude)
 	    
 		while  processedTime < 0.0
 	    {
@@ -122,9 +122,9 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func cosLocalHourAngleForAngle(sunTrueLongitude: Double, andLatitude latitude: Double, andZenith zenith: Double) -> Double
 	{
-        let sinDec: Double = 0.39782 * (sinDeg(sunTrueLongitude))
-	    let cosDec: Double = cosDeg((asinDeg(sinDec)))
-	    let cosH: Double = ((cosDeg(zenith)) - (sinDec * (sinDeg(latitude)))) / (cosDec * (cosDeg(latitude)))
+		let sinDec: Double = 0.39782 * (sinDeg(deg: sunTrueLongitude))
+		let cosDec: Double = cosDeg(deg: (asinDeg(x: sinDec)))
+		let cosH: Double = ((cosDeg(deg: zenith)) - (sinDec * (sinDeg(deg: latitude)))) / (cosDec * (cosDeg(deg: latitude)))
 	    return cosH
 	}
 	
@@ -139,7 +139,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func sunRightAscensionHoursForLongitude(sunTrueLongitude: Double) -> Double
 	{
-	    let a: Double = 0.91764 * tanDeg(sunTrueLongitude)
+		let a: Double = 0.91764 * tanDeg(deg: sunTrueLongitude)
         var ra: Double = 360.0 / (2.0 * M_PI) * atan(a)
 	    
 	    // get result into 0-360 degree range
@@ -163,7 +163,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func sunTrueLongitudeFromAnomaly(sunMeanAnomaly: Double) -> Double
 	{
-        var l: Double = sunMeanAnomaly + (1.916 * sinDeg(sunMeanAnomaly)) + (0.020 * sinDeg(2 * sunMeanAnomaly)) + 282.634
+		var l: Double = sunMeanAnomaly + (1.916 * sinDeg(deg: sunMeanAnomaly)) + (0.020 * sinDeg(deg: 2 * sunMeanAnomaly)) + 282.634
 	    
 	    // get longitude into 0-360 degree range
 	    if l >= 360.0
@@ -190,7 +190,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func meanAnomalyForDayOfYear(dayOfYear: Int, atLongitude longitude: Double, forCalculationType type: Int) -> Double
 	{
-	    let temp: Double = (0.9856 * approxTimeDaysForDayOfYear(dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude), forCalculationType: type)) - 3.289
+		let temp: Double = (0.9856 * approxTimeDaysForDayOfYear(dayOfYear: dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude: longitude), forCalculationType: type)) - 3.289
 	    return temp
 	}
 	
@@ -268,20 +268,20 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
         var tempZenith = zenith
 	    if adjustForElevation
 	    {
-	        tempZenith = adjustZenith(zenith, forElevation: geoLocation!.altitude)
+			tempZenith = adjustZenith(zenith: zenith, forElevation: geoLocation!.altitude)
 	    }
 	    else
 	    {
-	        tempZenith = adjustZenith(zenith, forElevation: 0)
+			tempZenith = adjustZenith(zenith: zenith, forElevation: 0)
 	    }
 	    
-	    let year: Int = yearMonthAndDayFromDate(date)[0]
+		let year: Int = yearMonthAndDayFromDate(date: date)[0]
 	    
-	    let month: Int = yearMonthAndDayFromDate(date)[1]
+		let month: Int = yearMonthAndDayFromDate(date: date)[1]
 	    
-	    let day: Int = yearMonthAndDayFromDate(date)[2]
+		let day: Int = yearMonthAndDayFromDate(date: date)[2]
 	    
-	    doubleTime = sunriseOrSunsetForYear(year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunset)
+		doubleTime = sunriseOrSunsetForYear(year: year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunset)
 	    
 	    return doubleTime
 	}
@@ -302,17 +302,17 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
         var tempZenith = zenith
 	    if adjustForElevation
 	    {
-	        tempZenith = adjustZenith(zenith, forElevation: geoLocation!.altitude)
+			tempZenith = adjustZenith(zenith: zenith, forElevation: geoLocation!.altitude)
 	    }
 	    else
 	    {
-	        tempZenith = adjustZenith(zenith, forElevation: 0)
+			tempZenith = adjustZenith(zenith: zenith, forElevation: 0)
 	    }
 	    
-	    let year: Int = yearMonthAndDayFromDate(date)[0]
-	    let month: Int = yearMonthAndDayFromDate(date)[1]
-	    let day: Int = yearMonthAndDayFromDate(date)[2]
-	    doubleTime = sunriseOrSunsetForYear(year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunrise)
+		let year: Int = yearMonthAndDayFromDate(date: date)[0]
+		let month: Int = yearMonthAndDayFromDate(date: date)[1]
+		let day: Int = yearMonthAndDayFromDate(date: date)[2]
+		doubleTime = sunriseOrSunsetForYear(year: year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunrise)
 	    return doubleTime
 	}
 	
@@ -338,7 +338,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	public func elevationAdjustmentForElevation(elevation: Double) -> Double
 	{
 	    let earthRadius: Double = kEarthRadiusInKilometers
-	    let elevationAdjustment: Double = toDegrees(acos(earthRadius / (earthRadius + (elevation / 1000))))
+		let elevationAdjustment: Double = toDegrees(radians: acos(earthRadius / (earthRadius + (elevation / 1000))))
 	    return elevationAdjustment
 	}
 	
@@ -371,7 +371,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	{
 	    if zenith == kZenithGeometric
 	    {
-            return zenith + (kSolarRadius + kRefraction + elevationAdjustmentForElevation(elevation))
+			return zenith + (kSolarRadius + kRefraction + elevationAdjustmentForElevation(elevation: elevation))
 	    }
 	    
 	    return zenith
@@ -386,11 +386,11 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func yearMonthAndDayFromDate(date: NSDate) -> [Int]
 	{
-        let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)!
-        let parts: NSDateComponents = gregorianCalendar.components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day], fromDate:date)
-        let year = parts.year
-	    let month = parts.month
-	    let day = parts.day
+		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+		let parts = gregorianCalendar.components([.year, .month, .day], from: date as Date)
+        let year = parts.year ?? 0
+	    let month = parts.month ?? 0
+	    let day = parts.day ?? 0
         let tempArray = [year, month, day]
 	    return tempArray
 	}

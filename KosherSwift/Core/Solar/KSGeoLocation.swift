@@ -11,38 +11,39 @@ public class GeoLocation
 	public var locationName : String?
 	public var latitude : Double = 0
 	public var altitude : Double = 0
-	public var timeZone : NSTimeZone?
+	public var timeZone : TimeZone?
 
     let trig = trigonometry()
     
     
-    public init(name: String, latitude: Double, longitude: Double, elevation: Double, timeZone: NSTimeZone)
+    public init(name: String? = nil, latitude: Double, longitude: Double, elevation: Double?, timeZone: TimeZone)
     {
         self.locationName = name
         self.longitude = longitude
         self.latitude = latitude
-        self.altitude = elevation
+        self.altitude = elevation ?? 0
         self.timeZone = timeZone
+		
     }
     
-	convenience public init(latitude: Double, longitude: Double, timeZone: NSTimeZone)
+	convenience public init(latitude: Double, longitude: Double, timeZone: TimeZone)
 	{
 		self.init(name: "Unspecified Location", latitude: latitude, longitude: longitude, elevation: 0, timeZone: timeZone)
 	}
 	
-	convenience public init(latitude: Double, longitude: Double, elevation: Double, timezone: NSTimeZone)
+	convenience public init(latitude: Double, longitude: Double, elevation: Double, timezone: TimeZone)
 	{
 		self.init(name: "Unspecified Location", latitude: latitude, longitude: longitude, elevation: elevation, timeZone: timezone)
 	}
 	
-	convenience public init(name: String, latitude: Double, longitude: Double, timeZone: NSTimeZone)
+	convenience public init(name: String, latitude: Double, longitude: Double, timeZone: TimeZone)
 	{
         self.init(name: name, latitude: latitude, longitude: longitude, elevation: 0, timeZone: timeZone)
 	}
 	
 	convenience public init()
 	{
-        self.init(name: "Greenwich, England", latitude: 0, longitude: 51.4772, timeZone: NSTimeZone(abbreviation: "GMT")!)
+        self.init(name: "Greenwich, England", latitude: 0, longitude: 51.4772, timeZone: TimeZone(abbreviation: "GMT")!)
 	}
 	
 	public func setLatitudeWithDegrees(_degrees: Int, andMinutes _minutes: Int, andSeconds _seconds: Double, inDirection _direction: String)
@@ -115,22 +116,22 @@ public class GeoLocation
      */
 	public func localMeanTimeOffset() -> Int
 	{
-	    return Int(longitude) * 4 * kMillisecondsInAMinute - (timeZone!.secondsFromGMT * 1000)
+		return Int(longitude) * 4 * kMillisecondsInAMinute - (timeZone!.secondsFromGMT() * 1000)
 	}
 	
 	public func getGeodesicInitialBearingForLocation(location: GeoLocation) -> Double
 	{
-	    return vincentyFormulaForLocation(location, withBearing: kInitialBearing)!
+		return vincentyFormulaForLocation(location: location, withBearing: kInitialBearing)!
 	}
 	
 	public func getGeodesicFinalBearingForLocation(location: GeoLocation) -> Double
 	{
-	    return vincentyFormulaForLocation(location, withBearing: kFinalBearing)!
+		return vincentyFormulaForLocation(location: location, withBearing: kFinalBearing)!
 	}
 	
 	public func getGeodesicDistanceForLocation(location: GeoLocation) -> Double
 	{
-	    return vincentyFormulaForLocation(location, withBearing: kDistance)!
+		return vincentyFormulaForLocation(location: location, withBearing: kDistance)!
 	}
 	
     /**
@@ -154,9 +155,9 @@ public class GeoLocation
 	    let a: Double = 6378137
 	    let b: Double = 6356752.3142
 	    let f: Double = 1 / 298.257223563;  // WGS-84 ellipsiod
-	    let L = trig.toRadians(location.longitude - longitude)
-	    let U1 = atan((1 - f) * tan(trig.toRadians(latitude)))
-	    let U2 = atan((1 - f) * tan(trig.toRadians(location.latitude)))
+		let L = trig.toRadians(degrees: location.longitude - longitude)
+		let U1 = atan((1 - f) * tan(trig.toRadians(degrees: latitude)))
+		let U2 = atan((1 - f) * tan(trig.toRadians(degrees: location.latitude)))
 	    let sinU1 = sin(U1)
         let cosU1 = cos(U1)
 	    let sinU2 = sin(U2)
@@ -190,7 +191,7 @@ public class GeoLocation
 	        cosSqAlpha = 1 - sinAlpha * sinAlpha
 	        cos2SigmaM = cosSigma - 2 * sinU1 * sinU2 / cosSqAlpha
 	        //Check if this is correct
-	        if isnan(cos2SigmaM){
+			if cos2SigmaM.isNaN {
 	            cos2SigmaM = 0; // equatorial line: cosSqAlpha=0 (ß6)
 	        }
 	        C = f / 16 * cosSqAlpha * (4 + f * (4 - 3 * cosSqAlpha))
@@ -211,9 +212,9 @@ public class GeoLocation
 	    let distance: Double = b * A * (sigma - deltaSigma)
 	    
 	    // initial bearing
-	    let fwdAz: Double = trig.toDegrees(atan2(cosU2 * sinLambda, cosU1 * sinU2 - sinU1 * cosU2 * cosLambda))
+		let fwdAz: Double = trig.toDegrees(radians: atan2(cosU2 * sinLambda, cosU1 * sinU2 - sinU1 * cosU2 * cosLambda))
 	    // final bearing
-	    let revAz: Double = trig.toDegrees(atan2(cosU1 * sinLambda, -sinU1 * cosU2 + cosU1 * sinU2 * cosLambda))
+		let revAz: Double = trig.toDegrees(radians: atan2(cosU1 * sinLambda, -sinU1 * cosU2 + cosU1 * sinU2 * cosLambda))
 	    if formula == kDistance
 	    {
 	        return distance
@@ -234,22 +235,22 @@ public class GeoLocation
 	
 	public func getRhumbLineBearingForLocation(location: GeoLocation) -> Double
 	{
-        var dLon: Double = trig.toRadians(location.longitude - longitude)
-	    let dPhi: Double = log(tan(trig.toRadians(location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
+		var dLon: Double = trig.toRadians(degrees: location.longitude - longitude)
+		let dPhi: Double = log(tan(trig.toRadians(degrees: location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
 	    if fabs(dLon) > M_PI{
 	        dLon = dLon > 0 ? -(2 * M_PI - dLon) : (2 * M_PI + dLon)
 	    }
-	    return trig.toDegrees(atan2(dLon, dPhi))
+		return trig.toDegrees(radians: atan2(dLon, dPhi))
 	}
 	
 	public func getRhumbLineDistanceForLocation(location: GeoLocation) -> Double
 	{
 	    
 	    let R: Double = 6371;  // earth's mean radius in km
-	    let dLat: Double = trig.toRadians(location.latitude - latitude)
-        var dLon: Double = trig.toRadians(fabs(location.longitude - longitude))
-	    let dPhi: Double = log(tan(trig.toRadians(location.longitude) / 2 + M_PI / 4) / tan(trig.toRadians(latitude) / 2 + M_PI / 4))
-	    let q: Double = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(trig.toRadians(latitude))
+		let dLat: Double = trig.toRadians(degrees: location.latitude - latitude)
+		var dLon: Double = trig.toRadians(degrees: fabs(location.longitude - longitude))
+		let dPhi: Double = log(tan(trig.toRadians(degrees: location.longitude) / 2 + M_PI / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
+		let q: Double = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(trig.toRadians(degrees: latitude))
 	    // if dLon over 180° take shorter rhumb across 180∞ meridian:
 	    if dLon > M_PI
 	    {
