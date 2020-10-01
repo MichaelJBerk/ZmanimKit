@@ -249,7 +249,7 @@ public class GeoLocation
 	    let R: Double = 6371;  // earth's mean radius in km
 		let dLat: Double = trig.toRadians(degrees: location.latitude - latitude)
 		var dLon: Double = trig.toRadians(degrees: fabs(location.longitude - longitude))
-		let dPhi: Double = log(tan(trig.toRadians(degrees: location.longitude) / 2 + .pi / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
+		let dPhi: Double = log(tan(trig.toRadians(degrees: location.longitude) / 2 + .pi / 4) / tan(trig.toRadians(degrees: latitude) / 2 + .pi / 4))
 		let q: Double = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(trig.toRadians(degrees: latitude))
 	    // if dLon over 180° take shorter rhumb across 180∞ meridian:
 		if dLon > .pi

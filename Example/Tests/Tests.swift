@@ -44,7 +44,7 @@ class KosherSwiftTests: XCTestCase {
 	func testAlos() {
 		print("alos")
 		let alos = Zman(selector: #selector(zCal.alosHashachar))
-		let e = alos.explanation()
+		
 		
 	}
 
