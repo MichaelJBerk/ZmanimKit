@@ -262,7 +262,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      *
      *  - returns: The sunset time as a double. (TODO: Check the units.)
      */
-	public func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	public func UTCSunsetForDate(date: Date, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
         var doubleTime: Double = 0.0
         var tempZenith = zenith
@@ -296,7 +296,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      *
      *  - returns: The sunrise time as a double. (TODO: Check the units.)
      */
-	public func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	public func UTCSunriseForDate(date: Date, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 	{
         var doubleTime: Double = 0.0
         var tempZenith = zenith
@@ -380,14 +380,14 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
     /**
      *  Break up a date object into day, month, year.
      *
-     *  - parameter date: An NSDate to use extract information from.
+     *  - parameter date: A Date to use extract information from.
      *
      *  - returns: An array containing three numbers. The first represents a year. The second represents the month. The third value is the day of the month.
      */
-	public func yearMonthAndDayFromDate(date: NSDate) -> [Int]
+	public func yearMonthAndDayFromDate(date: Date) -> [Int]
 	{
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
-		let parts = gregorianCalendar.components([.year, .month, .day], from: date as Date)
+		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
+		let parts = gregorianCalendar.dateComponents([.year, .month, .day], from: date)
         let year = parts.year ?? 0
 	    let month = parts.month ?? 0
 	    let day = parts.day ?? 0

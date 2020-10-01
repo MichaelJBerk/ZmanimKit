@@ -5,26 +5,26 @@
 
 import Foundation
 
-extension NSDate
+extension Date
 {
-	class public func dateWithDay(day: Int, month: Int, year: Int) -> NSDate
+	static public func dateWithDay(day: Int, month: Int, year: Int) -> Date
 	{
-		return NSDate.dateWithDay(day: day, Month: month, Year: year, andCalendar: NSDate.defaultCalendar())
+		return Date.dateWithDay(day: day, Month: month, Year: year, andCalendar: Date.defaultCalendar())
 	}
 	
-	class public func dateWithDay(day: Int, Month month: Int, Year year: Int, andCalendar calendar: NSCalendar) -> NSDate
+	static public func dateWithDay(day: Int, Month month: Int, Year year: Int, andCalendar calendar: Calendar) -> Date
 	{
-	    let components: NSDateComponents = NSDateComponents()
+	    var components: DateComponents = DateComponents()
 	    components.day = day
 	    components.month = month
 	    components.year = year
 	    
-		return calendar.date(from: components as DateComponents)! as NSDate
+		return calendar.date(from: components as DateComponents)! as Date
 	}
 	
-	class public func dateWithEra(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, week: Int, weekday: Int, weekdayOrdinal: Int, andCalendar calendar: NSCalendar) -> NSDate
+	static public func dateWithEra(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, week: Int, weekday: Int, weekdayOrdinal: Int, andCalendar calendar: Calendar) -> Date
 	{
-	    let components: NSDateComponents = NSDateComponents()
+	    var components: DateComponents = DateComponents()
 	    components.era = era
 	    components.year = year
 	    components.month = month
@@ -36,121 +36,121 @@ extension NSDate
 	    components.weekday = weekday
 	    components.weekdayOrdinal = weekdayOrdinal
 	    
-		return calendar.date(from: components as DateComponents)! as NSDate
+		return calendar.date(from: components as DateComponents)! as Date
 	}
 	
-	class public func defaultEraForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultEraForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).era
+		return Date.defaultComponentsForCalendar(calendar: calendar).era ?? 0
 	}
 	
-	class public func defaultYearForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultYearForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).year
+		return Date.defaultComponentsForCalendar(calendar: calendar).year ?? 0
 	}
 	
-	class public func defaultMonthForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultMonthForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).month
+		return Date.defaultComponentsForCalendar(calendar: calendar).month ?? 0
 	}
 	
-	class public func defaultDayForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultDayForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).day
+		return Date.defaultComponentsForCalendar(calendar: calendar).day ?? 0
 	}
 	
-	class public func defaultHourForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultHourForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).hour
+		return Date.defaultComponentsForCalendar(calendar: calendar).hour ?? 0
 	}
 	
-	class public func defaultMinuteForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultMinuteForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).minute
+		return Date.defaultComponentsForCalendar(calendar: calendar).minute ?? 0
 	}
 	
-	class public func defaultSecondForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultSecondForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).second
+		return Date.defaultComponentsForCalendar(calendar: calendar).second ?? 0
 	}
 	
-	class public func defaultWeekForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultWeekForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekOfYear
+		return Date.defaultComponentsForCalendar(calendar: calendar).weekOfYear ?? 0
 	}
 	
-	class public func defaultWeekdayForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultWeekdayForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekday
+		return Date.defaultComponentsForCalendar(calendar: calendar).weekday ?? 0
 	}
 	
-	class public func defaultWeekdayOrdinalForCalendar(calendar: NSCalendar) -> Int
+	static public func defaultWeekdayOrdinalForCalendar(calendar: Calendar) -> Int
 	{
-		return NSDate.defaultComponentsForCalendar(calendar: calendar).weekdayOrdinal
+		return Date.defaultComponentsForCalendar(calendar: calendar).weekdayOrdinal ?? 0
 	}
 	
-	class public func defaultEra() -> Int
+	static public func defaultEra() -> Int
 	{
-	    return NSDate.defaultComponents().era
+	    return Date.defaultComponents().era ?? 0
 	}
 	
-	class public func defaultYear() -> Int
+	static public func defaultYear() -> Int
 	{
-	    return NSDate.defaultComponents().year
+	    return Date.defaultComponents().year ?? 0
 	}
 	
-	class public func defaultMonth() -> Int
+	static public func defaultMonth() -> Int
 	{
-	    return NSDate.defaultComponents().month
+	    return Date.defaultComponents().month ?? 0
 	}
 	
-	class public func defaultDay() -> Int
+	static public func defaultDay() -> Int
 	{
-	    return NSDate.defaultComponents().day
+	    return Date.defaultComponents().day ?? 0
 	}
 	
-	class public func defaultHour() -> Int
+	static public func defaultHour() -> Int
 	{
-	    return NSDate.defaultComponents().hour
+	    return Date.defaultComponents().hour ?? 0
 	}
 	
-	class public func defaultMinute() -> Int
+	static public func defaultMinute() -> Int
 	{
-	    return NSDate.defaultComponents().minute
+	    return Date.defaultComponents().minute ?? 0
 	}
 	
-	class public func defaultSecond() -> Int
+	static public func defaultSecond() -> Int
 	{
-	    return NSDate.defaultComponents().second
+	    return Date.defaultComponents().second ?? 0
 	}
 	
-	class public func defaultWeek() -> Int
+	static public func defaultWeek() -> Int
 	{
-	    return NSDate.defaultComponents().weekOfYear
+	    return Date.defaultComponents().weekOfYear ?? 0
 	}
 	
-	class public func defaultWeekday() -> Int
+	static public func defaultWeekday() -> Int
 	{
-	    return NSDate.defaultComponents().weekday
+	    return Date.defaultComponents().weekday ?? 0
 	}
 	
-	class public func defaultWeekdayOrdinal() -> Int
+	static public func defaultWeekdayOrdinal() -> Int
 	{
-	    return NSDate.defaultComponents().weekdayOrdinal
+	    return Date.defaultComponents().weekdayOrdinal ?? 0
 	}
 	
-	class public func defaultComponents() -> NSDateComponents
+	static public func defaultComponents() -> DateComponents
 	{
-		return defaultComponentsForCalendar(calendar: NSDate.defaultCalendar())
+		return defaultComponentsForCalendar(calendar: Date.defaultCalendar())
 	}
 	
-	class public func defaultComponentsForCalendar(calendar: NSCalendar) -> NSDateComponents
+	static public func defaultComponentsForCalendar(calendar: Calendar) -> DateComponents
 	{    
-		return calendar.components([.era, .year, .month, .day, .hour, .minute, .second, .weekday, .weekdayOrdinal, .quarter, .weekOfYear, .weekOfMonth, .yearForWeekOfYear, .calendar, .timeZone], from:NSDate() as Date) as NSDateComponents
+		return calendar.dateComponents([.era, .year, .month, .day, .hour, .minute, .second, .weekday, .weekdayOrdinal, .quarter, .weekOfYear, .weekOfMonth, .yearForWeekOfYear, .calendar, .timeZone], from:Date() as Date) as DateComponents
 	}
 	
-	class public func defaultCalendar() -> NSCalendar
+	static public func defaultCalendar() -> Calendar
 	{
-		return NSCalendar.current as NSCalendar
+		return Calendar.current as Calendar
 	}
 }

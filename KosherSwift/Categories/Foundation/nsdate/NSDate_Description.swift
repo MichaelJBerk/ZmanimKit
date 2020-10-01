@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension NSDate
+extension Date
 {
     public func about() -> String
 	{
@@ -15,7 +15,7 @@ extension NSDate
 		return formatter.string(from: self as Date)
 	}
 	
-	public func dayNameOnCalendar(calendar: NSCalendar) -> String
+	public func dayNameOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -23,7 +23,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthNameOnCalendar(calendar: NSCalendar) -> String
+	public func monthNameOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -31,7 +31,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthAndYearOnCalendar(calendar: NSCalendar) -> String
+	public func monthAndYearOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -39,7 +39,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthAbbreviationAndYearOnCalendar(calendar: NSCalendar) -> String
+	public func monthAbbreviationAndYearOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -47,7 +47,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthAbbreviationOnCalendar(calendar: NSCalendar) -> String
+	public func monthAbbreviationOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -55,7 +55,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthAndDayOnCalendar(calendar: NSCalendar) -> String
+	public func monthAndDayOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -63,7 +63,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func dayOfMonthOnCalendar(calendar: NSCalendar) -> String
+	public func dayOfMonthOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -71,7 +71,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func monthAndDayAndYearOnCalendar(calendar: NSCalendar) -> String
+	public func monthAndDayAndYearOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar
@@ -79,7 +79,7 @@ extension NSDate
 		return f.string(from: self as Date)
 	}
 	
-	public func dayOfMonthAndYearOnCalendar(calendar: NSCalendar) -> String
+	public func dayOfMonthAndYearOnCalendar(calendar: Calendar) -> String
 	{
 		let f: DateFormatter = DateFormatter()
 		f.calendar = calendar as Calendar

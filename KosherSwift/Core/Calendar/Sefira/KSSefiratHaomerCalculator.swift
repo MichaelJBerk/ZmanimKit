@@ -9,7 +9,7 @@ import Foundation
 public class SefiratHaomerCalculator
 {
     /**
-     *  This method checks if [NSDate date] represents a day
+     *  This method checks if [Date date] represents a day
      *  that falls out during the omer count on the Hebrew
      *  calendar.
      *
@@ -17,7 +17,7 @@ public class SefiratHaomerCalculator
      */
 	class public func fallsToday() -> Bool
 	{
-		return fallsOnDate(date: NSDate())
+		return fallsOnDate(date: Date())
 	}
 	
     /**
@@ -28,7 +28,7 @@ public class SefiratHaomerCalculator
      *  - perameter date: The date to check
      *  - returns: true if date is during the sefira count, otherwise false.
      */
-	class public func fallsOnDate(date: NSDate) -> Bool
+	class public func fallsOnDate(date: Date) -> Bool
 	{
 		return dayOfSefiraForDate(date: date) != 0
 	}
@@ -37,14 +37,14 @@ public class SefiratHaomerCalculator
      *  This method returns an integer representing the
      *  current day of the omer count.
      *
-     *  If NSDate() does not fall out during the
+     *  If Date() does not fall out during the
      *  omer count, then 0 is returned.
      *
      *  - returns: An integer representing the day of the omer count.
      */
 	class public func dayOfSefira() -> Int
 	{
-		return dayOfSefiraForDate(date: NSDate())
+		return dayOfSefiraForDate(date: Date())
 	}
 	
     /**
@@ -57,10 +57,10 @@ public class SefiratHaomerCalculator
      *  - perameter date: The date to use.
      *  - returns: An integer representing the day of the omer count.
      */
-	class public func dayOfSefiraForDate(date: NSDate) -> Int
+	class public func dayOfSefiraForDate(date: Date) -> Int
 	{
-		let firstDayOfTheOmer: NSDate = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date: date)
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let firstDayOfTheOmer: Date = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date: date)
+		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
 		var day: Int = hebrewCalendar.daysFromDate(fromDate: firstDayOfTheOmer, toDate: date) + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
 	    if day < 0 || day > 49
 	    {
@@ -70,13 +70,13 @@ public class SefiratHaomerCalculator
 	    return day
 	}
 	
-	class public func _dateOfSixteenNissanForYearOfDate(date: NSDate) -> NSDate
+	class public func _dateOfSixteenNissanForYearOfDate(date: Date) -> Date
 	{
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
 		
 		let hebrewYear: Int = hebrewCalendar.yearsInDate(date: date)
 		
 	    //  Foundation reserves 7 for Adar II, so Nissan is 8
-		return NSDate.dateWithDay(day: 16, Month: 8, Year: hebrewYear, andCalendar: hebrewCalendar)
+		return Date.dateWithDay(day: 16, Month: 8, Year: hebrewYear, andCalendar: hebrewCalendar)
 	}
 }

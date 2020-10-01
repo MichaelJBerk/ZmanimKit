@@ -61,8 +61,8 @@ class TableViewController: UITableViewController {
 //		print(timeFormatter.string(from: zSunset as! Date))
 //
 		let jewishCalendar = JewishCalendar(location: geoLocation)
-		let nsGdbc = gregorianDateBeforeChanuka as NSDate
-		jewishCalendar.workingDate = gregorianDateBeforeChanuka as NSDate
+		let nsGdbc = gregorianDateBeforeChanuka
+		jewishCalendar.workingDate = gregorianDateBeforeChanuka
 		let shkia = jewishCalendar.sunsetOffsetByDegrees(offsetZenith: 90)
 		print(jewishCalendar.geoLocation?.timeZone?.abbreviation())
 		print(timeFormatter.string(from: shkia as! Date))
@@ -74,7 +74,7 @@ class TableViewController: UITableViewController {
 	func otherThing() {
 		let l = GeoLocation(latitude: 41.999466, longitude: -87.716220, timeZone: .current)
 		let cal = JewishCalendar(location: l)
-		cal.workingDate = Date() as NSDate
+		cal.workingDate = Date()
 		
 		let wd = cal.workingDateAdjustedForSunset()
 		print(timeFormatter.string(from: wd as Date))

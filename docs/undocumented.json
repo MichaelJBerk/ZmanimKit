@@ -1464,6 +1464,104 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 8,
+      "symbol": "Zman",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 10,
+      "symbol": "Zman.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 11,
+      "symbol": "Zman.selector",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 12,
+      "symbol": "Zman.ksZmanData",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 14,
+      "symbol": "Zman.zmanForSelector(selector:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 19,
+      "symbol": "Zman.init(selector:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 24,
+      "symbol": "Zman.hebrewName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 29,
+      "symbol": "Zman.transliteratedNameAshkenazic()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 34,
+      "symbol": "Zman.transliteratedNameSephardic()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 39,
+      "symbol": "Zman.englishName()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 44,
+      "symbol": "Zman.explanation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 49,
+      "symbol": "Zman.relatedZmanim()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 72,
+      "symbol": "Zman._metadataForCurrentZman()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 211,
+      "symbol": "Zman.isEqualToZman(anotherZman:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZmanimCalendar.swift",
       "line": 8,
       "symbol": "ZmanimCalendar",

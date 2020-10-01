@@ -17,23 +17,23 @@ import Foundation
  */
 public class ParashatHashavuaCalculator
 {
-	public var hebrewCalendar : NSCalendar?
-	public var gregorianCalendar : NSCalendar?
+	public var hebrewCalendar : Calendar
+	public var gregorianCalendar : Calendar
 
 	public init()
 	{
-		gregorianCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)
-		hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)
+		gregorianCalendar = Calendar(identifier: .gregorian)
+		hebrewCalendar = Calendar(identifier: .hebrew)
 	}
 	
     /**
      *  This method returns a KCParasha object representing the *parasha*
      *  in the diaspora for the week during which the supplied date falls.
      *
-     *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
+     *  - parameter date: A Date representing a day for which we want to calculate the parasha.
      *  - returns: A KCParasha object representing the relevant parasha or parshiot.
      */
-	public func parashaInDiasporaForDate(date: NSDate) -> Parasha
+	public func parashaInDiasporaForDate(date: Date) -> Parasha
 	{
 		return _parashaForDate(date: date, inDiaspora: true)
 	}
@@ -42,10 +42,10 @@ public class ParashatHashavuaCalculator
      *  This method returns a KCParasha object representing the *parasha*
      *  in Israel for the week during which the supplied date falls.
      *
-     *  - parameter date: An NSDate representing a day for which we want to calculate the parasha.
+     *  - parameter date: A Date representing a day for which we want to calculate the parasha.
      *  - returns: A KCParasha object representing the relevant parasha or parshiot.
      */
-	public func parashaInIsraelForDate(date: NSDate) -> Parasha
+	public func parashaInIsraelForDate(date: Date) -> Parasha
 	{
 		return _parashaForDate(date: date, inDiaspora: false)
 	}
@@ -54,9 +54,9 @@ public class ParashatHashavuaCalculator
      *  Returns a listing of all parshiot in the diaspora
      *  for the specificed year type.
      *
-     *  You can get the year type from the NSCalendar class method,
+     *  You can get the year type from the Calendar class method,
      *  typeOfHebrewYearContainingDate: as defined
-     *  in NSDate+HebrewYearTypes category method.
+     *  in Date+HebrewYearTypes category method.
      *
      *  - parameter typeOfYear: The type of hebrew year.
      *  - returns: An array of KCParasha objects.
@@ -144,11 +144,11 @@ public class ParashatHashavuaCalculator
      *  Returns a listing of all parshiot in Israel
      *  for the specificed year type.
      *
-     *  You can get the year type from the NSCalendar class method,
+     *  You can get the year type from the Calendar class method,
      *  typeOfHebrewYearContainingDate: as defined
-     *  in NSDate+HebrewYearTypes category method.
+     *  in Date+HebrewYearTypes category method.
      *
-     *  - perameters typeOfYear: A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
+     *  - perameters typeOfYear: A kHebrewYearType value as defined in Calendar+hebrewYearTypes.h
      *  - returns: An array of KCParasha objects.
      */
 	public func parshiotInIsraelDuringYearType(typeOfYear: kHebrewYearType) -> [Parashot]
@@ -232,13 +232,14 @@ public class ParashatHashavuaCalculator
 	    return parshiot
 	}
 	
-	private func _parashaForDate(date: NSDate, inDiaspora isInDiaspora: Bool) -> Parasha
+	private func _parashaForDate(date: Date, inDiaspora isInDiaspora: Bool) -> Parasha
 	{
-		let tempDate = hebrewCalendar!.lastDayOfTheWeekUsingReferenceDate(date: date)
-		let year = hebrewCalendar!.yearsInDate(date: tempDate)
-		let roshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar!)
-		let weeksSinceRoshHashana: Int = hebrewCalendar!.weeksFromDate(fromDate: roshHashana, toDate: tempDate)
-		let type: kHebrewYearType = NSCalendar.typeOfHebrewYearContainingDate(date: tempDate)!
+		
+		let tempDate = hebrewCalendar.lastDayOfTheWeekUsingReferenceDate(date: date)
+		let year = hebrewCalendar.yearsInDate(date: tempDate)
+		let roshHashana = Date.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar)
+		let weeksSinceRoshHashana: Int = hebrewCalendar.weeksFromDate(fromDate: roshHashana, toDate: tempDate)
+		let type: kHebrewYearType = Calendar.typeOfHebrewYearContainingDate(date: tempDate)!
 		//	Query the parshios
 		let parshiot = _parshiotForYearType(type: type, inDiaspora: isInDiaspora)
 	    //	Then look up this weeks parsha

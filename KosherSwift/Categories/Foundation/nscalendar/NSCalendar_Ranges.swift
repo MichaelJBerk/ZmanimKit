@@ -5,270 +5,271 @@
 
 import Foundation
 
-extension NSCalendar
+extension Calendar
 {
 	public func secondsPerMinute() -> Int
 	{
-		return secondsPerMinuteUsingReferenceDate(date: NSDate())
+		return secondsPerMinuteUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerMinuteUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerMinuteUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .minute, for: date as Date).length
+		let c = range(of: .second, in: .minute, for: date)
+		return range(of: .second, in: .minute, for: date)?.count ?? 0
 	}
 	
 	public func secondsPerHour() -> Int
 	{
-		return secondsPerHourUsingReferenceDate(date: NSDate())
+		return secondsPerHourUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerHourUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerHourUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .hour, for: date as Date).length
+		return range(of: .second, in: .hour, for: date as Date)?.count ?? 0
 	}
 	
 	public func minutesPerHour() -> Int
 	{
-		return minutesPerHourUsingReferenceDate(date: NSDate())
+		return minutesPerHourUsingReferenceDate(date: Date())
 	}
 	
-	public func minutesPerHourUsingReferenceDate(date: NSDate) -> Int
+	public func minutesPerHourUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .minute, in: .hour, for: date as Date).length
+		return range(of: .minute, in: .hour, for: date as Date)?.count ?? 0
 	}
 	
 	public func secondsPerDay() -> Int
 	{
-		return secondsPerDayUsingReferenceDate(date: NSDate())
+		return secondsPerDayUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerDayUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerDayUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .day, for: date as Date).length
+		return range(of: .second, in: .day, for: date as Date)?.count ?? 0
 	}
 	
 	public func minutesPerDay() -> Int
 	{
-		return minutesPerDayUsingReferenceDate(date: NSDate())
+		return minutesPerDayUsingReferenceDate(date: Date())
 	}
 	
-	public func minutesPerDayUsingReferenceDate(date: NSDate) -> Int
+	public func minutesPerDayUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .minute, in: .day, for: date as Date).length
+		return range(of: .minute, in: .day, for: date as Date)?.count ?? 0
 	}
 	
 	public func hoursPerDay() -> Int
 	{
-		return hoursPerDayUsingReferenceDate(date: NSDate())
+		return hoursPerDayUsingReferenceDate(date: Date())
 	}
 	
-	public func hoursPerDayUsingReferenceDate(date: NSDate) -> Int
+	public func hoursPerDayUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .hour, in: .day, for: date as Date).length
+		return range(of: .hour, in: .day, for: date as Date)?.count ?? 0
 	}
 	
 	public func secondsPerWeek() -> Int
 	{
-		return secondsPerWeekUsingReferenceDate(date: NSDate())
+		return secondsPerWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerWeekUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerWeekUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .weekOfYear, for: date as Date).length
+		return range(of: .second, in: .weekOfYear, for: date as Date)?.count ?? 0
 	}
 	
 	public func minutesPerWeek() -> Int
 	{
-		return minutesPerWeekUsingReferenceDate(date: NSDate())
+		return minutesPerWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func minutesPerWeekUsingReferenceDate(date: NSDate) -> Int
+	public func minutesPerWeekUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .minute, in: .weekOfYear, for: date as Date).length
+		return range(of: .minute, in: .weekOfYear, for: date as Date)?.count ?? 0
 	}
 	
 	public func hoursPerWeek() -> Int
 	{
-		return hoursPerWeekUsingReferenceDate(date: NSDate())
+		return hoursPerWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func hoursPerWeekUsingReferenceDate(date: NSDate) -> Int
+	public func hoursPerWeekUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .hour, in: .weekOfYear, for: date as Date).length
+		return range(of: .hour, in: .weekOfYear, for: date as Date)?.count ?? 0
 	}
 	
 	public func daysPerWeek() -> Int
 	{
-		return daysPerWeekUsingReferenceDate(date: NSDate())
+		return daysPerWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func daysPerWeekUsingReferenceDate(date: NSDate) -> Int
+	public func daysPerWeekUsingReferenceDate(date: Date) -> Int
 	{
-		let weekLater: NSDate = dateByAddingWeeks(weeks: 1, toDate: date)
-		return components(.day, from: date as Date, to: weekLater as Date, options: []).day ?? 0
+		let weekLater: Date = dateByAddingWeeks(weeks: 1, toDate: date)
+		return dateComponents([.day], from: date as Date, to: weekLater as Date).day ?? 0
 	}
 	
 	public func secondsPerMonth() -> Int
 	{
-		return secondsPerMonthUsingReferenceDate(date: NSDate())
+		return secondsPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerMonthUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerMonthUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .month, for: date as Date).length
+		return range(of: .second, in: .month, for: date as Date)?.count ?? 0
 	}
 	
 	public func minutesPerMonth() -> Int
 	{
-		return minutesPerMonthUsingReferenceDate(date: NSDate())
+		return minutesPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func minutesPerMonthUsingReferenceDate(date: NSDate) -> Int
+	public func minutesPerMonthUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .minute, in: .month, for: date as Date).length
+		return range(of: .minute, in: .month, for: date as Date)?.count ?? 0
 	}
 	
 	public func hoursPerMonth() -> Int
 	{
-		return hoursPerMonthUsingReferenceDate(date: NSDate())
+		return hoursPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func hoursPerMonthUsingReferenceDate(date: NSDate) -> Int
+	public func hoursPerMonthUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .hour, in: .month, for: date as Date).length
+		return range(of: .hour, in: .month, for: date as Date)?.count ?? 0
 	}
 	
 	public func daysPerMonth() -> Int
 	{
-		return daysPerMonthUsingReferenceDate(date: NSDate())
+		return daysPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func daysPerMonthUsingReferenceDate(date: NSDate) -> Int
+	public func daysPerMonthUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .day, in: .month, for: date as Date).length
+		return range(of: .day, in: .month, for: date as Date)?.count ?? 0
 	}
 	
 	public func weeksPerMonth() -> Int
 	{
-		return weeksPerMonthUsingReferenceDate(date: NSDate())
+		return weeksPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func weeksPerMonthUsingReferenceDate(date: NSDate) -> Int
+	public func weeksPerMonthUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .weekOfYear, in: .month, for: date as Date).length
+		return range(of: .weekOfYear, in: .month, for: date as Date)?.count ?? 0
 	}
 	
 	public func secondsPerYear() -> Int
 	{
-		return secondsPerYearUsingReferenceDate(date: NSDate())
+		return secondsPerYearUsingReferenceDate(date: Date())
 	}
 	
-	public func secondsPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func secondsPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .second, in: .year, for: date as Date).length
+		return range(of: .second, in: .year, for: date as Date)?.count ?? 0
 	}
 	
 	public func minutesPerYear() -> Int
 	{
-		return minutesPerYearUsingReferenceDate(date: NSDate())
+		return minutesPerYearUsingReferenceDate(date: Date())
 	}
 	
-	public func minutesPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func minutesPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .minute, in: .year, for: date as Date).length
+		return range(of: .minute, in: .year, for: date as Date)?.count ?? 0
 	}
 	
 	public func hoursPerYear() -> Int
 	{
-		return hoursPerYearUsingReferenceDate(date: NSDate())
+		return hoursPerYearUsingReferenceDate(date: Date())
 	}
 	
-	public func hoursPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func hoursPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .hour, in: .year, for: date as Date).length
+		return range(of: .hour, in: .year, for: date as Date)?.count ?? 0
 	}
 	
 	public func daysPerYear() -> Int
 	{
-		return daysPerYearUsingReferenceDate(date: NSDate())
+		return daysPerYearUsingReferenceDate(date: Date())
 	}
 	
-	public func daysPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func daysPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .day, in: .year, for: date as Date).length
+		return range(of: .day, in: .year, for: date as Date)?.count ?? 0
 	}
 	
 	public func weeksPerYear() -> Int
 	{
-		return weeksPerMonthUsingReferenceDate(date: NSDate())
+		return weeksPerMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func weeksPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func weeksPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .weekOfYear, in: .year, for: date as Date).length
+		return range(of: .weekOfYear, in: .year, for: date as Date)?.count ?? 0
 	}
 	
 	public func monthsPerYear() -> Int
 	{
-		return monthsPerYearUsingReferenceDate(date: NSDate())
+		return monthsPerYearUsingReferenceDate(date: Date())
 	}
 	
-	public func monthsPerYearUsingReferenceDate(date: NSDate) -> Int
+	public func monthsPerYearUsingReferenceDate(date: Date) -> Int
 	{
-		return range(of: .month, in: .year, for: date as Date).length
+		return range(of: .month, in: .year, for: date as Date)?.count ?? 0
 	}
 	
-	public func secondsFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func secondsFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.second, from: fromDate as Date, to: toDate as Date, options: []).second ?? 0
+		return dateComponents([.second], from: fromDate as Date, to: toDate as Date).second ?? 0
 	}
 	
-	public func minutesFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func minutesFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.minute, from: fromDate as Date, to: toDate as Date, options: []).minute ?? 0
+		return dateComponents([.minute], from: fromDate as Date, to: toDate as Date).minute ?? 0
 	}
 	
-	public func hoursFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func hoursFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.hour, from: fromDate as Date, to: toDate as Date, options: []).hour ?? 0
+		return dateComponents([.hour], from: fromDate as Date, to: toDate as Date).hour ?? 0
 	}
 	
-	public func daysFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func daysFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.day, from: fromDate as Date, to: toDate as Date, options: []).day ?? 0
+		return dateComponents([.day], from: fromDate as Date, to: toDate as Date).day ?? 0
 	}
 	
-	public func weeksFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func weeksFromDate(fromDate: Date, toDate: Date) -> Int
 	{
 		return weeksOfYearFromDate(fromDate: fromDate, toDate: toDate)
 	}
 	
-	public func weeksOfYearFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func weeksOfYearFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.weekOfYear, from: fromDate as Date, to: toDate as Date, options: []).weekOfYear ?? 0
+		return dateComponents([.weekOfYear], from: fromDate as Date, to: toDate as Date).weekOfYear ?? 0
 	}
 	
-	public func weeksOfMonthFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func weeksOfMonthFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.weekOfMonth, from: fromDate as Date, to: toDate as Date, options: []).weekOfMonth ?? 0
+		return dateComponents([.weekOfMonth], from: fromDate as Date, to: toDate as Date).weekOfMonth ?? 0
 	}
 	
-	public func monthsFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func monthsFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.month, from: fromDate as Date, to: toDate as Date, options: []).month ?? 0
+		return dateComponents([.month], from: fromDate as Date, to: toDate as Date).month ?? 0
 	}
 	
-	public func yearsFromDate(fromDate: NSDate, toDate: NSDate) -> Int
+	public func yearsFromDate(fromDate: Date, toDate: Date) -> Int
 	{
-		return components(.year, from: fromDate as Date, to: toDate as Date, options: []).year ?? 0
+		return dateComponents([.year], from: fromDate as Date, to: toDate as Date).year ?? 0
 	}
 	
-	public func date(firstDate: NSDate, isBeforeDate anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isBeforeDate anotherDate: Date) -> Bool
 	{
 		return secondsFromDate(fromDate: firstDate, toDate: anotherDate) < 0
 	}
 	
-	public func date(firstDate: NSDate, isAfterDate anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isAfterDate anotherDate: Date) -> Bool
 	{
 		return secondsFromDate(fromDate: firstDate, toDate: anotherDate) > 0
 	}

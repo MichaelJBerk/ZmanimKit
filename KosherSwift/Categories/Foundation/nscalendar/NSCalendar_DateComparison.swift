@@ -5,9 +5,9 @@
 
 import Foundation
 
-extension NSCalendar
+extension Calendar
 {
-	public func date(firstDate: NSDate, isSameDayAs anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isSameDayAs anotherDate: Date) -> Bool
 	{
 		let firstDay = daysInDate(date: firstDate)
 		let secondDay = daysInDate(date: anotherDate)
@@ -18,7 +18,7 @@ extension NSCalendar
 	    return sameMonth && sameDay
 	}
 	
-	public func date(firstDate: NSDate, isSameWeekAs anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isSameWeekAs anotherDate: Date) -> Bool
 	{
 		let firstMonth = weekOfYearInDate(date: firstDate)
 		let secondMonth = weekOfYearInDate(date: anotherDate)
@@ -29,7 +29,7 @@ extension NSCalendar
 	    return sameYear && sameMonth
 	}
 	
-	public func date(firstDate: NSDate, isSameMonthAs anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isSameMonthAs anotherDate: Date) -> Bool
 	{
 		let firstMonth = monthsInDate(date: firstDate)
 		let secondMonth = monthsInDate(date: anotherDate)
@@ -40,7 +40,7 @@ extension NSCalendar
 	    return sameYear && sameMonth
 	}
 	
-	public func date(firstDate: NSDate, isSameYearAs anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isSameYearAs anotherDate: Date) -> Bool
 	{
 		let firstYear = yearsInDate(date: firstDate)
 		let secondYear = yearsInDate(date: anotherDate)
@@ -51,7 +51,7 @@ extension NSCalendar
 	    return sameEra && sameYear
 	}
 	
-	public func date(firstDate: NSDate, isSameEraAs anotherDate: NSDate) -> Bool
+	public func date(firstDate: Date, isSameEraAs anotherDate: Date) -> Bool
 	{
 		let firstEra = eraInDate(date: firstDate)
 		let secondEra = eraInDate(date: anotherDate)

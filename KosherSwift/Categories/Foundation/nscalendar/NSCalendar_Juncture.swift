@@ -5,52 +5,52 @@
 
 import Foundation
 
-extension NSCalendar
+extension Calendar
 {
-	public func firstDayOfTheWeek() -> NSDate
+	public func firstDayOfTheWeek() -> Date
 	{
-		return firstDayOfTheWeekUsingReferenceDate(date: NSDate())
+		return firstDayOfTheWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func firstDayOfTheWeekUsingReferenceDate(date: NSDate) -> NSDate
+	public func firstDayOfTheWeekUsingReferenceDate(date: Date) -> Date
 	{    
 		let weekday: Int = weekdayInDate(date: date) - 1
 		return dateBySubtractingDays(days: weekday, fromDate: date)
 	}
 	
-	public func lastDayOfTheWeek() -> NSDate
+	public func lastDayOfTheWeek() -> Date
 	{
-		return lastDayOfTheWeekUsingReferenceDate(date: NSDate())
+		return lastDayOfTheWeekUsingReferenceDate(date: Date())
 	}
 	
-	public func lastDayOfTheWeekUsingReferenceDate(date: NSDate) -> NSDate
+	public func lastDayOfTheWeekUsingReferenceDate(date: Date) -> Date
 	{
-		let d: NSDate = firstDayOfTheWeekUsingReferenceDate(date: date)
+		let d: Date = firstDayOfTheWeekUsingReferenceDate(date: date)
 		let daysPerWeek: Int = daysPerWeekUsingReferenceDate(date: d)
 		return dateByAddingDays(days: daysPerWeek - 1, toDate: d)
 	}
 	
-	public func firstDayOfTheMonth() -> NSDate
+	public func firstDayOfTheMonth() -> Date
 	{
-		return firstDayOfTheMonthUsingReferenceDate(date: NSDate())
+		return firstDayOfTheMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func firstDayOfTheMonthUsingReferenceDate(date: NSDate) -> NSDate
+	public func firstDayOfTheMonthUsingReferenceDate(date: Date) -> Date
 	{
-		let c: NSDateComponents = components([.month, .year], from: date as Date) as NSDateComponents
+		var c: DateComponents = dateComponents([.month, .year], from: date as Date) as DateComponents
 	    c.day = 1
-		return self.date(from: c as DateComponents)! as NSDate
+		return self.date(from: c as DateComponents)! as Date
 	}
 	
-	public func lastDayOfTheMonth() -> NSDate
+	public func lastDayOfTheMonth() -> Date
 	{
-		return firstDayOfTheMonthUsingReferenceDate(date: NSDate())
+		return firstDayOfTheMonthUsingReferenceDate(date: Date())
 	}
 	
-	public func lastDayOfTheMonthUsingReferenceDate(date: NSDate) -> NSDate
+	public func lastDayOfTheMonthUsingReferenceDate(date: Date) -> Date
 	{
-		let c: NSDateComponents = components([.year, .month], from: date as Date) as NSDateComponents
+		var c: DateComponents = dateComponents([.year, .month], from: date as Date) as DateComponents
 		c.day = daysPerMonthUsingReferenceDate(date: date)
-		return self.date(from: c as DateComponents)! as NSDate
+		return self.date(from: c as DateComponents)! as Date
 	}
 }

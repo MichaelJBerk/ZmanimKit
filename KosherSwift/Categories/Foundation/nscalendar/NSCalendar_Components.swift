@@ -5,65 +5,65 @@
 
 import Foundation
 
-extension NSCalendar
+extension Calendar
 {
-	public func weekOfMonthInDate(date: NSDate) -> Int
+	public func weekOfMonthInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.weekOfMonth, from: date as Date) as NSDateComponents
-	    return comps.weekOfMonth
+		let comps: DateComponents = dateComponents([.weekOfMonth], from: date as Date) as DateComponents
+	    return comps.weekOfMonth!
 	}
 	
-	public func weekOfYearInDate(date: NSDate) -> Int
+	public func weekOfYearInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.weekOfYear, from: date as Date) as NSDateComponents
-	    return comps.weekOfYear
+		let comps: DateComponents = dateComponents([.weekOfYear], from: date as Date) as DateComponents
+	    return comps.weekOfYear!
 	}
 	
-	public func weekdayInDate(date: NSDate) -> Int
+	public func weekdayInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.weekday, from: date as Date) as NSDateComponents
-	    return comps.weekday
+		let comps: DateComponents = dateComponents([.weekday], from: date as Date) as DateComponents
+	    return comps.weekday!
 	}
 	
-	public func secondsInDate(date: NSDate) -> Int
+	public func secondsInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.second, from: date as Date) as NSDateComponents
-	    return comps.second
+		let comps: DateComponents = dateComponents([.second], from: date as Date) as DateComponents
+	    return comps.second!
 	}
 	
-	public func minutesInDate(date: NSDate) -> Int
+	public func minutesInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.minute, from: date as Date) as NSDateComponents
-	    return comps.minute
+		let comps: DateComponents = dateComponents([.minute], from: date as Date) as DateComponents
+	    return comps.minute!
 	}
 	
-	public func hoursInDate(date: NSDate) -> Int
+	public func hoursInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.hour, from: date as Date) as NSDateComponents
-	    return comps.hour
+		let comps: DateComponents = dateComponents([.hour], from: date as Date) as DateComponents
+	    return comps.hour!
 	}
 	
-	public func daysInDate(date: NSDate) -> Int
+	public func daysInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.day, from: date as Date) as NSDateComponents
-	    return comps.day
+		let comps: DateComponents = dateComponents([.day], from: date as Date) as DateComponents
+	    return comps.day!
 	}
 	
-	public func monthsInDate(date: NSDate) -> Int
+	public func monthsInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.month, from: date as Date) as NSDateComponents
-	    return comps.month
+		let comps: DateComponents = dateComponents([.month], from: date as Date) as DateComponents
+	    return comps.month!
 	}
 	
-	public func yearsInDate(date: NSDate) -> Int
+	public func yearsInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.year, from: date as Date) as NSDateComponents
-	    return comps.year
+		let comps: DateComponents = dateComponents([.year], from: date as Date) as DateComponents
+	    return comps.year!
 	}
 	
-	public func eraInDate(date: NSDate) -> Int
+	public func eraInDate(date: Date) -> Int
 	{
-		let comps: NSDateComponents = components(.era, from: date as Date) as NSDateComponents
-	    return comps.era
+		let comps: DateComponents = dateComponents([.era], from: date as Date) as DateComponents
+	    return comps.era!
 	}
 }

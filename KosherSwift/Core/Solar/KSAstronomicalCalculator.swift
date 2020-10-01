@@ -21,7 +21,7 @@ protocol AstronomicalCalculator
      *  - parameter adjustForElevation: Determines if we calculate at sea level or the altitude of the calculator's location.
      *  - returns: The number of milliseconds since
      */
-	func UTCSunriseForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	func UTCSunriseForDate(date: Date, andZenith zenith: Double, adjustForElevation: Bool) -> Double
     
     /**
      *  A method that calculates UTC sunrise as well as any time based on an angle above or below sunset. This abstract
@@ -36,5 +36,5 @@ protocol AstronomicalCalculator
      *  - returns: The UTC time of sunrise in 24 hour format. 5:45:00 AM will return 5.75.0. If an error was encountered in
      *  the calculation (expected behavior for some locations such as near the poles, NaN will be returned.
      */
-	func UTCSunsetForDate(date: NSDate, andZenith zenith: Double, adjustForElevation: Bool) -> Double
+	func UTCSunsetForDate(date: Date, andZenith zenith: Double, adjustForElevation: Bool) -> Double
 }

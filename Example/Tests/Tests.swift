@@ -27,13 +27,13 @@ class KosherSwiftTests: XCTestCase {
 		cal = Calendar.current
 		
 		let testDay = DateComponents(calendar: cal, year: 2020, month: 9, day: 9).date!
-		astCal.workingDate = testDay as NSDate
+		astCal.workingDate = testDay
 		
 		
 		zCal = ZmanimCalendar(location: location)
-		zCal.workingDate = testDay as NSDate
+		zCal.workingDate = testDay
 		cZCal = ComplexZmanimCalendar(location: location)
-		cZCal.workingDate = testDay as NSDate
+		cZCal.workingDate = testDay
 		
 	}
 
@@ -51,8 +51,8 @@ class KosherSwiftTests: XCTestCase {
 	func testAlosSpecificDate() throws {
 		
 		let testDate = DateComponents(calendar: cal, year: 2020, month: 9, day: 9).date!
-		cZCal.workingDate = testDate as NSDate
-		let date = cZCal.alosHashachar()! as Date
+		cZCal.workingDate = testDate
+		let date = cZCal.alosHashachar()!
 		let comps = cal.dateComponents(in: timeZone, from: date)
 
 		XCTAssert(comps.hour == 5)
@@ -97,7 +97,7 @@ class KosherSwiftTests: XCTestCase {
 		// We need to set this up, since we aren't mocking sunset.
 		let geoLocation = GeoLocation(latitude: 40.7128 , longitude: -74.0060, timeZone: tz)
 		let jewishCalendar = JewishCalendar(location: geoLocation)
-		jewishCalendar.workingDate = gregorianDateBeforeChanuka as NSDate
+		jewishCalendar.workingDate = gregorianDateBeforeChanuka
 		
 		// First test that before sunset (the initial 12/12/17 date object) is not Night 1-8
 		XCTAssertFalse(jewishCalendar.isChanukah())

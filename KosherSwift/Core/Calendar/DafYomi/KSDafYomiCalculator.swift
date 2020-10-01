@@ -12,9 +12,9 @@ public class DafYomiCalculator
     /**
      *  The reference date used by the calculator.
      */
-	public var workingDate : NSDate?
+	public var workingDate : Date?
 	
-	public init(date: NSDate)
+	public init(date: Date)
 	{
 	    workingDate = date
 	}
@@ -27,7 +27,7 @@ public class DafYomiCalculator
      */
 	public func dafYomiBavli() -> Daf
 	{
-		return dafYomiBavliForDate(date: NSDate())!
+		return dafYomiBavliForDate(date: Date())!
 	}
 	
     /**
@@ -39,13 +39,13 @@ public class DafYomiCalculator
      *
      *  - returns: a KCDaf object.
      */
-	public func dafYomiBavliForDate(date: NSDate) -> Daf?
+	public func dafYomiBavliForDate(date: Date) -> Daf?
 	{
 	    
 	    //Start on September 11, 1923
-		let dafYomiStartDate: NSDate = gregorianDateForYear(year: 1923, month: 9, andDay: 11)
+		let dafYomiStartDate: Date = gregorianDateForYear(year: 1923, month: 9, andDay: 11)
 		let dafYomiJulianStartDay: Int = julianDayForDate(date: dafYomiStartDate)
-		let shekalimChangeDate: NSDate = gregorianDateForYear(year: 1975, month: 6, andDay: 24)
+		let shekalimChangeDate: Date = gregorianDateForYear(year: 1975, month: 6, andDay: 24)
 		let shekalimJulianChangeDay: Int = julianDayForDate(date: shekalimChangeDate)
 	    
 	    //An array of the lengths of the meschtos
@@ -111,13 +111,13 @@ public class DafYomiCalculator
 	    return dafYomi
 	}
 	
-	public func julianDayForDate(date: NSDate) -> Int
+	public func julianDayForDate(date: Date) -> Int
 	{
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+		let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
 	    
-		var year: Int = gregorianCalendar.components(NSCalendar.Unit.year, from:date as Date).year ?? 0
-		var month: Int = gregorianCalendar.components(NSCalendar.Unit.month, from:date as Date).month ?? 0
-		let day: Int = gregorianCalendar.components(NSCalendar.Unit.day, from:date as Date).day ?? 0
+		var year: Int = gregorianCalendar.dateComponents([.year], from:date as Date).year ?? 0
+		var month: Int = gregorianCalendar.dateComponents([.month], from:date as Date).month ?? 0
+		let day: Int = gregorianCalendar.dateComponents([.day], from:date as Date).day ?? 0
 		
 	    if month <= 2
 	    {
@@ -134,15 +134,15 @@ public class DafYomiCalculator
 	    return Int(math3 + b - 1524.5)
 	}
 	
-	public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> NSDate
+	public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> Date
 	{
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
-	    let dateComponents: NSDateComponents = NSDateComponents()
+		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
+	    var dateComponents: DateComponents = DateComponents()
 	    dateComponents.year = year
 	    dateComponents.month = month
 	    dateComponents.day = day
 	    
-		let returnDate: NSDate = gregorianCalendar.date(from: dateComponents as DateComponents)! as NSDate
+		let returnDate: Date = gregorianCalendar.date(from: dateComponents as DateComponents)! as Date
 	    
 	    return returnDate
 	}

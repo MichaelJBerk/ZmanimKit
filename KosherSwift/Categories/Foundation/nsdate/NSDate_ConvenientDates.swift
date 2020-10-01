@@ -5,24 +5,24 @@
 
 import Foundation
 
-extension NSDate
+extension Date
 {
-	class public func dateWithHebrewMonth(month: Int, andDay day: Int) -> NSDate
+	static public func dateWithHebrewMonth(month: Int, andDay day: Int) -> Date
 	{
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-		let year: Int = hebrewCalendar.yearsInDate(date: NSDate())
+		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
+		let year: Int = hebrewCalendar.yearsInDate(date: Date())
 		return dateWithHebrewMonth(month: month, andDay: day, andYear: Int(year))
 	}
 	
-	class public func dateWithHebrewMonth(month: Int, andDay day: Int, andYear year: Int) -> NSDate
+	static public func dateWithHebrewMonth(month: Int, andDay day: Int, andYear year: Int) -> Date
 	{
-	    let comps: NSDateComponents = NSDateComponents()
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-		comps.calendar = hebrewCalendar as Calendar
+	    var comps: DateComponents = DateComponents()
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
+		comps.calendar = hebrewCalendar
 	    comps.month = month
 	    comps.day = day
 	    comps.year = year
-		let retVal: NSDate = hebrewCalendar.date(from: comps as DateComponents)! as NSDate
+		let retVal: Date = hebrewCalendar.date(from: comps as DateComponents)!
 	    return retVal
 	}
 }

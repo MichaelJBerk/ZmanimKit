@@ -24,9 +24,9 @@ public class JewishCalendar: ComplexZmanimCalendar
 	}
 	
     /** 
-     * Returns the index of any holidays that fall on the date represented by `NSDate()`.
+     * Returns the index of any holidays that fall on the date represented by `Date()`.
      * 
-     * - returns: A yom tov if a yom tov falls on `NSDate()`, nil if not.
+     * - returns: A yom tov if a yom tov falls on `Date()`, nil if not.
      */
 	public func yomTovIndex() -> kYomimTovim?
 	{
@@ -410,11 +410,11 @@ public class JewishCalendar: ComplexZmanimCalendar
 	    return (currentHebrewMonth() == .kTishrei && currentHebrewDayOfMonth() == 22)
 	}
 	
-	public func moladTohuAsDate() -> NSDate
+	public func moladTohuAsDate() -> Date
 	{
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
 	    
-	    let tohuComponents: NSDateComponents = NSDateComponents()
+	    var tohuComponents: DateComponents = DateComponents()
 		tohuComponents.calendar = gregorianCalendar as Calendar
 	    tohuComponents.year = -3760
 	    tohuComponents.month = 9
@@ -423,41 +423,41 @@ public class JewishCalendar: ComplexZmanimCalendar
 	    tohuComponents.minute = 0
 	    tohuComponents.second = Int(204 * 3.5)
 	    
-		let tohu: NSDate = gregorianCalendar.date(from: tohuComponents as DateComponents)! as NSDate
+		let tohu: Date = gregorianCalendar.date(from: tohuComponents as DateComponents)! as Date
 	    
 	    return tohu
 	}
 	
-	public func moladByAddingMonthsToTohu(numberOfMonths: Int) -> NSDate
+	public func moladByAddingMonthsToTohu(numberOfMonths: Int) -> Date
 	{
-	    let tohu: NSDate = moladTohuAsDate()
+	    let tohu: Date = moladTohuAsDate()
 	    
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+		let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
         
-		let components: NSDateComponents = gregorianCalendar.components([NSCalendar.Unit.year, NSCalendar.Unit.month, NSCalendar.Unit.month, NSCalendar.Unit.day, NSCalendar.Unit.hour, NSCalendar.Unit.minute, NSCalendar.Unit.second], from:tohu as Date) as NSDateComponents
-	    
-	    let day = components.day + (1 * numberOfMonths)
-	    let hour = components.hour + (12 * numberOfMonths)
-	    let seconds = components.second + Int(793 * 3.5) * numberOfMonths
+		var components: DateComponents = gregorianCalendar.dateComponents([.year, .month, .month, .day, .hour, .minute, .second], from:tohu as Date)
+		
+	    let day = components.day! + (1 * numberOfMonths)
+	    let hour = components.hour! + (12 * numberOfMonths)
+	    let seconds = components.second! + Int(793 * 3.5) * numberOfMonths
 	    
 	    components.day = Int(day)
 	    components.hour = hour
 	    components.second = seconds
 	    
-		let newMolad: NSDate = gregorianCalendar.date(from: components as DateComponents)! as NSDate
+		let newMolad: Date = gregorianCalendar.date(from: components as DateComponents)! as Date
 	    
 	    return newMolad
 	}
 	
-	public func numberOfMonthsBetweenMoladTohuAndDate(date: NSDate) -> Int
+	public func numberOfMonthsBetweenMoladTohuAndDate(date: Date) -> Int
 	{
-	    let tohu: NSDate = moladTohuAsDate()
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-		let comps: NSDateComponents = hebrewCalendar.components(NSCalendar.Unit.month, from:tohu as Date, to:date as Date, options: []) as NSDateComponents
-	    return comps.month
+	    let tohu: Date = moladTohuAsDate()
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
+		let comps: DateComponents = hebrewCalendar.dateComponents([.month], from:tohu as Date, to:date as Date)
+	    return comps.month!
 	}
 	
-	public func moladForDate(date: NSDate) -> NSDate
+	public func moladForDate(date: Date) -> Date
 	{
 		let monthDifference: Int = numberOfMonthsBetweenMoladTohuAndDate(date: date)
 		return moladByAddingMonthsToTohu(numberOfMonths: Int(monthDifference))
@@ -474,11 +474,11 @@ public class JewishCalendar: ComplexZmanimCalendar
      *  - parameter month: An Int representing the month. This method expects 1 for Nissan and 13 for Adar II. Use the constants to avoid any confusion.
      *  - parameter year: The Hebrew year to use in calculating.
      *
-     *  - returns: The molad in Standard Time in Yerushalayim as a NSDate.
+     *  - returns: The molad in Standard Time in Yerushalayim as a Date.
      */
-	public func moladAsDateForMonth(month: Int, ofYear year: Int) -> NSDate
+	public func moladAsDateForMonth(month: Int, ofYear year: Int) -> Date
 	{
-		let dateFromMonthAndYear: NSDate = NSDate.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
+		let dateFromMonthAndYear: Date = Date.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
 		return moladForDate(date: dateFromMonthAndYear)
 	}
 	
@@ -490,11 +490,11 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Earliest time of Kiddush Levana calculated as 3 days after the molad.
      */
-	public func tchilasZmanKidushLevana3DaysForDate(date: NSDate) -> NSDate
+	public func tchilasZmanKidushLevana3DaysForDate(date: Date) -> Date
 	{
-		let molad: NSDate = moladForDate(date: date)
+		let molad: Date = moladForDate(date: date)
 	    
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
 		hebrewCalendar.dateByAddingDays(days: 3, toDate: molad)
 	    
 		return moladForDate(date: molad)
@@ -509,9 +509,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Earliest time of Kiddush Levana calculated as 3 days after the molad.
      */
-	public func tchilasZmanKidushLevana3DaysForMonth(month: Int, ofYear year: Int) -> NSDate
+	public func tchilasZmanKidushLevana3DaysForMonth(month: Int, ofYear year: Int) -> Date
 	{
-		let dateFromMonthAndYear: NSDate = NSDate.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
+		let dateFromMonthAndYear: Date = Date.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
 		return tchilasZmanKidushLevana3DaysForDate(date: dateFromMonthAndYear)
 	}
 	
@@ -523,11 +523,11 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Earliest time of Kiddush Levana calculated as 7 days after the molad.
      */
-	public func tchilasZmanKidushLevana7DaysForDate(date: NSDate) -> NSDate
+	public func tchilasZmanKidushLevana7DaysForDate(date: Date) -> Date
 	{
-		let molad: NSDate = moladForDate(date: date)
+		let molad: Date = moladForDate(date: date)
 	    
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
 		hebrewCalendar.dateByAddingDays(days: 7, toDate: molad)
 	    
 		return moladForDate(date: molad)
@@ -542,9 +542,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Earliest time of Kiddush Levana calculated as 7 days after the molad.
      */
-	public func tchilasZmanKidushLevana7DaysForMonth(month: Int, ofYear year: Int) -> NSDate
+	public func tchilasZmanKidushLevana7DaysForMonth(month: Int, ofYear year: Int) -> Date
 	{
-		let dateFromMonthAndYear: NSDate = NSDate.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
+		let dateFromMonthAndYear: Date = Date.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
 		return tchilasZmanKidushLevana7DaysForDate(date: dateFromMonthAndYear)
 	}
 	
@@ -560,15 +560,15 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Latest time of Kiddush Levana between Moldos
      */
-	public func sofZmanKidushLevanaBetweenMoldosForDate(date: NSDate) -> NSDate
+	public func sofZmanKidushLevanaBetweenMoldosForDate(date: Date) -> Date
 	{
-		var molad: NSDate = moladForDate(date: date)
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-	    let comps: NSDateComponents = NSDateComponents()
+		var molad: Date = moladForDate(date: date)
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
+	    var comps: DateComponents = DateComponents()
 	    comps.month = 1
-		let nextMonth: NSDate = hebrewCalendar.dateByAddingMonths(months: 1, toDate: date)
-		let nextMolad: NSDate = moladForDate(date: nextMonth)
-		let secondsComps = hebrewCalendar.components(NSCalendar.Unit.second, from:molad as Date, to:nextMolad as Date, options: [])
+		let nextMonth: Date = hebrewCalendar.dateByAddingMonths(months: 1, toDate: date)
+		let nextMolad: Date = moladForDate(date: nextMonth)
+		let secondsComps = hebrewCalendar.dateComponents([.second], from:molad as Date, to:nextMolad as Date)
 		molad = molad.addingTimeInterval(TimeInterval(secondsComps.second ?? 0))
 	    return molad
 	}
@@ -586,9 +586,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Latest time of Kiddush Levana between Moldos
      */
-	public func sofZmanKidushLevanaBetweenMoldosForMonth(month: Int, ofYear year: Int) -> NSDate
+	public func sofZmanKidushLevanaBetweenMoldosForMonth(month: Int, ofYear year: Int) -> Date
 	{
-		let dateFromMonthAndYear: NSDate = NSDate.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
+		let dateFromMonthAndYear: Date = Date.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
 		return sofZmanKidushLevanaBetweenMoldosForDate(date: dateFromMonthAndYear)
 	}
 	
@@ -606,10 +606,10 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Latest time of Kiddush Levana calculated as 15 days after the molad.
      */
-	public func sofZmanKidushLevana15DaysForDate(date: NSDate) -> NSDate
+	public func sofZmanKidushLevana15DaysForDate(date: Date) -> Date
 	{
-		let molad: NSDate = moladForDate(date: date)
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let molad: Date = moladForDate(date: date)
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
 		return hebrewCalendar.dateByAddingDays(days: 15, toDate: molad)
 	}
 	
@@ -629,9 +629,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: Latest time of Kiddush Levana calculated as 15 days after the molad.
      */
-	public func sofZmanKidushLevana15DaysForMonth(month: Int, ofYear year: Int) -> NSDate
+	public func sofZmanKidushLevana15DaysForMonth(month: Int, ofYear year: Int) -> Date
 	{
-		let dateFromMonthAndYear: NSDate = NSDate.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
+		let dateFromMonthAndYear: Date = Date.dateWithHebrewMonth(month: month, andDay: 1, andYear: year)
 		return sofZmanKidushLevana15DaysForDate(date: dateFromMonthAndYear)
     }
 	
@@ -653,9 +653,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func currentHebrewMonth() -> kHebrewMonth
 	{
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
 	    
-		return kHebrewMonth(rawValue: hebrewCalendar.components(NSCalendar.Unit.month, from:workingDateAdjustedForSunset() as Date).month ?? 0)!
+		return kHebrewMonth(rawValue: hebrewCalendar.dateComponents([.month], from:workingDateAdjustedForSunset() as Date).month ?? 0)!
 	}
 	
     /**
@@ -665,10 +665,10 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func currentHebrewDayOfMonth() -> Int
 	{
-	    let now: NSDate = workingDateAdjustedForSunset()
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+	    let now: Date = workingDateAdjustedForSunset()
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
 	
-		return hebrewCalendar.components(NSCalendar.Unit.day, from:now as Date).day ?? 0
+		return hebrewCalendar.dateComponents([.day], from:now as Date).day ?? 0
 	}
 	
     /**
@@ -678,10 +678,10 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func currentDayOfTheWeek() -> Int
 	{
-	    let now: NSDate = workingDate!
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+	    let now: Date = workingDate!
+		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
 	
-		return gregorianCalendar.components(NSCalendar.Unit.weekday, from:now as Date).weekday ?? 0
+		return gregorianCalendar.dateComponents([.weekday], from:now as Date).weekday ?? 0
 	}
 	
     /**
@@ -691,9 +691,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      **/
 	public func isCurrentlyHebrewLeapYear() -> Bool
 	{
-	    let now: NSDate = workingDateAdjustedForSunset()
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-		let year: Int = hebrewCalendar.components(NSCalendar.Unit.year, from:now as Date).year ?? 0
+	    let now: Date = workingDateAdjustedForSunset()
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
+		let year: Int = hebrewCalendar.dateComponents([.year], from:now as Date).year ?? 0
 	
 		return isHebrewLeapYear(year: year)
 	}
@@ -727,10 +727,10 @@ public class JewishCalendar: ComplexZmanimCalendar
      **/
 	public func currentHebrewYear() -> Int
 	{
-	    let now: NSDate = workingDateAdjustedForSunset()
-		let hebrewCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
+	    let now: Date = workingDateAdjustedForSunset()
+		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
 	
-		return hebrewCalendar.components(NSCalendar.Unit.year, from:now as Date).year ?? 0
+		return hebrewCalendar.dateComponents([.year], from:now as Date).year ?? 0
 	}
 	
     /**
@@ -742,9 +742,9 @@ public class JewishCalendar: ComplexZmanimCalendar
      **/
 	public func lengthOfHebrewYear(year: Int) -> Int
 	{
-		let hebrewCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.hebrew)!
-		let thisRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar)
-		let nextRoshHashana = NSDate.dateWithDay(day: 1, Month: 1, Year: year + 1, andCalendar: hebrewCalendar)
+		let hebrewCalendar = Calendar(identifier:.hebrew)
+		let thisRoshHashana = Date.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar)
+		let nextRoshHashana = Date.dateWithDay(day: 1, Month: 1, Year: year + 1, andCalendar: hebrewCalendar)
 		var totalDaysInTheYear = hebrewCalendar.daysFromDate(fromDate: thisRoshHashana, toDate: nextRoshHashana)
 	    if totalDaysInTheYear == 353 || totalDaysInTheYear == 383
 	    {
@@ -783,25 +783,25 @@ public class JewishCalendar: ComplexZmanimCalendar
      *
      *  - returns: The friday folling the provided date.
      **/
-	public func fridayFollowingDate(workingDate: NSDate) -> NSDate
+	public func fridayFollowingDate(workingDate: Date) -> Date
 	{
-		let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+		let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
 		
-		let gregorianDateComponents: NSDateComponents = gregorianCalendar.components(NSCalendar.Unit.weekday, from:workingDate as Date) as NSDateComponents
+		let gregorianDateComponents: DateComponents = gregorianCalendar.dateComponents([.weekday], from:workingDate as Date) as DateComponents
 	 	
-		let weekday: Int = gregorianDateComponents.weekday
+		let weekday: Int = gregorianDateComponents.weekday ?? 0
 	    
 		return dateByAddingDays(days: (6 - weekday), toDate: workingDate)
 	}
 	
-	public func workingDateAdjustedForSunset() -> NSDate
+	public func workingDateAdjustedForSunset() -> Date
 	{
-        var returnDate: NSDate = super.workingDate!
+        var returnDate: Date = super.workingDate!
 		let isAfterSunset: Bool = sunset()!.timeIntervalSince(returnDate as Date) < 0
 	    
 	    if isAfterSunset
 	    {
-			let gregorianCalendar: NSCalendar = NSCalendar(calendarIdentifier:NSCalendar.Identifier.gregorian)!
+			let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
 			returnDate = gregorianCalendar.dateByAddingDays(days: 1, toDate: returnDate)
 	    }
 	    
