@@ -164,7 +164,7 @@ public class GeoLocation
         let cosU2 = cos(U2)
 	    
         var lambda = L
-        var lambdaP = 2.0 * M_PI
+		var lambdaP = 2.0 * .pi
         var iterLimit: Double = 20
         var sinLambda: Double = 0
         var cosLambda: Double = 0
@@ -236,9 +236,9 @@ public class GeoLocation
 	public func getRhumbLineBearingForLocation(location: GeoLocation) -> Double
 	{
 		var dLon: Double = trig.toRadians(degrees: location.longitude - longitude)
-		let dPhi: Double = log(tan(trig.toRadians(degrees: location.latitude) / 2 + M_PI / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
-	    if fabs(dLon) > M_PI{
-	        dLon = dLon > 0 ? -(2 * M_PI - dLon) : (2 * M_PI + dLon)
+		let dPhi: Double = log(tan(trig.toRadians(degrees: location.latitude) / 2 + .pi / 4) / tan(trig.toRadians(degrees: latitude) / 2 + .pi / 4))
+		if fabs(dLon) > .pi{
+			dLon = dLon > 0 ? -(2 * .pi - dLon) : (2 * .pi + dLon)
 	    }
 		return trig.toDegrees(radians: atan2(dLon, dPhi))
 	}
@@ -249,12 +249,12 @@ public class GeoLocation
 	    let R: Double = 6371;  // earth's mean radius in km
 		let dLat: Double = trig.toRadians(degrees: location.latitude - latitude)
 		var dLon: Double = trig.toRadians(degrees: fabs(location.longitude - longitude))
-		let dPhi: Double = log(tan(trig.toRadians(degrees: location.longitude) / 2 + M_PI / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
+		let dPhi: Double = log(tan(trig.toRadians(degrees: location.longitude) / 2 + .pi / 4) / tan(trig.toRadians(degrees: latitude) / 2 + M_PI / 4))
 		let q: Double = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(trig.toRadians(degrees: latitude))
 	    // if dLon over 180° take shorter rhumb across 180∞ meridian:
-	    if dLon > M_PI
+		if dLon > .pi
 	    {
-	        dLon = 2 * M_PI - dLon
+			dLon = 2 * .pi - dLon
 	    }
 	    let d: Double = sqrt(dLat * dLat + q * q * dLon * dLon)
 	    

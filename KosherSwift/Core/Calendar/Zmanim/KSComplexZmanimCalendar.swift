@@ -2084,8 +2084,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanShmaFixedLocal() -> Date?
 	{
-		if let date = dateBySubtractingMinutes(minutes: 180, fromDate: fixedLocalChatzos()!) as? Date
-        {
+		if let flc = fixedLocalChatzos()
+		{
+			let date = dateBySubtractingMinutes(minutes: 180, fromDate: flc)
             return date
         }
         return nil
@@ -2099,8 +2100,9 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      */
 	public func sofZmanTfilaFixedLocal() -> Date?
 	{
-		if let date = dateBySubtractingMinutes(minutes: 120, fromDate: fixedLocalChatzos()!) as? Date
-        {
+		if let flc = fixedLocalChatzos()
+		{
+			let date = dateBySubtractingMinutes(minutes: 120, fromDate: flc)
             return date
         }
 	    return nil

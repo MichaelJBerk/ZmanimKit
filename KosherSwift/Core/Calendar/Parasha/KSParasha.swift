@@ -58,6 +58,6 @@ public class Parasha
 	
 	public func description() -> String
 	{
-		return "\(description) : \(nameTransliterated())"
+		return "\(String(describing: description)) : \(nameTransliterated())"
 	}
 }

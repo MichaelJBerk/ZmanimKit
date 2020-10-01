@@ -14,7 +14,6 @@ extension Calendar
 	
 	public func secondsPerMinuteUsingReferenceDate(date: Date) -> Int
 	{
-		let c = range(of: .second, in: .minute, for: date)
 		return range(of: .second, in: .minute, for: date)?.count ?? 0
 	}
 	

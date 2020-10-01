@@ -494,9 +494,6 @@ public class JewishCalendar: ComplexZmanimCalendar
 	{
 		let molad: Date = moladForDate(date: date)
 	    
-		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
-		hebrewCalendar.dateByAddingDays(days: 3, toDate: molad)
-	    
 		return moladForDate(date: molad)
 	}
 	
@@ -526,9 +523,6 @@ public class JewishCalendar: ComplexZmanimCalendar
 	public func tchilasZmanKidushLevana7DaysForDate(date: Date) -> Date
 	{
 		let molad: Date = moladForDate(date: date)
-	    
-		let hebrewCalendar: Calendar = Calendar(identifier: .hebrew)
-		hebrewCalendar.dateByAddingDays(days: 7, toDate: molad)
 	    
 		return moladForDate(date: molad)
 	}

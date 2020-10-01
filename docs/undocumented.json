@@ -192,931 +192,931 @@
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 10,
-      "symbol": "NSCalendar.weekOfMonthInDate(date:)",
+      "symbol": "Calendar.weekOfMonthInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 16,
-      "symbol": "NSCalendar.weekOfYearInDate(date:)",
+      "symbol": "Calendar.weekOfYearInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 22,
-      "symbol": "NSCalendar.weekdayInDate(date:)",
+      "symbol": "Calendar.weekdayInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 28,
-      "symbol": "NSCalendar.secondsInDate(date:)",
+      "symbol": "Calendar.secondsInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 34,
-      "symbol": "NSCalendar.minutesInDate(date:)",
+      "symbol": "Calendar.minutesInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 40,
-      "symbol": "NSCalendar.hoursInDate(date:)",
+      "symbol": "Calendar.hoursInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 46,
-      "symbol": "NSCalendar.daysInDate(date:)",
+      "symbol": "Calendar.daysInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 52,
-      "symbol": "NSCalendar.monthsInDate(date:)",
+      "symbol": "Calendar.monthsInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 58,
-      "symbol": "NSCalendar.yearsInDate(date:)",
+      "symbol": "Calendar.yearsInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Components.swift",
       "line": 64,
-      "symbol": "NSCalendar.eraInDate(date:)",
+      "symbol": "Calendar.eraInDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateComparison.swift",
       "line": 10,
-      "symbol": "NSCalendar.date(firstDate:isSameDayAs:)",
+      "symbol": "Calendar.date(firstDate:isSameDayAs:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateComparison.swift",
       "line": 21,
-      "symbol": "NSCalendar.date(firstDate:isSameWeekAs:)",
+      "symbol": "Calendar.date(firstDate:isSameWeekAs:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateComparison.swift",
       "line": 32,
-      "symbol": "NSCalendar.date(firstDate:isSameMonthAs:)",
+      "symbol": "Calendar.date(firstDate:isSameMonthAs:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateComparison.swift",
       "line": 43,
-      "symbol": "NSCalendar.date(firstDate:isSameYearAs:)",
+      "symbol": "Calendar.date(firstDate:isSameYearAs:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateComparison.swift",
       "line": 54,
-      "symbol": "NSCalendar.date(firstDate:isSameEraAs:)",
+      "symbol": "Calendar.date(firstDate:isSameEraAs:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
       "line": 10,
-      "symbol": "NSCalendar.dateByAddingSeconds(seconds:toDate:)",
+      "symbol": "Calendar.dateByAddingSeconds(seconds:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 19,
-      "symbol": "NSCalendar.dateByAddingMinutes(minutes:seconds:toDate:)",
+      "line": 17,
+      "symbol": "Calendar.dateByAddingMinutes(minutes:seconds:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 27,
-      "symbol": "NSCalendar.dateByAddingHours(hours:toDate:)",
+      "line": 25,
+      "symbol": "Calendar.dateByAddingHours(hours:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 34,
-      "symbol": "NSCalendar.dateByAddingDays(days:toDate:)",
+      "line": 32,
+      "symbol": "Calendar.dateByAddingDays(days:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 41,
-      "symbol": "NSCalendar.dateByAddingWeeks(weeks:toDate:)",
+      "line": 39,
+      "symbol": "Calendar.dateByAddingWeeks(weeks:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 48,
-      "symbol": "NSCalendar.dateByAddingMonths(months:toDate:)",
+      "line": 46,
+      "symbol": "Calendar.dateByAddingMonths(months:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 55,
-      "symbol": "NSCalendar.dateByAddingYears(years:toDate:)",
+      "line": 53,
+      "symbol": "Calendar.dateByAddingYears(years:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 62,
-      "symbol": "NSCalendar.dateBySubtractingSeconds(seconds:fromDate:)",
+      "line": 60,
+      "symbol": "Calendar.dateBySubtractingSeconds(seconds:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 70,
-      "symbol": "NSCalendar.dateBySubtractingMinutes(minutes:seconds:fromDate:)",
+      "line": 68,
+      "symbol": "Calendar.dateBySubtractingMinutes(minutes:seconds:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 78,
-      "symbol": "NSCalendar.dateBySubtractingHours(hours:fromDate:)",
+      "line": 76,
+      "symbol": "Calendar.dateBySubtractingHours(hours:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 85,
-      "symbol": "NSCalendar.dateBySubtractingDays(days:fromDate:)",
+      "line": 83,
+      "symbol": "Calendar.dateBySubtractingDays(days:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 92,
-      "symbol": "NSCalendar.dateBySubtractingWeeks(weeks:fromDate:)",
+      "line": 90,
+      "symbol": "Calendar.dateBySubtractingWeeks(weeks:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 99,
-      "symbol": "NSCalendar.dateBySubtractingMonths(months:fromDate:)",
+      "line": 97,
+      "symbol": "Calendar.dateBySubtractingMonths(months:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_DateManipulation.swift",
-      "line": 106,
-      "symbol": "NSCalendar.dateBySubtractingYears(years:fromDate:)",
+      "line": 104,
+      "symbol": "Calendar.dateBySubtractingYears(years:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_HebrewYearTypes.swift",
       "line": 10,
-      "symbol": "NSCalendar.firstWeekdayOfHebrewYearContainingDate(date:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Calendar.firstWeekdayOfHebrewYearContainingDate(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_HebrewYearTypes.swift",
       "line": 18,
-      "symbol": "NSCalendar.lengthOfHebrewYearContainingDate(date:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Calendar.lengthOfHebrewYearContainingDate(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_HebrewYearTypes.swift",
       "line": 47,
-      "symbol": "NSCalendar.isHebrewYearContainingDateALeapYear(date:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Calendar.isHebrewYearContainingDateALeapYear(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_HebrewYearTypes.swift",
       "line": 60,
-      "symbol": "NSCalendar.typeOfHebrewYearContainingDate(date:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Calendar.typeOfHebrewYearContainingDate(date:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_HebrewYearTypes.swift",
       "line": 159,
-      "symbol": "NSCalendar.hebrewCalendar()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Calendar.hebrewCalendar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 10,
-      "symbol": "NSCalendar.firstDayOfTheWeek()",
+      "symbol": "Calendar.firstDayOfTheWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 15,
-      "symbol": "NSCalendar.firstDayOfTheWeekUsingReferenceDate(date:)",
+      "symbol": "Calendar.firstDayOfTheWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 21,
-      "symbol": "NSCalendar.lastDayOfTheWeek()",
+      "symbol": "Calendar.lastDayOfTheWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 26,
-      "symbol": "NSCalendar.lastDayOfTheWeekUsingReferenceDate(date:)",
+      "symbol": "Calendar.lastDayOfTheWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 33,
-      "symbol": "NSCalendar.firstDayOfTheMonth()",
+      "symbol": "Calendar.firstDayOfTheMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 38,
-      "symbol": "NSCalendar.firstDayOfTheMonthUsingReferenceDate(date:)",
+      "symbol": "Calendar.firstDayOfTheMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 45,
-      "symbol": "NSCalendar.lastDayOfTheMonth()",
+      "symbol": "Calendar.lastDayOfTheMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Juncture.swift",
       "line": 50,
-      "symbol": "NSCalendar.lastDayOfTheMonthUsingReferenceDate(date:)",
+      "symbol": "Calendar.lastDayOfTheMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
       "line": 10,
-      "symbol": "NSCalendar.secondsPerMinute()",
+      "symbol": "Calendar.secondsPerMinute()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
       "line": 15,
-      "symbol": "NSCalendar.secondsPerMinuteUsingReferenceDate(date:)",
+      "symbol": "Calendar.secondsPerMinuteUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 20,
-      "symbol": "NSCalendar.secondsPerHour()",
+      "line": 21,
+      "symbol": "Calendar.secondsPerHour()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 25,
-      "symbol": "NSCalendar.secondsPerHourUsingReferenceDate(date:)",
+      "line": 26,
+      "symbol": "Calendar.secondsPerHourUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 30,
-      "symbol": "NSCalendar.minutesPerHour()",
+      "line": 31,
+      "symbol": "Calendar.minutesPerHour()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 35,
-      "symbol": "NSCalendar.minutesPerHourUsingReferenceDate(date:)",
+      "line": 36,
+      "symbol": "Calendar.minutesPerHourUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 40,
-      "symbol": "NSCalendar.secondsPerDay()",
+      "line": 41,
+      "symbol": "Calendar.secondsPerDay()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 45,
-      "symbol": "NSCalendar.secondsPerDayUsingReferenceDate(date:)",
+      "line": 46,
+      "symbol": "Calendar.secondsPerDayUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 50,
-      "symbol": "NSCalendar.minutesPerDay()",
+      "line": 51,
+      "symbol": "Calendar.minutesPerDay()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 55,
-      "symbol": "NSCalendar.minutesPerDayUsingReferenceDate(date:)",
+      "line": 56,
+      "symbol": "Calendar.minutesPerDayUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 60,
-      "symbol": "NSCalendar.hoursPerDay()",
+      "line": 61,
+      "symbol": "Calendar.hoursPerDay()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 65,
-      "symbol": "NSCalendar.hoursPerDayUsingReferenceDate(date:)",
+      "line": 66,
+      "symbol": "Calendar.hoursPerDayUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 70,
-      "symbol": "NSCalendar.secondsPerWeek()",
+      "line": 71,
+      "symbol": "Calendar.secondsPerWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 75,
-      "symbol": "NSCalendar.secondsPerWeekUsingReferenceDate(date:)",
+      "line": 76,
+      "symbol": "Calendar.secondsPerWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 80,
-      "symbol": "NSCalendar.minutesPerWeek()",
+      "line": 81,
+      "symbol": "Calendar.minutesPerWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 85,
-      "symbol": "NSCalendar.minutesPerWeekUsingReferenceDate(date:)",
+      "line": 86,
+      "symbol": "Calendar.minutesPerWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 90,
-      "symbol": "NSCalendar.hoursPerWeek()",
+      "line": 91,
+      "symbol": "Calendar.hoursPerWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 95,
-      "symbol": "NSCalendar.hoursPerWeekUsingReferenceDate(date:)",
+      "line": 96,
+      "symbol": "Calendar.hoursPerWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 100,
-      "symbol": "NSCalendar.daysPerWeek()",
+      "line": 101,
+      "symbol": "Calendar.daysPerWeek()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 105,
-      "symbol": "NSCalendar.daysPerWeekUsingReferenceDate(date:)",
+      "line": 106,
+      "symbol": "Calendar.daysPerWeekUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 111,
-      "symbol": "NSCalendar.secondsPerMonth()",
+      "line": 112,
+      "symbol": "Calendar.secondsPerMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 116,
-      "symbol": "NSCalendar.secondsPerMonthUsingReferenceDate(date:)",
+      "line": 117,
+      "symbol": "Calendar.secondsPerMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 121,
-      "symbol": "NSCalendar.minutesPerMonth()",
+      "line": 122,
+      "symbol": "Calendar.minutesPerMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 126,
-      "symbol": "NSCalendar.minutesPerMonthUsingReferenceDate(date:)",
+      "line": 127,
+      "symbol": "Calendar.minutesPerMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 131,
-      "symbol": "NSCalendar.hoursPerMonth()",
+      "line": 132,
+      "symbol": "Calendar.hoursPerMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 136,
-      "symbol": "NSCalendar.hoursPerMonthUsingReferenceDate(date:)",
+      "line": 137,
+      "symbol": "Calendar.hoursPerMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 141,
-      "symbol": "NSCalendar.daysPerMonth()",
+      "line": 142,
+      "symbol": "Calendar.daysPerMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 146,
-      "symbol": "NSCalendar.daysPerMonthUsingReferenceDate(date:)",
+      "line": 147,
+      "symbol": "Calendar.daysPerMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 151,
-      "symbol": "NSCalendar.weeksPerMonth()",
+      "line": 152,
+      "symbol": "Calendar.weeksPerMonth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 156,
-      "symbol": "NSCalendar.weeksPerMonthUsingReferenceDate(date:)",
+      "line": 157,
+      "symbol": "Calendar.weeksPerMonthUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 161,
-      "symbol": "NSCalendar.secondsPerYear()",
+      "line": 162,
+      "symbol": "Calendar.secondsPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 166,
-      "symbol": "NSCalendar.secondsPerYearUsingReferenceDate(date:)",
+      "line": 167,
+      "symbol": "Calendar.secondsPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 171,
-      "symbol": "NSCalendar.minutesPerYear()",
+      "line": 172,
+      "symbol": "Calendar.minutesPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 176,
-      "symbol": "NSCalendar.minutesPerYearUsingReferenceDate(date:)",
+      "line": 177,
+      "symbol": "Calendar.minutesPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 181,
-      "symbol": "NSCalendar.hoursPerYear()",
+      "line": 182,
+      "symbol": "Calendar.hoursPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 186,
-      "symbol": "NSCalendar.hoursPerYearUsingReferenceDate(date:)",
+      "line": 187,
+      "symbol": "Calendar.hoursPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 191,
-      "symbol": "NSCalendar.daysPerYear()",
+      "line": 192,
+      "symbol": "Calendar.daysPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 196,
-      "symbol": "NSCalendar.daysPerYearUsingReferenceDate(date:)",
+      "line": 197,
+      "symbol": "Calendar.daysPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 201,
-      "symbol": "NSCalendar.weeksPerYear()",
+      "line": 202,
+      "symbol": "Calendar.weeksPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 206,
-      "symbol": "NSCalendar.weeksPerYearUsingReferenceDate(date:)",
+      "line": 207,
+      "symbol": "Calendar.weeksPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 211,
-      "symbol": "NSCalendar.monthsPerYear()",
+      "line": 212,
+      "symbol": "Calendar.monthsPerYear()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 216,
-      "symbol": "NSCalendar.monthsPerYearUsingReferenceDate(date:)",
+      "line": 217,
+      "symbol": "Calendar.monthsPerYearUsingReferenceDate(date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 221,
-      "symbol": "NSCalendar.secondsFromDate(fromDate:toDate:)",
+      "line": 222,
+      "symbol": "Calendar.secondsFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 226,
-      "symbol": "NSCalendar.minutesFromDate(fromDate:toDate:)",
+      "line": 227,
+      "symbol": "Calendar.minutesFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 231,
-      "symbol": "NSCalendar.hoursFromDate(fromDate:toDate:)",
+      "line": 232,
+      "symbol": "Calendar.hoursFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 236,
-      "symbol": "NSCalendar.daysFromDate(fromDate:toDate:)",
+      "line": 237,
+      "symbol": "Calendar.daysFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 241,
-      "symbol": "NSCalendar.weeksFromDate(fromDate:toDate:)",
+      "line": 242,
+      "symbol": "Calendar.weeksFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 246,
-      "symbol": "NSCalendar.weeksOfYearFromDate(fromDate:toDate:)",
+      "line": 247,
+      "symbol": "Calendar.weeksOfYearFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 251,
-      "symbol": "NSCalendar.weeksOfMonthFromDate(fromDate:toDate:)",
+      "line": 252,
+      "symbol": "Calendar.weeksOfMonthFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 256,
-      "symbol": "NSCalendar.monthsFromDate(fromDate:toDate:)",
+      "line": 257,
+      "symbol": "Calendar.monthsFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 261,
-      "symbol": "NSCalendar.yearsFromDate(fromDate:toDate:)",
+      "line": 262,
+      "symbol": "Calendar.yearsFromDate(fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 266,
-      "symbol": "NSCalendar.date(firstDate:isBeforeDate:)",
+      "line": 267,
+      "symbol": "Calendar.date(firstDate:isBeforeDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nscalendar/NSCalendar_Ranges.swift",
-      "line": 271,
-      "symbol": "NSCalendar.date(firstDate:isAfterDate:)",
+      "line": 272,
+      "symbol": "Calendar.date(firstDate:isAfterDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 10,
-      "symbol": "NSDate.dateWithDay(day:month:year:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.dateWithDay(day:month:year:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 15,
-      "symbol": "NSDate.dateWithDay(day:Month:Year:andCalendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.dateWithDay(day:Month:Year:andCalendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 25,
-      "symbol": "NSDate.dateWithEra(era:year:month:day:hour:minute:second:week:weekday:weekdayOrdinal:andCalendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.dateWithEra(era:year:month:day:hour:minute:second:week:weekday:weekdayOrdinal:andCalendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 42,
-      "symbol": "NSDate.defaultEraForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultEraForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 47,
-      "symbol": "NSDate.defaultYearForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultYearForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 52,
-      "symbol": "NSDate.defaultMonthForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultMonthForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 57,
-      "symbol": "NSDate.defaultDayForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultDayForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 62,
-      "symbol": "NSDate.defaultHourForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultHourForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 67,
-      "symbol": "NSDate.defaultMinuteForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultMinuteForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 72,
-      "symbol": "NSDate.defaultSecondForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultSecondForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 77,
-      "symbol": "NSDate.defaultWeekForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeekForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 82,
-      "symbol": "NSDate.defaultWeekdayForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeekdayForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 87,
-      "symbol": "NSDate.defaultWeekdayOrdinalForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeekdayOrdinalForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 92,
-      "symbol": "NSDate.defaultEra()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultEra()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 97,
-      "symbol": "NSDate.defaultYear()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultYear()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 102,
-      "symbol": "NSDate.defaultMonth()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultMonth()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 107,
-      "symbol": "NSDate.defaultDay()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultDay()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 112,
-      "symbol": "NSDate.defaultHour()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultHour()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 117,
-      "symbol": "NSDate.defaultMinute()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultMinute()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 122,
-      "symbol": "NSDate.defaultSecond()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultSecond()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 127,
-      "symbol": "NSDate.defaultWeek()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeek()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 132,
-      "symbol": "NSDate.defaultWeekday()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeekday()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 137,
-      "symbol": "NSDate.defaultWeekdayOrdinal()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultWeekdayOrdinal()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 142,
-      "symbol": "NSDate.defaultComponents()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultComponents()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 147,
-      "symbol": "NSDate.defaultComponentsForCalendar(calendar:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultComponentsForCalendar(calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Components.swift",
       "line": 152,
-      "symbol": "NSDate.defaultCalendar()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.defaultCalendar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_ConvenientDates.swift",
       "line": 10,
-      "symbol": "NSDate.dateWithHebrewMonth(month:andDay:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.dateWithHebrewMonth(month:andDay:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_ConvenientDates.swift",
       "line": 17,
-      "symbol": "NSDate.dateWithHebrewMonth(month:andDay:andYear:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "symbol": "Date.dateWithHebrewMonth(month:andDay:andYear:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 10,
-      "symbol": "NSDate.about()",
+      "symbol": "Date.about()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 18,
-      "symbol": "NSDate.dayNameOnCalendar(calendar:)",
+      "symbol": "Date.dayNameOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 26,
-      "symbol": "NSDate.monthNameOnCalendar(calendar:)",
+      "symbol": "Date.monthNameOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 34,
-      "symbol": "NSDate.monthAndYearOnCalendar(calendar:)",
+      "symbol": "Date.monthAndYearOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 42,
-      "symbol": "NSDate.monthAbbreviationAndYearOnCalendar(calendar:)",
+      "symbol": "Date.monthAbbreviationAndYearOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 50,
-      "symbol": "NSDate.monthAbbreviationOnCalendar(calendar:)",
+      "symbol": "Date.monthAbbreviationOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 58,
-      "symbol": "NSDate.monthAndDayOnCalendar(calendar:)",
+      "symbol": "Date.monthAndDayOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 66,
-      "symbol": "NSDate.dayOfMonthOnCalendar(calendar:)",
+      "symbol": "Date.dayOfMonthOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 74,
-      "symbol": "NSDate.monthAndDayAndYearOnCalendar(calendar:)",
+      "symbol": "Date.monthAndDayAndYearOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Categories/Foundation/nsdate/NSDate_Description.swift",
       "line": 82,
-      "symbol": "NSDate.dayOfMonthAndYearOnCalendar(calendar:)",
+      "symbol": "Date.dayOfMonthAndYearOnCalendar(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1829,21 +1829,21 @@
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Solar/KSAstronomicalCalendar_DateManipulation.swift",
-      "line": 65,
+      "line": 66,
       "symbol": "AstronomicalCalendar.dateBySubtractingWeeks(weeks:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Solar/KSAstronomicalCalendar_DateManipulation.swift",
-      "line": 70,
+      "line": 71,
       "symbol": "AstronomicalCalendar.dateBySubtractingMonths(months:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Solar/KSAstronomicalCalendar_DateManipulation.swift",
-      "line": 75,
+      "line": 76,
       "symbol": "AstronomicalCalendar.dateBySubtractingYears(years:fromDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

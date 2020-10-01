@@ -140,7 +140,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	public func sunRightAscensionHoursForLongitude(sunTrueLongitude: Double) -> Double
 	{
 		let a: Double = 0.91764 * tanDeg(deg: sunTrueLongitude)
-        var ra: Double = 360.0 / (2.0 * M_PI) * atan(a)
+		var ra: Double = 360.0 / (2.0 * Double.pi) * atan(a)
 	    
 	    // get result into 0-360 degree range
 	    // if (ra >= 360.0)ra = ra - 360.0;

@@ -16,7 +16,7 @@ public class trigonometry
     */
     public func toRadians(degrees: Double) -> Double
     {
-        return degrees * M_PI / 180.0
+		return degrees * .pi / 180.0
     }
 
     /**
@@ -24,7 +24,7 @@ public class trigonometry
     */
     public func toDegrees(radians: Double) -> Double
     {
-        return radians * 180.0 / M_PI
+		return radians * 180.0 / .pi
     }
 
     /**
@@ -32,7 +32,7 @@ public class trigonometry
     */
     public func sinDeg(deg: Double) -> Double
     {
-        return sin(deg * 2.0 * M_PI / 360.0)
+		return sin(deg * 2.0 * .pi / 360.0)
     }
 
     /**
@@ -40,7 +40,7 @@ public class trigonometry
     */
     public func acosDeg(x: Double) -> Double
     {
-        return acos(x) * 360.0 / (2 * M_PI)
+		return acos(x) * 360.0 / (2 * .pi)
     }
 
     /**
@@ -48,7 +48,7 @@ public class trigonometry
     */
     public func asinDeg(x: Double) -> Double
     {
-        return asin(x) * 360.0 / (2 * M_PI)
+		return asin(x) * 360.0 / (2 * .pi)
     }
 
     /**
@@ -56,7 +56,7 @@ public class trigonometry
     */
     public func tanDeg(deg: Double) -> Double
     {
-        return tan(deg * 2.0 * M_PI / 360.0)
+		return tan(deg * 2.0 * .pi / 360.0)
     }
 
     /**
@@ -64,6 +64,6 @@ public class trigonometry
     */
     public func cosDeg(deg: Double) -> Double
     {
-        return cos(deg * 2.0 * M_PI / 360.0)
+		return cos(deg * 2.0 * .pi / 360.0)
     }
 }
