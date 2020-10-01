@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftZmanim'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'A Swift library for getting zmanim.'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.6'
+  s.macos.deployment_target = '10.15.6'
 
   s.source_files = 'KosherSwift/**/*'
   
