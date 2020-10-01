@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GeoLocation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GeoLocation" class="dashAnchor"></a>
+    <a title="GeoLocation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">KosherSwift 2.0.1 Docs</a> (36% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">KosherSwift Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GeoLocation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AstronomicalCalendar.html">AstronomicalCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComplexZmanimCalendar.html">ComplexZmanimCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Daf.html">Daf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DafYomiCalculator.html">DafYomiCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeoLocation.html">GeoLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JewishCalendar.html">JewishCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JewishHoliday.html">JewishHoliday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Parasha.html">Parasha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ParashatHashavuaCalculator.html">ParashatHashavuaCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SefiraFormatter.html">SefiraFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SefiratHaomerCalculator.html">SefiratHaomerCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SunriseAndSunsetCalculator.html">SunriseAndSunsetCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ZmanimCalendar.html">ZmanimCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/trigonometry.html">trigonometry</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Parashot.html">Parashot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SefiraCustom.html">SefiraCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SefiraLanguage.html">SefiraLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SefiraPrayerAddition.html">SefiraPrayerAddition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Tractate.html">Tractate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kHebrewMonth.html">kHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kHebrewYearType.html">kHebrewYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kWeekday.html">kWeekday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYearLength.html">kYearLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYearType.html">kYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYomimTovim.html">kYomimTovim</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSCalendar.html">NSCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSDate.html">NSDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSDateComponents.html">NSDateComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11KosherSwift11holidayDataa">holidayData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GeoLocation</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GeoLocation</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC9longitudeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/longitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC9longitudeSdvp">longitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC12locationNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/locationName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC12locationNameSSSgvp">locationName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">locationName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC8latitudeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/latitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC8latitudeSdvp">latitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC8altitudeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/altitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC8altitudeSdvp">altitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">altitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC8timeZone10Foundation04TimeF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/timeZone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC8timeZone10Foundation04TimeF0VSgvp">timeZone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC4name8latitude9longitude9elevation8timeZoneACSSSg_S3dSg10Foundation04TimeJ0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:latitude:longitude:elevation:timeZone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC4name8latitude9longitude9elevation8timeZoneACSSSg_S3dSg10Foundation04TimeJ0Vtcfc">init(name:<wbr>latitude:<wbr>longitude:<wbr>elevation:<wbr>timeZone:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC8latitude9longitude8timeZoneACSd_Sd10Foundation04TimeH0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(latitude:longitude:timeZone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC8latitude9longitude8timeZoneACSd_Sd10Foundation04TimeH0Vtcfc">init(latitude:<wbr>longitude:<wbr>timeZone:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC8latitude9longitude9elevation8timezoneACSd_S2d10Foundation8TimeZoneVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(latitude:longitude:elevation:timezone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC8latitude9longitude9elevation8timezoneACSd_S2d10Foundation8TimeZoneVtcfc">init(latitude:<wbr>longitude:<wbr>elevation:<wbr>timezone:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC4name8latitude9longitude8timeZoneACSS_S2d10Foundation04TimeI0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:latitude:longitude:timeZone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC4name8latitude9longitude8timeZoneACSS_S2d10Foundation04TimeI0Vtcfc">init(name:<wbr>latitude:<wbr>longitude:<wbr>timeZone:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC22setLatitudeWithDegrees8_degrees10andMinutes0J7Seconds11inDirectionySi_SiSdSStF"></a>
+                    <a name="//apple_ref/swift/Method/setLatitudeWithDegrees(_degrees:andMinutes:andSeconds:inDirection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC22setLatitudeWithDegrees8_degrees10andMinutes0J7Seconds11inDirectionySi_SiSdSStF">setLatitudeWithDegrees(_degrees:<wbr>andMinutes:<wbr>andSeconds:<wbr>inDirection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLatitudeWithDegrees</span><span class="p">(</span><span class="nv">_degrees</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andMinutes</span> <span class="nv">_minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andSeconds</span> <span class="nv">_seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">inDirection</span> <span class="nv">_direction</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC23setLongitudeWithDegrees8_degrees10andMinutes0J7Seconds11inDirectionySi_SiSdSStKF"></a>
+                    <a name="//apple_ref/swift/Method/setLongitudeWithDegrees(_degrees:andMinutes:andSeconds:inDirection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC23setLongitudeWithDegrees8_degrees10andMinutes0J7Seconds11inDirectionySi_SiSdSStKF">setLongitudeWithDegrees(_degrees:<wbr>andMinutes:<wbr>andSeconds:<wbr>inDirection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLongitudeWithDegrees</span><span class="p">(</span><span class="nv">_degrees</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andMinutes</span> <span class="nv">_minutes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andSeconds</span> <span class="nv">_seconds</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">inDirection</span> <span class="nv">_direction</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC19localMeanTimeOffsetSiyF"></a>
+                    <a name="//apple_ref/swift/Method/localMeanTimeOffset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC19localMeanTimeOffsetSiyF">localMeanTimeOffset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that will return the location&rsquo;s local mean time
+  offset in milliseconds from local
+  <a href="http://en.wikipedia.org/wiki/Standard_time"> standard time</a>.
+  The globe is split into 360&deg;, with
+   15&deg; per hour of the day. For a local that is at a longitude that
+  is evenly divisible by 15 (longitude % 15 == 0), at solar noon (with
+  adjustment for the
+  <a href="http://en.wikipedia.org/wiki/Equation_of_time">equation of time</a>) the sun
+  should be directly overhead, so a user who is 1&deg; west of this will have noon at 4
+  minutes after standard time noon, and conversely, a user
+  who is 1&deg; east of the 15&deg; longitude will have noon at 11:56 AM. Lakewood, N.J.,
+  whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75&deg;.
+  This is multiplied by 4 to yield 3 minutes and 10 seconds earlier than standard time.
+  The offset returned does not account for the
+  <a href="http://en.wikipedia.org/wiki/Daylight_saving_time">Daylight saving time</a>
+  offset since this class is unaware of dates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localMeanTimeOffset</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the offset in milliseconds not accounting for Daylight saving time. A positive
+value will be returned East of the 15&deg; timezone line, and a negative value West of i</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC028getGeodesicInitialBearingForD08locationSdAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getGeodesicInitialBearingForLocation(location:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC028getGeodesicInitialBearingForD08locationSdAC_tF">getGeodesicInitialBearingForLocation(location:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGeodesicInitialBearingForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC026getGeodesicFinalBearingForD08locationSdAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getGeodesicFinalBearingForLocation(location:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC026getGeodesicFinalBearingForD08locationSdAC_tF">getGeodesicFinalBearingForLocation(location:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGeodesicFinalBearingForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC022getGeodesicDistanceForD08locationSdAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getGeodesicDistanceForLocation(location:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC022getGeodesicDistanceForD08locationSdAC_tF">getGeodesicDistanceForLocation(location:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGeodesicDistanceForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC018vincentyFormulaForD08location11withBearingSdSgAC_SitF"></a>
+                    <a name="//apple_ref/swift/Method/vincentyFormulaForLocation(location:withBearing:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC018vincentyFormulaForD08location11withBearingSdSgAC_SitF">vincentyFormulaForLocation(location:<wbr>withBearing:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate <a
+ href="http://en.wikipedia.org/wiki/Great-circle_distance">geodesic
+ distance</a> in Meters between this Object and a second Object passed to
+ this method using <a
+ href="http://en.wikipedia.org/wiki/Thaddeus_Vincenty">Thaddeus Vincenty&rsquo;s</a>
+ inverse formula See T Vincenty, &ldquo;<a
+ href="http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf">Direct and Inverse
+ Solutions of Geodesics on the Ellipsoid with application of nested
+ equations</a>&rdquo;, Survey Review, vol XXII no 176, 1975.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">vincentyFormulaForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">,</span> <span class="n">withBearing</span> <span class="nv">formula</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the destination location</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>formula</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>This formula calculates initial bearing InitialBearing, final bearing ({@link #FINAL_BEARING}) and distance ({@link #DISTANCE}).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC022getRhumbLineBearingForD08locationSdAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRhumbLineBearingForLocation(location:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC022getRhumbLineBearingForD08locationSdAC_tF">getRhumbLineBearingForLocation(location:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRhumbLineBearingForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC023getRhumbLineDistanceForD08locationSdAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRhumbLineDistanceForLocation(location:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC023getRhumbLineDistanceForD08locationSdAC_tF">getRhumbLineDistanceForLocation(location:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRhumbLineDistanceForLocation</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift11GeoLocationC11descriptionSSyF"></a>
+                    <a name="//apple_ref/swift/Method/description()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift11GeoLocationC11descriptionSSyF">description()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">description</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/MichaelJBerk/SwiftZmanim" target="_blank" rel="external">Michael Berk</a>. All rights reserved. (Last updated: 2020-10-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

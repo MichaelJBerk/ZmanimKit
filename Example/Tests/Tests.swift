@@ -40,6 +40,13 @@ class KosherSwiftTests: XCTestCase {
 	override func tearDownWithError() throws {
 		// Put teardown code here. This method is called after the invocation of each test method in the class.
 	}
+	
+	func testAlos() {
+		print("alos")
+		let alos = Zman(selector: #selector(zCal.alosHashachar))
+		let e = alos.explanation()
+		
+	}
 
 	func testAlosSpecificDate() throws {
 		
