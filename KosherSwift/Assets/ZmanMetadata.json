@@ -8,11 +8,19 @@
 		"hebrew": "דף יומי"
 	},
 	{
+		"ash": "Daf Yomi",
+		"sef": "Daf Yomi",
+		"eng": "Daf Yomi",
+		"selector": "dafYomiBavliForDateWithDate:",
+		"exp": "Daf Yomi in Talmud Bavli.",
+		"hebrew": "דף יומי"
+	},
+	{
 		"ash": "Parsha (Israel)",
 		"sef": "Parsha (Israel)",
 		"eng": "Torah Portion (Israel)",
 		"selector": "parshaIsrael",
-		"exp": "This week's Parsha, for those living inside Eretz Yisroel, keeping one day of Yom Tov. \nSince the second day of Yom Tov is not observed in Eretz Yisroel, on occasions where it falls out on Shabbos, those living in Eretz Yisroel will read that week's Parsha, while those outside will read the Torah reading for Yom Tov.",
+		"exp": "The Parsha for those living inside Eretz Yisroel, keeping one day of Yom Tov. \nSince the second day of Yom Tov is not observed in Eretz Yisroel, on occasions where it falls out on Shabbos, those living in Eretz Yisroel will read that week's Parsha, while those outside will read the Torah reading for Yom Tov.",
 		"hebrew": "פרשה (ארץ ישראל)"
 	},
 	{
@@ -20,7 +28,7 @@
 		"sef": "Parsha (Diaspora)",
 		"eng": "Torah Portion (Diaspora)",
 		"selector": "parshaDiaspora",
-		"exp": "This week's Parsha, for those living outside Eretz Yisroel, keeping two days of Yom Tov. \nSince the second day of Yom Tov is not observed in Eretz Yisroel, on occasions where it falls out on Shabbos, those living in Eretz Yisroel will read that week's Parsha, while those outside will read the Torah reading for Yom Tov.",
+		"exp": "The Parsha for those living outside Eretz Yisroel, keeping two days of Yom Tov. \nSince the second day of Yom Tov is not observed in Eretz Yisroel, on occasions where it falls out on Shabbos, those living in Eretz Yisroel will read that week's Parsha, while those outside will read the Torah reading for Yom Tov.",
 		"hebrew": "פרשה (חוץ לארץ)"
 	},
     {

@@ -205,10 +205,6 @@ public class Zman
 	public func getMetadata() {
 		
 			let jd = JSONDecoder()
-		let b = Bundle(for: Self.self)
-//		print(b.bundleURL)
-		let bp = try? FileManager.default.contentsOfDirectory(atPath: "file:///var/containers/Bundle/Application/E1A74A8E-3EC8-4DA2-8E0C-5A1A187BE267/ZmanApp.app/Frameworks/SwiftZmanim.framework/SwiftZmanim" )//+ "SwiftZmanim")
-//		print(bp)
 			let d = Bundle.init(for: Self.self).url(forResource: "ZmanMetadata", withExtension: "json")!
 			let jsonData = try! Data(contentsOf: d)
 		do {
