@@ -6,7 +6,7 @@
 import Foundation
 
 /** A class that represents a page in the Talmud. */
-public class Daf
+public class Daf: NSObject
 {
     /**
      *  The page number that the given Daf represents.

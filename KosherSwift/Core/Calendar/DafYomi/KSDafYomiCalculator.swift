@@ -25,7 +25,7 @@ public class DafYomiCalculator
      *
      *  - returns: a KCDaf object.
      */
-	public func dafYomiBavli() -> Daf
+	@objc public func dafYomiBavli() -> Daf
 	{
 		return dafYomiBavliForDate(date: Date())!
 	}
@@ -39,7 +39,7 @@ public class DafYomiCalculator
      *
      *  - returns: a KCDaf object.
      */
-	public func dafYomiBavliForDate(date: Date) -> Daf?
+	@objc public func dafYomiBavliForDate(date: Date) -> Daf?
 	{
 	    
 	    //Start on September 11, 1923
@@ -111,7 +111,7 @@ public class DafYomiCalculator
 	    return dafYomi
 	}
 	
-	public func julianDayForDate(date: Date) -> Int
+	@objc public func julianDayForDate(date: Date) -> Int
 	{
 		let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
 	    
@@ -134,7 +134,7 @@ public class DafYomiCalculator
 	    return Int(math3 + b - 1524.5)
 	}
 	
-	public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> Date
+	@objc public func gregorianDateForYear(year: Int, month: Int, andDay day: Int) -> Date
 	{
 		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
 	    var dateComponents: DateComponents = DateComponents()

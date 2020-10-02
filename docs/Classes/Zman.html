@@ -89,6 +89,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/HebrewMonth.html">HebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/Parashot.html">Parashot</a>
               </li>
               <li class="nav-group-task">
@@ -102,9 +105,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/Tractate.html">Tractate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/kHebrewMonth.html">kHebrewMonth</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/kHebrewYearType.html">kHebrewYearType</a>
@@ -138,6 +138,22 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11KosherSwift11convertToZDyyF">convertToZD()</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11KosherSwift9ZMetadataV">ZMetadata</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -167,9 +183,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11KosherSwift4ZmanC4dataSaySS6hebrew_SS7englishSS8transAshSS0G3SefSS8selectorSSSg11descriptiontGSgvp"></a>
+                    <a name="/s:11KosherSwift4ZmanC4dataSayAA9ZMetadataVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KosherSwift4ZmanC4dataSaySS6hebrew_SS7englishSS8transAshSS0G3SefSS8selectorSSSg11descriptiontGSgvp">data</a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC4dataSayAA9ZMetadataVGSgvp">data</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,7 +200,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="n"><a href="../Classes/Zman.html#/s:11KosherSwift4ZmanC02ksC4Dataa">ksZmanData</a></span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:11KosherSwift9ZMetadataV">ZMetadata</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -212,33 +228,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Selector</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11KosherSwift4ZmanC02ksC4Dataa"></a>
-                    <a name="//apple_ref/swift/Alias/ksZmanData" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KosherSwift4ZmanC02ksC4Dataa">ksZmanData</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="n">ksZmanData</span> <span class="o">=</span> <span class="p">(</span><span class="nv">hebrew</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">english</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">transAsh</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">transSef</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -437,6 +426,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11KosherSwift4ZmanC4name4fromS2S_tF"></a>
+                    <a name="//apple_ref/swift/Method/name(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC4name4fromS2S_tF">name(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">name</span><span class="p">(</span><span class="n">from</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift4ZmanC15rabbinicOpinion4fromSSSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/rabbinicOpinion(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC15rabbinicOpinion4fromSSSgSS_tF">rabbinicOpinion(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rabbinicOpinion</span><span class="p">(</span><span class="n">from</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11KosherSwift4ZmanC13relatedZmanimSaySSGyF"></a>
                     <a name="//apple_ref/swift/Method/relatedZmanim()" class="dashAnchor"></a>
                     <a class="token" href="#/s:11KosherSwift4ZmanC13relatedZmanimSaySSGyF">relatedZmanim()</a>
@@ -464,9 +507,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11KosherSwift4ZmanC019_metadataForCurrentC0SS6hebrew_SS7englishSS8transAshSS0I3SefSS8selectorSSSg11descriptiontyF"></a>
-                    <a name="//apple_ref/swift/Method/_metadataForCurrentZman()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11KosherSwift4ZmanC019_metadataForCurrentC0SS6hebrew_SS7englishSS8transAshSS0I3SefSS8selectorSSSg11descriptiontyF">_metadataForCurrentZman()</a>
+                    <a name="/s:11KosherSwift4ZmanC8metadatas13KeyValuePairsVySSSDyS2SGGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/metadata()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC8metadatas13KeyValuePairsVySSSDyS2SGGyFZ">metadata()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -481,7 +524,88 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">_metadataForCurrentZman</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a href="../Classes/Zman.html#/s:11KosherSwift4ZmanC02ksC4Dataa">ksZmanData</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">metadata</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">DictionaryLiteral</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift4ZmanC11getMetadatayyF"></a>
+                    <a name="//apple_ref/swift/Method/getMetadata()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC11getMetadatayyF">getMetadata()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMetadata</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift4ZmanC02ksc14DataForCurrentC0AA9ZMetadataVyF"></a>
+                    <a name="//apple_ref/swift/Method/ksZmanDataForCurrentZman()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC02ksc14DataForCurrentC0AA9ZMetadataVyF">ksZmanDataForCurrentZman()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ksZmanDataForCurrentZman</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:11KosherSwift9ZMetadataV">ZMetadata</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11KosherSwift4ZmanC012mdForCurrentC0SDyS2SGyF"></a>
+                    <a name="//apple_ref/swift/Method/mdForCurrentZman()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11KosherSwift4ZmanC012mdForCurrentC0SDyS2SGyF">mdForCurrentZman()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mdForCurrentZman</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>

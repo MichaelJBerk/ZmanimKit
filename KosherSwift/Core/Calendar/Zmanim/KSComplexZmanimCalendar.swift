@@ -58,7 +58,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *  Int.min will be returned. See detailed explanation on top of
      *  AstronomicalCalendar documentation.
      */
-	public func shaahZmanis19Point8Degrees() -> Double
+	@objc public func shaahZmanis19Point8Degrees() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos19Point8Degrees(), toSunset: tzais19Point8Degrees())
 	}
@@ -84,7 +84,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *  Int.min will be returned. See detailed explanation on top of
      *  AstronomicalCalendar documentation.
      */
-	public func shaahZmanis18Degrees() -> Double
+	@objc public func shaahZmanis18Degrees() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos18Degrees(), toSunset: tzais18Degrees())
 	}
@@ -110,7 +110,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *  Int.min will be returned. See detailed explanation on top of
      *  AstronomicalCalendar documentation.
      */
-	public func shaahZmanis26Degrees() -> Double
+	@objc public func shaahZmanis26Degrees() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos26Degrees(), toSunset: tzais26Degrees())
 	}
@@ -136,7 +136,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *  Int.min will be returned. See detailed explanation on top of
      *  AstronomicalCalendar documentation.
      */
-	public func shaahZmanis16Point1Degrees() -> Double
+	@objc public func shaahZmanis16Point1Degrees() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzais16Point1Degrees())
 	}
@@ -154,7 +154,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * and one where it does not set, a Int.min will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis60Minutes() -> Double
+	@objc public func shaahZmanis60Minutes() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos60(), toSunset: tzais60())
 	}
@@ -173,7 +173,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * and one where it does not set, a Int.min will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis72Minutes() -> Double
+	@objc public func shaahZmanis72Minutes() -> Double
 	{
 	    return shaahZmanisMogenAvraham()
 	}
@@ -194,7 +194,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * a Int.min will be returned. See detailed explanation on top of
      * the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis72MinutesZmanis() -> Double
+	@objc public func shaahZmanis72MinutesZmanis() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos72Zmanis(), toSunset: tzais72Zmanis())
 	}
@@ -213,7 +213,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * Int.min will be returned. See detailed explanation on top of
      * the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis90Minutes() -> Double
+	@objc public func shaahZmanis90Minutes() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos90(), toSunset: tzais90())
 	}
@@ -234,7 +234,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * a Int.min will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis90MinutesZmanis() -> Double
+	@objc public func shaahZmanis90MinutesZmanis() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos90Zmanis(), toSunset: tzais90Zmanis())
 	}
@@ -253,7 +253,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * Int.min will be returned. See detailed explanation on top of
      * the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis96Minutes() -> Double
+	@objc public func shaahZmanis96Minutes() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos96(), toSunset: tzais96())
 	}
@@ -273,7 +273,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a Int.min
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis96MinutesZmanis() -> Double
+	@objc public func shaahZmanis96MinutesZmanis() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos96Zmanis(), toSunset: tzais96Zmanis())
 	}
@@ -295,7 +295,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * not set, a Int.min will be returned. See detailed explanation on top
      * of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanisAteretTorah() -> Double
+	@objc public func shaahZmanisAteretTorah() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos72Zmanis(), toSunset: tzaisAteretTorah())
 	}
@@ -313,7 +313,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a Int.min
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis120Minutes() -> Double
+	@objc public func shaahZmanis120Minutes() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos120(), toSunset: tzais120())
 	}
@@ -333,7 +333,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a Int.min will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func shaahZmanis120MinutesZmanis() -> Double
+	@objc public func shaahZmanis120MinutesZmanis() -> Double
 	{
 		return temporalHourFromSunrise(sunrise: alos120Zmanis(), toSunset: tzais120Zmanis())
 	}
@@ -350,7 +350,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha120Minutes() -> Date?
+	@objc public func plagHamincha120Minutes() -> Date?
 	{
 		return alos120Zmanis()?.addingTimeInterval(shaahZmanis120Minutes() * 10.75)
 	}
@@ -367,7 +367,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha120MinutesZmanis() -> Date?
+	@objc public func plagHamincha120MinutesZmanis() -> Date?
 	{
 		return alos120Zmanis()?.addingTimeInterval(shaahZmanis120MinutesZmanis() * 10.75)
 	}
@@ -386,7 +386,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * least one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos60() -> Date?
+	@objc public func alos60() -> Date?
 	{
         if let sunrise = seaLevelSunrise()
         {
@@ -413,7 +413,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos72Zmanis() -> Date?
+	@objc public func alos72Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    
@@ -437,7 +437,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos90() -> Date?
+	@objc public func alos90() -> Date?
 	{
 	    
 	    if let baseDate: Date = seaLevelSunrise()
@@ -460,7 +460,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos90Zmanis() -> Date?
+	@objc public func alos90Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    
@@ -485,7 +485,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos96() -> Date?
+	@objc public func alos96() -> Date?
 	{
 	    if let baseDate: Date = seaLevelSunrise()
         {
@@ -507,7 +507,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos96Zmanis() -> Date?
+	@objc public func alos96Zmanis() -> Date?
 	{
 	
 	    let shaahZmanis = shaahZmanisGra()
@@ -533,7 +533,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos120() -> Date?
+	@objc public func alos120() -> Date?
 	{
 	    if let baseDate: Date = seaLevelSunrise()
         {
@@ -555,7 +555,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will
      * be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func alos120Zmanis() -> Date?
+	@objc public func alos120Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    if shaahZmanis == Double(Int.min)
@@ -579,7 +579,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos26Degrees() -> Date?
+	@objc public func alos26Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithTwentySix)
 	}
@@ -595,7 +595,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos18Degrees() -> Date?
+	@objc public func alos18Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
@@ -614,7 +614,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos19Point8Degrees() -> Date?
+	@objc public func alos19Point8Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)
 	}
@@ -633,7 +633,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func alos16Point1Degrees() -> Date?
+	@objc public func alos16Point1Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithSixteenPointOne)
 	}
@@ -651,7 +651,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir11Point5Degrees() -> Date?
+	@objc public func misheyakir11Point5Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithElevenPointFive)
 	}
@@ -669,7 +669,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir11Degrees() -> Date?
+	@objc public func misheyakir11Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithElevenDegrees)
 	}
@@ -687,7 +687,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func misheyakir10Point2Degrees() -> Date?
+	@objc public func misheyakir10Point2Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithTenPointTwo)
 	}
@@ -706,7 +706,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
      * top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA19Point8Degrees() -> Date?
+	@objc public func sofZmanShmaMGA19Point8Degrees() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)?.addingTimeInterval(shaahZmanis19Point8Degrees() * 3)
 	}
@@ -725,7 +725,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA16Point1Degrees() -> Date?
+	@objc public func sofZmanShmaMGA16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 3)
 	}
@@ -745,7 +745,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA72Minutes() -> Date
+	@objc public func sofZmanShmaMGA72Minutes() -> Date
 	{
 	    return sofZmanShmaMogenAvraham()
 	}
@@ -764,7 +764,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA72MinutesZmanis() -> Date
+	@objc public func sofZmanShmaMGA72MinutesZmanis() -> Date
 	{
 		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 3)
 	}
@@ -782,7 +782,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA90Minutes() -> Date?
+	@objc public func sofZmanShmaMGA90Minutes() -> Date?
 	{
 		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 3)
 	}
@@ -801,7 +801,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA90MinutesZmanis() -> Date?
+	@objc public func sofZmanShmaMGA90MinutesZmanis() -> Date?
 	{
 		return alos90Zmanis()?.addingTimeInterval(shaahZmanis90MinutesZmanis() * 3)
 	}
@@ -820,7 +820,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA96Minutes() -> Date?
+	@objc public func sofZmanShmaMGA96Minutes() -> Date?
 	{
 		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 3)
 	}
@@ -839,7 +839,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA96MinutesZmanis() -> Date?
+	@objc public func sofZmanShmaMGA96MinutesZmanis() -> Date?
 	{
 		return alos96Zmanis()?.addingTimeInterval(shaahZmanis96MinutesZmanis() * 3)
 	}
@@ -856,7 +856,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShma3HoursBeforeChatzos() -> Date
+	@objc public func sofZmanShma3HoursBeforeChatzos() -> Date
 	{
 	    let baseDate: Date = chatzos()
 		return dateBySubtractingHours(hours: 3, fromDate: baseDate)
@@ -876,7 +876,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil
      * will be returned. See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaMGA120Minutes() -> Date?
+	@objc public func sofZmanShmaMGA120Minutes() -> Date?
 	{
 		return alos120()?.addingTimeInterval(shaahZmanis120Minutes() * 3)
 	}
@@ -896,7 +896,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaAlos16Point1ToSunset() -> Date?
+	@objc public func sofZmanShmaAlos16Point1ToSunset() -> Date?
 	{
 		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: seaLevelSunset())
 	    
@@ -923,7 +923,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees() -> Date?
+	@objc public func sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees() -> Date?
 	{
 		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
 	     if shaahZmanis == Double(Int.min)
@@ -948,7 +948,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA19Point8Degrees() -> Date?
+	@objc public func sofZmanTfilaMGA19Point8Degrees() -> Date?
 	{
 		return alos19Point8Degrees()?.addingTimeInterval(shaahZmanis19Point8Degrees() * 4)
 	}
@@ -967,7 +967,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA16Point1Degrees() -> Date?
+	@objc public func sofZmanTfilaMGA16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 4)
 	}
@@ -987,7 +987,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA72Minutes() -> Date
+	@objc public func sofZmanTfilaMGA72Minutes() -> Date
 	{
 	    return sofZmanTfilaMogenAvraham()
 	}
@@ -1006,7 +1006,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA72MinutesZmanis() -> Date
+	@objc public func sofZmanTfilaMGA72MinutesZmanis() -> Date
 	{
 		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 4)
 	}
@@ -1025,7 +1025,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA90Minutes() -> Date?
+	@objc public func sofZmanTfilaMGA90Minutes() -> Date?
 	{
 		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 4)
 	}
@@ -1044,7 +1044,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA90MinutesZmanis() -> Date
+	@objc public func sofZmanTfilaMGA90MinutesZmanis() -> Date
 	{
 		return alos90Zmanis()!.addingTimeInterval(shaahZmanis90MinutesZmanis() * 4)
 	}
@@ -1062,7 +1062,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA96Minutes() -> Date?
+	@objc public func sofZmanTfilaMGA96Minutes() -> Date?
 	{
 		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 4)
 	}
@@ -1081,7 +1081,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA96MinutesZmanis() -> Date?
+	@objc public func sofZmanTfilaMGA96MinutesZmanis() -> Date?
 	{
 		return alos96Zmanis()?.addingTimeInterval(shaahZmanis96MinutesZmanis() * 4)
 	}
@@ -1100,7 +1100,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaMGA120Minutes() -> Date?
+	@objc public func sofZmanTfilaMGA120Minutes() -> Date?
 	{
 		return alos120()?.addingTimeInterval(shaahZmanis120Minutes() * 4)
 	}
@@ -1117,7 +1117,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfila2HoursBeforeChatzos() -> Date
+	@objc public func sofZmanTfila2HoursBeforeChatzos() -> Date
 	{
 		return dateBySubtractingHours(hours: 2, fromDate: chatzos())
 	}
@@ -1137,7 +1137,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func minchaGedola30Minutes() -> Date //After chatzos
+	@objc public func minchaGedola30Minutes() -> Date //After chatzos
 	{
 		return dateByAddingMinutes(minutes: 30, toDate: chatzos())
 	}
@@ -1155,7 +1155,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func minchaGedola72Minutes() -> Date
+	@objc public func minchaGedola72Minutes() -> Date
 	{
 		return alos72().addingTimeInterval(shaahZmanis72Minutes() * 6.5)
 	}
@@ -1174,13 +1174,13 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * horizon for this calculation, a nil will be returned. See detailed explanation
      * on top of the AstronomicalCalendar documentation.
      */
-	public func minchaGedola16Point1Degrees() -> Date?
+	@objc public func minchaGedola16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 6.5)
 	}
 	
     // TODO
-//	public func minchaGedolaGreaterThan30() -> Date?
+//	@objc public func minchaGedolaGreaterThan30() -> Date?
 //	{
 //	    if minchaGedola30Minutes() == nil || minchaGedola() == nil
 //		{
@@ -1211,7 +1211,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * the horizon for this calculation, a nil will be returned. See detailed explanation on top of
      * the AstronomicalCalendar documentation.
      */
-	public func minchaKetana16Point1Degrees() -> Date?
+	@objc public func minchaKetana16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 9.5)
 	}
@@ -1230,7 +1230,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func minchaKetana72Minutes() -> Date
+	@objc public func minchaKetana72Minutes() -> Date
 	{
 		return alos72().addingTimeInterval(shaahZmanis72MinutesZmanis() * 9.5)
 	}
@@ -1247,7 +1247,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha60Minutes() -> Date?
+	@objc public func plagHamincha60Minutes() -> Date?
 	{
 		return alos60()?.addingTimeInterval(shaahZmanis60Minutes() * 10.75)
 	}
@@ -1264,7 +1264,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha72Minutes() -> Date?
+	@objc public func plagHamincha72Minutes() -> Date?
 	{
 		return alos72().addingTimeInterval(shaahZmanis72Minutes() * 10.75)
 	}
@@ -1281,7 +1281,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha90Minutes() -> Date?
+	@objc public func plagHamincha90Minutes() -> Date?
 	{
 		return alos90()?.addingTimeInterval(shaahZmanis90Minutes() * 10.75)
 	}
@@ -1298,7 +1298,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha96Minutes() -> Date?
+	@objc public func plagHamincha96Minutes() -> Date?
 	{
 		return alos96()?.addingTimeInterval(shaahZmanis96Minutes() * 10.75)
 	}
@@ -1313,7 +1313,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha96MinutesZmanis() -> Date
+	@objc public func plagHamincha96MinutesZmanis() -> Date
 	{
 		return alos96Zmanis()!.addingTimeInterval(shaahZmanis96MinutesZmanis() * 10.75)
 	}
@@ -1328,7 +1328,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha90MinutesZmanis() -> Date
+	@objc public func plagHamincha90MinutesZmanis() -> Date
 	{
 		return alos90Zmanis()!.addingTimeInterval(shaahZmanis90MinutesZmanis() * 10.75)
 	}
@@ -1343,7 +1343,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha72MinutesZmanis() -> Date
+	@objc public func plagHamincha72MinutesZmanis() -> Date
 	{
 		return alos72Zmanis()!.addingTimeInterval(shaahZmanis72MinutesZmanis() * 10.75)
 	}
@@ -1360,7 +1360,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned. See detailed explanation on
      * top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha16Point1Degrees() -> Date?
+	@objc public func plagHamincha16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 10.75)
 	}
@@ -1377,7 +1377,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha19Point8Degrees() -> Date?
+	@objc public func plagHamincha19Point8Degrees() -> Date?
 	{
 		return alos19Point8Degrees()?.addingTimeInterval(shaahZmanis19Point8Degrees() * 10.75)
 	}
@@ -1393,7 +1393,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha26Degrees() -> Date?
+	@objc public func plagHamincha26Degrees() -> Date?
 	{
 		return alos26Degrees()?.addingTimeInterval(shaahZmanis26Degrees() * 10.75)
 	}
@@ -1410,7 +1410,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHamincha18Degrees() -> Date?
+	@objc public func plagHamincha18Degrees() -> Date?
 	{
 		return alos18Degrees()?.addingTimeInterval(shaahZmanis18Degrees() * 10.75)
 	}
@@ -1430,7 +1430,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagAlosToSunset() -> Date?
+	@objc public func plagAlosToSunset() -> Date?
 	{
 		let shaaZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: seaLevelSunset())
 		return alos16Point1Degrees()?.addingTimeInterval(shaaZmanis * 10.75)
@@ -1450,7 +1450,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> Date?
+	@objc public func plagAlos16Point1ToTzaisGeonim7Point083Degrees() -> Date?
 	{
 		let shaahZmanis = temporalHourFromSunrise(sunrise: alos16Point1Degrees(), toSunset: tzaisGeonim7Point083Degrees())
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis * 10.75)
@@ -1478,7 +1478,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func bainHashmashosRT13Degrees() -> Date?
+	@objc public func bainHashmashosRT13Degrees() -> Date?
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithThirteenPointTwentyFourDegrees)
 	}
@@ -1494,7 +1494,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func bainHashmashosRT58Point5Minutes() -> Date
+	@objc public func bainHashmashosRT58Point5Minutes() -> Date
 	{
 	    let baseDate: Date = seaLevelSunset()!
 		return dateByAddingMinutes(minutes: 58, seconds: 30, toDate: baseDate)
@@ -1511,7 +1511,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func bainHashmashosRT13Point5MinutesBefore7Point083Degrees() -> Date
+	@objc public func bainHashmashosRT13Point5MinutesBefore7Point083Degrees() -> Date
 	{
 		let baseDate: Date = sunsetOffsetByDegrees(offsetZenith: kZenithSevenPointZeroEightThree)
 		return dateBySubtractingMinutes(minutes: 13, seconds: 30, fromDate: baseDate)
@@ -1530,7 +1530,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func bainHashmashosRT2Stars() -> Date?
+	@objc public func bainHashmashosRT2Stars() -> Date?
 	{
 	    let alos19Point8: Date? = alos19Point8Degrees()
 	    let sunrise: Date? = seaLevelSunrise()
@@ -1558,7 +1558,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim5Point95Degrees() -> Date
+	@objc public func tzaisGeonim5Point95Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithFivePointNinetyFive)
 	}
@@ -1576,7 +1576,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim3Point65Degrees() -> Date
+	@objc public func tzaisGeonim3Point65Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithThreePointSixtyFive)
 	}
@@ -1594,7 +1594,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim4Point61Degrees() -> Date
+	@objc public func tzaisGeonim4Point61Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointSixtyOne)
 	}
@@ -1612,7 +1612,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim4Point37Degrees() -> Date
+	@objc public func tzaisGeonim4Point37Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointThirtySeven)
 	}
@@ -1632,7 +1632,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim5Point88Degrees() -> Date
+	@objc public func tzaisGeonim5Point88Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithFivePointEightyEight)
 	}
@@ -1650,7 +1650,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim4Point8Degrees() -> Date
+	@objc public func tzaisGeonim4Point8Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithFourPointEight)
 	}
@@ -1668,7 +1668,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim7Point083Degrees() -> Date
+	@objc public func tzaisGeonim7Point083Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithSevenPointZeroEightThree)
 	}
@@ -1684,7 +1684,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisGeonim8Point5Degrees() -> Date
+	@objc public func tzaisGeonim8Point5Degrees() -> Date
 	{
 		return  sunsetOffsetByDegrees(offsetZenith: kZenithEightPointFive)
 	}
@@ -1700,7 +1700,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais50() -> Date
+	@objc public func tzais50() -> Date
 	{
 		return dateByAddingMinutes(minutes: 50, toDate: seaLevelSunset()!)
 	}
@@ -1716,7 +1716,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais60() -> Date
+	@objc public func tzais60() -> Date
 	{
 		return dateByAddingMinutes(minutes: 60, toDate: seaLevelSunset()!)
 	}
@@ -1738,7 +1738,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzaisAteretTorah() -> Date
+	@objc public func tzaisAteretTorah() -> Date
 	{
 		return dateByAddingMinutes(minutes: ateretTorahSunsetOffset, toDate: seaLevelSunset()!)
 	}
@@ -1759,7 +1759,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanShmaAteretTorah() -> Date?
+	@objc public func sofZmanShmaAteretTorah() -> Date?
 	{
 		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 3)
 	}
@@ -1780,7 +1780,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanTfilaAteretTorah() -> Date?
+	@objc public func sofZmanTfilaAteretTorah() -> Date?
 	{
 		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 4)
 	}
@@ -1801,7 +1801,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func minchaGedolaAteretTorah() -> Date?
+	@objc public func minchaGedolaAteretTorah() -> Date?
 	{
 		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 6.5)
 	}
@@ -1822,7 +1822,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func minchaKetanaAteretTorah() -> Date?
+	@objc public func minchaKetanaAteretTorah() -> Date?
 	{
 		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 9.5)
 	}
@@ -1841,7 +1841,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func plagHaminchaAteretTorah() -> Date?
+	@objc public func plagHaminchaAteretTorah() -> Date?
 	{
 		return alos72Zmanis()?.addingTimeInterval(shaahZmanisAteretTorah() * 10.75)
 	}
@@ -1856,7 +1856,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date of misheyakir.
      */
-	public func misheyakirAteretTorahWithMinutes(minutes: Int) -> Date
+	@objc public func misheyakirAteretTorahWithMinutes(minutes: Int) -> Date
 	{
 		return dateByAddingMinutes(minutes: minutes, toDate: alos72Zmanis()!)
 	}
@@ -1871,7 +1871,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais72Zmanis() -> Date?
+	@objc public func tzais72Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    
@@ -1893,7 +1893,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais90Zmanis() -> Date?
+	@objc public func tzais90Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    
@@ -1915,7 +1915,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais96Zmanis() -> Date?
+	@objc public func tzais96Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    
@@ -1941,7 +1941,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais90() -> Date
+	@objc public func tzais90() -> Date
 	{
 		return dateByAddingMinutes(minutes: 90, toDate: seaLevelSunset()!)
 	}
@@ -1959,7 +1959,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais120() -> Date
+	@objc public func tzais120() -> Date
 	{
 		return dateByAddingMinutes(minutes: 120, toDate: seaLevelSunset()!)
 	}
@@ -1974,7 +1974,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais120Zmanis() -> Date?
+	@objc public func tzais120Zmanis() -> Date?
 	{
 	    let shaahZmanis = shaahZmanisGra()
 	    if shaahZmanis == Double(Int.min)
@@ -1994,7 +1994,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais16Point1Degrees() -> Date
+	@objc public func tzais16Point1Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithSixteenPointOne)
 	}
@@ -2009,7 +2009,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais26Degrees() -> Date
+	@objc public func tzais26Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithTwentySix)
 	}
@@ -2024,7 +2024,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais18Degrees() -> Date
+	@objc public func tzais18Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
@@ -2039,7 +2039,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais19Point8Degrees() -> Date
+	@objc public func tzais19Point8Degrees() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithNineteenPointEight)
 	}
@@ -2054,7 +2054,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func tzais96() -> Date
+	@objc public func tzais96() -> Date
 	{
 		return dateByAddingMinutes(minutes: 96, toDate: seaLevelSunset()!)
 	}
@@ -2071,7 +2071,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date representing the local chatzos.
      */
-	public func fixedLocalChatzos() -> Date?
+	@objc public func fixedLocalChatzos() -> Date?
 	{
 		return dateFromTime(time: (12.0 - Double(geoLocation!.timeZone!.secondsFromGMT())))?.addingTimeInterval(Double(geoLocation!.localMeanTimeOffset()))
 	}
@@ -2082,7 +2082,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date of the latest zman krias shema calculated as 3 hours before FixedLocalChatzos()
      */
-	public func sofZmanShmaFixedLocal() -> Date?
+	@objc public func sofZmanShmaFixedLocal() -> Date?
 	{
 		if let flc = fixedLocalChatzos()
 		{
@@ -2098,7 +2098,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *
      * - returns: the Date of the latest zman tfila.
      */
-	public func sofZmanTfilaFixedLocal() -> Date?
+	@objc public func sofZmanTfilaFixedLocal() -> Date?
 	{
 		if let flc = fixedLocalChatzos()
 		{
@@ -2121,7 +2121,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * one day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanAchilasChametzGra() -> Date
+	@objc public func sofZmanAchilasChametzGra() -> Date
 	{
 	    return sofZmanTfilaGra()
 	}
@@ -2140,7 +2140,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set), a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanAchilasChametzMGA72Minutes() -> Date
+	@objc public func sofZmanAchilasChametzMGA72Minutes() -> Date
 	{
 	    return sofZmanTfilaMGA72Minutes()
 	}
@@ -2159,7 +2159,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * below the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanAchilasChametzMGA16Point1Degrees() -> Date?
+	@objc public func sofZmanAchilasChametzMGA16Point1Degrees() -> Date?
 	{
 	    return sofZmanTfilaMGA16Point1Degrees()
 	}
@@ -2176,7 +2176,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanBiurChametzGra() -> Date
+	@objc public func sofZmanBiurChametzGra() -> Date
 	{
 		return seaLevelSunrise()!.addingTimeInterval(shaahZmanisGra() * 5)
 	}
@@ -2194,7 +2194,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set), a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanBiurChametzMGA72Minutes() -> Date
+	@objc public func sofZmanBiurChametzMGA72Minutes() -> Date
 	{
 		return alos72().addingTimeInterval(shaahZmanisMogenAvraham() * 5)
 	}
@@ -2213,7 +2213,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * the horizon for this calculation, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func sofZmanBiurChametzMGA16Point1Degrees() -> Date?
+	@objc public func sofZmanBiurChametzMGA16Point1Degrees() -> Date?
 	{
 		return alos16Point1Degrees()?.addingTimeInterval(shaahZmanis16Point1Degrees() * 5)
 	}
@@ -2229,7 +2229,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
      * See detailed explanation on top of the AstronomicalCalendar documentation.
      */
-	public func solarMidnight() -> Date?
+	@objc public func solarMidnight() -> Date?
 	{
 	    let clonedCalendar: ComplexZmanimCalendar = self
 		clonedCalendar.workingDate = dateByAddingDays(days: 1, toDate: clonedCalendar.workingDate!)

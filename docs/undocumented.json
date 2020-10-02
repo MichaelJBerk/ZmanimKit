@@ -1486,13 +1486,6 @@
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
-      "line": 12,
-      "symbol": "Zman.ksZmanData",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
       "line": 14,
       "symbol": "Zman.zmanForSelector(selector:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
@@ -1542,21 +1535,56 @@
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
-      "line": 49,
+      "line": 48,
+      "symbol": "Zman.name(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 100,
+      "symbol": "Zman.rabbinicOpinion(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 176,
       "symbol": "Zman.relatedZmanim()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
-      "line": 72,
-      "symbol": "Zman._metadataForCurrentZman()",
+      "line": 199,
+      "symbol": "Zman.metadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 205,
+      "symbol": "Zman.getMetadata()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
-      "line": 211,
+      "line": 218,
+      "symbol": "Zman.ksZmanDataForCurrentZman()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 225,
+      "symbol": "Zman.mdForCurrentZman()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Calendar/Zmanim/KSZman.swift",
+      "line": 236,
       "symbol": "Zman.isEqualToZman(anotherZman:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1989,6 +2017,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Utilities/ZmanMetadata.swift",
+      "line": 10,
+      "symbol": "ZMetadata",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Utilities/ZmanMetadata.swift",
+      "line": 19,
+      "symbol": "convertToZD()",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Core/Utilities/trigonometry.swift",
       "line": 8,
       "symbol": "trigonometry",
@@ -1998,91 +2040,91 @@
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 20,
-      "symbol": "kHebrewMonth.kTishrei",
+      "symbol": "HebrewMonth.tishrei",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 21,
-      "symbol": "kHebrewMonth.heshvan",
+      "symbol": "HebrewMonth.heshvan",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 22,
-      "symbol": "kHebrewMonth.kKislev",
+      "symbol": "HebrewMonth.kislev",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 23,
-      "symbol": "kHebrewMonth.kTeves",
+      "symbol": "HebrewMonth.teves",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 24,
-      "symbol": "kHebrewMonth.kShevat",
+      "symbol": "HebrewMonth.shevat",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 25,
-      "symbol": "kHebrewMonth.kAdar",
+      "symbol": "HebrewMonth.adar",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 26,
-      "symbol": "kHebrewMonth.kAdar_II",
+      "symbol": "HebrewMonth.adar_II",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 27,
-      "symbol": "kHebrewMonth.kNissan",
+      "symbol": "HebrewMonth.nissan",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 28,
-      "symbol": "kHebrewMonth.kIyar",
+      "symbol": "HebrewMonth.iyar",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 29,
-      "symbol": "kHebrewMonth.kSivan",
+      "symbol": "HebrewMonth.sivan",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 30,
-      "symbol": "kHebrewMonth.kTammuz",
+      "symbol": "HebrewMonth.tammuz",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 31,
-      "symbol": "kHebrewMonth.kAv",
+      "symbol": "HebrewMonth.av",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SharedStuff/SwiftZmanim/KosherSwift/Headers/KSHebrewYear.swift",
       "line": 32,
-      "symbol": "kHebrewMonth.kElul",
+      "symbol": "HebrewMonth.elul",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
