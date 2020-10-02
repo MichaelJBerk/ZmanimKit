@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
   s.macos.deployment_target = '10.15.6'
 
   s.source_files = 'KosherSwift/**/*'
+  s.resources = 'KosherSwift/Assets/*'
   
   # s.resource_bundles = {
   #   'KosherSwift' => ['KosherSwift/Assets/*.png']

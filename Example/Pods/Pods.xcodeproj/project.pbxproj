@@ -49,6 +49,8 @@
 		4A2C83382526466000CE65C1 /* KSGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830F2526466000CE65C1 /* KSGeoLocation.swift */; };
 		4A2C83392526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83102526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift */; };
 		4A2C833A2526466000CE65C1 /* trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83122526466000CE65C1 /* trigonometry.swift */; };
+		4AA0945E25269EAA00ADE3D8 /* ZmanMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */; };
+		4AC38B002526AA2600CC9108 /* ZmanMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */; };
 		5A96DB7E1CFE24D82358E594DE62BCE3 /* Pods-KosherSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9D9B02A2FDE32B82C864AF41AE0744 /* Pods-KosherSwift_Tests-dummy.m */; };
 		715DE3C5B7C1604ABFC7F09943A6E23B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		77000954633BE9D973F9E7D45B7DDEF5 /* Pods-KosherSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A52CB42D4C43F9871294F2C70FF289CF /* Pods-KosherSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -125,6 +127,8 @@
 		4A2C830F2526466000CE65C1 /* KSGeoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSGeoLocation.swift; sourceTree = "<group>"; };
 		4A2C83102526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalendar_DateManipulation.swift; sourceTree = "<group>"; };
 		4A2C83122526466000CE65C1 /* trigonometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trigonometry.swift; sourceTree = "<group>"; };
+		4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZmanMetadata.swift; path = KosherSwift/Core/Utilities/ZmanMetadata.swift; sourceTree = "<group>"; };
+		4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ZmanMetadata.json; path = KosherSwift/Assets/ZmanMetadata.json; sourceTree = "<group>"; };
 		546894301C2CC708DB4CA41A216565B3 /* Pods-KosherSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KosherSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5BAEC6E8E46FBD6B4FE2A0527497EA77 /* KosherSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KosherSwift-dummy.m"; sourceTree = "<group>"; };
 		7363845E4F436A2C52A9B2EBB745CE6A /* Pods-KosherSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KosherSwift_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -434,6 +438,8 @@
 		AC4DE6A1A9869B0F0C9DC09E5AB3CA7A /* KosherSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */,
+				4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */,
 				4A2C82E62526466000CE65C1 /* Categories */,
 				4A2C82F92526466000CE65C1 /* Core */,
 				4A2C82DB2526466000CE65C1 /* Headers */,
@@ -597,6 +603,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC38B002526AA2600CC9108 /* ZmanMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +642,7 @@
 				4A2C83262526466000CE65C1 /* NSDateComponents_AllComponents.swift in Sources */,
 				4A2C832E2526466000CE65C1 /* KSZman.swift in Sources */,
 				4A2C83292526466000CE65C1 /* NSDate_Description.swift in Sources */,
+				4AA0945E25269EAA00ADE3D8 /* ZmanMetadata.swift in Sources */,
 				4A2C831F2526466000CE65C1 /* kYearLength.swift in Sources */,
 				4A2C83192526466000CE65C1 /* KSZenith.swift in Sources */,
 				4A2C83152526466000CE65C1 /* KSParashaReadings.swift in Sources */,

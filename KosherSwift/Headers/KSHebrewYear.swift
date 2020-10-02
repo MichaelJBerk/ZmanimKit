@@ -15,21 +15,21 @@ import Foundation
  *  Other languages or environments may handle Hebrew leap
  *  years differently.
  */
-public enum kHebrewMonth: Int
+public enum HebrewMonth: Int
 {
-	case kTishrei = 1
+	case tishrei = 1
 	case heshvan
-	case kKislev
-	case kTeves
-	case kShevat
-	case kAdar
-	case kAdar_II
-	case kNissan
-	case kIyar
-	case kSivan
-	case kTammuz
-	case kAv
-	case kElul
+	case kislev
+	case teves
+	case shevat
+	case adar
+	case adar_II
+	case nissan
+	case iyar
+	case sivan
+	case tammuz
+	case av
+	case elul
 }
 
 /** kYearType

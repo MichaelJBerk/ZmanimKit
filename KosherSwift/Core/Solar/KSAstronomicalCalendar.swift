@@ -59,7 +59,7 @@ public class AstronomicalCalendar
      *  at least one day a year that the sun does not rise, and one where it does not set,
      *  nil will be returned.
      */
-	public func sunrise() -> Date?
+	@objc public func sunrise() -> Date?
 	{
 		let sunrise = UTCSunrise(zenith: kZenithGeometric)
 		return dateFromTime(time: sunrise)
@@ -77,7 +77,7 @@ public class AstronomicalCalendar
      *
      *  - returns: Sunrise at sea level as a Date.
      */
-	public func seaLevelSunrise() -> Date?
+	@objc public func seaLevelSunrise() -> Date?
 	{
 		let sunrise: Double = UTCSeaLevelSunrise(zenith: kZenithGeometric)
 		return dateFromTime(time: sunrise)
@@ -86,7 +86,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of civil twilight.
      */
-	public func beginCivilTwilight() -> Date?
+	@objc public func beginCivilTwilight() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithCivil)
 	}
@@ -94,7 +94,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of nautical twilight.
      */
-	public func beginNauticalTwilight() -> Date?
+	@objc public func beginNauticalTwilight() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithNautical)
 	}
@@ -102,7 +102,7 @@ public class AstronomicalCalendar
     /**
      *  This method calculates the start of astronomical twilight.
      */
-	public func beginAstronomicalTwilight() -> Date?
+	@objc public func beginAstronomicalTwilight() -> Date?
 	{
 		return sunriseOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
@@ -115,7 +115,7 @@ public class AstronomicalCalendar
      *
      *  - returns: A Date representing sunset on workingDate.
      */
-	public func sunset() -> Date?
+	@objc public func sunset() -> Date?
 	{
 		let sunset: Double = UTCSunset(zenith: kZenithGeometric)
 		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunrise())
@@ -129,7 +129,7 @@ public class AstronomicalCalendar
      *
      *  - returns: A Date representing sunset on workingDate.
      */
-	public func seaLevelSunset() -> Date?
+	@objc public func seaLevelSunset() -> Date?
 	{
 		let sunset: Double = UTCSeaLevelSunset(zenith: kZenithGeometric)
 		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunrise())
@@ -150,7 +150,7 @@ public class AstronomicalCalendar
      *   there is at least one day a year where the sun does not rise, and one where it does not set, a null will be
      *   returned. See detailed explanation on top of the page.
      */
-	public func adjustedSunsetDateWithSunset(sunset: Date?, andSunrise sunrise: Date?) -> Date
+	@objc public func adjustedSunsetDateWithSunset(sunset: Date?, andSunrise sunrise: Date?) -> Date
 	{
 		if sunrise != nil && sunset != nil && (sunrise!.timeIntervalSince(sunset! as Date) > 0)
 	    {
@@ -165,7 +165,7 @@ public class AstronomicalCalendar
      * - returns: The Date of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
      *         the calculation can't be computed, null will be returned. See detailed explanation on top of the page.
      */
-	public func endCivilTwilight() -> Date
+	@objc public func endCivilTwilight() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithCivil)
 	}
@@ -177,7 +177,7 @@ public class AstronomicalCalendar
      *   102&deg;}.  If the calculation can't be computed, null will be returned. See detailed explanation on top of
      *   the page.
      */
-	public func endNauticalTwilight() -> Date
+	@objc public func endNauticalTwilight() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithNautical)
 	}
@@ -189,7 +189,7 @@ public class AstronomicalCalendar
      *         108&deg;}. If the calculation can't be computed, null will be returned. See detailed explanation on top
      *         of the page.
      */
-	public func endAstronomicalTwilight() -> Date
+	@objc public func endAstronomicalTwilight() -> Date
 	{
 		return sunsetOffsetByDegrees(offsetZenith: kZenithAstronomical)
 	}
@@ -202,7 +202,7 @@ public class AstronomicalCalendar
      *  - returns: The Date of the beginning of civil twilight using a zenith of 96 degrees. If the calculation
      *         can't be computed, nill will be returned. See detailed explanation on top of the page.
      */
-	public func sunriseOffsetByDegrees(offsetZenith: Double) -> Date?
+	@objc public func sunriseOffsetByDegrees(offsetZenith: Double) -> Date?
 	{
 		let dawn: Double = UTCSunrise(zenith: offsetZenith)
 	    
@@ -222,7 +222,7 @@ public class AstronomicalCalendar
      *         rise, and one where it does not set, a null will be returned. See detailed explanation on top of the
      *         page.
      */
-	public func sunsetOffsetByDegrees(offsetZenith: Double) -> Date
+	@objc public func sunsetOffsetByDegrees(offsetZenith: Double) -> Date
 	{
 		let sunset: Double = UTCSunset(zenith: offsetZenith)
 		
@@ -238,7 +238,7 @@ public class AstronomicalCalendar
      *   the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
      *   not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
      */
-	public func UTCSunrise(zenith: Double) -> Double
+	@objc public func UTCSunrise(zenith: Double) -> Double
 	{
 		return astronomicalCalculator!.UTCSunriseForDate(date: workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
@@ -253,7 +253,7 @@ public class AstronomicalCalendar
      * - returns: The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can't be computed such as in the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
      *   not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
      */
-	public func UTCSeaLevelSunrise(zenith: Double) -> Double
+	@objc public func UTCSeaLevelSunrise(zenith: Double) -> Double
 	{
 		let sunrise: Double = (astronomicalCalculator!).UTCSunriseForDate(date: workingDate!, andZenith: zenith, adjustForElevation: false)
 	    return sunrise
@@ -268,7 +268,7 @@ public class AstronomicalCalendar
      *   the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
      *   not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
      */
-	public func UTCSunset(zenith: Double) -> Double
+	@objc public func UTCSunset(zenith: Double) -> Double
 	{
 		return astronomicalCalculator!.UTCSunsetForDate(date: workingDate!, andZenith: zenith, adjustForElevation: true)
 	}
@@ -285,7 +285,7 @@ public class AstronomicalCalendar
      *   the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
      *   not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
      */
-	public func UTCSeaLevelSunset(zenith: Double) -> Double
+	@objc public func UTCSeaLevelSunset(zenith: Double) -> Double
 	{
 		return astronomicalCalculator!.UTCSunsetForDate(date: workingDate!, andZenith: zenith, adjustForElevation: false)
 	}
@@ -302,7 +302,7 @@ public class AstronomicalCalendar
      * - returns: The long millisecond length of the temporal hour. If the calculation can't be computed a
      *         Int.min will be returned. See detailed explanation on top of the page.
      */
-	public func temporalHourFromSunrise(sunrise: Date?, toSunset sunset: Date?) -> Double
+	@objc public func temporalHourFromSunrise(sunrise: Date?, toSunset sunset: Date?) -> Double
 	{
 	    if sunrise == nil || sunset == nil
 	    {
@@ -322,7 +322,7 @@ public class AstronomicalCalendar
      *   Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
      *   not set, null will be returned. See detailed explanation on top of the page.
      */
-	public func sunTransit() -> Date
+	@objc public func sunTransit() -> Date
 	{
 		return sunrise()!.addingTimeInterval(temporalHourFromSunrise(sunrise: sunrise(), toSunset: sunset()) * 6)
 	}
