@@ -30,6 +30,38 @@ public enum HebrewMonth: Int
 	case tammuz
 	case av
 	case elul
+	
+	///Name of the Hebrew month, transliterated into English
+	public var transliteratedTitle: String {
+		switch self {
+		case .adar:
+			return "Adar"
+		case .adar_II:
+			return "Adar II"
+		case .av:
+			return "Av"
+		case .heshvan:
+			return "Cheshvan"
+		case .elul:
+			return "Elul"
+		case .iyar:
+			return "Iyar"
+		case .kislev:
+			return "Kislev"
+		case .nissan:
+			return "Nissan"
+		case .shevat:
+			return "Shevat"
+		case .sivan:
+			return "Sivan"
+		case .tammuz:
+			return "Tammuz"
+		case .teves:
+			return "Teves"
+		case .tishrei:
+			return "Tishrei"
+		}
+	}
 }
 
 /** kYearType

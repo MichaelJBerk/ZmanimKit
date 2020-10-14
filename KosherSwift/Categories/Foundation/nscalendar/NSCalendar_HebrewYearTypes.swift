@@ -7,12 +7,12 @@ import Foundation
 
 extension Calendar
 {
-	static public func firstWeekdayOfHebrewYearContainingDate(date: Date) -> kWeekday
+	static public func firstWeekdayOfHebrewYearContainingDate(date: Date) -> Weekday
 	{
 	    let hebCal = hebrewCalendar()
 		let hebrewYear = hebCal.yearsInDate(date: date)
 		let roshHashana = Date.dateWithDay(day: 1, Month: 1, Year: hebrewYear, andCalendar: hebCal)
-		return kWeekday(rawValue: hebCal.weekdayInDate(date: roshHashana))!
+		return Weekday(rawValue: hebCal.weekdayInDate(date: roshHashana))!
 	}
 	
 	static public func lengthOfHebrewYearContainingDate(date: Date) -> kYearLength?
@@ -69,12 +69,12 @@ extension Calendar
 		{
 	        if length == .Short
 	        {
-	            if weekday == kWeekday.Monday
+	            if weekday == Weekday.Monday
 	            {
 	                return kHebrewYearType.TypeA
 	            }
 	            
-	            else if weekday == kWeekday.Saturday
+	            else if weekday == Weekday.Saturday
 	            {
 	                return kHebrewYearType.TypeB
 	            }
@@ -82,12 +82,12 @@ extension Calendar
 	        
 	        else if length == kYearLength.Regular
 	        {
-	            if weekday == kWeekday.Tuesday
+	            if weekday == Weekday.Tuesday
 	            {
 	                return kHebrewYearType.TypeC
 	            }
 	            
-	            else if weekday == kWeekday.Thursday {
+	            else if weekday == Weekday.Thursday {
 	                return kHebrewYearType.TypeD
 	            }
 	        }
@@ -95,15 +95,15 @@ extension Calendar
 	        else if length == kYearLength.Long
 	        {
 	            
-	            if weekday == kWeekday.Monday {
+	            if weekday == Weekday.Monday {
 	                return kHebrewYearType.TypeE
 	            }
 	            
-	            else if weekday == kWeekday.Thursday {
+	            else if weekday == Weekday.Thursday {
 	                return kHebrewYearType.TypeF
 	            }
 	            
-	            else if weekday == kWeekday.Saturday {
+	            else if weekday == Weekday.Saturday {
 	                return kHebrewYearType.TypeG
 	            }
 	        }
@@ -113,16 +113,16 @@ extension Calendar
 	    {
 	        if length == kYearLength.Short
 	        {
-                if weekday == kWeekday.Monday
+                if weekday == Weekday.Monday
 	            {
 	                return kHebrewYearType.TypeH
 	            }
 	            
-	            else if weekday == kWeekday.Thursday {
+	            else if weekday == Weekday.Thursday {
 	                return kHebrewYearType.TypeI
 	            }
 	            
-	            else if weekday == kWeekday.Saturday
+	            else if weekday == Weekday.Saturday
 	            {
 	                return kHebrewYearType.TypeJ
 	            }
@@ -130,23 +130,23 @@ extension Calendar
 	        
 	        else if length == kYearLength.Regular
 	        {
-	            if weekday == kWeekday.Tuesday
+	            if weekday == Weekday.Tuesday
 	            {
 	                return kHebrewYearType.TypeK
 	            }
 	        }
 	        else if length == kYearLength.Long
 	        {
-	            if weekday == kWeekday.Monday
+	            if weekday == Weekday.Monday
 	            {
 	                return kHebrewYearType.TypeL
 	            }
 	            
-	            else if weekday == kWeekday.Thursday
+	            else if weekday == Weekday.Thursday
 	            {
 	                return kHebrewYearType.TypeM
 	            }
-	            else if weekday == kWeekday.Saturday
+	            else if weekday == Weekday.Saturday
 	            {
 	                return kHebrewYearType.TypeN
 	            }

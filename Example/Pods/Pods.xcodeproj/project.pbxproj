@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C5DB6CD0E813F826E5D3B4C0A48DCB0 /* Pods-KosherSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930FD0EBA4182562B3A3AB5EC3A68B5 /* Pods-KosherSwift_Example-dummy.m */; };
 		3B4D4862225B02F87842FEE8445FCCDC /* Pods-KosherSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B1F4AF699C4FBAB480B101A40DAC2E /* Pods-KosherSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A20547E253747A9000FC102 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EA2526466000CE65C1 /* Weekday.swift */; };
 		4A2C83132526466000CE65C1 /* KSZenithExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */; };
-		4A2C83142526466000CE65C1 /* KSJewishHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DD2526466000CE65C1 /* KSJewishHolidays.swift */; };
+		4A2C83142526466000CE65C1 /* YomTov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DD2526466000CE65C1 /* YomTov.swift */; };
 		4A2C83152526466000CE65C1 /* KSParashaReadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */; };
 		4A2C83162526466000CE65C1 /* KSTractates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DF2526466000CE65C1 /* KSTractates.swift */; };
 		4A2C83172526466000CE65C1 /* KSMolad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E02526466000CE65C1 /* KSMolad.swift */; };
@@ -19,7 +20,6 @@
 		4A2C831A2526466000CE65C1 /* KSAstronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E32526466000CE65C1 /* KSAstronomical.swift */; };
 		4A2C831B2526466000CE65C1 /* KSHebrewYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E42526466000CE65C1 /* KSHebrewYear.swift */; };
 		4A2C831C2526466000CE65C1 /* KSBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E52526466000CE65C1 /* KSBearing.swift */; };
-		4A2C831D2526466000CE65C1 /* kWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EA2526466000CE65C1 /* kWeekday.swift */; };
 		4A2C831E2526466000CE65C1 /* kHebrewYearType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */; };
 		4A2C831F2526466000CE65C1 /* kYearLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EC2526466000CE65C1 /* kYearLength.swift */; };
 		4A2C83202526466000CE65C1 /* NSCalendar_Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82ED2526466000CE65C1 /* NSCalendar_Ranges.swift */; };
@@ -88,7 +88,7 @@
 		35276E51FD34BA5D94FCBE224EB1826C /* KosherSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KosherSwift.release.xcconfig; sourceTree = "<group>"; };
 		3FAEA63B7DD18FE6063AC1428268FC58 /* Pods-KosherSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KosherSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSZenithExtended.swift; sourceTree = "<group>"; };
-		4A2C82DD2526466000CE65C1 /* KSJewishHolidays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSJewishHolidays.swift; sourceTree = "<group>"; };
+		4A2C82DD2526466000CE65C1 /* YomTov.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YomTov.swift; sourceTree = "<group>"; };
 		4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSParashaReadings.swift; sourceTree = "<group>"; };
 		4A2C82DF2526466000CE65C1 /* KSTractates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTractates.swift; sourceTree = "<group>"; };
 		4A2C82E02526466000CE65C1 /* KSMolad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMolad.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		4A2C82E32526466000CE65C1 /* KSAstronomical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomical.swift; sourceTree = "<group>"; };
 		4A2C82E42526466000CE65C1 /* KSHebrewYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSHebrewYear.swift; sourceTree = "<group>"; };
 		4A2C82E52526466000CE65C1 /* KSBearing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSBearing.swift; sourceTree = "<group>"; };
-		4A2C82EA2526466000CE65C1 /* kWeekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kWeekday.swift; sourceTree = "<group>"; };
+		4A2C82EA2526466000CE65C1 /* Weekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kHebrewYearType.swift; sourceTree = "<group>"; };
 		4A2C82EC2526466000CE65C1 /* kYearLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kYearLength.swift; sourceTree = "<group>"; };
 		4A2C82ED2526466000CE65C1 /* NSCalendar_Ranges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_Ranges.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */,
-				4A2C82DD2526466000CE65C1 /* KSJewishHolidays.swift */,
+				4A2C82DD2526466000CE65C1 /* YomTov.swift */,
 				4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */,
 				4A2C82DF2526466000CE65C1 /* KSTractates.swift */,
 				4A2C82E02526466000CE65C1 /* KSMolad.swift */,
@@ -268,7 +268,7 @@
 		4A2C82E92526466000CE65C1 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				4A2C82EA2526466000CE65C1 /* kWeekday.swift */,
+				4A2C82EA2526466000CE65C1 /* Weekday.swift */,
 				4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */,
 				4A2C82EC2526466000CE65C1 /* kYearLength.swift */,
 			);
@@ -628,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A20547E253747A9000FC102 /* Weekday.swift in Sources */,
 				4A2C83332526466000CE65C1 /* KSJewishCalendar.swift in Sources */,
 				4A2C831C2526466000CE65C1 /* KSBearing.swift in Sources */,
 				4A2C83342526466000CE65C1 /* KSJewishHoliday.swift in Sources */,
@@ -635,7 +636,7 @@
 				4A2C83132526466000CE65C1 /* KSZenithExtended.swift in Sources */,
 				4A2C83232526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift in Sources */,
 				AD83C84CAC958B1C0912A58FF6690325 /* KosherSwift-dummy.m in Sources */,
-				4A2C83142526466000CE65C1 /* KSJewishHolidays.swift in Sources */,
+				4A2C83142526466000CE65C1 /* YomTov.swift in Sources */,
 				4A2C83372526466000CE65C1 /* KSAstronomicalCalendar.swift in Sources */,
 				4A2C83282526466000CE65C1 /* NSDate_Components.swift in Sources */,
 				4A2C832B2526466000CE65C1 /* KSDafYomiCalculator.swift in Sources */,
@@ -660,7 +661,6 @@
 				4A2C83242526466000CE65C1 /* NSCalendar_DateManipulation.swift in Sources */,
 				4A2C832A2526466000CE65C1 /* KSDaf.swift in Sources */,
 				4A2C832F2526466000CE65C1 /* KSZmanimCalendar.swift in Sources */,
-				4A2C831D2526466000CE65C1 /* kWeekday.swift in Sources */,
 				4A2C83382526466000CE65C1 /* KSGeoLocation.swift in Sources */,
 				4A2C83392526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */,
 				4A2C831B2526466000CE65C1 /* KSHebrewYear.swift in Sources */,

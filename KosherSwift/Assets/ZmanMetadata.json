@@ -1,5 +1,13 @@
 [
 	{
+		"ash": "Shabbos Begins",
+		"sef": "Shabbat Begins",
+		"eng": "Sabbath Begins",
+		"selector": "candleLighting",
+		"exp": "Shabbat candle lighting time",
+		"hebrew": "הדלקת נרות (שבת)"
+	},
+	{
 		"ash": "Daf Yomi",
 		"sef": "Daf Yomi",
 		"eng": "Daf Yomi",

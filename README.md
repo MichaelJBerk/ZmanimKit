@@ -1,23 +1,28 @@
-# SwiftZmanim
-A Swift 5 version of [KosherSwift](https://github.com/DanielSmith1239/KosherSwift)
+# ZmanimKit
+A Swift library for implementing Zmanim and other Jewish time-related calculations.
+
+This is based on Dani Smith's work with [KosherSwift](https://github.com/DanielSmith1239/KosherSwift), which is based on KosherCocoa and KosherJava
 
 # Documentation
 A "Get Started" guide can be found [here](https://github.com/MichaelJBerk/SwiftZmanim/blob/master/GetStarted.md).
 
 # Installation
-Just copy the KosherSwift folder in to your project.
 
 ### Cocoapods
 KosherSwift is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KosherSwift"
+pod "SwiftZmanim"
 ```
 
 # To Do:
-- [x] Create documentation
-- [x] Create "Get Started" guide
+
+- [ ] Prepare for Open Source release
+	- [ ] Rename to ZmanimKit 
+	- [ ] Release on CocoaPods
+	
+	
 - [ ] Finish cleaning up code
 - [ ] Add support for retrieving sefira prayers
 - [ ] Add support for returning nil in ComplexZmanimCalendar

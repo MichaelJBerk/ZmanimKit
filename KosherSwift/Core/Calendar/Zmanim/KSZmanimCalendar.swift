@@ -5,6 +5,9 @@
 
 import Foundation
 
+/// A Class that calculates times for common Zmanim
+///
+/// - seealso: [ComplexZmanimCalendar]
 public class ZmanimCalendar: AstronomicalCalendar
 {
 	public var candleLightingOffset = 0
