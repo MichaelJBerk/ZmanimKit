@@ -32,6 +32,7 @@ public class JewishCalendar: ComplexZmanimCalendar
 	public func yomTovIndex() -> YomTov?
 	{
 	    let useModernHolidays: Bool = returnsModernHolidays
+		
 	    
         switch  currentHebrewMonth()
 	    {
@@ -211,6 +212,14 @@ public class JewishCalendar: ComplexZmanimCalendar
             default:
                 break
 	    }
+		if let weekday = internalCalendar?.component(.weekday, from: workingDate ?? Date()) {
+			if weekday == 6 {
+				return .erevShabbos
+			}
+			if weekday == 7 {
+				return .shabbos
+			}
+		}
 	    // if we get to this stage, then there are no holidays for the given date return -1
 	    return nil
 	}

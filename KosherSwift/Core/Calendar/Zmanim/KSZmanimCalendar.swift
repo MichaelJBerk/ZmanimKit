@@ -128,4 +128,9 @@ public class ZmanimCalendar: AstronomicalCalendar
 	{
 		return dateByAddingMinutes(minutes: 72, toDate: seaLevelSunset()!)
 	}
+	@objc public func havdalah() -> Date
+	{
+		return tzais72()
+	}
+	
 }

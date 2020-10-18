@@ -1,5 +1,13 @@
 [
 	{
+		"ash": "Havdalah",
+		"sef": "Havdalah",
+		"eng": "Sabbath Concludes",
+		"selector": "havdalah",
+		"exp": "Time that Shabbos ends",
+		"hebrew": "הבדלה"
+	},
+	{
 		"ash": "Shabbos Begins",
 		"sef": "Shabbat Begins",
 		"eng": "Sabbath Begins",

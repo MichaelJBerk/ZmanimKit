@@ -90,6 +90,10 @@ public enum YomTov: Int
 	static var fastDays: [YomTov] {
 		return [.fastOfEsther, .erevPesach, .seventeenthOfTammuz, .ninthOfAv, .fastOfGedalya, .tenthOfTevet]
 	}
+	///Days where you can't perform Melacha
+	static var noMelacha: [YomTov] {
+		return [.shabbos, .roshHashana, .yomKippur, .succos, .simchasTorah, .sheminiAtzeres, .pesach, .shavuos]
+	}
 	
 	public var transliterated: String {
 		switch self {
