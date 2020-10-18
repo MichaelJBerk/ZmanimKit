@@ -80,19 +80,26 @@ public enum YomTov: Int
 	case erevShabbos
 	case shabbos
 	
-	static var shaloshRegalim: [YomTov] {
+	public static var shaloshRegalim: [YomTov] {
 		return [.pesach, .succos, .shavuos]
 	}
 	
-	static var zionistHolidays: [YomTov] {
+	public static var zionistHolidays: [YomTov] {
 		return [.yomHashoah, .yomHazikaron, .yomHaatzmaut, .yomYerushalayim]
 	}
-	static var fastDays: [YomTov] {
+	public static var fastDays: [YomTov] {
 		return [.fastOfEsther, .erevPesach, .seventeenthOfTammuz, .ninthOfAv, .fastOfGedalya, .tenthOfTevet]
 	}
 	///Days where you can't perform Melacha
-	static var noMelacha: [YomTov] {
+	public static var noMelacha: [YomTov] {
 		return [.shabbos, .roshHashana, .yomKippur, .succos, .simchasTorah, .sheminiAtzeres, .pesach, .shavuos]
+	}
+	
+	public static var erev: [YomTov] {
+		return [.erevShabbos, .erevPesach, .erevSuccos, .erevShavuos, .erevRoshHashana, .erevYomKippur ]
+	}
+	public static var showCandleLighting: [YomTov] {
+		return noMelacha + erev
 	}
 	
 	public var transliterated: String {

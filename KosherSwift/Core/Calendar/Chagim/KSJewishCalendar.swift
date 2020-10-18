@@ -134,7 +134,7 @@ public class JewishCalendar: ComplexZmanimCalendar
 	            }
 	            if currentHebrewDayOfMonth() == 21
 	            {
-	                return YomTov.hoshanaRabba
+ 	                return YomTov.hoshanaRabba
 	            }
 	            if currentHebrewDayOfMonth() == 22
 	            {
@@ -669,7 +669,12 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func currentHebrewDayOfMonth() -> Int
 	{
-	    let now: Date = workingDateAdjustedForSunset()
+		var now: Date
+		now = workingDate ?? Date()
+		if now.isCurrentDate {
+			now = workingDateAdjustedForSunset()
+		}
+	   
 		let hebrewCalendar: Calendar = Calendar(identifier:.hebrew)
 	
 		return hebrewCalendar.dateComponents([.day], from:now as Date).day ?? 0
