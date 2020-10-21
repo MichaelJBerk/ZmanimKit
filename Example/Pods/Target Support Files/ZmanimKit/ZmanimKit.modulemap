@@ -1,0 +1,6 @@
+framework module ZmanimKit {
+  umbrella header "ZmanimKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

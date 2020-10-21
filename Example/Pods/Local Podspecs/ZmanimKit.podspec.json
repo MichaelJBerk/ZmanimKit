@@ -1,0 +1,28 @@
+{
+  "name": "ZmanimKit",
+  "version": "2.0.1",
+  "summary": "A Swift library for getting zmanim.",
+  "swift_versions": [
+    "5.0"
+  ],
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MichaelJBerk/SwiftZmanim",
+  "license": {
+    "type": "LGLP",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "Michael Berk": "michaelberkdev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/MichaelJBerk/SwiftZmanim.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "13.6",
+    "osx": "10.15.6"
+  },
+  "source_files": "Sources/**/*",
+  "resources": "Assets/*",
+  "swift_version": "5.0"
+}

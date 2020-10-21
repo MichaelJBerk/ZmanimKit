@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'KosherSwift_Example' do
-  pod 'KosherSwift', :path => '../'
+target 'ZmanimKit_Example' do
+  pod 'ZmanimKit', :path => '../'
 
-  target 'KosherSwift_Tests' do
+  target 'ZmanimKit_Tests' do
     inherit! :search_paths
 
     

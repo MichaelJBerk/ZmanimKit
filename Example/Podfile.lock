@@ -1,16 +1,16 @@
 PODS:
-  - KosherSwift (0.1.0)
+  - ZmanimKit (2.0.1)
 
 DEPENDENCIES:
-  - KosherSwift (from `../`)
+  - ZmanimKit (from `../`)
 
 EXTERNAL SOURCES:
-  KosherSwift:
+  ZmanimKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KosherSwift: f55250bdcce58b4afaad7b682a9f2dc58eb529e3
+  ZmanimKit: 91829a959b689f0636dd81a2170b34b9a19754a8
 
-PODFILE CHECKSUM: ac28b674e487cd34b6ccaf3eb59ea125c7cb367f
+PODFILE CHECKSUM: 47c09f657a626dabe529ac2dbbfcc32fe22d31a5
 
 COCOAPODS: 1.9.3

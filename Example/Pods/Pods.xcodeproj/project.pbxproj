@@ -7,447 +7,552 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C5DB6CD0E813F826E5D3B4C0A48DCB0 /* Pods-KosherSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930FD0EBA4182562B3A3AB5EC3A68B5 /* Pods-KosherSwift_Example-dummy.m */; };
-		3B4D4862225B02F87842FEE8445FCCDC /* Pods-KosherSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B1F4AF699C4FBAB480B101A40DAC2E /* Pods-KosherSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A20547E253747A9000FC102 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EA2526466000CE65C1 /* Weekday.swift */; };
-		4A2C83132526466000CE65C1 /* KSZenithExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */; };
-		4A2C83142526466000CE65C1 /* YomTov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DD2526466000CE65C1 /* YomTov.swift */; };
-		4A2C83152526466000CE65C1 /* KSParashaReadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */; };
-		4A2C83162526466000CE65C1 /* KSTractates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82DF2526466000CE65C1 /* KSTractates.swift */; };
-		4A2C83172526466000CE65C1 /* KSMolad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E02526466000CE65C1 /* KSMolad.swift */; };
-		4A2C83182526466000CE65C1 /* KSSunCalculationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E12526466000CE65C1 /* KSSunCalculationTypes.swift */; };
-		4A2C83192526466000CE65C1 /* KSZenith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E22526466000CE65C1 /* KSZenith.swift */; };
-		4A2C831A2526466000CE65C1 /* KSAstronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E32526466000CE65C1 /* KSAstronomical.swift */; };
-		4A2C831B2526466000CE65C1 /* KSHebrewYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E42526466000CE65C1 /* KSHebrewYear.swift */; };
-		4A2C831C2526466000CE65C1 /* KSBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82E52526466000CE65C1 /* KSBearing.swift */; };
-		4A2C831E2526466000CE65C1 /* kHebrewYearType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */; };
-		4A2C831F2526466000CE65C1 /* kYearLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EC2526466000CE65C1 /* kYearLength.swift */; };
-		4A2C83202526466000CE65C1 /* NSCalendar_Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82ED2526466000CE65C1 /* NSCalendar_Ranges.swift */; };
-		4A2C83212526466000CE65C1 /* NSCalendar_DateComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EE2526466000CE65C1 /* NSCalendar_DateComparison.swift */; };
-		4A2C83222526466000CE65C1 /* NSCalendar_Juncture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82EF2526466000CE65C1 /* NSCalendar_Juncture.swift */; };
-		4A2C83232526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F02526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift */; };
-		4A2C83242526466000CE65C1 /* NSCalendar_DateManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F12526466000CE65C1 /* NSCalendar_DateManipulation.swift */; };
-		4A2C83252526466000CE65C1 /* NSCalendar_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F22526466000CE65C1 /* NSCalendar_Components.swift */; };
-		4A2C83262526466000CE65C1 /* NSDateComponents_AllComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F42526466000CE65C1 /* NSDateComponents_AllComponents.swift */; };
-		4A2C83272526466000CE65C1 /* NSDate_ConvenientDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F62526466000CE65C1 /* NSDate_ConvenientDates.swift */; };
-		4A2C83282526466000CE65C1 /* NSDate_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F72526466000CE65C1 /* NSDate_Components.swift */; };
-		4A2C83292526466000CE65C1 /* NSDate_Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82F82526466000CE65C1 /* NSDate_Description.swift */; };
-		4A2C832A2526466000CE65C1 /* KSDaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82FC2526466000CE65C1 /* KSDaf.swift */; };
-		4A2C832B2526466000CE65C1 /* KSDafYomiCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82FD2526466000CE65C1 /* KSDafYomiCalculator.swift */; };
-		4A2C832C2526466000CE65C1 /* KSParasha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C82FF2526466000CE65C1 /* KSParasha.swift */; };
-		4A2C832D2526466000CE65C1 /* KSParashatHashavuaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83002526466000CE65C1 /* KSParashatHashavuaCalculator.swift */; };
-		4A2C832E2526466000CE65C1 /* KSZman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83022526466000CE65C1 /* KSZman.swift */; };
-		4A2C832F2526466000CE65C1 /* KSZmanimCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83032526466000CE65C1 /* KSZmanimCalendar.swift */; };
-		4A2C83302526466000CE65C1 /* KSComplexZmanimCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83042526466000CE65C1 /* KSComplexZmanimCalendar.swift */; };
-		4A2C83312526466000CE65C1 /* KSSefiraFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83062526466000CE65C1 /* KSSefiraFormatter.swift */; };
-		4A2C83322526466000CE65C1 /* KSSefiratHaomerCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83072526466000CE65C1 /* KSSefiratHaomerCalculator.swift */; };
-		4A2C83332526466000CE65C1 /* KSJewishCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83092526466000CE65C1 /* KSJewishCalendar.swift */; };
-		4A2C83342526466000CE65C1 /* KSJewishHoliday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830A2526466000CE65C1 /* KSJewishHoliday.swift */; };
-		4A2C83352526466000CE65C1 /* KSAstronomicalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830C2526466000CE65C1 /* KSAstronomicalCalculator.swift */; };
-		4A2C83362526466000CE65C1 /* KSSunriseAndSunsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830D2526466000CE65C1 /* KSSunriseAndSunsetCalculator.swift */; };
-		4A2C83372526466000CE65C1 /* KSAstronomicalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830E2526466000CE65C1 /* KSAstronomicalCalendar.swift */; };
-		4A2C83382526466000CE65C1 /* KSGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C830F2526466000CE65C1 /* KSGeoLocation.swift */; };
-		4A2C83392526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83102526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift */; };
-		4A2C833A2526466000CE65C1 /* trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C83122526466000CE65C1 /* trigonometry.swift */; };
-		4AA0945E25269EAA00ADE3D8 /* ZmanMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */; };
-		4AC38B002526AA2600CC9108 /* ZmanMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */; };
-		5A96DB7E1CFE24D82358E594DE62BCE3 /* Pods-KosherSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9D9B02A2FDE32B82C864AF41AE0744 /* Pods-KosherSwift_Tests-dummy.m */; };
-		715DE3C5B7C1604ABFC7F09943A6E23B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		77000954633BE9D973F9E7D45B7DDEF5 /* Pods-KosherSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A52CB42D4C43F9871294F2C70FF289CF /* Pods-KosherSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD83C84CAC958B1C0912A58FF6690325 /* KosherSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEC6E8E46FBD6B4FE2A0527497EA77 /* KosherSwift-dummy.m */; };
-		B8CD050C6428686C5AE08165C9661866 /* KosherSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D52BA9E313DFFF562C493196A73701C9 /* KosherSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCCF99F2EDB4FF0793161719CB6FB28E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E999DEC09377174DF457C21105A74237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		003FE7088CE1DF56A77379FD883290F8 /* KSComplexZmanimCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AED54F73BAA0AFA0B8E50E425AB8F1 /* KSComplexZmanimCalendar.swift */; };
+		0915D338FB902365E238A25B2C8A3695 /* KSAstronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280BA8893536AFF01EE17D3D131B8037 /* KSAstronomical.swift */; };
+		142B5C3EAF0D7D5C9BC112DAEB4B895D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		14ADE2B3C43B59D885645F901E8C0FD2 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E559361C0888396AA2D17379A434D2 /* KSAstronomicalCalendar_DateManipulation.swift */; };
+		198F278CAA34A03599DE1D32B9DF1A4E /* KSAstronomicalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE64DE0E578735B00C5F3C7E210F5C /* KSAstronomicalCalculator.swift */; };
+		24978E004A03D70BE1BC7879E35AB7C0 /* KSGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868C6A3FA15569C2023E26F5FF824F6 /* KSGeoLocation.swift */; };
+		2960F7056FD7DADDFBEB529E12906984 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC9B00AAD93BA4C74D1D3BE0F00FF5A /* Weekday.swift */; };
+		347A4B48C1F2B27AC295A1B41E7B0563 /* YomTov.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5018002437103D9734AFE822099A20F /* YomTov.swift */; };
+		36020A16F2ED6074D694916EF72F57AB /* KSZenith.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE728B1ABDDB3104A1077FDAA268B7 /* KSZenith.swift */; };
+		3A630F4CD6E3A034D10B38370C4944A1 /* NSDateComponents_AllComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C3179EE05F6557E06B2C1B69A97CE2 /* NSDateComponents_AllComponents.swift */; };
+		3BD89416027978E7B590FA658F37B8DE /* KSZman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD26D1F50D1F7FC9C0ABF337AE67146 /* KSZman.swift */; };
+		3E2CA15C060C78DD3D34FBE19A1F71B0 /* ZmanMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E37C6E584B16C8113BC4103671687FF /* ZmanMetadata.json */; };
+		3ED4F466B93D4BE7D5E6511702636E6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		425AC62E3BC5AE8C70306738591EB36A /* KSMolad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429B09CE6B129795C97DD5D6C208628 /* KSMolad.swift */; };
+		43CDF3467B43279AE622E5408137DB92 /* KSHebrewYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BBCD2339C834282C2EB51090E51E01 /* KSHebrewYear.swift */; };
+		52293F12E90AE7AC0CA973BDE18BE041 /* NSDate_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F449A6297220FBD770C5736E4EC30E3 /* NSDate_Components.swift */; };
+		59A752F6D140FFEDB659BD69A1FD4D37 /* KSParasha.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E588825924110F3A9A8F36B1994C32 /* KSParasha.swift */; };
+		6DB7FD0882A21037D3666E3948BD920F /* NSDate_ConvenientDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD6C7C68CFCB5101FA275DE913BFC4F /* NSDate_ConvenientDates.swift */; };
+		79B6A9C26E744A3E940527A2D72CDC0B /* KSDafYomiCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB252DCFC3836346142550CCEC3D0204 /* KSDafYomiCalculator.swift */; };
+		7ACCC9A2F1EB028A99B94B8B21231D7B /* Pods-ZmanimKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C26047D50562D9CAD89EC00DA89E57 /* Pods-ZmanimKit_Tests-dummy.m */; };
+		7FA9C18B4E6A3BE4F59F7FE09247379D /* KSParashaReadings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D5EFB43D46EA06D7F4D33D7FDB699 /* KSParashaReadings.swift */; };
+		8116F708C00EFDE31EC50884479B8457 /* KSJewishHoliday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5747D303B0C899DE6C9A1C864A6C29 /* KSJewishHoliday.swift */; };
+		880B2E893CDF92DED8C5E20C31563FFD /* NSCalendar_Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8AE0B5699E80EA5995FDDB7380DB6 /* NSCalendar_Ranges.swift */; };
+		93D6F65B12265BA1FE0D7C2D5EF76921 /* NSCalendar_HebrewYearTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF24BF89339E452A51A9B01653553AA /* NSCalendar_HebrewYearTypes.swift */; };
+		98ACCC21AC26CDBBBD466442657F0DEF /* KSAstronomicalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ADABF367ABC3D2F36910218E2E3D5B /* KSAstronomicalCalendar.swift */; };
+		9EF6FFF93307606ECD6F6E36A9EDC7F5 /* KSZenithExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED95367A24AFEBF86471A5E147106D96 /* KSZenithExtended.swift */; };
+		A12BDB2A6903F5FB03D97C32D1D1436F /* KSSunriseAndSunsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088CDBF8F8C8AC8C7B74B6F8F9E6F7A2 /* KSSunriseAndSunsetCalculator.swift */; };
+		A14BF939B8DFCFB982B69EC9784256E0 /* KSJewishCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD3D5E5648B59D3B323806306A2A1C /* KSJewishCalendar.swift */; };
+		A6901F290261EE1088B1A8BC93F43E6D /* NSCalendar_Juncture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55329C9CBFD16426C24C48542F51BF3 /* NSCalendar_Juncture.swift */; };
+		A7F8B0110796486FB51D4396B562629C /* ZmanimKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDBEE2B48F1221764A581176A9D27D4 /* ZmanimKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2B2C72DFE52C947B1488AAFDB95C3D6 /* trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44D33DFDAF015B8248345B34DF2F1F /* trigonometry.swift */; };
+		B30DC8301DA83D355A39D3613B28A24B /* KSBearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C504C627F309DD937BD4F2F0DFD5E9C0 /* KSBearing.swift */; };
+		B48F3B873AA8891AB629585A6E2ECEB5 /* NSDate_Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89FA9451C56914B9AE2A4D0B2DFA52 /* NSDate_Description.swift */; };
+		B4BFC4D7C8EA97D934BC87B1E5DA44C9 /* NSCalendar_DateManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD495EE028F6A29B4702A4874BC76CCF /* NSCalendar_DateManipulation.swift */; };
+		B731C7AB149AB1747D9099419B1FAD8D /* Pods-ZmanimKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52309823E8DD30998B97DE2668AD547F /* Pods-ZmanimKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B742992FF5AC97E0A9C347F6B082BF01 /* kYearLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31037C2502A98FB6B2619EDCB0F8B364 /* kYearLength.swift */; };
+		BCE0C11C0A9924030104D0E1E6ED8BFE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CC3291C982A1061DDCC99FCBCA60A /* DateExtensions.swift */; };
+		BEFC4D36806D396C999C31F2378B41E5 /* KSSunCalculationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E57CCABBAC9F94275FF0BD485628E /* KSSunCalculationTypes.swift */; };
+		C115D19BFDC2DCB11EF5319A14F72C18 /* Pods-ZmanimKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C88F36902A1B6F39639545882C21D9 /* Pods-ZmanimKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4E2F0ED1091B5A587AAF6AF8B742FD5 /* KSDaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B7A53FC55FAD01A0DEF9F2D68530D /* KSDaf.swift */; };
+		D236B9417890590C4D2CBE0C99EAAD12 /* kHebrewYearType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2AF2471B2C95DF4CBE64385D981789 /* kHebrewYearType.swift */; };
+		D3910BC13461126A9532DF00A5979592 /* ZmanMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E4E896599E461A0C5FB852EC267A35 /* ZmanMetadata.swift */; };
+		DBC9D0E3731547C26CD2FA15CC9FE13F /* KSSefiraFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E092FAACFEC2B4021736001425289 /* KSSefiraFormatter.swift */; };
+		DCC335187CDA0775CB38AC6219CF3815 /* KSSefiratHaomerCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE6557D78D1E440519189199A8C770 /* KSSefiratHaomerCalculator.swift */; };
+		E2B111B8CA5B105221474DEC74622E02 /* Pods-ZmanimKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC28EC5690B96FFDE5315FB4172B3EF /* Pods-ZmanimKit_Example-dummy.m */; };
+		E2EFC347AB44F3DC9BFB1C6C5393E852 /* NSCalendar_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D449DEA364A78AD2931D2617DFA1B2 /* NSCalendar_Components.swift */; };
+		E648208ECC09BA7690FEEA6E87B7731C /* KSZmanimCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5742D27A220F23471E88B584111EB1B5 /* KSZmanimCalendar.swift */; };
+		E94375B86AF4D48649ED79DD104018A9 /* ZmanimKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD20E248A79FA5E3881DBC1662660C5E /* ZmanimKit-dummy.m */; };
+		EBB5FAFB03CE6B851CAA9173D7DEFEAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EEB5CA6B59E42F2F4C66A41A45A1082A /* NSCalendar_DateComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CF2F2E1128EAAA1D2AC3401E3610F6 /* NSCalendar_DateComparison.swift */; };
+		F25804130980BB5FF4433E125ABD2A55 /* KSTractates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570D85133506135FB5ABE008A6FB2FE4 /* KSTractates.swift */; };
+		F4A9E679D5FD66D742F1B6645AFB507D /* KSParashatHashavuaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7076C2FA200F794ECD6DF20CDE7402C /* KSParashatHashavuaCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2ACFC2A5F3C78B58FDD98AB809864120 /* PBXContainerItemProxy */ = {
+		7A4D68EA590E1C9338624D29FE850BC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F2CBCB9BC6EAA56B4A0800C790C2C30D;
-			remoteInfo = KosherSwift;
+			remoteGlobalIDString = 8A54B2912350BA8D95C8F9CB764C72AA;
+			remoteInfo = ZmanimKit;
 		};
-		E17B757A641D3150FBCE3FDF688E5E11 /* PBXContainerItemProxy */ = {
+		9371FA555B182CD6668A489FB9B19D0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 664A3E46F69F21734FC2BB28E6120DA7;
-			remoteInfo = "Pods-KosherSwift_Example";
+			remoteGlobalIDString = 8FD38EDA8DFFB5A2ACCB880F5362D11E;
+			remoteInfo = "Pods-ZmanimKit_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E9D9B02A2FDE32B82C864AF41AE0744 /* Pods-KosherSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KosherSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		1CD2E8FCA150298ECB22D6780E6BFC49 /* Pods_KosherSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KosherSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23B266A1070A831921D3D4B3C9B98DB1 /* Pods-KosherSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KosherSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		24030E39D2768CFF87C138195BB9AD6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		26029752D1316A4B73A2860E5F89E89B /* Pods-KosherSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KosherSwift_Example-Info.plist"; sourceTree = "<group>"; };
-		2D582AEA18372A2F93D30E5986D1B064 /* Pods-KosherSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KosherSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		006EF087A90ED65AF2B696E5D8B57415 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		00ADABF367ABC3D2F36910218E2E3D5B /* KSAstronomicalCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalendar.swift; sourceTree = "<group>"; };
+		00E559361C0888396AA2D17379A434D2 /* KSAstronomicalCalendar_DateManipulation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalendar_DateManipulation.swift; sourceTree = "<group>"; };
+		034293D610CAFD8A336665C62B2C6252 /* SefiraLanguage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraLanguage.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/SefiraLanguage.html; sourceTree = "<group>"; };
+		0429B09CE6B129795C97DD5D6C208628 /* KSMolad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSMolad.swift; sourceTree = "<group>"; };
+		0452045FE2419C114FBC2359ABD30AA4 /* Date.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Date.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Extensions/Date.html; sourceTree = "<group>"; };
+		04D8AE558F042D651EA4B9FD516392A8 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		04FE6557D78D1E440519189199A8C770 /* KSSefiratHaomerCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSSefiratHaomerCalculator.swift; sourceTree = "<group>"; };
+		088CDBF8F8C8AC8C7B74B6F8F9E6F7A2 /* KSSunriseAndSunsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSSunriseAndSunsetCalculator.swift; sourceTree = "<group>"; };
+		0B0BDCF0B2D3E477267DA2F5E6A10D0E /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
+		0F1CCA9BCFBDD4166CF2AD8A131F851F /* Pods-ZmanimKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZmanimKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F449A6297220FBD770C5736E4EC30E3 /* NSDate_Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate_Components.swift; sourceTree = "<group>"; };
+		0F644D5F208FAA74EB26B0A3388BE29C /* SefiraPrayerAddition.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraPrayerAddition.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/SefiraPrayerAddition.html; sourceTree = "<group>"; };
+		0FC9B00AAD93BA4C74D1D3BE0F00FF5A /* Weekday.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		10254F8911D131BEB58BCE0360D3B6E3 /* ComplexZmanimCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ComplexZmanimCalendar.html; path = docs/Classes/ComplexZmanimCalendar.html; sourceTree = "<group>"; };
+		116FD41F58B7EB8E706C2009ABFD7D21 /* kYearLength.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kYearLength.html; path = docs/Enums/kYearLength.html; sourceTree = "<group>"; };
+		1273F329C4B616F1355D3B5FEB4AC54D /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
+		16D33E259CEA53ABA592FA13B24E0E1F /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		178C25D658E847063359FD629EF66149 /* HebrewMonth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HebrewMonth.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/HebrewMonth.html; sourceTree = "<group>"; };
+		18D449DEA364A78AD2931D2617DFA1B2 /* NSCalendar_Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_Components.swift; sourceTree = "<group>"; };
+		1AC2400D456991C54084202A23CAA8F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1BFC081ACA0F5585B46809E9B8660DE5 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		1F7BA03DDC48430E5CD6BF7DEE8197AD /* DafYomiCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = DafYomiCalculator.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/DafYomiCalculator.html; sourceTree = "<group>"; };
+		1F89EA2D6E92FF7AB91450BA0A8A4542 /* ZmanimCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ZmanimCalendar.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/ZmanimCalendar.html; sourceTree = "<group>"; };
+		1FC22B9A7F8F6FD91DCB6DF9F1B4AD26 /* Pods_ZmanimKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZmanimKit_Tests.framework; path = "Pods-ZmanimKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC2BD4D3EBA1E484BB448B2BCFB21B9 /* JewishCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = JewishCalendar.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/JewishCalendar.html; sourceTree = "<group>"; };
+		244588EBA882643B9A5AB69077CF708C /* Parasha.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Parasha.html; path = docs/Classes/Parasha.html; sourceTree = "<group>"; };
+		26505B7025D8D5455FA14E8C4CBE0D7C /* Zman.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Zman.html; path = docs/Classes/Zman.html; sourceTree = "<group>"; };
+		267D43623772C654270546B188CB5F7B /* Pods-ZmanimKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZmanimKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		26DC6AB351CD1F424DA7702D309208B6 /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/img/spinner.gif; sourceTree = "<group>"; };
+		280BA8893536AFF01EE17D3D131B8037 /* KSAstronomical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSAstronomical.swift; sourceTree = "<group>"; };
+		28DC3DAE065369FC07D2DE819C8B6F77 /* ZmanimKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZmanimKit.debug.xcconfig; sourceTree = "<group>"; };
+		2B5747D303B0C899DE6C9A1C864A6C29 /* KSJewishHoliday.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSJewishHoliday.swift; sourceTree = "<group>"; };
+		2C9FBDE8E7433D93FD7A9230DAA0DD70 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		2EDA0B263CA436E154AFA40FC9129FC3 /* kHebrewYearType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kHebrewYearType.html; path = docs/Enums/kHebrewYearType.html; sourceTree = "<group>"; };
+		2FA8AE0B5699E80EA5995FDDB7380DB6 /* NSCalendar_Ranges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_Ranges.swift; sourceTree = "<group>"; };
+		2FB769827674021FFF7268DC6179AF62 /* SefiraPrayerAddition.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraPrayerAddition.html; path = docs/Enums/SefiraPrayerAddition.html; sourceTree = "<group>"; };
+		300E4A8EE5DD3B87498A3C77C63B765E /* kHebrewYearType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kHebrewYearType.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/kHebrewYearType.html; sourceTree = "<group>"; };
+		31037C2502A98FB6B2619EDCB0F8B364 /* kYearLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = kYearLength.swift; sourceTree = "<group>"; };
+		31FB288EBF3D1B724E2DF27B7604CC52 /* kYearType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kYearType.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/kYearType.html; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35276E51FD34BA5D94FCBE224EB1826C /* KosherSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KosherSwift.release.xcconfig; sourceTree = "<group>"; };
-		3FAEA63B7DD18FE6063AC1428268FC58 /* Pods-KosherSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KosherSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSZenithExtended.swift; sourceTree = "<group>"; };
-		4A2C82DD2526466000CE65C1 /* YomTov.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YomTov.swift; sourceTree = "<group>"; };
-		4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSParashaReadings.swift; sourceTree = "<group>"; };
-		4A2C82DF2526466000CE65C1 /* KSTractates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTractates.swift; sourceTree = "<group>"; };
-		4A2C82E02526466000CE65C1 /* KSMolad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMolad.swift; sourceTree = "<group>"; };
-		4A2C82E12526466000CE65C1 /* KSSunCalculationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSSunCalculationTypes.swift; sourceTree = "<group>"; };
-		4A2C82E22526466000CE65C1 /* KSZenith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSZenith.swift; sourceTree = "<group>"; };
-		4A2C82E32526466000CE65C1 /* KSAstronomical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomical.swift; sourceTree = "<group>"; };
-		4A2C82E42526466000CE65C1 /* KSHebrewYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSHebrewYear.swift; sourceTree = "<group>"; };
-		4A2C82E52526466000CE65C1 /* KSBearing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSBearing.swift; sourceTree = "<group>"; };
-		4A2C82EA2526466000CE65C1 /* Weekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
-		4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kHebrewYearType.swift; sourceTree = "<group>"; };
-		4A2C82EC2526466000CE65C1 /* kYearLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kYearLength.swift; sourceTree = "<group>"; };
-		4A2C82ED2526466000CE65C1 /* NSCalendar_Ranges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_Ranges.swift; sourceTree = "<group>"; };
-		4A2C82EE2526466000CE65C1 /* NSCalendar_DateComparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_DateComparison.swift; sourceTree = "<group>"; };
-		4A2C82EF2526466000CE65C1 /* NSCalendar_Juncture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_Juncture.swift; sourceTree = "<group>"; };
-		4A2C82F02526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_HebrewYearTypes.swift; sourceTree = "<group>"; };
-		4A2C82F12526466000CE65C1 /* NSCalendar_DateManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_DateManipulation.swift; sourceTree = "<group>"; };
-		4A2C82F22526466000CE65C1 /* NSCalendar_Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCalendar_Components.swift; sourceTree = "<group>"; };
-		4A2C82F42526466000CE65C1 /* NSDateComponents_AllComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateComponents_AllComponents.swift; sourceTree = "<group>"; };
-		4A2C82F62526466000CE65C1 /* NSDate_ConvenientDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate_ConvenientDates.swift; sourceTree = "<group>"; };
-		4A2C82F72526466000CE65C1 /* NSDate_Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate_Components.swift; sourceTree = "<group>"; };
-		4A2C82F82526466000CE65C1 /* NSDate_Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate_Description.swift; sourceTree = "<group>"; };
-		4A2C82FC2526466000CE65C1 /* KSDaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSDaf.swift; sourceTree = "<group>"; };
-		4A2C82FD2526466000CE65C1 /* KSDafYomiCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSDafYomiCalculator.swift; sourceTree = "<group>"; };
-		4A2C82FF2526466000CE65C1 /* KSParasha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSParasha.swift; sourceTree = "<group>"; };
-		4A2C83002526466000CE65C1 /* KSParashatHashavuaCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSParashatHashavuaCalculator.swift; sourceTree = "<group>"; };
-		4A2C83022526466000CE65C1 /* KSZman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSZman.swift; sourceTree = "<group>"; };
-		4A2C83032526466000CE65C1 /* KSZmanimCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSZmanimCalendar.swift; sourceTree = "<group>"; };
-		4A2C83042526466000CE65C1 /* KSComplexZmanimCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSComplexZmanimCalendar.swift; sourceTree = "<group>"; };
-		4A2C83062526466000CE65C1 /* KSSefiraFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSSefiraFormatter.swift; sourceTree = "<group>"; };
-		4A2C83072526466000CE65C1 /* KSSefiratHaomerCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSSefiratHaomerCalculator.swift; sourceTree = "<group>"; };
-		4A2C83092526466000CE65C1 /* KSJewishCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSJewishCalendar.swift; sourceTree = "<group>"; };
-		4A2C830A2526466000CE65C1 /* KSJewishHoliday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSJewishHoliday.swift; sourceTree = "<group>"; };
-		4A2C830C2526466000CE65C1 /* KSAstronomicalCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalculator.swift; sourceTree = "<group>"; };
-		4A2C830D2526466000CE65C1 /* KSSunriseAndSunsetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSSunriseAndSunsetCalculator.swift; sourceTree = "<group>"; };
-		4A2C830E2526466000CE65C1 /* KSAstronomicalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalendar.swift; sourceTree = "<group>"; };
-		4A2C830F2526466000CE65C1 /* KSGeoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSGeoLocation.swift; sourceTree = "<group>"; };
-		4A2C83102526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalendar_DateManipulation.swift; sourceTree = "<group>"; };
-		4A2C83122526466000CE65C1 /* trigonometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trigonometry.swift; sourceTree = "<group>"; };
-		4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZmanMetadata.swift; path = KosherSwift/Core/Utilities/ZmanMetadata.swift; sourceTree = "<group>"; };
-		4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ZmanMetadata.json; path = KosherSwift/Assets/ZmanMetadata.json; sourceTree = "<group>"; };
-		546894301C2CC708DB4CA41A216565B3 /* Pods-KosherSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KosherSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5BAEC6E8E46FBD6B4FE2A0527497EA77 /* KosherSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KosherSwift-dummy.m"; sourceTree = "<group>"; };
-		7363845E4F436A2C52A9B2EBB745CE6A /* Pods-KosherSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KosherSwift_Tests-Info.plist"; sourceTree = "<group>"; };
-		7930FD0EBA4182562B3A3AB5EC3A68B5 /* Pods-KosherSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KosherSwift_Example-dummy.m"; sourceTree = "<group>"; };
-		7CB8AEC6C80D08E1C2EBAD9A8909E2AB /* KosherSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KosherSwift.modulemap; sourceTree = "<group>"; };
-		85B1F4AF699C4FBAB480B101A40DAC2E /* Pods-KosherSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KosherSwift_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A52CB42D4C43F9871294F2C70FF289CF /* Pods-KosherSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KosherSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A7F5AD3A96A8475836BB3C20DB8A1845 /* Pods-KosherSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KosherSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		B1E508B7F2E989B34A9A205675066710 /* Pods-KosherSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KosherSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B22D05D7093B94AD7ABEA29E09117BFE /* Pods-KosherSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KosherSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B28EAD5A4705AA1A48BA2A6C78498AC0 /* Pods-KosherSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KosherSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B3E5041055E8A4E9646D9DD839E7593C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B5359862F3BC78C2A946A30A7A25233A /* KosherSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KosherSwift.debug.xcconfig; sourceTree = "<group>"; };
-		BA7D768AFCB8FE1B4087446CE51342BC /* KosherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A2A79EA37FED8CDB656AA313D901FA /* Pods_KosherSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KosherSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C13BF01B72C0890CA29F4EBB621F5D36 /* KosherSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KosherSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D52BA9E313DFFF562C493196A73701C9 /* KosherSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KosherSwift-umbrella.h"; sourceTree = "<group>"; };
-		DB818EC64326987961846E09C3664EA3 /* Pods-KosherSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KosherSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E6FF895019807281A50622404E8343CF /* Pods-KosherSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KosherSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E93380C2D9DD2C887EA6160365DEADB2 /* KosherSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KosherSwift-prefix.pch"; sourceTree = "<group>"; };
-		F6E9D4FE017E8BC0F7898F5C869A8B83 /* KosherSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KosherSwift-Info.plist"; sourceTree = "<group>"; };
-		FC0245FD29778DE1AFCB30E5EB0BC864 /* Pods-KosherSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KosherSwift_Example.modulemap"; sourceTree = "<group>"; };
+		34CE64DE0E578735B00C5F3C7E210F5C /* KSAstronomicalCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSAstronomicalCalculator.swift; sourceTree = "<group>"; };
+		3590BE91390192CC57D0D27CF9EF1876 /* SefiraCustom.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraCustom.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/SefiraCustom.html; sourceTree = "<group>"; };
+		36B9007CB823CCF0E170B90AB9D51BC2 /* ParashatHashavuaCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ParashatHashavuaCalculator.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/ParashatHashavuaCalculator.html; sourceTree = "<group>"; };
+		3B5E57CCABBAC9F94275FF0BD485628E /* KSSunCalculationTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSSunCalculationTypes.swift; sourceTree = "<group>"; };
+		3E37C6E584B16C8113BC4103671687FF /* ZmanMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = ZmanMetadata.json; path = Assets/ZmanMetadata.json; sourceTree = "<group>"; };
+		41CFE7ED98DC1392E54CC06A9CE8E808 /* Pods-ZmanimKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZmanimKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		44DD3D5E5648B59D3B323806306A2A1C /* KSJewishCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSJewishCalendar.swift; sourceTree = "<group>"; };
+		481849F49BA002EBFC6A0FA28F7AC700 /* GeoLocation.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GeoLocation.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/GeoLocation.html; sourceTree = "<group>"; };
+		48D6435B78BD5A647D831BEA73A16F6C /* SefiraCustom.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraCustom.html; path = docs/Enums/SefiraCustom.html; sourceTree = "<group>"; };
+		4B948601C6B0092B73656039FA694CF3 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
+		4C100325E2CE43EBFC9E86FE9B39BA31 /* Tractate.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Tractate.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/Tractate.html; sourceTree = "<group>"; };
+		4CDBEE2B48F1221764A581176A9D27D4 /* ZmanimKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZmanimKit-umbrella.h"; sourceTree = "<group>"; };
+		51AF0673CB70A18C3D99A68DDD68741A /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
+		52309823E8DD30998B97DE2668AD547F /* Pods-ZmanimKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZmanimKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		527C1C963202507D897F4B8DE896813C /* Pods-ZmanimKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZmanimKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		53E5E1B4FA28512145C32ED7E2F2A911 /* Functions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Functions.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Functions.html; sourceTree = "<group>"; };
+		570D85133506135FB5ABE008A6FB2FE4 /* KSTractates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSTractates.swift; sourceTree = "<group>"; };
+		5742D27A220F23471E88B584111EB1B5 /* KSZmanimCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSZmanimCalendar.swift; sourceTree = "<group>"; };
+		58146ABD0C545CE3FE99F4870FDF84E1 /* NSDateComponents.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NSDateComponents.html; path = docs/Extensions/NSDateComponents.html; sourceTree = "<group>"; };
+		59EC5F1C085E537093838AC567D75985 /* Pods-ZmanimKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZmanimKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A49FC961170314822D401D7D51D7F25 /* AstronomicalCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AstronomicalCalendar.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/AstronomicalCalendar.html; sourceTree = "<group>"; };
+		5A5A80FD1AE95699327D2F68AD710C83 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		5C6CC3291C982A1061DDCC99FCBCA60A /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		5DB54E05FDAE9616DC1533AA88F15FB9 /* ZmanimCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ZmanimCalendar.html; path = docs/Classes/ZmanimCalendar.html; sourceTree = "<group>"; };
+		5E783F1F408FBA00E7534AD28D7B3486 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		5FD0DE525B6B445A322E2EB1990C2426 /* ZmanimKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZmanimKit.framework; path = ZmanimKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A035BE3D9D703AA6846EFFD02EBD9D /* YomTov.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YomTov.html; path = docs/Enums/YomTov.html; sourceTree = "<group>"; };
+		63B764947EAE32D474FC8BCA44901135 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		64C3179EE05F6557E06B2C1B69A97CE2 /* NSDateComponents_AllComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDateComponents_AllComponents.swift; sourceTree = "<group>"; };
+		652BA54D9559CBEDB9CA650B788F66E4 /* Pods-ZmanimKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZmanimKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		65919E7BB38F474322B761D5159B751F /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
+		65A5DB0834B2FAB8A768CE0B555C051B /* Pods-ZmanimKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZmanimKit_Example-Info.plist"; sourceTree = "<group>"; };
+		65CA8E730C1161B8B48850CD2DFEF962 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/KosherSwift.docset/Contents/Info.plist; sourceTree = "<group>"; };
+		681F50CCDAC0F6E0D97F26D72CEDE6C2 /* KosherSwift.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = KosherSwift.tgz; path = docs/docsets/KosherSwift.tgz; sourceTree = "<group>"; };
+		69678196429CDBB23FEEAF253A857FF7 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
+		6969A17A4FA6788EE418F9767943BD33 /* DafYomiCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = DafYomiCalculator.html; path = docs/Classes/DafYomiCalculator.html; sourceTree = "<group>"; };
+		69E6F751DC0F5C4C3326D0FA3D95BBBD /* SunriseAndSunsetCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SunriseAndSunsetCalculator.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/SunriseAndSunsetCalculator.html; sourceTree = "<group>"; };
+		6A01FACF1A108B8739631D82F27ECB91 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
+		6BD0B7AC9F59F77F29358923E112389A /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		712569C639425C430253B9B3E8B0EF2F /* Weekday.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Weekday.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/Weekday.html; sourceTree = "<group>"; };
+		749C014D06E7C275678BD967A737A910 /* Calendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Calendar.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Extensions/Calendar.html; sourceTree = "<group>"; };
+		753E092FAACFEC2B4021736001425289 /* KSSefiraFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSSefiraFormatter.swift; sourceTree = "<group>"; };
+		7868C6A3FA15569C2023E26F5FF824F6 /* KSGeoLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSGeoLocation.swift; sourceTree = "<group>"; };
+		7C44D33DFDAF015B8248345B34DF2F1F /* trigonometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = trigonometry.swift; sourceTree = "<group>"; };
+		7CC625884EC5318BD2717052D5B74A77 /* Daf.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Daf.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/Daf.html; sourceTree = "<group>"; };
+		7F5EC6F8FDE71E3D019A15CC99A945AB /* SefiratHaomerCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiratHaomerCalculator.html; path = docs/Classes/SefiratHaomerCalculator.html; sourceTree = "<group>"; };
+		836B7A53FC55FAD01A0DEF9F2D68530D /* KSDaf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSDaf.swift; sourceTree = "<group>"; };
+		8504FDB965B6D3339217F2BCF3BA9AA2 /* Parashot.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Parashot.html; path = docs/Enums/Parashot.html; sourceTree = "<group>"; };
+		87B7923D11EA4D828CB3FB2D85EFA03F /* Parashot.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Parashot.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/Parashot.html; sourceTree = "<group>"; };
+		87BBCD2339C834282C2EB51090E51E01 /* KSHebrewYear.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSHebrewYear.swift; sourceTree = "<group>"; };
+		87D3EE129FB04D6CBDD557182F9AA4C7 /* Pods_ZmanimKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZmanimKit_Example.framework; path = "Pods-ZmanimKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A941B92EC51DA96C4DB5081B38A9DC /* GeoLocation.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GeoLocation.html; path = docs/Classes/GeoLocation.html; sourceTree = "<group>"; };
+		8A47229989F6FE5B358FC3D6F785B317 /* Pods-ZmanimKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZmanimKit_Example.modulemap"; sourceTree = "<group>"; };
+		8E06954192019DB12D74FE9C4627F776 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		8EF8F2B38C12CE55F1A0153BFB0DDA4C /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		8F8E607E0E01E0AEF2552B1A6175742E /* kYearLength.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kYearLength.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/kYearLength.html; sourceTree = "<group>"; };
+		9197BC2F26CBBBE6FA9CD290C19D5588 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		92F6172E411D7816D144FB8954EA3CEB /* Pods-ZmanimKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZmanimKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9367403515B3614256910B095ECE0765 /* ZmanimKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZmanimKit.release.xcconfig; sourceTree = "<group>"; };
+		940793F7BD69B4EA58EAD6E9D0DACDC6 /* NSDateComponents.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NSDateComponents.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Extensions/NSDateComponents.html; sourceTree = "<group>"; };
+		956731F1F5DE8571575CBD7DA975B378 /* YomTov.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YomTov.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums/YomTov.html; sourceTree = "<group>"; };
+		95E6363656DB47A4C48BB7EB2FAE43C9 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		9A302D19F51D0F3624055B5BEC59149E /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		9C6E74E8CB997987D53BDD22F822B2B0 /* Parasha.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Parasha.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/Parasha.html; sourceTree = "<group>"; };
+		9CD26D1F50D1F7FC9C0ABF337AE67146 /* KSZman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSZman.swift; sourceTree = "<group>"; };
+		9D3BB2EBAAC9C4767858D1617CBCE51D /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0C5C99BF5D456E02FD29C13DC00025B /* Pods-ZmanimKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZmanimKit_Tests.modulemap"; sourceTree = "<group>"; };
+		A195AA6606A20B82D2EA8FB1F54ADB13 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		A2AF931AC66B9EB31E18C166F994D341 /* trigonometry.html */ = {isa = PBXFileReference; includeInIndex = 1; name = trigonometry.html; path = docs/Classes/trigonometry.html; sourceTree = "<group>"; };
+		A4E4E896599E461A0C5FB852EC267A35 /* ZmanMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZmanMetadata.swift; sourceTree = "<group>"; };
+		A50D5EFB43D46EA06D7F4D33D7FDB699 /* KSParashaReadings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSParashaReadings.swift; sourceTree = "<group>"; };
+		A52241359F414EE9FF50B2FD60581699 /* ZmanimKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZmanimKit-Info.plist"; sourceTree = "<group>"; };
+		A5933764CD96948BBE25658A2445A2D1 /* HebrewMonth.html */ = {isa = PBXFileReference; includeInIndex = 1; name = HebrewMonth.html; path = docs/Enums/HebrewMonth.html; sourceTree = "<group>"; };
+		A7E588825924110F3A9A8F36B1994C32 /* KSParasha.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSParasha.swift; sourceTree = "<group>"; };
+		A866BA2723CA86B22EB8C29BA452AD9B /* Date.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Date.html; path = docs/Extensions/Date.html; sourceTree = "<group>"; };
+		A94475BCB20D517DB14597C9A928BE1C /* Tractate.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Tractate.html; path = docs/Enums/Tractate.html; sourceTree = "<group>"; };
+		AA72B35117A63A038AA5577E2908AA4E /* SefiraLanguage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraLanguage.html; path = docs/Enums/SefiraLanguage.html; sourceTree = "<group>"; };
+		AB624D0A6DB0523990A15E9152A8538A /* Daf.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Daf.html; path = docs/Classes/Daf.html; sourceTree = "<group>"; };
+		AB749F44C178ACD72F9CEE9BA029CF43 /* AstronomicalCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AstronomicalCalendar.html; path = docs/Classes/AstronomicalCalendar.html; sourceTree = "<group>"; };
+		ACE4AA760D6C67D6A4F2814BDF9DB981 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
+		ACF24BF89339E452A51A9B01653553AA /* NSCalendar_HebrewYearTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_HebrewYearTypes.swift; sourceTree = "<group>"; };
+		AD20E248A79FA5E3881DBC1662660C5E /* ZmanimKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZmanimKit-dummy.m"; sourceTree = "<group>"; };
+		AD495EE028F6A29B4702A4874BC76CCF /* NSCalendar_DateManipulation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_DateManipulation.swift; sourceTree = "<group>"; };
+		AD9941B2082B8ED001360EEE9CDABD0F /* ComplexZmanimCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ComplexZmanimCalendar.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/ComplexZmanimCalendar.html; sourceTree = "<group>"; };
+		ADCC8CB6083416F0C2FE093585ACD9BD /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
+		B07BDEF25505491AD3A6C8C34727FB3F /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
+		B0E6735871C51E5DA9B4398C3161E419 /* SunriseAndSunsetCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SunriseAndSunsetCalculator.html; path = docs/Classes/SunriseAndSunsetCalculator.html; sourceTree = "<group>"; };
+		B39F2E8AA8E4E4F32B35A243D9702F37 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Structs.html; sourceTree = "<group>"; };
+		B871E0944CECB5C5A1326412C8BDA09F /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/KosherSwift.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		B8798AE626AEC1BC472314B95A678C20 /* SefiraFormatter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraFormatter.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/SefiraFormatter.html; sourceTree = "<group>"; };
+		BEEA46AE40E20BA9AA144452DFF8A6D8 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/Structs.html; sourceTree = "<group>"; };
+		C0EDB77BA5ACF0543D71DE3F8FF47F25 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		C504C627F309DD937BD4F2F0DFD5E9C0 /* KSBearing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSBearing.swift; sourceTree = "<group>"; };
+		C5FEA8A935D61EDBC626F9829B12F35A /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
+		CAAE728B1ABDDB3104A1077FDAA268B7 /* KSZenith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSZenith.swift; sourceTree = "<group>"; };
+		CC89FA9451C56914B9AE2A4D0B2DFA52 /* NSDate_Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate_Description.swift; sourceTree = "<group>"; };
+		CCDB54D62069F6C7C44A5473842D2F42 /* SefiratHaomerCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiratHaomerCalculator.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/SefiratHaomerCalculator.html; sourceTree = "<group>"; };
+		CF06133A444F1E7750EA1AA0903276F3 /* ParashatHashavuaCalculator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ParashatHashavuaCalculator.html; path = docs/Classes/ParashatHashavuaCalculator.html; sourceTree = "<group>"; };
+		D3C26047D50562D9CAD89EC00DA89E57 /* Pods-ZmanimKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZmanimKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		D43541875CCB4B6470E793228993FC86 /* Zman.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Zman.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/Zman.html; sourceTree = "<group>"; };
+		D55329C9CBFD16426C24C48542F51BF3 /* NSCalendar_Juncture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_Juncture.swift; sourceTree = "<group>"; };
+		D7076C2FA200F794ECD6DF20CDE7402C /* KSParashatHashavuaCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSParashatHashavuaCalculator.swift; sourceTree = "<group>"; };
+		D71B50ECF78457F1F4D377BEEEC13A7E /* trigonometry.html */ = {isa = PBXFileReference; includeInIndex = 1; name = trigonometry.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/Classes/trigonometry.html; sourceTree = "<group>"; };
+		D8C1C69A9587D66F4B3D5EA381B50E81 /* Weekday.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Weekday.html; path = docs/Enums/Weekday.html; sourceTree = "<group>"; };
+		D9FD7E7D07A51DC05287F2947D23ADD1 /* JewishCalendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = JewishCalendar.html; path = docs/Classes/JewishCalendar.html; sourceTree = "<group>"; };
+		DCC28EC5690B96FFDE5315FB4172B3EF /* Pods-ZmanimKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZmanimKit_Example-dummy.m"; sourceTree = "<group>"; };
+		DE3E537A213C635AAAE8835DD31983BA /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		DE6C7AC44CF73828D8CDDCEA45E0CD2B /* Functions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Functions.html; path = docs/Functions.html; sourceTree = "<group>"; };
+		DF2AF2471B2C95DF4CBE64385D981789 /* kHebrewYearType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = kHebrewYearType.swift; sourceTree = "<group>"; };
+		E00C47B2107AFD95AF53490D372B23B0 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		E2E92D8930EC3EAEF8827C5AB8198CC7 /* kYearType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = kYearType.html; path = docs/Enums/kYearType.html; sourceTree = "<group>"; };
+		E5018002437103D9734AFE822099A20F /* YomTov.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YomTov.swift; sourceTree = "<group>"; };
+		E5C88F36902A1B6F39639545882C21D9 /* Pods-ZmanimKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZmanimKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		E5D185328293589277C3258338C52B2E /* Pods-ZmanimKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZmanimKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E671EF456C22E4837B757F324398AF97 /* Pods-ZmanimKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZmanimKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E811147028DBE51EFEBBAEEBDA788FF5 /* Pods-ZmanimKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZmanimKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EC7903D0A19B5176279C6D072D37CA59 /* ZmanimKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZmanimKit.modulemap; sourceTree = "<group>"; };
+		ED7F5B4E36BE1272898246BC8EE563C2 /* Calendar.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Calendar.html; path = docs/Extensions/Calendar.html; sourceTree = "<group>"; };
+		ED95367A24AFEBF86471A5E147106D96 /* KSZenithExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSZenithExtended.swift; sourceTree = "<group>"; };
+		EECFE2DC96BB5DEC1803644DD47A2AE0 /* ZmanimKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZmanimKit-prefix.pch"; sourceTree = "<group>"; };
+		EF3FCBD751D2E13C38616959FFCEA6F1 /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
+		F316C6EF0D01CE8FE2A114CBC0EE2B15 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		F4CF2F2E1128EAAA1D2AC3401E3610F6 /* NSCalendar_DateComparison.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSCalendar_DateComparison.swift; sourceTree = "<group>"; };
+		F68B0FA3021876B39090E39D1CD91147 /* ZmanimKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZmanimKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F7E23494FB5510386EF91EEF0EC2AD23 /* SefiraFormatter.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SefiraFormatter.html; path = docs/Classes/SefiraFormatter.html; sourceTree = "<group>"; };
+		F9AED54F73BAA0AFA0B8E50E425AB8F1 /* KSComplexZmanimCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSComplexZmanimCalendar.swift; sourceTree = "<group>"; };
+		FB252DCFC3836346142550CCEC3D0204 /* KSDafYomiCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KSDafYomiCalculator.swift; sourceTree = "<group>"; };
+		FDD6C7C68CFCB5101FA275DE913BFC4F /* NSDate_ConvenientDates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate_ConvenientDates.swift; sourceTree = "<group>"; };
+		FDFA0202A45A2787949F71BEB5333FFE /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/KosherSwift.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		FEF14CE9960BCD98B30507B9EF346536 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38487BA0CD1D7B79034146F4220B6E7E /* Frameworks */ = {
+		3D492F0167F1D91DA9A1BCA1E664BCAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				715DE3C5B7C1604ABFC7F09943A6E23B /* Foundation.framework in Frameworks */,
+				EBB5FAFB03CE6B851CAA9173D7DEFEAF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EF4565C2E3E3B377848ECB58FA5EC9F /* Frameworks */ = {
+		66B28B41DDA79A025278EAAC5BF419B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCCF99F2EDB4FF0793161719CB6FB28E /* Foundation.framework in Frameworks */,
+				3ED4F466B93D4BE7D5E6511702636E6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0F285CF51CFA03D3C40785151752869 /* Frameworks */ = {
+		B56CB27EB6CDAD0D217ECD16C343A15E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E999DEC09377174DF457C21105A74237 /* Foundation.framework in Frameworks */,
+				142B5C3EAF0D7D5C9BC112DAEB4B895D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27D168FD3D0D6C40C0B926A26B1B1D05 /* Support Files */ = {
+		01DA665A77ED6D71D001A0D97EEB4CC1 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				7CB8AEC6C80D08E1C2EBAD9A8909E2AB /* KosherSwift.modulemap */,
-				5BAEC6E8E46FBD6B4FE2A0527497EA77 /* KosherSwift-dummy.m */,
-				F6E9D4FE017E8BC0F7898F5C869A8B83 /* KosherSwift-Info.plist */,
-				E93380C2D9DD2C887EA6160365DEADB2 /* KosherSwift-prefix.pch */,
-				D52BA9E313DFFF562C493196A73701C9 /* KosherSwift-umbrella.h */,
-				B5359862F3BC78C2A946A30A7A25233A /* KosherSwift.debug.xcconfig */,
-				35276E51FD34BA5D94FCBE224EB1826C /* KosherSwift.release.xcconfig */,
+				C09C766CBF45D9168C2E20F3A462D95B /* Chagim */,
+				9D9D8BD49401F96DCC2D6D4A84CC18E9 /* DafYomi */,
+				711182277996F0E2B0C8CF3D15F8B041 /* Parasha */,
+				49E28BDFE4B9AC67177559579141F2E2 /* Sefira */,
+				D27E1EE782A3A49986DD3E1B55978980 /* Zmanim */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KosherSwift";
-			sourceTree = "<group>";
-		};
-		28D6C0C4FF37AFD93E0929BCAE713C0C /* Pods-KosherSwift_Example */ = {
-			isa = PBXGroup;
-			children = (
-				FC0245FD29778DE1AFCB30E5EB0BC864 /* Pods-KosherSwift_Example.modulemap */,
-				2D582AEA18372A2F93D30E5986D1B064 /* Pods-KosherSwift_Example-acknowledgements.markdown */,
-				23B266A1070A831921D3D4B3C9B98DB1 /* Pods-KosherSwift_Example-acknowledgements.plist */,
-				7930FD0EBA4182562B3A3AB5EC3A68B5 /* Pods-KosherSwift_Example-dummy.m */,
-				B28EAD5A4705AA1A48BA2A6C78498AC0 /* Pods-KosherSwift_Example-frameworks.sh */,
-				26029752D1316A4B73A2860E5F89E89B /* Pods-KosherSwift_Example-Info.plist */,
-				85B1F4AF699C4FBAB480B101A40DAC2E /* Pods-KosherSwift_Example-umbrella.h */,
-				B1E508B7F2E989B34A9A205675066710 /* Pods-KosherSwift_Example.debug.xcconfig */,
-				DB818EC64326987961846E09C3664EA3 /* Pods-KosherSwift_Example.release.xcconfig */,
-			);
-			name = "Pods-KosherSwift_Example";
-			path = "Target Support Files/Pods-KosherSwift_Example";
-			sourceTree = "<group>";
-		};
-		4A2C82DB2526466000CE65C1 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82DC2526466000CE65C1 /* KSZenithExtended.swift */,
-				4A2C82DD2526466000CE65C1 /* YomTov.swift */,
-				4A2C82DE2526466000CE65C1 /* KSParashaReadings.swift */,
-				4A2C82DF2526466000CE65C1 /* KSTractates.swift */,
-				4A2C82E02526466000CE65C1 /* KSMolad.swift */,
-				4A2C82E12526466000CE65C1 /* KSSunCalculationTypes.swift */,
-				4A2C82E22526466000CE65C1 /* KSZenith.swift */,
-				4A2C82E32526466000CE65C1 /* KSAstronomical.swift */,
-				4A2C82E42526466000CE65C1 /* KSHebrewYear.swift */,
-				4A2C82E52526466000CE65C1 /* KSBearing.swift */,
-			);
-			name = Headers;
-			path = KosherSwift/Headers;
-			sourceTree = "<group>";
-		};
-		4A2C82E62526466000CE65C1 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82E72526466000CE65C1 /* Foundation */,
-			);
-			name = Categories;
-			path = KosherSwift/Categories;
-			sourceTree = "<group>";
-		};
-		4A2C82E72526466000CE65C1 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82E82526466000CE65C1 /* nscalendar */,
-				4A2C82F32526466000CE65C1 /* nsdatecomponents */,
-				4A2C82F52526466000CE65C1 /* nsdate */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		4A2C82E82526466000CE65C1 /* nscalendar */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82E92526466000CE65C1 /* Enums */,
-				4A2C82ED2526466000CE65C1 /* NSCalendar_Ranges.swift */,
-				4A2C82EE2526466000CE65C1 /* NSCalendar_DateComparison.swift */,
-				4A2C82EF2526466000CE65C1 /* NSCalendar_Juncture.swift */,
-				4A2C82F02526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift */,
-				4A2C82F12526466000CE65C1 /* NSCalendar_DateManipulation.swift */,
-				4A2C82F22526466000CE65C1 /* NSCalendar_Components.swift */,
-			);
-			path = nscalendar;
-			sourceTree = "<group>";
-		};
-		4A2C82E92526466000CE65C1 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82EA2526466000CE65C1 /* Weekday.swift */,
-				4A2C82EB2526466000CE65C1 /* kHebrewYearType.swift */,
-				4A2C82EC2526466000CE65C1 /* kYearLength.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		4A2C82F32526466000CE65C1 /* nsdatecomponents */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82F42526466000CE65C1 /* NSDateComponents_AllComponents.swift */,
-			);
-			path = nsdatecomponents;
-			sourceTree = "<group>";
-		};
-		4A2C82F52526466000CE65C1 /* nsdate */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82F62526466000CE65C1 /* NSDate_ConvenientDates.swift */,
-				4A2C82F72526466000CE65C1 /* NSDate_Components.swift */,
-				4A2C82F82526466000CE65C1 /* NSDate_Description.swift */,
-			);
-			path = nsdate;
-			sourceTree = "<group>";
-		};
-		4A2C82F92526466000CE65C1 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82FA2526466000CE65C1 /* Calendar */,
-				4A2C830B2526466000CE65C1 /* Solar */,
-				4A2C83112526466000CE65C1 /* Utilities */,
-			);
-			name = Core;
-			path = KosherSwift/Core;
-			sourceTree = "<group>";
-		};
-		4A2C82FA2526466000CE65C1 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82FB2526466000CE65C1 /* DafYomi */,
-				4A2C82FE2526466000CE65C1 /* Parasha */,
-				4A2C83012526466000CE65C1 /* Zmanim */,
-				4A2C83052526466000CE65C1 /* Sefira */,
-				4A2C83082526466000CE65C1 /* Chagim */,
-			);
+			name = Calendar;
 			path = Calendar;
 			sourceTree = "<group>";
 		};
-		4A2C82FB2526466000CE65C1 /* DafYomi */ = {
+		072CA1606A4C0128964F978693771827 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4A2C82FC2526466000CE65C1 /* KSDaf.swift */,
-				4A2C82FD2526466000CE65C1 /* KSDafYomiCalculator.swift */,
+				5C6CC3291C982A1061DDCC99FCBCA60A /* DateExtensions.swift */,
+				7C44D33DFDAF015B8248345B34DF2F1F /* trigonometry.swift */,
+				A4E4E896599E461A0C5FB852EC267A35 /* ZmanMetadata.swift */,
 			);
-			path = DafYomi;
-			sourceTree = "<group>";
-		};
-		4A2C82FE2526466000CE65C1 /* Parasha */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C82FF2526466000CE65C1 /* KSParasha.swift */,
-				4A2C83002526466000CE65C1 /* KSParashatHashavuaCalculator.swift */,
-			);
-			path = Parasha;
-			sourceTree = "<group>";
-		};
-		4A2C83012526466000CE65C1 /* Zmanim */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C83022526466000CE65C1 /* KSZman.swift */,
-				4A2C83032526466000CE65C1 /* KSZmanimCalendar.swift */,
-				4A2C83042526466000CE65C1 /* KSComplexZmanimCalendar.swift */,
-			);
-			path = Zmanim;
-			sourceTree = "<group>";
-		};
-		4A2C83052526466000CE65C1 /* Sefira */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C83062526466000CE65C1 /* KSSefiraFormatter.swift */,
-				4A2C83072526466000CE65C1 /* KSSefiratHaomerCalculator.swift */,
-			);
-			path = Sefira;
-			sourceTree = "<group>";
-		};
-		4A2C83082526466000CE65C1 /* Chagim */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C83092526466000CE65C1 /* KSJewishCalendar.swift */,
-				4A2C830A2526466000CE65C1 /* KSJewishHoliday.swift */,
-			);
-			path = Chagim;
-			sourceTree = "<group>";
-		};
-		4A2C830B2526466000CE65C1 /* Solar */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C830C2526466000CE65C1 /* KSAstronomicalCalculator.swift */,
-				4A2C830D2526466000CE65C1 /* KSSunriseAndSunsetCalculator.swift */,
-				4A2C830E2526466000CE65C1 /* KSAstronomicalCalendar.swift */,
-				4A2C830F2526466000CE65C1 /* KSGeoLocation.swift */,
-				4A2C83102526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift */,
-			);
-			path = Solar;
-			sourceTree = "<group>";
-		};
-		4A2C83112526466000CE65C1 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				4A2C83122526466000CE65C1 /* trigonometry.swift */,
-			);
+			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		4CA2349420743F722B5DD451DE5F6D8B /* Development Pods */ = {
+		216DD023000029BEB059B0C7D11CE173 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				AC4DE6A1A9869B0F0C9DC09E5AB3CA7A /* KosherSwift */,
+				CFE5BEA07873477F6347814A01DE7FE5 /* Foundation */,
 			);
-			name = "Development Pods";
+			name = Categories;
+			path = Sources/Categories;
 			sourceTree = "<group>";
 		};
-		53735480C5711A76C5D6F8F64107483C /* Pod */ = {
+		31F06EEC795B5E516D5D0CC218A0B254 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C13BF01B72C0890CA29F4EBB621F5D36 /* KosherSwift.podspec */,
-				24030E39D2768CFF87C138195BB9AD6D /* LICENSE */,
-				B3E5041055E8A4E9646D9DD839E7593C /* README.md */,
+				AB749F44C178ACD72F9CEE9BA029CF43 /* AstronomicalCalendar.html */,
+				5A49FC961170314822D401D7D51D7F25 /* AstronomicalCalendar.html */,
+				16D33E259CEA53ABA592FA13B24E0E1F /* badge.svg */,
+				749C014D06E7C275678BD967A737A910 /* Calendar.html */,
+				ED7F5B4E36BE1272898246BC8EE563C2 /* Calendar.html */,
+				F316C6EF0D01CE8FE2A114CBC0EE2B15 /* carat.png */,
+				0B0BDCF0B2D3E477267DA2F5E6A10D0E /* carat.png */,
+				2C9FBDE8E7433D93FD7A9230DAA0DD70 /* Classes.html */,
+				ADCC8CB6083416F0C2FE093585ACD9BD /* Classes.html */,
+				10254F8911D131BEB58BCE0360D3B6E3 /* ComplexZmanimCalendar.html */,
+				AD9941B2082B8ED001360EEE9CDABD0F /* ComplexZmanimCalendar.html */,
+				7CC625884EC5318BD2717052D5B74A77 /* Daf.html */,
+				AB624D0A6DB0523990A15E9152A8538A /* Daf.html */,
+				1F7BA03DDC48430E5CD6BF7DEE8197AD /* DafYomiCalculator.html */,
+				6969A17A4FA6788EE418F9767943BD33 /* DafYomiCalculator.html */,
+				8E06954192019DB12D74FE9C4627F776 /* dash.png */,
+				A195AA6606A20B82D2EA8FB1F54ADB13 /* dash.png */,
+				0452045FE2419C114FBC2359ABD30AA4 /* Date.html */,
+				A866BA2723CA86B22EB8C29BA452AD9B /* Date.html */,
+				B871E0944CECB5C5A1326412C8BDA09F /* docSet.dsidx */,
+				ACE4AA760D6C67D6A4F2814BDF9DB981 /* Enums.html */,
+				C5FEA8A935D61EDBC626F9829B12F35A /* Enums.html */,
+				9197BC2F26CBBBE6FA9CD290C19D5588 /* Extensions.html */,
+				8EF8F2B38C12CE55F1A0153BFB0DDA4C /* Extensions.html */,
+				DE6C7AC44CF73828D8CDDCEA45E0CD2B /* Functions.html */,
+				53E5E1B4FA28512145C32ED7E2F2A911 /* Functions.html */,
+				481849F49BA002EBFC6A0FA28F7AC700 /* GeoLocation.html */,
+				88A941B92EC51DA96C4DB5081B38A9DC /* GeoLocation.html */,
+				51AF0673CB70A18C3D99A68DDD68741A /* gh.png */,
+				6A01FACF1A108B8739631D82F27ECB91 /* gh.png */,
+				A5933764CD96948BBE25658A2445A2D1 /* HebrewMonth.html */,
+				178C25D658E847063359FD629EF66149 /* HebrewMonth.html */,
+				1BFC081ACA0F5585B46809E9B8660DE5 /* highlight.css */,
+				C0EDB77BA5ACF0543D71DE3F8FF47F25 /* highlight.css */,
+				EF3FCBD751D2E13C38616959FFCEA6F1 /* index.html */,
+				E00C47B2107AFD95AF53490D372B23B0 /* index.html */,
+				65CA8E730C1161B8B48850CD2DFEF962 /* Info.plist */,
+				5E783F1F408FBA00E7534AD28D7B3486 /* jazzy.css */,
+				9A302D19F51D0F3624055B5BEC59149E /* jazzy.css */,
+				6BD0B7AC9F59F77F29358923E112389A /* jazzy.js */,
+				FDFA0202A45A2787949F71BEB5333FFE /* jazzy.js */,
+				B07BDEF25505491AD3A6C8C34727FB3F /* jazzy.search.js */,
+				69678196429CDBB23FEEAF253A857FF7 /* jazzy.search.js */,
+				1FC2BD4D3EBA1E484BB448B2BCFB21B9 /* JewishCalendar.html */,
+				D9FD7E7D07A51DC05287F2947D23ADD1 /* JewishCalendar.html */,
+				63B764947EAE32D474FC8BCA44901135 /* jquery.min.js */,
+				95E6363656DB47A4C48BB7EB2FAE43C9 /* jquery.min.js */,
+				2EDA0B263CA436E154AFA40FC9129FC3 /* kHebrewYearType.html */,
+				300E4A8EE5DD3B87498A3C77C63B765E /* kHebrewYearType.html */,
+				681F50CCDAC0F6E0D97F26D72CEDE6C2 /* KosherSwift.tgz */,
+				8F8E607E0E01E0AEF2552B1A6175742E /* kYearLength.html */,
+				116FD41F58B7EB8E706C2009ABFD7D21 /* kYearLength.html */,
+				31FB288EBF3D1B724E2DF27B7604CC52 /* kYearType.html */,
+				E2E92D8930EC3EAEF8827C5AB8198CC7 /* kYearType.html */,
+				006EF087A90ED65AF2B696E5D8B57415 /* LICENSE.md */,
+				65919E7BB38F474322B761D5159B751F /* lunr.min.js */,
+				4B948601C6B0092B73656039FA694CF3 /* lunr.min.js */,
+				58146ABD0C545CE3FE99F4870FDF84E1 /* NSDateComponents.html */,
+				940793F7BD69B4EA58EAD6E9D0DACDC6 /* NSDateComponents.html */,
+				9C6E74E8CB997987D53BDD22F822B2B0 /* Parasha.html */,
+				244588EBA882643B9A5AB69077CF708C /* Parasha.html */,
+				CF06133A444F1E7750EA1AA0903276F3 /* ParashatHashavuaCalculator.html */,
+				36B9007CB823CCF0E170B90AB9D51BC2 /* ParashatHashavuaCalculator.html */,
+				8504FDB965B6D3339217F2BCF3BA9AA2 /* Parashot.html */,
+				87B7923D11EA4D828CB3FB2D85EFA03F /* Parashot.html */,
+				1AC2400D456991C54084202A23CAA8F9 /* README.md */,
+				5A5A80FD1AE95699327D2F68AD710C83 /* search.json */,
+				9D3BB2EBAAC9C4767858D1617CBCE51D /* search.json */,
+				48D6435B78BD5A647D831BEA73A16F6C /* SefiraCustom.html */,
+				3590BE91390192CC57D0D27CF9EF1876 /* SefiraCustom.html */,
+				B8798AE626AEC1BC472314B95A678C20 /* SefiraFormatter.html */,
+				F7E23494FB5510386EF91EEF0EC2AD23 /* SefiraFormatter.html */,
+				034293D610CAFD8A336665C62B2C6252 /* SefiraLanguage.html */,
+				AA72B35117A63A038AA5577E2908AA4E /* SefiraLanguage.html */,
+				0F644D5F208FAA74EB26B0A3388BE29C /* SefiraPrayerAddition.html */,
+				2FB769827674021FFF7268DC6179AF62 /* SefiraPrayerAddition.html */,
+				7F5EC6F8FDE71E3D019A15CC99A945AB /* SefiratHaomerCalculator.html */,
+				CCDB54D62069F6C7C44A5473842D2F42 /* SefiratHaomerCalculator.html */,
+				26DC6AB351CD1F424DA7702D309208B6 /* spinner.gif */,
+				1273F329C4B616F1355D3B5FEB4AC54D /* spinner.gif */,
+				B39F2E8AA8E4E4F32B35A243D9702F37 /* Structs.html */,
+				BEEA46AE40E20BA9AA144452DFF8A6D8 /* Structs.html */,
+				69E6F751DC0F5C4C3326D0FA3D95BBBD /* SunriseAndSunsetCalculator.html */,
+				B0E6735871C51E5DA9B4398C3161E419 /* SunriseAndSunsetCalculator.html */,
+				A94475BCB20D517DB14597C9A928BE1C /* Tractate.html */,
+				4C100325E2CE43EBFC9E86FE9B39BA31 /* Tractate.html */,
+				A2AF931AC66B9EB31E18C166F994D341 /* trigonometry.html */,
+				D71B50ECF78457F1F4D377BEEEC13A7E /* trigonometry.html */,
+				04D8AE558F042D651EA4B9FD516392A8 /* typeahead.jquery.js */,
+				DE3E537A213C635AAAE8835DD31983BA /* typeahead.jquery.js */,
+				FEF14CE9960BCD98B30507B9EF346536 /* undocumented.json */,
+				D8C1C69A9587D66F4B3D5EA381B50E81 /* Weekday.html */,
+				712569C639425C430253B9B3E8B0EF2F /* Weekday.html */,
+				956731F1F5DE8571575CBD7DA975B378 /* YomTov.html */,
+				62A035BE3D9D703AA6846EFFD02EBD9D /* YomTov.html */,
+				26505B7025D8D5455FA14E8C4CBE0D7C /* Zman.html */,
+				D43541875CCB4B6470E793228993FC86 /* Zman.html */,
+				1F89EA2D6E92FF7AB91450BA0A8A4542 /* ZmanimCalendar.html */,
+				5DB54E05FDAE9616DC1533AA88F15FB9 /* ZmanimCalendar.html */,
+				F68B0FA3021876B39090E39D1CD91147 /* ZmanimKit.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		6B6E366256D431CE7A49913D1C0DC22B /* Products */ = {
+		3BB136AD523BDA7814DF7F9DE1C1FF99 /* nscalendar */ = {
 			isa = PBXGroup;
 			children = (
-				BA7D768AFCB8FE1B4087446CE51342BC /* KosherSwift.framework */,
-				1CD2E8FCA150298ECB22D6780E6BFC49 /* Pods_KosherSwift_Example.framework */,
-				C0A2A79EA37FED8CDB656AA313D901FA /* Pods_KosherSwift_Tests.framework */,
+				18D449DEA364A78AD2931D2617DFA1B2 /* NSCalendar_Components.swift */,
+				F4CF2F2E1128EAAA1D2AC3401E3610F6 /* NSCalendar_DateComparison.swift */,
+				AD495EE028F6A29B4702A4874BC76CCF /* NSCalendar_DateManipulation.swift */,
+				ACF24BF89339E452A51A9B01653553AA /* NSCalendar_HebrewYearTypes.swift */,
+				D55329C9CBFD16426C24C48542F51BF3 /* NSCalendar_Juncture.swift */,
+				2FA8AE0B5699E80EA5995FDDB7380DB6 /* NSCalendar_Ranges.swift */,
+				F1ED0238ACA5BDC08A1E67656F245D88 /* Enums */,
+			);
+			name = nscalendar;
+			path = nscalendar;
+			sourceTree = "<group>";
+		};
+		434A61364D9146840AD8B4B814468CF7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				280BA8893536AFF01EE17D3D131B8037 /* KSAstronomical.swift */,
+				C504C627F309DD937BD4F2F0DFD5E9C0 /* KSBearing.swift */,
+				87BBCD2339C834282C2EB51090E51E01 /* KSHebrewYear.swift */,
+				0429B09CE6B129795C97DD5D6C208628 /* KSMolad.swift */,
+				A50D5EFB43D46EA06D7F4D33D7FDB699 /* KSParashaReadings.swift */,
+				3B5E57CCABBAC9F94275FF0BD485628E /* KSSunCalculationTypes.swift */,
+				570D85133506135FB5ABE008A6FB2FE4 /* KSTractates.swift */,
+				CAAE728B1ABDDB3104A1077FDAA268B7 /* KSZenith.swift */,
+				ED95367A24AFEBF86471A5E147106D96 /* KSZenithExtended.swift */,
+				E5018002437103D9734AFE822099A20F /* YomTov.swift */,
+			);
+			name = Headers;
+			path = Sources/Headers;
+			sourceTree = "<group>";
+		};
+		46ACF3B631F8A69E6B91D551DB2044EA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				01DA665A77ED6D71D001A0D97EEB4CC1 /* Calendar */,
+				F85A3F022046E8ED6AEBDBC19224ED79 /* Solar */,
+				072CA1606A4C0128964F978693771827 /* Utilities */,
+			);
+			name = Core;
+			path = Sources/Core;
+			sourceTree = "<group>";
+		};
+		49E28BDFE4B9AC67177559579141F2E2 /* Sefira */ = {
+			isa = PBXGroup;
+			children = (
+				753E092FAACFEC2B4021736001425289 /* KSSefiraFormatter.swift */,
+				04FE6557D78D1E440519189199A8C770 /* KSSefiratHaomerCalculator.swift */,
+			);
+			name = Sefira;
+			path = Sefira;
+			sourceTree = "<group>";
+		};
+		5005384A33FCCE9A52F1EC0D0DBDBB99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E37C6E584B16C8113BC4103671687FF /* ZmanMetadata.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		51D704596197C6CD8121D427A268738E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87D3EE129FB04D6CBDD557182F9AA4C7 /* Pods_ZmanimKit_Example.framework */,
+				1FC22B9A7F8F6FD91DCB6DF9F1B4AD26 /* Pods_ZmanimKit_Tests.framework */,
+				5FD0DE525B6B445A322E2EB1990C2426 /* ZmanimKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8275A298A788355ED7982145D6CA4755 /* Pods-KosherSwift_Tests */ = {
+		711182277996F0E2B0C8CF3D15F8B041 /* Parasha */ = {
 			isa = PBXGroup;
 			children = (
-				A7F5AD3A96A8475836BB3C20DB8A1845 /* Pods-KosherSwift_Tests.modulemap */,
-				3FAEA63B7DD18FE6063AC1428268FC58 /* Pods-KosherSwift_Tests-acknowledgements.markdown */,
-				B22D05D7093B94AD7ABEA29E09117BFE /* Pods-KosherSwift_Tests-acknowledgements.plist */,
-				0E9D9B02A2FDE32B82C864AF41AE0744 /* Pods-KosherSwift_Tests-dummy.m */,
-				7363845E4F436A2C52A9B2EBB745CE6A /* Pods-KosherSwift_Tests-Info.plist */,
-				A52CB42D4C43F9871294F2C70FF289CF /* Pods-KosherSwift_Tests-umbrella.h */,
-				E6FF895019807281A50622404E8343CF /* Pods-KosherSwift_Tests.debug.xcconfig */,
-				546894301C2CC708DB4CA41A216565B3 /* Pods-KosherSwift_Tests.release.xcconfig */,
+				A7E588825924110F3A9A8F36B1994C32 /* KSParasha.swift */,
+				D7076C2FA200F794ECD6DF20CDE7402C /* KSParashatHashavuaCalculator.swift */,
 			);
-			name = "Pods-KosherSwift_Tests";
-			path = "Target Support Files/Pods-KosherSwift_Tests";
+			name = Parasha;
+			path = Parasha;
 			sourceTree = "<group>";
 		};
-		A339D9260C4545D1A362063B9C38A2A7 /* Targets Support Files */ = {
+		8A994BECE913B1AAEEB9FE1474A2CCAB /* nsdate */ = {
 			isa = PBXGroup;
 			children = (
-				28D6C0C4FF37AFD93E0929BCAE713C0C /* Pods-KosherSwift_Example */,
-				8275A298A788355ED7982145D6CA4755 /* Pods-KosherSwift_Tests */,
+				0F449A6297220FBD770C5736E4EC30E3 /* NSDate_Components.swift */,
+				FDD6C7C68CFCB5101FA275DE913BFC4F /* NSDate_ConvenientDates.swift */,
+				CC89FA9451C56914B9AE2A4D0B2DFA52 /* NSDate_Description.swift */,
+			);
+			name = nsdate;
+			path = nsdate;
+			sourceTree = "<group>";
+		};
+		95EFBB24887EA476B2A7869CA93A0D18 /* ZmanimKit */ = {
+			isa = PBXGroup;
+			children = (
+				216DD023000029BEB059B0C7D11CE173 /* Categories */,
+				46ACF3B631F8A69E6B91D551DB2044EA /* Core */,
+				434A61364D9146840AD8B4B814468CF7 /* Headers */,
+				31F06EEC795B5E516D5D0CC218A0B254 /* Pod */,
+				5005384A33FCCE9A52F1EC0D0DBDBB99 /* Resources */,
+				DB45C92A1F1E91C0DF078FAF9CA48496 /* Support Files */,
+			);
+			name = ZmanimKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		98E72D15983BCF30A292A6EA33152A00 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95EFBB24887EA476B2A7869CA93A0D18 /* ZmanimKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9D9D8BD49401F96DCC2D6D4A84CC18E9 /* DafYomi */ = {
+			isa = PBXGroup;
+			children = (
+				836B7A53FC55FAD01A0DEF9F2D68530D /* KSDaf.swift */,
+				FB252DCFC3836346142550CCEC3D0204 /* KSDafYomiCalculator.swift */,
+			);
+			name = DafYomi;
+			path = DafYomi;
+			sourceTree = "<group>";
+		};
+		A212DB7AC436D9CD77BC6539D5C9E7EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1674E29FB2D07CB3179324043FF94F7 /* Pods-ZmanimKit_Example */,
+				EC70FBDE917BED2EEC8D981C88BEC3EB /* Pods-ZmanimKit_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AC4DE6A1A9869B0F0C9DC09E5AB3CA7A /* KosherSwift */ = {
-			isa = PBXGroup;
-			children = (
-				4AA0945D25269EAA00ADE3D8 /* ZmanMetadata.swift */,
-				4AC38AFF2526AA2600CC9108 /* ZmanMetadata.json */,
-				4A2C82E62526466000CE65C1 /* Categories */,
-				4A2C82F92526466000CE65C1 /* Core */,
-				4A2C82DB2526466000CE65C1 /* Headers */,
-				53735480C5711A76C5D6F8F64107483C /* Pod */,
-				27D168FD3D0D6C40C0B926A26B1B1D05 /* Support Files */,
-			);
-			name = KosherSwift;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -458,15 +563,53 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C09C766CBF45D9168C2E20F3A462D95B /* Chagim */ = {
+			isa = PBXGroup;
+			children = (
+				44DD3D5E5648B59D3B323806306A2A1C /* KSJewishCalendar.swift */,
+				2B5747D303B0C899DE6C9A1C864A6C29 /* KSJewishHoliday.swift */,
+			);
+			name = Chagim;
+			path = Chagim;
+			sourceTree = "<group>";
+		};
+		C1674E29FB2D07CB3179324043FF94F7 /* Pods-ZmanimKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8A47229989F6FE5B358FC3D6F785B317 /* Pods-ZmanimKit_Example.modulemap */,
+				92F6172E411D7816D144FB8954EA3CEB /* Pods-ZmanimKit_Example-acknowledgements.markdown */,
+				59EC5F1C085E537093838AC567D75985 /* Pods-ZmanimKit_Example-acknowledgements.plist */,
+				DCC28EC5690B96FFDE5315FB4172B3EF /* Pods-ZmanimKit_Example-dummy.m */,
+				E811147028DBE51EFEBBAEEBDA788FF5 /* Pods-ZmanimKit_Example-frameworks.sh */,
+				65A5DB0834B2FAB8A768CE0B555C051B /* Pods-ZmanimKit_Example-Info.plist */,
+				E5C88F36902A1B6F39639545882C21D9 /* Pods-ZmanimKit_Example-umbrella.h */,
+				E671EF456C22E4837B757F324398AF97 /* Pods-ZmanimKit_Example.debug.xcconfig */,
+				527C1C963202507D897F4B8DE896813C /* Pods-ZmanimKit_Example.release.xcconfig */,
+			);
+			name = "Pods-ZmanimKit_Example";
+			path = "Target Support Files/Pods-ZmanimKit_Example";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				4CA2349420743F722B5DD451DE5F6D8B /* Development Pods */,
+				98E72D15983BCF30A292A6EA33152A00 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6B6E366256D431CE7A49913D1C0DC22B /* Products */,
-				A339D9260C4545D1A362063B9C38A2A7 /* Targets Support Files */,
+				51D704596197C6CD8121D427A268738E /* Products */,
+				A212DB7AC436D9CD77BC6539D5C9E7EE /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFE5BEA07873477F6347814A01DE7FE5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				3BB136AD523BDA7814DF7F9DE1C1FF99 /* nscalendar */,
+				8A994BECE913B1AAEEB9FE1474A2CCAB /* nsdate */,
+				E19BA35CDA4FCD6EC41DE53D84EAFCB7 /* nsdatecomponents */,
+			);
+			name = Foundation;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -477,90 +620,165 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D27E1EE782A3A49986DD3E1B55978980 /* Zmanim */ = {
+			isa = PBXGroup;
+			children = (
+				F9AED54F73BAA0AFA0B8E50E425AB8F1 /* KSComplexZmanimCalendar.swift */,
+				9CD26D1F50D1F7FC9C0ABF337AE67146 /* KSZman.swift */,
+				5742D27A220F23471E88B584111EB1B5 /* KSZmanimCalendar.swift */,
+			);
+			name = Zmanim;
+			path = Zmanim;
+			sourceTree = "<group>";
+		};
+		DB45C92A1F1E91C0DF078FAF9CA48496 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC7903D0A19B5176279C6D072D37CA59 /* ZmanimKit.modulemap */,
+				AD20E248A79FA5E3881DBC1662660C5E /* ZmanimKit-dummy.m */,
+				A52241359F414EE9FF50B2FD60581699 /* ZmanimKit-Info.plist */,
+				EECFE2DC96BB5DEC1803644DD47A2AE0 /* ZmanimKit-prefix.pch */,
+				4CDBEE2B48F1221764A581176A9D27D4 /* ZmanimKit-umbrella.h */,
+				28DC3DAE065369FC07D2DE819C8B6F77 /* ZmanimKit.debug.xcconfig */,
+				9367403515B3614256910B095ECE0765 /* ZmanimKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZmanimKit";
+			sourceTree = "<group>";
+		};
+		E19BA35CDA4FCD6EC41DE53D84EAFCB7 /* nsdatecomponents */ = {
+			isa = PBXGroup;
+			children = (
+				64C3179EE05F6557E06B2C1B69A97CE2 /* NSDateComponents_AllComponents.swift */,
+			);
+			name = nsdatecomponents;
+			path = nsdatecomponents;
+			sourceTree = "<group>";
+		};
+		EC70FBDE917BED2EEC8D981C88BEC3EB /* Pods-ZmanimKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0C5C99BF5D456E02FD29C13DC00025B /* Pods-ZmanimKit_Tests.modulemap */,
+				0F1CCA9BCFBDD4166CF2AD8A131F851F /* Pods-ZmanimKit_Tests-acknowledgements.markdown */,
+				E5D185328293589277C3258338C52B2E /* Pods-ZmanimKit_Tests-acknowledgements.plist */,
+				D3C26047D50562D9CAD89EC00DA89E57 /* Pods-ZmanimKit_Tests-dummy.m */,
+				267D43623772C654270546B188CB5F7B /* Pods-ZmanimKit_Tests-Info.plist */,
+				52309823E8DD30998B97DE2668AD547F /* Pods-ZmanimKit_Tests-umbrella.h */,
+				41CFE7ED98DC1392E54CC06A9CE8E808 /* Pods-ZmanimKit_Tests.debug.xcconfig */,
+				652BA54D9559CBEDB9CA650B788F66E4 /* Pods-ZmanimKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZmanimKit_Tests";
+			path = "Target Support Files/Pods-ZmanimKit_Tests";
+			sourceTree = "<group>";
+		};
+		F1ED0238ACA5BDC08A1E67656F245D88 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DF2AF2471B2C95DF4CBE64385D981789 /* kHebrewYearType.swift */,
+				31037C2502A98FB6B2619EDCB0F8B364 /* kYearLength.swift */,
+				0FC9B00AAD93BA4C74D1D3BE0F00FF5A /* Weekday.swift */,
+			);
+			name = Enums;
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F85A3F022046E8ED6AEBDBC19224ED79 /* Solar */ = {
+			isa = PBXGroup;
+			children = (
+				34CE64DE0E578735B00C5F3C7E210F5C /* KSAstronomicalCalculator.swift */,
+				00ADABF367ABC3D2F36910218E2E3D5B /* KSAstronomicalCalendar.swift */,
+				00E559361C0888396AA2D17379A434D2 /* KSAstronomicalCalendar_DateManipulation.swift */,
+				7868C6A3FA15569C2023E26F5FF824F6 /* KSGeoLocation.swift */,
+				088CDBF8F8C8AC8C7B74B6F8F9E6F7A2 /* KSSunriseAndSunsetCalculator.swift */,
+			);
+			name = Solar;
+			path = Solar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1E229992C42D2FF6DDD142C9A1D77E03 /* Headers */ = {
+		1A3E8C352913D86950E77D61DACEEBDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77000954633BE9D973F9E7D45B7DDEF5 /* Pods-KosherSwift_Tests-umbrella.h in Headers */,
+				C115D19BFDC2DCB11EF5319A14F72C18 /* Pods-ZmanimKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F68D839ECCB2C97A543460596351257 /* Headers */ = {
+		915A26219255BE21F215853A420B54AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4D4862225B02F87842FEE8445FCCDC /* Pods-KosherSwift_Example-umbrella.h in Headers */,
+				A7F8B0110796486FB51D4396B562629C /* ZmanimKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0628883E76C0F78D59D90692954A728 /* Headers */ = {
+		E46C523F6F05B930C9951569DEC0A260 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CD050C6428686C5AE08165C9661866 /* KosherSwift-umbrella.h in Headers */,
+				B731C7AB149AB1747D9099419B1FAD8D /* Pods-ZmanimKit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0DD89E96E77DA5037AC6B8C9A7CAA84F /* Pods-KosherSwift_Tests */ = {
+		836663DF21AD785C7C17158B8A4B7610 /* Pods-ZmanimKit_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB495C09EC0DCA871399102573763DD8 /* Build configuration list for PBXNativeTarget "Pods-KosherSwift_Tests" */;
+			buildConfigurationList = 962C52C96ABB71A3EF6FD0BEB1DE5231 /* Build configuration list for PBXNativeTarget "Pods-ZmanimKit_Tests" */;
 			buildPhases = (
-				1E229992C42D2FF6DDD142C9A1D77E03 /* Headers */,
-				7EE03B6AD56207CBDE6018ECC04CB3BD /* Sources */,
-				38487BA0CD1D7B79034146F4220B6E7E /* Frameworks */,
-				EC4E614844CFD1EF225F87080B8DD3DC /* Resources */,
+				E46C523F6F05B930C9951569DEC0A260 /* Headers */,
+				5DCCBB9698A301B0342B2D9A189733D5 /* Sources */,
+				66B28B41DDA79A025278EAAC5BF419B3 /* Frameworks */,
+				D2A3D19BC409EC50083A1B7E2252BD08 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BF293592405572E7EABA230BA23E2F75 /* PBXTargetDependency */,
+				3456F47AD5C1D5F19F31BD415FF7FB28 /* PBXTargetDependency */,
 			);
-			name = "Pods-KosherSwift_Tests";
-			productName = "Pods-KosherSwift_Tests";
-			productReference = C0A2A79EA37FED8CDB656AA313D901FA /* Pods_KosherSwift_Tests.framework */;
+			name = "Pods-ZmanimKit_Tests";
+			productName = "Pods-ZmanimKit_Tests";
+			productReference = 1FC22B9A7F8F6FD91DCB6DF9F1B4AD26 /* Pods_ZmanimKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		664A3E46F69F21734FC2BB28E6120DA7 /* Pods-KosherSwift_Example */ = {
+		8A54B2912350BA8D95C8F9CB764C72AA /* ZmanimKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADCE0265EED0669CC1F5F8E9323067BA /* Build configuration list for PBXNativeTarget "Pods-KosherSwift_Example" */;
+			buildConfigurationList = EDC5F284DC1D39C79AAD188F66B5FB2A /* Build configuration list for PBXNativeTarget "ZmanimKit" */;
 			buildPhases = (
-				6F68D839ECCB2C97A543460596351257 /* Headers */,
-				DC36FDD2C9170CF43C6A166C16BEDF16 /* Sources */,
-				B0F285CF51CFA03D3C40785151752869 /* Frameworks */,
-				C374AE1E158055FFA3EDEA12899E3120 /* Resources */,
+				915A26219255BE21F215853A420B54AE /* Headers */,
+				BE493482DAF90CBB73013CE17B350F19 /* Sources */,
+				B56CB27EB6CDAD0D217ECD16C343A15E /* Frameworks */,
+				880D84BB74DDF46D3E56C70FF0F43CDE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F69660A5DD156D7602FD4BBD0B177A44 /* PBXTargetDependency */,
 			);
-			name = "Pods-KosherSwift_Example";
-			productName = "Pods-KosherSwift_Example";
-			productReference = 1CD2E8FCA150298ECB22D6780E6BFC49 /* Pods_KosherSwift_Example.framework */;
+			name = ZmanimKit;
+			productName = ZmanimKit;
+			productReference = 5FD0DE525B6B445A322E2EB1990C2426 /* ZmanimKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F2CBCB9BC6EAA56B4A0800C790C2C30D /* KosherSwift */ = {
+		8FD38EDA8DFFB5A2ACCB880F5362D11E /* Pods-ZmanimKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFDA22BD7E6E306B876108AC846EC2CA /* Build configuration list for PBXNativeTarget "KosherSwift" */;
+			buildConfigurationList = 92294F259571A8AB84B8D938941B431B /* Build configuration list for PBXNativeTarget "Pods-ZmanimKit_Example" */;
 			buildPhases = (
-				F0628883E76C0F78D59D90692954A728 /* Headers */,
-				76B6415E23EC2B891AAC99CFC235BA7B /* Sources */,
-				9EF4565C2E3E3B377848ECB58FA5EC9F /* Frameworks */,
-				70668349FF134371C28871BA1777931F /* Resources */,
+				1A3E8C352913D86950E77D61DACEEBDF /* Headers */,
+				C99CEF0F44D9D8E3E554ED297C51FC11 /* Sources */,
+				3D492F0167F1D91DA9A1BCA1E664BCAA /* Frameworks */,
+				ACC0DE606E059EA9C740005F4C1445C3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B3BBD0CC805066EFD8E83ADBE1A3B8E /* PBXTargetDependency */,
 			);
-			name = KosherSwift;
-			productName = KosherSwift;
-			productReference = BA7D768AFCB8FE1B4087446CE51342BC /* KosherSwift.framework */;
+			name = "Pods-ZmanimKit_Example";
+			productName = "Pods-ZmanimKit_Example";
+			productReference = 87D3EE129FB04D6CBDD557182F9AA4C7 /* Pods_ZmanimKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -569,14 +787,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1220;
-				TargetAttributes = {
-					F2CBCB9BC6EAA56B4A0800C790C2C30D = {
-						LastSwiftMigration = 1220;
-					};
-				};
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -587,34 +799,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6B6E366256D431CE7A49913D1C0DC22B /* Products */;
+			productRefGroup = 51D704596197C6CD8121D427A268738E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2CBCB9BC6EAA56B4A0800C790C2C30D /* KosherSwift */,
-				664A3E46F69F21734FC2BB28E6120DA7 /* Pods-KosherSwift_Example */,
-				0DD89E96E77DA5037AC6B8C9A7CAA84F /* Pods-KosherSwift_Tests */,
+				8FD38EDA8DFFB5A2ACCB880F5362D11E /* Pods-ZmanimKit_Example */,
+				836663DF21AD785C7C17158B8A4B7610 /* Pods-ZmanimKit_Tests */,
+				8A54B2912350BA8D95C8F9CB764C72AA /* ZmanimKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		70668349FF134371C28871BA1777931F /* Resources */ = {
+		880D84BB74DDF46D3E56C70FF0F43CDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC38B002526AA2600CC9108 /* ZmanMetadata.json in Resources */,
+				3E2CA15C060C78DD3D34FBE19A1F71B0 /* ZmanMetadata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C374AE1E158055FFA3EDEA12899E3120 /* Resources */ = {
+		ACC0DE606E059EA9C740005F4C1445C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC4E614844CFD1EF225F87080B8DD3DC /* Resources */ = {
+		D2A3D19BC409EC50083A1B7E2252BD08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -624,157 +836,91 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76B6415E23EC2B891AAC99CFC235BA7B /* Sources */ = {
+		5DCCBB9698A301B0342B2D9A189733D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A20547E253747A9000FC102 /* Weekday.swift in Sources */,
-				4A2C83332526466000CE65C1 /* KSJewishCalendar.swift in Sources */,
-				4A2C831C2526466000CE65C1 /* KSBearing.swift in Sources */,
-				4A2C83342526466000CE65C1 /* KSJewishHoliday.swift in Sources */,
-				4A2C831E2526466000CE65C1 /* kHebrewYearType.swift in Sources */,
-				4A2C83132526466000CE65C1 /* KSZenithExtended.swift in Sources */,
-				4A2C83232526466000CE65C1 /* NSCalendar_HebrewYearTypes.swift in Sources */,
-				AD83C84CAC958B1C0912A58FF6690325 /* KosherSwift-dummy.m in Sources */,
-				4A2C83142526466000CE65C1 /* YomTov.swift in Sources */,
-				4A2C83372526466000CE65C1 /* KSAstronomicalCalendar.swift in Sources */,
-				4A2C83282526466000CE65C1 /* NSDate_Components.swift in Sources */,
-				4A2C832B2526466000CE65C1 /* KSDafYomiCalculator.swift in Sources */,
-				4A2C83262526466000CE65C1 /* NSDateComponents_AllComponents.swift in Sources */,
-				4A2C832E2526466000CE65C1 /* KSZman.swift in Sources */,
-				4A2C83292526466000CE65C1 /* NSDate_Description.swift in Sources */,
-				4AA0945E25269EAA00ADE3D8 /* ZmanMetadata.swift in Sources */,
-				4A2C831F2526466000CE65C1 /* kYearLength.swift in Sources */,
-				4A2C83192526466000CE65C1 /* KSZenith.swift in Sources */,
-				4A2C83152526466000CE65C1 /* KSParashaReadings.swift in Sources */,
-				4A2C83272526466000CE65C1 /* NSDate_ConvenientDates.swift in Sources */,
-				4A2C83162526466000CE65C1 /* KSTractates.swift in Sources */,
-				4A2C832C2526466000CE65C1 /* KSParasha.swift in Sources */,
-				4A2C83182526466000CE65C1 /* KSSunCalculationTypes.swift in Sources */,
-				4A2C83352526466000CE65C1 /* KSAstronomicalCalculator.swift in Sources */,
-				4A2C83172526466000CE65C1 /* KSMolad.swift in Sources */,
-				4A2C83302526466000CE65C1 /* KSComplexZmanimCalendar.swift in Sources */,
-				4A2C83202526466000CE65C1 /* NSCalendar_Ranges.swift in Sources */,
-				4A2C833A2526466000CE65C1 /* trigonometry.swift in Sources */,
-				4A2C83252526466000CE65C1 /* NSCalendar_Components.swift in Sources */,
-				4A2C831A2526466000CE65C1 /* KSAstronomical.swift in Sources */,
-				4A2C83242526466000CE65C1 /* NSCalendar_DateManipulation.swift in Sources */,
-				4A2C832A2526466000CE65C1 /* KSDaf.swift in Sources */,
-				4A2C832F2526466000CE65C1 /* KSZmanimCalendar.swift in Sources */,
-				4A2C83382526466000CE65C1 /* KSGeoLocation.swift in Sources */,
-				4A2C83392526466000CE65C1 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */,
-				4A2C831B2526466000CE65C1 /* KSHebrewYear.swift in Sources */,
-				4A2C832D2526466000CE65C1 /* KSParashatHashavuaCalculator.swift in Sources */,
-				4A2C83312526466000CE65C1 /* KSSefiraFormatter.swift in Sources */,
-				4A2C83222526466000CE65C1 /* NSCalendar_Juncture.swift in Sources */,
-				4A2C83322526466000CE65C1 /* KSSefiratHaomerCalculator.swift in Sources */,
-				4A2C83212526466000CE65C1 /* NSCalendar_DateComparison.swift in Sources */,
-				4A2C83362526466000CE65C1 /* KSSunriseAndSunsetCalculator.swift in Sources */,
+				7ACCC9A2F1EB028A99B94B8B21231D7B /* Pods-ZmanimKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EE03B6AD56207CBDE6018ECC04CB3BD /* Sources */ = {
+		BE493482DAF90CBB73013CE17B350F19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A96DB7E1CFE24D82358E594DE62BCE3 /* Pods-KosherSwift_Tests-dummy.m in Sources */,
+				BCE0C11C0A9924030104D0E1E6ED8BFE /* DateExtensions.swift in Sources */,
+				D236B9417890590C4D2CBE0C99EAAD12 /* kHebrewYearType.swift in Sources */,
+				0915D338FB902365E238A25B2C8A3695 /* KSAstronomical.swift in Sources */,
+				198F278CAA34A03599DE1D32B9DF1A4E /* KSAstronomicalCalculator.swift in Sources */,
+				98ACCC21AC26CDBBBD466442657F0DEF /* KSAstronomicalCalendar.swift in Sources */,
+				14ADE2B3C43B59D885645F901E8C0FD2 /* KSAstronomicalCalendar_DateManipulation.swift in Sources */,
+				B30DC8301DA83D355A39D3613B28A24B /* KSBearing.swift in Sources */,
+				003FE7088CE1DF56A77379FD883290F8 /* KSComplexZmanimCalendar.swift in Sources */,
+				C4E2F0ED1091B5A587AAF6AF8B742FD5 /* KSDaf.swift in Sources */,
+				79B6A9C26E744A3E940527A2D72CDC0B /* KSDafYomiCalculator.swift in Sources */,
+				24978E004A03D70BE1BC7879E35AB7C0 /* KSGeoLocation.swift in Sources */,
+				43CDF3467B43279AE622E5408137DB92 /* KSHebrewYear.swift in Sources */,
+				A14BF939B8DFCFB982B69EC9784256E0 /* KSJewishCalendar.swift in Sources */,
+				8116F708C00EFDE31EC50884479B8457 /* KSJewishHoliday.swift in Sources */,
+				425AC62E3BC5AE8C70306738591EB36A /* KSMolad.swift in Sources */,
+				59A752F6D140FFEDB659BD69A1FD4D37 /* KSParasha.swift in Sources */,
+				7FA9C18B4E6A3BE4F59F7FE09247379D /* KSParashaReadings.swift in Sources */,
+				F4A9E679D5FD66D742F1B6645AFB507D /* KSParashatHashavuaCalculator.swift in Sources */,
+				DBC9D0E3731547C26CD2FA15CC9FE13F /* KSSefiraFormatter.swift in Sources */,
+				DCC335187CDA0775CB38AC6219CF3815 /* KSSefiratHaomerCalculator.swift in Sources */,
+				BEFC4D36806D396C999C31F2378B41E5 /* KSSunCalculationTypes.swift in Sources */,
+				A12BDB2A6903F5FB03D97C32D1D1436F /* KSSunriseAndSunsetCalculator.swift in Sources */,
+				F25804130980BB5FF4433E125ABD2A55 /* KSTractates.swift in Sources */,
+				36020A16F2ED6074D694916EF72F57AB /* KSZenith.swift in Sources */,
+				9EF6FFF93307606ECD6F6E36A9EDC7F5 /* KSZenithExtended.swift in Sources */,
+				3BD89416027978E7B590FA658F37B8DE /* KSZman.swift in Sources */,
+				E648208ECC09BA7690FEEA6E87B7731C /* KSZmanimCalendar.swift in Sources */,
+				B742992FF5AC97E0A9C347F6B082BF01 /* kYearLength.swift in Sources */,
+				E2EFC347AB44F3DC9BFB1C6C5393E852 /* NSCalendar_Components.swift in Sources */,
+				EEB5CA6B59E42F2F4C66A41A45A1082A /* NSCalendar_DateComparison.swift in Sources */,
+				B4BFC4D7C8EA97D934BC87B1E5DA44C9 /* NSCalendar_DateManipulation.swift in Sources */,
+				93D6F65B12265BA1FE0D7C2D5EF76921 /* NSCalendar_HebrewYearTypes.swift in Sources */,
+				A6901F290261EE1088B1A8BC93F43E6D /* NSCalendar_Juncture.swift in Sources */,
+				880B2E893CDF92DED8C5E20C31563FFD /* NSCalendar_Ranges.swift in Sources */,
+				52293F12E90AE7AC0CA973BDE18BE041 /* NSDate_Components.swift in Sources */,
+				6DB7FD0882A21037D3666E3948BD920F /* NSDate_ConvenientDates.swift in Sources */,
+				B48F3B873AA8891AB629585A6E2ECEB5 /* NSDate_Description.swift in Sources */,
+				3A630F4CD6E3A034D10B38370C4944A1 /* NSDateComponents_AllComponents.swift in Sources */,
+				B2B2C72DFE52C947B1488AAFDB95C3D6 /* trigonometry.swift in Sources */,
+				2960F7056FD7DADDFBEB529E12906984 /* Weekday.swift in Sources */,
+				347A4B48C1F2B27AC295A1B41E7B0563 /* YomTov.swift in Sources */,
+				E94375B86AF4D48649ED79DD104018A9 /* ZmanimKit-dummy.m in Sources */,
+				D3910BC13461126A9532DF00A5979592 /* ZmanMetadata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC36FDD2C9170CF43C6A166C16BEDF16 /* Sources */ = {
+		C99CEF0F44D9D8E3E554ED297C51FC11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C5DB6CD0E813F826E5D3B4C0A48DCB0 /* Pods-KosherSwift_Example-dummy.m in Sources */,
+				E2B111B8CA5B105221474DEC74622E02 /* Pods-ZmanimKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BF293592405572E7EABA230BA23E2F75 /* PBXTargetDependency */ = {
+		3456F47AD5C1D5F19F31BD415FF7FB28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-KosherSwift_Example";
-			target = 664A3E46F69F21734FC2BB28E6120DA7 /* Pods-KosherSwift_Example */;
-			targetProxy = E17B757A641D3150FBCE3FDF688E5E11 /* PBXContainerItemProxy */;
+			name = "Pods-ZmanimKit_Example";
+			target = 8FD38EDA8DFFB5A2ACCB880F5362D11E /* Pods-ZmanimKit_Example */;
+			targetProxy = 9371FA555B182CD6668A489FB9B19D0B /* PBXContainerItemProxy */;
 		};
-		F69660A5DD156D7602FD4BBD0B177A44 /* PBXTargetDependency */ = {
+		5B3BBD0CC805066EFD8E83ADBE1A3B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = KosherSwift;
-			target = F2CBCB9BC6EAA56B4A0800C790C2C30D /* KosherSwift */;
-			targetProxy = 2ACFC2A5F3C78B58FDD98AB809864120 /* PBXContainerItemProxy */;
+			name = ZmanimKit;
+			target = 8A54B2912350BA8D95C8F9CB764C72AA /* ZmanimKit */;
+			targetProxy = 7A4D68EA590E1C9338624D29FE850BC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		34F2C4AC77711006EF23F43E0B882E63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB818EC64326987961846E09C3664EA3 /* Pods-KosherSwift_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KosherSwift_Example/Pods-KosherSwift_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KosherSwift_Example/Pods-KosherSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		771C673759BA620B4F3442647B2105BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1E508B7F2E989B34A9A205675066710 /* Pods-KosherSwift_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KosherSwift_Example/Pods-KosherSwift_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KosherSwift_Example/Pods-KosherSwift_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -800,100 +946,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B3197E4BE43D89032A27BF7477333737 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5359862F3BC78C2A946A30A7A25233A /* KosherSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KosherSwift/KosherSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KosherSwift/KosherSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 2.0.0;
-				MODULEMAP_FILE = "Target Support Files/KosherSwift/KosherSwift.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mibe.KosherSwift;
-				PRODUCT_MODULE_NAME = KosherSwift;
-				PRODUCT_NAME = KosherSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -919,7 +971,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -932,45 +984,13 @@
 			};
 			name = Debug;
 		};
-		BEBD69242F1E0C77E967F0CF52EBA2E7 /* Release */ = {
+		4B84863FBC651DB2BAA0CE3BFC374855 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35276E51FD34BA5D94FCBE224EB1826C /* KosherSwift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KosherSwift/KosherSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KosherSwift/KosherSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 2.0.0;
-				MODULEMAP_FILE = "Target Support Files/KosherSwift/KosherSwift.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mibe.KosherSwift;
-				PRODUCT_MODULE_NAME = KosherSwift;
-				PRODUCT_NAME = KosherSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E692CCAC58D34F4A6C42881E271C250F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 546894301C2CC708DB4CA41A216565B3 /* Pods-KosherSwift_Tests.release.xcconfig */;
+			baseConfigurationReference = 41CFE7ED98DC1392E54CC06A9CE8E808 /* Pods-ZmanimKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -980,46 +1000,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KosherSwift_Tests/Pods-KosherSwift_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZmanimKit_Tests/Pods-ZmanimKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KosherSwift_Tests/Pods-KosherSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F902CC2E91A58F4CE5859C33C9BBBACB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6FF895019807281A50622404E8343CF /* Pods-KosherSwift_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KosherSwift_Tests/Pods-KosherSwift_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KosherSwift_Tests/Pods-KosherSwift_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZmanimKit_Tests/Pods-ZmanimKit_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1033,41 +1019,275 @@
 			};
 			name = Debug;
 		};
+		52706958FD371103B0D64F80E5CA5B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652BA54D9559CBEDB9CA650B788F66E4 /* Pods-ZmanimKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZmanimKit_Tests/Pods-ZmanimKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZmanimKit_Tests/Pods-ZmanimKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E8A168114D11B4CD637445151B5FEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527C1C963202507D897F4B8DE896813C /* Pods-ZmanimKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZmanimKit_Example/Pods-ZmanimKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZmanimKit_Example/Pods-ZmanimKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A017C66EAFA770B6A0F890F5716804C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DC3DAE065369FC07D2DE819C8B6F77 /* ZmanimKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZmanimKit/ZmanimKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZmanimKit/ZmanimKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZmanimKit/ZmanimKit.modulemap";
+				PRODUCT_MODULE_NAME = ZmanimKit;
+				PRODUCT_NAME = ZmanimKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0960CFAFFF3A9647B4E4C94AB49F7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E671EF456C22E4837B757F324398AF97 /* Pods-ZmanimKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZmanimKit_Example/Pods-ZmanimKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZmanimKit_Example/Pods-ZmanimKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7E102017BB8315325A94228573B3D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9367403515B3614256910B095ECE0765 /* ZmanimKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZmanimKit/ZmanimKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZmanimKit/ZmanimKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZmanimKit/ZmanimKit.modulemap";
+				PRODUCT_MODULE_NAME = ZmanimKit;
+				PRODUCT_NAME = ZmanimKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADCE0265EED0669CC1F5F8E9323067BA /* Build configuration list for PBXNativeTarget "Pods-KosherSwift_Example" */ = {
+		92294F259571A8AB84B8D938941B431B /* Build configuration list for PBXNativeTarget "Pods-ZmanimKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				771C673759BA620B4F3442647B2105BE /* Debug */,
-				34F2C4AC77711006EF23F43E0B882E63 /* Release */,
+				C0960CFAFFF3A9647B4E4C94AB49F7BF /* Debug */,
+				5E8A168114D11B4CD637445151B5FEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFDA22BD7E6E306B876108AC846EC2CA /* Build configuration list for PBXNativeTarget "KosherSwift" */ = {
+		962C52C96ABB71A3EF6FD0BEB1DE5231 /* Build configuration list for PBXNativeTarget "Pods-ZmanimKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3197E4BE43D89032A27BF7477333737 /* Debug */,
-				BEBD69242F1E0C77E967F0CF52EBA2E7 /* Release */,
+				4B84863FBC651DB2BAA0CE3BFC374855 /* Debug */,
+				52706958FD371103B0D64F80E5CA5B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB495C09EC0DCA871399102573763DD8 /* Build configuration list for PBXNativeTarget "Pods-KosherSwift_Tests" */ = {
+		EDC5F284DC1D39C79AAD188F66B5FB2A /* Build configuration list for PBXNativeTarget "ZmanimKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F902CC2E91A58F4CE5859C33C9BBBACB /* Debug */,
-				E692CCAC58D34F4A6C42881E271C250F /* Release */,
+				A017C66EAFA770B6A0F890F5716804C4 /* Debug */,
+				F7E102017BB8315325A94228573B3D00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
