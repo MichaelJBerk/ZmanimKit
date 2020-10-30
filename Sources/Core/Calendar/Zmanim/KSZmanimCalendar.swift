@@ -42,6 +42,9 @@ public class ZmanimCalendar: AstronomicalCalendar
 		return alos72().addingTimeInterval(shaahZmanisMogenAvraham() * 3)
 	}
 	
+	///Time to light candles on erev Shabbos/Yom Tov
+	///
+	///This method uses the `candleLightingOffset`. For example if it is set to 18, the returned date will be 18 minutes before sundown.
 	@objc public func candleLighting() -> Date
 	{
 	    let candleLightingOffset: Int = self.candleLightingOffset

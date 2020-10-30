@@ -99,7 +99,13 @@ public enum YomTov: Int
 		return [.erevShabbos, .erevPesach, .erevSuccos, .erevShavuos, .erevRoshHashana, .erevYomKippur ]
 	}
 	public static var showCandleLighting: [YomTov] {
+		//TODO: Don't include days that we say havdalah
+		//It should show on erev yom tov, erev shabbos, and the first day if outside of diaspora
 		return noMelacha + erev
+	}
+	public static var showHavdalah: [YomTov] {
+		//TODO: Only show on 2nd day outside of diaspora, or if the following day isn't shabbos
+		return noMelacha
 	}
 	
 	public var transliterated: String {
