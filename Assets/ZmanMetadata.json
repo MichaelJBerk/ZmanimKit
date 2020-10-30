@@ -8,9 +8,9 @@
 		"hebrew": "הבדלה"
 	},
 	{
-		"ash": "Shabbos Begins",
-		"sef": "Shabbat Begins",
-		"eng": "Sabbath Begins",
+		"ash": "Hadlakas Neiros",
+		"sef": "Hadlakat Neirot",
+		"eng": "Candle Lighting",
 		"selector": "candleLighting",
 		"exp": "Shabbat candle lighting time",
 		"hebrew": "הדלקת נרות (שבת)"
