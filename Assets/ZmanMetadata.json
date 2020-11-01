@@ -12,8 +12,56 @@
 		"sef": "Candle Lighting",
 		"eng": "Candle Lighting",
 		"selector": "candleLighting",
-		"exp": "Shabbat candle lighting time",
+		"exp": "Shabbat candle lighting time (Shkiah). Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
 		"hebrew": "הדלקת נרות"
+	},
+	{
+		"ash": "Candle Lighting (15 Minutes)",
+		"sef": "Candle Lighting (15 Minutes)",
+		"eng": "Candle Lighting (15 Minutes)",
+		"selector": "candleLighting15",
+		"exp": "Shabbat candle lighting time, 15 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew":"הדלקת נרות (15 דקות)"
+	},
+	{
+		"ash": "Candle Lighting (18 Minutes)",
+		"sef": "Candle Lighting (18 Minutes)",
+		"eng": "Candle Lighting (18 Minutes)",
+		"selector": "candleLighting18",
+		"exp": "Shabbat candle lighting time, 18 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew": "הדלקת נרות (18 דקות)"
+	},
+	{
+		"ash": "Candle Lighting (20 Minutes)",
+		"sef": "Candle Lighting (20 Minutes)",
+		"eng": "Candle Lighting (20 Minutes)",
+		"selector": "candleLighting20",
+		"exp": "Shabbat candle lighting time, 20 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew": "הדלקת נרות (20 דקות)"
+	},
+	{
+		"ash": "Candle Lighting (22 Minutes)",
+		"sef": "Candle Lighting (22 Minutes)",
+		"eng": "Candle Lighting (22 Minutes)",
+		"selector": "candleLighting22",
+		"exp": "Shabbat candle lighting time, 22 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew": "הדלקת נרות (22 דקות)"
+	},
+	{
+		"ash": "Candle Lighting (30 Minutes)",
+		"sef": "Candle Lighting (30 Minutes)",
+		"eng": "Candle Lighting (30 Minutes)",
+		"selector": "candleLighting30",
+		"exp": "Shabbat candle lighting time, 30 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew": "הדלקת נרות (30 דקות)"
+	},
+	{
+		"ash": "Candle Lighting (40 Minutes)",
+		"sef": "Candle Lighting (40 Minutes)",
+		"eng": "Candle Lighting (40 Minutes)",
+		"selector": "candleLighting40",
+		"exp": "Shabbat candle lighting time, 40 minutes before Shkiah. Shkiah is calculated as sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith.",
+		"hebrew": "הדלקת נרות (40 דקות)"
 	},
 	{
 		"ash": "Daf Yomi",

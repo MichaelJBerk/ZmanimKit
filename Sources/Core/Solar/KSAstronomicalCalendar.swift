@@ -120,8 +120,6 @@ public class AstronomicalCalendar
 		let sunset: Double = UTCSunset(zenith: kZenithGeometric)
 		let sunsetDate = dateFromTime(time: sunset)
 		let sunriseDate = sunrise()
-		print("Sunset Date: ", sunsetDate)
-		print("Sunrise Date: ", sunriseDate)
 		return adjustedSunsetDateWithSunset(sunset: sunsetDate, andSunrise: sunriseDate)
 	}
 	
