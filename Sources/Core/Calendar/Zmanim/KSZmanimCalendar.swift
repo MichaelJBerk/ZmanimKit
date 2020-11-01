@@ -54,7 +54,9 @@ public class ZmanimCalendar: AstronomicalCalendar
 	
 	@objc public func candleLightingWithOffsetFromSunset(offsetInMinutes: Int) -> Date
 	{
-		return dateBySubtractingMinutes(minutes: offsetInMinutes, fromDate: sunset()!)
+		let s = sunset()!
+		let d = dateBySubtractingMinutes(minutes: offsetInMinutes, fromDate: s)
+		return d
 	}
 	
 	@objc public func candleLighting15() -> Date

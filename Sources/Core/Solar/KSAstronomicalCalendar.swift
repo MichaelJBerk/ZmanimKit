@@ -118,7 +118,11 @@ public class AstronomicalCalendar
 	@objc public func sunset() -> Date?
 	{
 		let sunset: Double = UTCSunset(zenith: kZenithGeometric)
-		return adjustedSunsetDateWithSunset(sunset: dateFromTime(time: sunset), andSunrise: sunrise())
+		let sunsetDate = dateFromTime(time: sunset)
+		let sunriseDate = sunrise()
+		print("Sunset Date: ", sunsetDate)
+		print("Sunrise Date: ", sunriseDate)
+		return adjustedSunsetDateWithSunset(sunset: sunsetDate, andSunrise: sunriseDate)
 	}
 	
     /**
