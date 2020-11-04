@@ -5,6 +5,8 @@
 
 import Foundation
 
+public typealias YomTovInfo = (yomTov: YomTov, dayOfYomTov: Int)
+
 /// A class that calculates Hebrew dates, Yom Tov, and Daf Yomi
 public class JewishCalendar: ComplexZmanimCalendar
 {
@@ -24,151 +26,159 @@ public class JewishCalendar: ComplexZmanimCalendar
 		super.init(location: aGeoLocation)
 	}
 	
+	
     /** 
      * Returns the index of any holidays that fall on the date represented by `Date()`.
      * 
      * - returns: A yom tov if a yom tov falls on `Date()`, nil if not.
      */
-	public func yomTovIndex() -> YomTov?
+	public func yomTovInfo() -> YomTovInfo?
 	{
 	    let useModernHolidays: Bool = returnsModernHolidays
-		
+		let currentHebrewDay = currentHebrewDayOfMonth()
+		var dayOfYomTov: Int = 1
 	    
         switch  currentHebrewMonth()
 	    {
 	        case .nissan:
 	            if currentHebrewDayOfMonth() == 14
 	            {
-	                return YomTov.erevPesach
+	                return (YomTov.erevPesach, 0)
 	            }
 	            else if currentHebrewDayOfMonth() == 15 || currentHebrewDayOfMonth() == 21 || (!inIsrael && (currentHebrewDayOfMonth() == 16 || currentHebrewDayOfMonth() == 22))
 	            {
-	                return YomTov.pesach
+					dayOfYomTov = currentHebrewDay - 14
+	                return (YomTov.pesach, dayOfYomTov)
 	            }
 	            else if (currentHebrewDayOfMonth() >= 17 && currentHebrewDayOfMonth() <= 20) || (currentHebrewDayOfMonth() == 16 && inIsrael)
 	            {
-	                return YomTov.holHamoedPesach
+					dayOfYomTov = currentHebrewDay - 14
+	                return (YomTov.holHamoedPesach, dayOfYomTov)
 	            }
 	            if useModernHolidays && ((currentHebrewDayOfMonth() == 26 && currentDayOfTheWeek() == 5) || (currentHebrewDayOfMonth() == 28 && currentDayOfTheWeek() == 1) || (currentHebrewDayOfMonth() == 27 && currentDayOfTheWeek() == 3) || (currentHebrewDayOfMonth() == 27 && currentDayOfTheWeek() == 5))
 	            {
-	                return YomTov.yomHashoah
+	                return (YomTov.yomHashoah, dayOfYomTov)
 	            }
 		case .iyar:
 	            if useModernHolidays && ((currentHebrewDayOfMonth() == 4 && currentDayOfTheWeek() == 3) || ((currentHebrewDayOfMonth() == 3 || currentHebrewDayOfMonth() == 2) && currentDayOfTheWeek() == 4) || (currentHebrewDayOfMonth() == 5 && currentDayOfTheWeek() == 2))
 	            {
-                    return YomTov.yomHazikaron
+                    return (YomTov.yomHazikaron, dayOfYomTov)
 				}
 	            // if 5 Iyar falls on Wed Yom Haatzmaut is that day. If it falls on Friday or Shabbos it is moved back to
 	            // Thursday. If it falls on Monday it is moved to Tuesday
 	            if useModernHolidays && ((currentHebrewDayOfMonth() == 5 && currentDayOfTheWeek() == 4) || ((currentHebrewDayOfMonth() == 4 || currentHebrewDayOfMonth() == 3) && currentDayOfTheWeek() == 5) || (currentHebrewDayOfMonth() == 6 && currentDayOfTheWeek() == 3))
 	            {
-                    return YomTov.yomHaatzmaut
+                    return (YomTov.yomHaatzmaut, dayOfYomTov)
 				}
 	            if currentHebrewDayOfMonth() == 14
 	            {
-	                return YomTov.pesachSheni
+	                return (YomTov.pesachSheni, dayOfYomTov)
 	            }
 	            if useModernHolidays && currentHebrewDayOfMonth() == 28
 	            {
-	                return YomTov.yomHashoah
+	                return (YomTov.yomHashoah, dayOfYomTov)
 	            }
 	        case .sivan:
 	            if currentHebrewDayOfMonth() == 5
 	            {
-	                return YomTov.erevShavuos
+	                return (YomTov.erevShavuos, 0)
 	            }
 	            else if currentHebrewDayOfMonth() == 6 || (currentHebrewDayOfMonth() == 7 && !inIsrael)
 	            {
-	                return YomTov.shavuos
+					dayOfYomTov = currentHebrewDay - 5
+	                return (YomTov.shavuos, dayOfYomTov)
 	            }
 	        case .tammuz:
 	            // push off the fast day if it falls on Shabbos
 	            if (currentHebrewDayOfMonth() == 17 && currentDayOfTheWeek() != 7) || (currentHebrewDayOfMonth() == 18 && currentDayOfTheWeek() == 1)
 	            {
-	                return YomTov.seventeenthOfTammuz
+	                return (YomTov.seventeenthOfTammuz, dayOfYomTov)
 	            }
 	        case .av:
 	            // if Tisha B'av falls on Shabbos, push off until Sunday
 	            if (currentDayOfTheWeek() == 1 && currentHebrewDayOfMonth() == 10) || (currentDayOfTheWeek() != 7 && currentHebrewDayOfMonth() == 9)
 	            {
-	                return YomTov.ninthOfAv
+	                return (YomTov.ninthOfAv, dayOfYomTov)
 	            }
                 else if currentHebrewDayOfMonth() == 15
                 {
-	                return YomTov.tuBeav
+	                return (YomTov.tuBeav, dayOfYomTov)
 	            }
 	        case .elul:
 	            if currentHebrewDayOfMonth() == 29
 	            {
-	                return YomTov.erevRoshHashana
+	                return (YomTov.erevRoshHashana, 0)
 	            }
 	        case .tishrei:
 	            if currentHebrewDayOfMonth() == 1 || currentHebrewDayOfMonth() == 2
 	            {
-	                return YomTov.roshHashana
+					dayOfYomTov = currentHebrewDay
+	                return (YomTov.roshHashana, dayOfYomTov)
 	            }
 	            else if (currentHebrewDayOfMonth() == 3 && currentDayOfTheWeek() != 7) || (currentHebrewDayOfMonth() == 4 && currentDayOfTheWeek() == 1)
 	            {
 	                // push off Tzom Gedalia if it falls on Shabbos
-	                return YomTov.fastOfGedalya
+	                return (YomTov.fastOfGedalya, dayOfYomTov)
 	            }
 	            else if currentHebrewDayOfMonth() == 9
 	            {
-	                return YomTov.erevYomKippur
+	                return (YomTov.erevYomKippur, 0)
 	            }
 	            else if currentHebrewDayOfMonth() == 10
 	            {
-	                return YomTov.yomKippur
+	                return (YomTov.yomKippur, dayOfYomTov)
 	            }
 	            else if currentHebrewDayOfMonth() == 14
 	            {
-	                return YomTov.erevSuccos
+	                return (YomTov.erevSuccos, 0)
 	            }
 	            if currentHebrewDayOfMonth() == 15 || (currentHebrewDayOfMonth() == 16 && !inIsrael)
 	            {
-	                return YomTov.succos
+					dayOfYomTov =  14 - currentHebrewDay
+	                return (YomTov.succos, dayOfYomTov)
 	            }
 	            if (currentHebrewDayOfMonth() >= 17 && currentHebrewDayOfMonth() <= 20) || (currentHebrewDayOfMonth() == 16 && inIsrael)
 	            {
-	                return YomTov.holHamoedSuccos
+					dayOfYomTov = 14 - currentHebrewDay
+	                return (YomTov.holHamoedSuccos, dayOfYomTov)
 	            }
 	            if currentHebrewDayOfMonth() == 21
 	            {
- 	                return YomTov.hoshanaRabba
+ 	                return (YomTov.hoshanaRabba, 6)
 	            }
 	            if currentHebrewDayOfMonth() == 22
 	            {
-	                return YomTov.sheminiAtzeres
+	                return (YomTov.sheminiAtzeres, 7)
 	            }
 	            if currentHebrewDayOfMonth() == 23 && !inIsrael
 	            {
-	                return YomTov.simchasTorah
+	                return (YomTov.simchasTorah, 8)
 	            }
 	        case .kislev:
 	            if currentHebrewDayOfMonth() == 24
 	            {
-	                return YomTov.erevChanukah
+	                return (YomTov.erevChanukah, 0)
 	            }
 	            else
 	            {
 	                if currentHebrewDayOfMonth() >= 25
 	                {
-	                    return YomTov.hanukah
+	                    return (YomTov.hanukah, dayOfChanukah())
 	                }
 	            }
 	        case .teves:
 	            if currentHebrewDayOfMonth() == 1 || currentHebrewDayOfMonth() == 2 || (currentHebrewDayOfMonth() == 3 && isKislevShort())
 	            {
-	                return YomTov.hanukah
+	                return (YomTov.hanukah, dayOfChanukah())
 	            }
 	            else if currentHebrewDayOfMonth() == 10
 	            {
-	                return YomTov.tenthOfTevet
+	                return (YomTov.tenthOfTevet, dayOfYomTov)
 	            }
 	        case .shevat:
 	            if currentHebrewDayOfMonth() == 15
 	            {
-	                return YomTov.tuBeshvat
+	                return (YomTov.tuBeshvat, dayOfYomTov)
 	            }
 	        case .adar:
 	            if !isCurrentlyHebrewLeapYear()
@@ -176,15 +186,15 @@ public class JewishCalendar: ComplexZmanimCalendar
 	                // if 13th Adar falls on Friday or Shabbos, push back to Thursday
 	                if ((currentHebrewDayOfMonth() == 11 || currentHebrewDayOfMonth() == 12) && currentDayOfTheWeek() == 5) || (currentHebrewDayOfMonth() == 13 && !(currentDayOfTheWeek() == 6 || currentDayOfTheWeek() == 7))
 	                {
-	                    return YomTov.fastOfEsther
+	                    return (YomTov.fastOfEsther, dayOfYomTov)
 	                }
 	                if currentHebrewDayOfMonth() == 14
 	                {
-	                    return YomTov.purim
+	                    return (YomTov.purim, dayOfYomTov)
 	                }
 	                else if currentHebrewDayOfMonth() == 15
 	                {
-	                    return YomTov.shushanPurim
+	                    return (YomTov.shushanPurim, dayOfYomTov)
 	                }
 	            }
 	            // else if a leap year
@@ -192,37 +202,42 @@ public class JewishCalendar: ComplexZmanimCalendar
 	            {
 	                if currentHebrewDayOfMonth() == 14
 	                {
-	                    return YomTov.purimKatan
+	                    return (YomTov.purimKatan, dayOfYomTov)
 	                }
 	            }
 	        case .adar_II:
 	            // if 13th Adar falls on Friday or Shabbos, push back to Thursday
 	            if ((currentHebrewDayOfMonth() == 11 || currentHebrewDayOfMonth() == 12) && currentDayOfTheWeek() == 5) || (currentHebrewDayOfMonth() == 13 && !(currentDayOfTheWeek() == 6 || currentDayOfTheWeek() == 7))
 	            {
-	                return YomTov.fastOfEsther
+	                return (YomTov.fastOfEsther, dayOfYomTov)
 	            }
 	            if currentHebrewDayOfMonth() == 14
 	            {
-	                return YomTov.purim
+	                return (YomTov.purim, dayOfYomTov)
 	            }
 	            else if currentHebrewDayOfMonth() == 15
 	            {
-	                return YomTov.shushanPurim
+	                return (YomTov.shushanPurim, dayOfYomTov)
 	            }
             default:
                 break
 	    }
 		if let weekday = internalCalendar?.component(.weekday, from: workingDate ?? Date()) {
 			if weekday == 6 {
-				return .erevShabbos
+				return (.erevShabbos, 0)
 			}
 			if weekday == 7 {
-				return .shabbos
+				return (.shabbos, 1)
 			}
 		}
 	    // if we get to this stage, then there are no holidays for the given date return -1
 	    return nil
 	}
+//
+//	public func isFirstDay() -> Bool {
+//		let ytIndex = yomTovIndex()
+//		let currendWeekday = currentHebrewDayOfMonth()
+//	}
 	
     /** 
      * This method determines if the given date is a Jewish Holiday.
@@ -231,7 +246,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isYomTov() -> Bool
 	{
-        if let holidayIndex = yomTovIndex()
+		if let holidayIndex = yomTovInfo()?.yomTov
         {
             if isErevYomTov() || holidayIndex == .hanukah || (isTaanis() && holidayIndex != .yomKippur)
             {
@@ -239,7 +254,7 @@ public class JewishCalendar: ComplexZmanimCalendar
             }
         }
 
-	    return yomTovIndex() != nil
+		return yomTovInfo()?.yomTov != nil
 	}
 	
     /**
@@ -249,7 +264,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isCholHamoed() -> Bool
 	{
-	    let holidayIndex = yomTovIndex()
+		let holidayIndex = yomTovInfo()?.yomTov
 	    return (holidayIndex == .holHamoedPesach || holidayIndex == .holHamoedSuccos)
 	}
 	
@@ -280,7 +295,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isErevYomTov() -> Bool
 	{
-	    let holidayIndex = yomTovIndex()
+		let holidayIndex = yomTovInfo()?.yomTov
 	
 	    return holidayIndex == .erevPesach || holidayIndex == .erevShavuos || holidayIndex == .erevRoshHashana || holidayIndex == .erevYomKippur || holidayIndex == .erevSuccos
 	}
@@ -304,7 +319,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isTaanis() -> Bool
 	{
-	    let holidayIndex = yomTovIndex()
+		let holidayIndex = yomTovInfo()?.yomTov
 	    
 	    return holidayIndex == .seventeenthOfTammuz || holidayIndex == .ninthOfAv || holidayIndex == .yomKippur || holidayIndex == .fastOfGedalya || holidayIndex == .tenthOfTevet || holidayIndex == .fastOfEsther
 	}
@@ -340,7 +355,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isChanukah() -> Bool
 	{
-	    return yomTovIndex() == .hanukah
+		return yomTovInfo()?.yomTov == .hanukah
 	}
 	
     /**
@@ -350,7 +365,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isPurim() -> Bool
 	{
-	    return yomTovIndex() == .purim
+		return yomTovInfo()?.yomTov == .purim
 	}
 	
     /**
@@ -371,7 +386,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isPesach() -> Bool
 	{
-	    return yomTovIndex() == .pesach
+		return yomTovInfo()?.yomTov == .pesach
 	}
 	
     /**
@@ -381,7 +396,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isShavuos() -> Bool
 	{
-	    return yomTovIndex() == .shavuos
+		return yomTovInfo()?.yomTov == .shavuos
 	}
 	
     /**
@@ -391,7 +406,7 @@ public class JewishCalendar: ComplexZmanimCalendar
      */
 	public func isSuccos() -> Bool
 	{
-	    return yomTovIndex() == .succos
+		return yomTovInfo()?.yomTov == .succos
 	}
 	
     /**
