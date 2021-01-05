@@ -386,7 +386,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
      */
 	public func yearMonthAndDayFromDate(date: Date) -> [Int]
 	{
-		let gregorianCalendar: Calendar = Calendar(identifier:.gregorian)
+		let gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
 		let parts = gregorianCalendar.dateComponents([.year, .month, .day], from: date)
         let year = parts.year ?? 0
 	    let month = parts.month ?? 0
