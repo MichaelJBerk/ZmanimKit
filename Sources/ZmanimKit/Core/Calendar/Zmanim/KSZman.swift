@@ -196,24 +196,31 @@ public class Zman
 	    return related
 	}
 	
-	public static func metadata() -> DictionaryLiteral<String, [String: String]> {
-		let data: DictionaryLiteral<String, [String: String]> = .init()
+	public static func metadata() -> KeyValuePairs<String, [String: String]> {
+		let data: KeyValuePairs<String, [String: String]> = .init()
 		return data
 		
 	}
 
 	public func getMetadata() {
 		
-			let jd = JSONDecoder()
-			let d = Bundle.init(for: Self.self).url(forResource: "ZmanMetadata", withExtension: "json")!
-			let jsonData = try! Data(contentsOf: d)
+		let jd = JSONDecoder()
+		var d: URL = URL(string: "mberk.com")!
+		
+		#if SWIFT_PACKAGE
+		d = Bundle.module.url(forResource: "ZmanMetadata", withExtension: "json")!
+		#else
+		d = Bundle.init(for: Self.self).url(forResource: "ZmanMetadata", withExtension: "json")!
+		#endif
+				
+		let jsonData = try! Data(contentsOf: d)
 		do {
 			let decodedData = try jd.decode([ZMetadata].self, from: jsonData)
 			self.data = decodedData
 		} catch let error as NSError {
 			print("Error loading metadata. \(error), \(error.userInfo)")
 		}
-			
+		
 	}
 	
 	public func ksZmanDataForCurrentZman() -> ZMetadata {

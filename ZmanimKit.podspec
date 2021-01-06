@@ -32,8 +32,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.6'
   s.macos.deployment_target = '10.15.6'
 
-  s.source_files = 'Sources/**/*'
-  s.resources = 'Assets/*'
+  s.source_files = 'Sources/ZmanimKit/**/*'
+  s.resources = 'Sources/ZmanimKit/Resources/*'
   
   # s.resource_bundles = {
   #   'KosherSwift' => ['KosherSwift/Assets/*.png']

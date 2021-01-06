@@ -21,7 +21,9 @@ let package = Package(
         .target(
             name: "ZmanimKit",
 			dependencies: [],
-			path: "Sources"
+			resources: [
+				.copy("Resources/ZmanMetadata.json"),
+			]
 			),
         .testTarget(
             name: "ZmanimKitTests",
