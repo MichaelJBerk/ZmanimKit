@@ -1,4 +1,6 @@
 # ZmanimKit
+**NOTE: ZmanimKit is still in beta. Use at your own risk!** 
+
 A Swift 5.3 library for implementing Zmanim and other Halachic time-related calculations.
 
 This is based on Dani Smith's work with [KosherSwift](https://github.com/DanielSmith1239/KosherSwift), which is based on KosherCocoa and KosherJava
