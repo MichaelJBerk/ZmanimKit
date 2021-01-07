@@ -7,8 +7,7 @@ This is based on Dani Smith's work with [KosherSwift](https://github.com/DanielS
 
 # To Do:
 
-- [ ] Prepare for Open Source release
-	- [X] Rename to ZmanimKit
+- [ ] Prepare for final release
 	- [ ] Release on CocoaPods
 - [ ] Finish cleaning up code
 - [ ] Add support for retrieving sefira prayers
@@ -21,4 +20,4 @@ Michael Berk, Michaelberkdev@gmail.com
 
 ## License
 
-KosherSwift is available under the LGLP license. See the LICENSE.md file for more info.
+ZmanimKit is available under the LGLP license. See the LICENSE.md file for more info.
