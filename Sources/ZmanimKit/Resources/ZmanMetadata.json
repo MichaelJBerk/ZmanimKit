@@ -68,7 +68,7 @@
 		"sef": "Daf Yomi",
 		"eng": "Daf Yomi",
 		"selector": "dafYomiBavli",
-		"exp": "Today's Daf Yomi in Talmud Bavli.",
+		"exp": "Today's Daf Yomi in Talmud Bavli",
 		"hebrew": "דף יומי"
 	},
 	{
@@ -76,7 +76,7 @@
 		"sef": "Daf Yomi",
 		"eng": "Daf Yomi",
 		"selector": "dafYomiBavliForDateWithDate:",
-		"exp": "Daf Yomi in Talmud Bavli.",
+		"exp": "Daf Yomi in Talmud Bavli",
 		"hebrew": "דף יומי"
 	},
 	{
