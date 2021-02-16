@@ -162,6 +162,8 @@ public enum YomTov: Int
 			return "Shabbos"
 		case .tuBeshvat:
 			return "Tu Beshvat"
+		case .shushanPurim:
+			return "Shushan Purim"	
 		default:
 			return "\(self)"
 		}
