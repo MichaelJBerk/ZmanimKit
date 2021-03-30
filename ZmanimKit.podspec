@@ -29,7 +29,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/MichaelJBerk/ZmanimKit.git', :branch => "master"} #:tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.6'
+#   s.ios.deployment_target = '13.6'
+  s.ios.deployment_target = '12.0'
   s.macos.deployment_target = '10.15.6'
 
   s.source_files = 'Sources/ZmanimKit/**/*'
