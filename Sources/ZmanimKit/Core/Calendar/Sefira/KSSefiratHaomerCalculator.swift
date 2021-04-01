@@ -48,15 +48,15 @@ public class SefiratHaomerCalculator
 	}
 	
     /**
-     *  This method returns an integer representing the
-     *  day of the omer count which date falls out on.
-     *
-     *  If date does not fall out during the
-     *  omer count, then 0 is returned.
-     *
-     *  - perameter date: The date to use.
-     *  - returns: An integer representing the day of the omer count.
-     */
+	This method returns an integer representing the
+	day of the omer count which `date` falls out on.
+	
+	If date does not fall out during the
+	omer count, then 0 is returned.
+	
+	- parameter date: The date to use.
+	- returns: An integer representing the day of the omer count.
+	*/
 	class public func dayOfSefiraForDate(date: Date) -> Int
 	{
 		let firstDayOfTheOmer: Date = SefiratHaomerCalculator._dateOfSixteenNissanForYearOfDate(date: date)
@@ -69,6 +69,41 @@ public class SefiratHaomerCalculator
 	    
 	    return day
 	}
+	
+	/**
+	This method returns an integer representing the
+	day of the omer count which `date` falls out on,
+	taking into account whether or not `date` is after sunset
+	has occurred
+	
+	If `date` does not fall out during the
+	omer count, then 0 is returned.
+	
+	- parameter date: The date to use.
+	- parameter location: The location to use when calculating
+	- returns: An integer representing the day of the omer count.
+	*/
+	class public func updatingDayOfSefiraFor(date: Date, location: GeoLocation) -> Int {
+		var omer = dayOfSefiraForDate(date: date)
+		let sunsetCal = ZmanimCalendar(location: location)
+		sunsetCal.workingDate = date
+		let sunset = sunsetCal.sunset()
+		//Return 0 when it's not between pesach and Shavuos, but do show it on the second night of pesach (for those in Eretz Yisroel), after sunset
+		let jCal = JewishCalendar(location: GeoLocation())
+		jCal.workingDate = date
+		if !jCal.isPesach(), omer == 0 {
+			return 0
+		}
+		if sunset!.compare(date) == .orderedDescending {
+			omer += 1
+			//16 since it's after sunset - so it's the next day
+			if jCal.currentHebrewMonth() == .nissan, jCal.currentHebrewDayOfMonth() == 16 {
+				return 1
+			}
+		}
+		return omer
+	}
+	
 	
 	class public func _dateOfSixteenNissanForYearOfDate(date: Date) -> Date
 	{

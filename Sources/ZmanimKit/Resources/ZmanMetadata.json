@@ -1,5 +1,13 @@
 [
 	{
+		"ash": "Omer",
+		"sef": "Omer",
+		"eng": "Omer",
+		"selector": "omer",
+		"exp": "Current day of the omer, updating at sunset. By default, it only appears between the second day of Pesach and the first day of Shavuot.",
+		"hebrew": "עומר"
+	},
+	{
 		"ash": "Havdalah",
 		"sef": "Havdalah",
 		"eng": "Sabbath Concludes",
