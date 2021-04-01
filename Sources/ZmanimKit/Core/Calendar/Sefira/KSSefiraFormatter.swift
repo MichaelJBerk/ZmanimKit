@@ -35,7 +35,10 @@ public class SefiraFormatter {
 								  showLamenatzaiach:Bool = false,
 								  showAna:Bool = false,
 								  showRibono:Bool = false,
-								  showAleinu:Bool = false) -> String {
+								  showAleinu:Bool = false) -> String? {
+		if day <= 0 || day > 49 {
+			return nil
+		}
 		let formatter = SefiraFormatter()
 		formatter.language = language
 		formatter.custom = custom

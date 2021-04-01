@@ -94,11 +94,14 @@ public class SefiratHaomerCalculator
 		if !jCal.isPesach(), omer == 0 {
 			return 0
 		}
-		if sunset!.compare(date) == .orderedDescending {
+		if date.compare(sunset!) == .orderedDescending {
 			omer += 1
 			//16 since it's after sunset - so it's the next day
 			if jCal.currentHebrewMonth() == .nissan, jCal.currentHebrewDayOfMonth() == 16 {
 				return 1
+			}
+			if jCal.isShavuos() {
+				return 0
 			}
 		}
 		return omer
