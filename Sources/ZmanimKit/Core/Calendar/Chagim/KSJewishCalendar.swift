@@ -231,7 +231,16 @@ public class JewishCalendar: ComplexZmanimCalendar {
     public func isCholHamoedSuccos() -> Bool {
         return (currentHebrewMonth() == .tishrei) && ((currentHebrewDayOfMonth() >= 17 && currentHebrewDayOfMonth() <= 20) || (currentHebrewDayOfMonth() == 16 && inIsrael))
     }
-
+	
+	/**
+	 * This method determines if the given date is Hoshana Rabbah.
+	 *
+	 *  - returns: true if the current day is Hoshana Rabbah.
+	 */
+	public func isHoshanaRabbah() -> Bool {
+		return currentHebrewMonth() == .tishrei && currentHebrewDayOfMonth() == 21
+	}
+	
     /**
      * This method determines if the given date is Chol Hamoed of Pesach.
      *
