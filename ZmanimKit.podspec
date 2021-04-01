@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZmanimKit'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'A Swift library for getting zmanim.'
   s.swift_versions	 = ['5.0']
 
