@@ -161,11 +161,25 @@ public enum YomTov: Int
 		case .shabbos:
 			return "Shabbos"
 		case .tuBeshvat:
-			return "Tu Beshvat"
+			return "Tu B'Shvat"
 		case .shushanPurim:
-			return "Shushan Purim"	
-		default:
-			return "\(self)"
+			return "Shushan Purim"
+		case .yomHashoah:
+			return "Yom Hashoah"
+		case .yomHazikaron:
+			return "Yom Hazikaron"
+		case .yomYerushalayim:
+			return "Yom Yerushalayim"
+		case .pesachSheni:
+			return "Pesach Sheni"
+		case .tuBeav:
+			return "Tu B'av"
+		case .purimKatan:
+			return "Purim Katan"
+		case .roshChodesh:
+			return "Rosh Chodesh"
+		case .yomHaatzmaut:
+			return "Yom Haatzmaut"
 		}
 	}
 }
