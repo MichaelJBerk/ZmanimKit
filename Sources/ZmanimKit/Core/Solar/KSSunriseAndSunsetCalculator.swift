@@ -72,10 +72,16 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 	        }
 			localHourAngle = acosDeg(x: cosLocalHourAngle)
 	    }
+//		if localHourAngle.isNaN {
+//			localHourAngle = 360
+//		}
 	    let localHour: Double = localHourAngle / kDegreesPerHour
 	    
-		let localMeanTime: Double = localMeanTimeForHour(localHour: localHour, andAscension: sunRightAscensionHours, andApproxTimeDays: approxTimeDaysForDayOfYear(dayOfYear: dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude: longitude), forCalculationType: type))
-	    
+		var localMeanTime: Double = localMeanTimeForHour(localHour: localHour, andAscension: sunRightAscensionHours, andApproxTimeDays: approxTimeDaysForDayOfYear(dayOfYear: dayOfYear, withHoursFromMeridian: hoursFromMeridianForLongitude(longitude: longitude), forCalculationType: type))
+	    let h = hoursFromMeridianForLongitude(longitude: longitude)
+//		if localMeanTime.isNaN {
+//			localMeanTime = 0
+//		}
 		var processedTime: Double = localMeanTime - hoursFromMeridianForLongitude(longitude: longitude)
 	    
 		while  processedTime < 0.0
@@ -86,6 +92,9 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 		while  processedTime >= 24.0
 	    {
 			processedTime = processedTime - 24.0
+		}
+		if processedTime.isNaN {
+			print("Nan")
 		}
 	    
 	    return processedTime
@@ -312,6 +321,7 @@ public class SunriseAndSunsetCalculator: trigonometry, AstronomicalCalculator
 		let year: Int = yearMonthAndDayFromDate(date: date)[0]
 		let month: Int = yearMonthAndDayFromDate(date: date)[1]
 		let day: Int = yearMonthAndDayFromDate(date: date)[2]
+		
 		doubleTime = sunriseOrSunsetForYear(year: year, andMonth: month, andDay: day, atLongitude: geoLocation!.longitude, andLatitude: geoLocation!.latitude, withZenith: tempZenith, andType: kTypeSunrise)
 	    return doubleTime
 	}

@@ -5,7 +5,51 @@
 
 import Foundation
 
-/** A class that calculates various sunrise and sunset values. */
+/** A class that calculates various sunrise and sunset values.
+
+Documentation from KosherJava:
+
+A calendar that calculates astronomical times such as `sunrise()`, `sunset()` and twilight times. This class contains a `Calendar` and can therefore use the standard Calendar functionality to change dates etc...
+
+The calculation engine used to calculate the astronomical times can be changed to a different implementation by implementing the `AstronomicalCalculator` protocol and setting it with the `setAstronomicalCalculator(AstronomicalCalculator)` method. A number of different calculation engine
+implementations are included in the util package.
+- NOTE: Only SunriseAndSunsetCalendar is included in `ZmanimKit`
+- NOTE: There are times when the algorithms can't calculate proper values for sunrise, sunset and twilight. This
+is usually caused by trying to calculate times for areas either very far North or South, where sunrise / sunset never
+happen on that date. This is common when calculating twilight with a deep dip below the horizon for locations as far
+south of the North Pole as London, in the northern hemisphere. The sun never reaches this dip at certain times of the
+year. When the calculations encounter this condition a null will be returned when a
+`Date` is expected and `Long` when a <code>`Long`</code> is expected. The
+reason that `Errors` are not thrown in these cases is because the lack of a rise/set or twilight is
+not an exception, but an expected condition in many parts of the world.
+
+Here is a simple example of how to use the API to calculate sunrise.
+First create the Calendar for the location you would like to calculate sunrise or sunset times for:
+
+<pre>
+String locationName = &quot;Lakewood, NJ&quot;;
+double latitude = 40.0828; // Lakewood, NJ
+double longitude = -74.2094; // Lakewood, NJ
+double elevation = 20; // optional elevation correction in Meters
+// the String parameter in getTimeZone() has to be a valid timezone listed in
+// {@link java.util.TimeZone#getAvailableIDs()}
+TimeZone timeZone = TimeZone.getTimeZone(&quot;America/New_York&quot;);
+GeoLocation location = new GeoLocation(locationName, latitude, longitude, elevation, timeZone);
+AstronomicalCalendar ac = new AstronomicalCalendar(location);
+</pre>
+
+To get the time of sunrise, first set the date you want (if not set, the date will default to today):
+
+<pre>
+ac.getCalendar().set(Calendar.MONTH, Calendar.FEBRUARY);
+ac.getCalendar().set(Calendar.DAY_OF_MONTH, 8);
+Date sunrise = ac.getSunrise();
+</pre>
+
+
+@author &copy; Eliyahu Hershfeld 2004 - 2020
+
+*/
 public class AstronomicalCalendar
 {
     /**
@@ -362,6 +406,9 @@ public class AstronomicalCalendar
      */
 	public func dateFromTime(time: Double, inTimeZone tz: TimeZone, onDate date: Date) -> Date?
 	{
+		if time.isNaN {
+			return nil
+		}
         var calculatedTime = time
 		let gregorianCalendar = Calendar(identifier:.gregorian)
 		var components: DateComponents = gregorianCalendar.dateComponents([.year, .month, .weekOfYear, .day, .hour, .minute, .second, .era], from: date)
