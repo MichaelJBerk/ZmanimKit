@@ -38,7 +38,7 @@ public class ComplexZmanimCalendar: ZmanimCalendar
 	}
 	
     /**
-     *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
+     *  Method to return a _shaah zmanis_ (temporal hour) calculated using a
      *  19.8&deg; dip.
      *
      *  This calculation divides the day based on the opinion of the Magen Avraham that the day runs
@@ -46,8 +46,8 @@ public class ComplexZmanimCalendar: ZmanimCalendar
      *  eastern geometric horizon before sunrise.
      *
      *  Dusk for this is when the sun is 19.8&deg; below the western geometric horizon
-     *  after sunset. This day is split into 12 equal parts with each part being a <em>shaah
-     *  zmanis</em>.
+     *  after sunset. This day is split into 12 equal parts with each part being a _shaah
+     *  zmanis_.
      *
      *  - returns: The millisecond length of a shaah zmanis.
      *
