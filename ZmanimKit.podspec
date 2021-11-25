@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 #   s.ios.deployment_target = '13.6'
   s.ios.deployment_target = '12.0'
   s.macos.deployment_target = '10.15.6'
+  s.watchos.deployment_target = '7.0'
 
   s.source_files = 'Sources/ZmanimKit/**/*'
   s.resources = 'Sources/ZmanimKit/Resources/*'
