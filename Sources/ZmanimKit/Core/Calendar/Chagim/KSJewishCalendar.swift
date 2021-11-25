@@ -9,6 +9,22 @@ public typealias YomTovInfo = (yomTov: YomTov, dayOfYomTov: Int)
 
 /// A class that calculates Hebrew dates, Yom Tov, and Daf Yomi
 public class JewishCalendar: ComplexZmanimCalendar {
+	
+	///Determines if all dates are adjusted to the correct hebrew date based on sunset
+	///
+	///``ZmanimKit`` can adjust the input date to the correct Hebrew date if it occurs after sunset.
+	///For example, 11/26/2021 at 7:00 PM becomes 22 Kislev, instead of 21 Kiselv.
+	///This property controls whether or not this adjustment is only applied when the `workingDate` is the current date.
+	///
+	///If `false`, ``JewishCalendar`` will only adjust the date when the `workingDate` is the current date. If `true`, then ``JewishCalendar`` will adjust the working date even if it's not the current date. This can be useful for testing, for example.
+	///
+	///Defaults to `false`
+	///
+	///- Warning: This won't work properly if the `workingDate` is using the Gregorian calendar.
+	///
+	///- Tip: If you're dealing with a date provided directly by the user, consider whether or not they expect the date to be adjusted in this particular situation.
+	
+	public var adjustAllDatesForSunset = false
     /**
      *  Determines if we consider "modern" holidays,
      *  such as Yom Ha'atzmaut when returning values.
@@ -618,6 +634,18 @@ public class JewishCalendar: ComplexZmanimCalendar {
 
         return HebrewMonth(rawValue: hebrewCalendar.dateComponents([.month], from: workingDateAdjustedForSunset() as Date).month ?? 0)!
     }
+	
+	///Controls wether or not the working date is adjusted, based on the value of ``adjustAllDatesForSunset``
+	private func shouldAdjustDate(_ date: Date) -> Bool {
+		if adjustAllDatesForSunset {
+			return true
+		} else {
+			if date.isCurrentDate {
+				return true
+			}
+		}
+		return false
+	}
 
     /**
      *  Returns the day of the current hebrew month
@@ -627,7 +655,7 @@ public class JewishCalendar: ComplexZmanimCalendar {
     public func currentHebrewDayOfMonth() -> Int {
         var now: Date
         now = workingDate ?? Date()
-        if now.isCurrentDate {
+        if shouldAdjustDate(now) {
             now = workingDateAdjustedForSunset()
         }
 
