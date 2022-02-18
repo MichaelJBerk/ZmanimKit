@@ -179,7 +179,9 @@ public class JewishCalendar: ComplexZmanimCalendar {
             else {
                 if currentHebrewDayOfMonth() == 14 {
                     return (YomTov.purimKatan, dayOfYomTov)
-                }
+                } else if currentHebrewDayOfMonth() == 15 {
+					return (YomTov.shushanPuirmKatan, dayOfYomTov)
+				}
             }
         case .adar_II:
             // if 13th Adar falls on Friday or Shabbos, push back to Thursday
@@ -204,6 +206,15 @@ public class JewishCalendar: ComplexZmanimCalendar {
             }
         }
         // if we get to this stage, then there are no holidays for the given date return -1
+		if isRoshChodesh() {
+			var rcDay = 1
+			let jCal = Calendar.hebrewCalendar()
+			let yesterday = jCal.dateByAddingDays(days: -1, toDate: workingDate ?? Date())
+			if jCal.component(.day, from: yesterday) == 30 {
+				rcDay = 2
+			}
+			return (YomTov.roshChodesh, rcDay)
+		}
         return nil
     }
 

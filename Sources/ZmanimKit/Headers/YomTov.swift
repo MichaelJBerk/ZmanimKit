@@ -66,6 +66,9 @@ public enum YomTov: Int
 	case shushanPurim
 	/// 14th of Adar I (on a leap year)
 	case purimKatan
+	/// 15th of Adar I (on a leap year)
+	case shushanPuirmKatan
+	
 	/// Beginning of the New Month
 	case roshChodesh
 	/// Holocaust Memorial Day
@@ -176,6 +179,8 @@ public enum YomTov: Int
 			return "Tu B'av"
 		case .purimKatan:
 			return "Purim Katan"
+		case .shushanPuirmKatan:
+			return "Sushan Purim Katan"
 		case .roshChodesh:
 			return "Rosh Chodesh"
 		case .yomHaatzmaut:
