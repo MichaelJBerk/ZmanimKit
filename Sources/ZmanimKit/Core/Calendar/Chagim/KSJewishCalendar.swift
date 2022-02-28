@@ -309,6 +309,10 @@ public class JewishCalendar: ComplexZmanimCalendar {
 
         return holidayIndex == .seventeenthOfTammuz || holidayIndex == .ninthOfAv || holidayIndex == .yomKippur || holidayIndex == .fastOfGedalya || holidayIndex == .tenthOfTevet || holidayIndex == .fastOfEsther
     }
+	
+	public func isAseretYimeiTeshuvah() -> Bool {
+		return currentHebrewMonth() == .tishrei && currentHebrewDayOfMonth() >= 10
+	}
 
     /**
      *  This method determines the day of Chanukah.
