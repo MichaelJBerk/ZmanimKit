@@ -39,6 +39,30 @@ public class JewishCalendar: ComplexZmanimCalendar {
     override public init(location aGeoLocation: GeoLocation) {
         super.init(location: aGeoLocation)
     }
+	
+	///Returns all the Yom Tovs that apply to the given day
+	public func yomTovs() -> [YomTovInfo] {
+		var yomTovs = [YomTovInfo]()
+		let notYomTovs: [YomTov] = [
+			.erevShabbos,
+			.shabbos,
+			.roshChodesh
+		]
+		if let yomTovInfo = yomTovInfo() {
+			yomTovs.append(yomTovInfo)
+		}
+		if let rcInfo = getRoshChodeshInfo(),
+		   !yomTovs.contains (where: {$0.yomTov == .roshChodesh}) {
+			yomTovs.insert(rcInfo, at: 0)
+		}
+		
+		if let shabbosInfo = getShabbosInfo(),
+		   !yomTovs.contains(where: {$0.yomTov == .shabbos}),
+		   !yomTovs.contains (where: {$0.yomTov == .erevShabbos}) {
+			yomTovs.insert(shabbosInfo, at: 0)
+		}
+		return yomTovs
+	}
 
     /**
      * Returns the index of any holidays that fall on the date represented by `Date()`.
@@ -197,15 +221,32 @@ public class JewishCalendar: ComplexZmanimCalendar {
         default:
             break
         }
-        if let weekday = internalCalendar?.component(.weekday, from: workingDate ?? Date()) {
-            if weekday == 6 {
-                return (.erevShabbos, 0)
-            }
-            if weekday == 7 {
-                return (.shabbos, 1)
-            }
-        }
+		if let shabbosInfo = getShabbosInfo() {
+			return shabbosInfo
+		}
         // if we get to this stage, then there are no holidays for the given date return -1
+		if let rcInfo = getRoshChodeshInfo() {
+			return rcInfo
+		}
+		return nil
+    }
+	
+	
+	///Internal function used for determining if the day is Shabbos/Erev Shabbos
+	func getShabbosInfo() -> YomTovInfo? {
+		if let weekday = internalCalendar?.component(.weekday, from: workingDate ?? Date()) {
+			if weekday == 6 {
+				return (.erevShabbos, 0)
+			}
+			if weekday == 7 {
+				return (.shabbos, 1)
+			}
+		}
+		return nil
+	}
+	
+	///Internal function used for determining if the day is Rosh Chodesh
+	func getRoshChodeshInfo() -> YomTovInfo? {
 		if isRoshChodesh() {
 			var rcDay = 1
 			let jCal = Calendar.hebrewCalendar()
@@ -215,8 +256,8 @@ public class JewishCalendar: ComplexZmanimCalendar {
 			}
 			return (YomTov.roshChodesh, rcDay)
 		}
-        return nil
-    }
+		return nil
+	}
 
 //
     //	public func isFirstDay() -> Bool {
