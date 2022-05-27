@@ -106,7 +106,7 @@ public class JewishCalendar: ComplexZmanimCalendar {
                 return (YomTov.pesachSheni, dayOfYomTov)
             }
             if useModernHolidays && currentHebrewDayOfMonth() == 28 {
-                return (YomTov.yomHashoah, dayOfYomTov)
+                return (YomTov.yomYerushalayim, dayOfYomTov)
             }
         case .sivan:
             if currentHebrewDayOfMonth() == 5 {
