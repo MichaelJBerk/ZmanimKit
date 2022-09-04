@@ -21,4 +21,19 @@ final class ZmanimKitTests: XCTestCase {
     static var allTests = [
         ("testExample", testExample),
     ]
+	
+	func testEdgewere() {
+//		.init(name: "Edgeware", longitude: -0.262034, latitude: 51.615788)
+		let loc = GeoLocation(latitude: 51.615788, longitude: -0.262034, timeZone: .init(abbreviation: "GMT")!)
+		let cal = ZmanimCalendar(location: loc)
+		let simpleDateFormatter = DateFormatter()
+		simpleDateFormatter.dateStyle = .none
+		simpleDateFormatter.timeStyle = .short
+		simpleDateFormatter.timeZone = .init(abbreviation: "GMT")
+		let sep2022 = DateComponents(calendar: .current, year: 2022, month: 9, day: 01).date!
+		cal.workingDate = sep2022
+		
+		print("Edgewere Sof Zman Shma Gra: \(simpleDateFormatter.string(from: cal.sofZmanShmaGra()))")
+		
+	}
 }
