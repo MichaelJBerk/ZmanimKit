@@ -352,7 +352,7 @@ public class JewishCalendar: ComplexZmanimCalendar {
     }
 	
 	public func isAseretYimeiTeshuvah() -> Bool {
-		return currentHebrewMonth() == .tishrei && currentHebrewDayOfMonth() >= 10
+		return currentHebrewMonth() == .tishrei && currentHebrewDayOfMonth() <= 10
 	}
 
     /**
