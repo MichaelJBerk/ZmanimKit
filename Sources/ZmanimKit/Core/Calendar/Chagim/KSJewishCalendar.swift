@@ -840,4 +840,31 @@ public class JewishCalendar: ComplexZmanimCalendar {
 
         return returnDate
     }
+	
+	/// Determines if Mashiv Haruach is said on the given day
+	///
+	/// - Returns: `true` if Mashiv Haruach is said on the day, `false` if it is not.
+	/// >Note:  On Shmini Atzeres, the method will always return `true`. On the first day of Pesach, it will always return `false`.
+	public func isMashivHaruach() -> Bool {
+		let month = currentHebrewMonth()
+		let day = currentHebrewDayOfMonth()
+		switch month {
+		case .tishrei:
+			if day >= 22 {
+				return true
+			} else {
+				return false
+			}
+		case .nissan:
+			if day < 15 {
+				return true
+			} else {
+				return false
+			}
+		case .iyar, .tammuz, .av, .elul:
+			return false
+		default:
+			return true
+		}
+	}
 }

@@ -36,4 +36,27 @@ final class ZmanimKitTests: XCTestCase {
 		print("Edgewere Sof Zman Shma Gra: \(simpleDateFormatter.string(from: cal.sofZmanShmaGra()))")
 		
 	}
+	
+	func testMashivHaruach() {
+		let cal = JewishCalendar(location: GeoLocation(latitude: 40.7127, longitude: -74.0060, timeZone: TimeZone(identifier: "EST")!))
+		//Tishrei
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 1, day: 03).date!
+		XCTAssertFalse(cal.isMashivHaruach())
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 1, day: 25).date!
+		XCTAssertTrue(cal.isMashivHaruach())
+		
+		//arbitrary month (cheshvan)
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 2, day: 03).date!
+		XCTAssertTrue(cal.isMashivHaruach())
+		
+		//Nissan
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 8, day: 03).date!
+		XCTAssertTrue(cal.isMashivHaruach())
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 8, day: 24).date!
+		XCTAssertFalse(cal.isMashivHaruach())
+		
+		//arbitrary month (iyar)
+		cal.workingDate = DateComponents(calendar: .hebrewCalendar(), year: 5784, month: 9, day: 24).date!
+		XCTAssertFalse(cal.isMashivHaruach())
+	}
 }
