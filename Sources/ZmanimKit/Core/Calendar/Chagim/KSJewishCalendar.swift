@@ -778,7 +778,7 @@ public class JewishCalendar: ComplexZmanimCalendar {
     }
 
     /**
-     *  Returns the length of the parameter Hebrew year
+     *  Returns the number of days in a given Hebrew year
      *
      *  - parameter year: A hebrew year.
      *
@@ -789,14 +789,6 @@ public class JewishCalendar: ComplexZmanimCalendar {
         let thisRoshHashana = Date.dateWithDay(day: 1, Month: 1, Year: year, andCalendar: hebrewCalendar)
         let nextRoshHashana = Date.dateWithDay(day: 1, Month: 1, Year: year + 1, andCalendar: hebrewCalendar)
         var totalDaysInTheYear = hebrewCalendar.daysFromDate(fromDate: thisRoshHashana, toDate: nextRoshHashana)
-        if totalDaysInTheYear == 353 || totalDaysInTheYear == 383 {
-            totalDaysInTheYear = 0
-        } else if totalDaysInTheYear == 354 || totalDaysInTheYear == 384 {
-            totalDaysInTheYear = 1
-        } else if totalDaysInTheYear == 355 || totalDaysInTheYear == 385 {
-            totalDaysInTheYear = 2
-        }
-
         return totalDaysInTheYear
     }
 
